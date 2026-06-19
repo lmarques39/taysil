@@ -1,6 +1,6 @@
 ---
 name: extract-logo-from-live-site
-description: Extract a logo image from a live website (including Next.js sites) using Playwright, download it to public/, and apply it to the navbar, footer, and browser tab favicon.
+description: Extract images (logo or CSS background) from a live website (including Next.js sites) using Playwright, download them to public/, and apply them to the project.
 ---
 
 ## When to use
@@ -45,6 +45,33 @@ Slightly taller than the navbar version works well for footer branding blocks.
 <link rel="icon" type="image/jpeg" href="/logo.jpg" />
 ```
 Replace any existing `<link rel="icon" ...>` line. Modern browsers support JPEG favicons; no conversion needed.
+
+---
+
+## Extracting CSS background images
+
+When the image you need is a CSS `background-image` (not an `<img>` tag), use this snippet:
+
+```js
+browser_evaluate → () => {
+  const els = [...document.querySelectorAll('*')].filter(el => {
+    const bg = window.getComputedStyle(el).backgroundImage;
+    return bg && bg !== 'none';
+  });
+  return els.map(el => ({
+    cls: el.className.toString().slice(0, 80),
+    bg: window.getComputedStyle(el).backgroundImage
+  }));
+}
+```
+
+The `bg` value will look like `url("https://site.com/_next/static/media/gears.abc123.jpg")` — strip the `url("…")` wrapper and curl the inner URL directly.
+
+**Example** — Taysil hero image:
+```bash
+curl -sL "https://www.taysil.pt/_next/static/media/gears.9554ab88.jpg" -o public/hero-gears.jpg
+```
+Then in JSX: `style={{ backgroundImage: 'url(/hero-gears.jpg)' }}` with a dark overlay div on top.
 
 ## Notes
 - If the logo has a white background and the navbar/footer is dark, the white box is acceptable and matches the original branding.
