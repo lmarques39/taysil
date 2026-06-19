@@ -27,7 +27,8 @@ pnpm-debug.log*
 Thumbs.db
 
 # Screenshots (session artifacts)
-*.png
+/*.png
+/*.jpg
 
 # Playwright session cache
 .playwright-mcp/
