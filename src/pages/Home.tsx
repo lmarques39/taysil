@@ -58,12 +58,12 @@ export default function Home() {
               >
                 Ver Produtos <ArrowRight size={17} />
               </Link>
-              <a
-                href="tel:939044050"
-                className="inline-flex items-center justify-center gap-2 border border-slate-700 hover:border-slate-500 text-slate-300 hover:text-white font-semibold px-7 py-3.5 rounded-lg transition-colors tabular-nums"
+              <Link
+                to="/contactos"
+                className="inline-flex items-center justify-center gap-2 border border-slate-700 hover:border-slate-500 text-slate-300 hover:text-white font-semibold px-7 py-3.5 rounded-lg transition-colors"
               >
-                939 044 050
-              </a>
+                Contacte-nos
+              </Link>
             </div>
 
             <div className="flex gap-8 pt-8">
