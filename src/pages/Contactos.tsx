@@ -48,7 +48,7 @@ export default function Contactos() {
               {/* Morada */}
               <div className="mb-10">
                 <div className="border-l-4 border-red-600 pl-4 mb-4">
-                  <h3 className="text-sm font-extrabold text-slate-900 uppercase tracking-wide">Morada</h3>
+                  <h3 className="text-sm font-extrabold text-red-500 uppercase tracking-wide">Morada</h3>
                 </div>
                 <address className="not-italic text-slate-600 leading-relaxed">
                   Rua Vasco da Gama nº33<br />
@@ -68,7 +68,7 @@ export default function Contactos() {
               {/* Telefone */}
               <div className="mb-10">
                 <div className="border-l-4 border-red-600 pl-4 mb-4">
-                  <h3 className="text-sm font-extrabold text-slate-900 uppercase tracking-wide">Telefone</h3>
+                  <h3 className="text-sm font-extrabold text-red-500 uppercase tracking-wide">Telefone</h3>
                 </div>
                 <ul className="space-y-3">
                   {phones.map(({ number, href, label }) => (
@@ -88,7 +88,7 @@ export default function Contactos() {
               {/* Email */}
               <div className="mb-10">
                 <div className="border-l-4 border-red-600 pl-4 mb-4">
-                  <h3 className="text-sm font-extrabold text-slate-900 uppercase tracking-wide">Email</h3>
+                  <h3 className="text-sm font-extrabold text-red-500 uppercase tracking-wide">Email</h3>
                 </div>
                 <a
                   href="mailto:geral.taysil@gmail.com"
@@ -101,7 +101,7 @@ export default function Contactos() {
               {/* Horário */}
               <div>
                 <div className="border-l-4 border-red-600 pl-4 mb-4">
-                  <h3 className="text-sm font-extrabold text-slate-900 uppercase tracking-wide">Horário</h3>
+                  <h3 className="text-sm font-extrabold text-red-500 uppercase tracking-wide">Horário</h3>
                 </div>
                 <div className="space-y-2 text-sm">
                   <div className="flex justify-between">
