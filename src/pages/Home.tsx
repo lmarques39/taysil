@@ -134,8 +134,16 @@ export default function Home() {
       </section>
 
       {/* Proof strip */}
-      <section className="py-16 bg-slate-900">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-16 bg-slate-900 relative overflow-hidden">
+        <div
+          className="absolute inset-0 opacity-[0.07]"
+          style={{
+            backgroundImage:
+              'linear-gradient(rgba(255,255,255,1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,1) 1px, transparent 1px)',
+            backgroundSize: '60px 60px',
+          }}
+        />
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-10">
             {proofPoints.map(({ value, label, detail }) => (
               <div key={label} className="text-center sm:text-left">
