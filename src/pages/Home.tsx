@@ -1,36 +1,21 @@
 import { Link } from 'react-router-dom'
-import { ArrowRight, ShieldCheck, Truck, Award, Users } from 'lucide-react'
-import CategoryCarousel from '../components/CategoryCarousel'
+import { ArrowRight } from 'lucide-react'
+import { CATEGORIES } from '../data/categories'
 
-const stats = [
-  { value: '3000+', label: 'Referências' },
-  { value: '6', label: 'Categorias' },
-  { value: 'B2B', label: 'Grossista' },
+const catImages: Record<string, string | null> = {
+  ferramentas:       '/cat-ferramentas.jpg',
+  mecanica:          '/cat-mecanica.jpg',
+  'chapa-pintura':   '/cat-chapa.jpg',
+  'higiene-seguranca': '/cat-higiene.jpg',
+  eletricidade:      '/cat-eletricidade.jpg',
+  lavagens:          null,
+}
+
+const proofPoints = [
+  { value: '+3000', label: 'Referências', detail: 'Ferramentas, mecânica, higiene e muito mais.' },
+  { value: '6',     label: 'Categorias',  detail: 'Uma gama completa para qualquer tipo de oficina.' },
+  { value: 'B2B',   label: 'Grossista',   detail: 'Preços profissionais para o seu negócio.' },
 ]
-
-const features = [
-  {
-    icon: ShieldCheck,
-    title: 'Qualidade Garantida',
-    desc: 'Produtos certificados de marcas de referência para o setor automóvel.',
-  },
-  {
-    icon: Truck,
-    title: 'Entrega Eficiente',
-    desc: 'Cumprimos prazos de entrega com a rapidez que o seu negócio precisa.',
-  },
-  {
-    icon: Award,
-    title: 'Preço Justo',
-    desc: 'Materiais de qualidade a preços competitivos sem compromisso na exigência.',
-  },
-  {
-    icon: Users,
-    title: 'Foco no Cliente',
-    desc: 'O sucesso dos nossos clientes é a nossa prioridade máxima.',
-  },
-]
-
 
 export default function Home() {
   return (
@@ -38,134 +23,154 @@ export default function Home() {
       <title>Taysil – Ferramentas e Consumíveis Automóvel | Sintra</title>
       <meta name="description" content="Comércio por grosso de químicos, ferramentas e consumíveis para o setor automóvel em Sintra. Mais de 3000 referências das marcas KROFTOOLS e JBM." />
 
-      {/* Hero */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        {/* Background image */}
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: 'url(/hero-gears.jpg)' }}
-        />
-        {/* Dark overlay */}
-        <div className="absolute inset-0 bg-slate-900/65" />
+      {/* Hero — split screen */}
+      <section className="min-h-screen flex flex-col lg:flex-row">
 
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-16">
-          <div className="inline-flex items-center gap-2 bg-red-600/20 border border-red-500/30 rounded-full px-4 py-1.5 mb-8">
-            <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse" />
-            <span className="text-red-300 text-sm font-medium">Sintra, Portugal</span>
-          </div>
-
-          <h1 className="text-4xl sm:text-5xl lg:text-7xl font-extrabold text-white leading-tight tracking-tight mb-6">
-            O que precisa,
-            <br />
-            <span className="text-red-500">num só lugar.</span>
-          </h1>
-
-          <p className="text-lg sm:text-xl text-slate-300 max-w-2xl mx-auto leading-relaxed mb-4">
-            Na Taysil, garantimos a qualidade e variedade de produtos para o setor automóvel.
-          </p>
-          <p className="text-base text-slate-400 max-w-xl mx-auto mb-10">
-            Dos químicos aos consumíveis, das ferramentas à higiene e proteção individual.
-          </p>
-
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              to="/produtos"
-              className="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white font-semibold px-8 py-3.5 rounded-lg transition-colors"
-            >
-              Ver Produtos <ArrowRight size={18} />
-            </Link>
-            <Link
-              to="/contactos"
-              className="inline-flex items-center gap-2 border border-slate-500 hover:border-slate-300 text-slate-300 hover:text-white font-semibold px-8 py-3.5 rounded-lg transition-colors"
-            >
-              Contactar
-            </Link>
-          </div>
-
-          {/* Stats */}
-          <div className="mt-20 grid grid-cols-3 gap-6 max-w-md mx-auto">
-            {stats.map(({ value, label }) => (
-              <div key={label} className="text-center">
-                <div className="text-2xl sm:text-3xl font-bold text-white">{value}</div>
-                <div className="text-xs text-slate-400 mt-1">{label}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 opacity-40">
-          <div className="w-0.5 h-8 bg-slate-400 rounded-full animate-bounce" />
-        </div>
-      </section>
-
-      {/* Features */}
-      <section className="pt-16 pb-10 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-14">
-            <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">Porque a Taysil?</h2>
-            <p className="text-slate-500 max-w-xl mx-auto">
-              Com mais de 3000 referências ao dispor, servimos mecânica, chapa e pintura, eletricidade, lavagens e proteção individual.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {features.map(({ icon: Icon, title, desc }) => (
-              <div
-                key={title}
-                className="group p-6 rounded-xl border border-slate-100 hover:border-red-100 hover:shadow-lg hover:shadow-red-50 transition-all"
-              >
-                <div className="w-12 h-12 bg-red-50 rounded-lg flex items-center justify-center mb-4 group-hover:bg-red-100 transition-colors">
-                  <Icon size={22} className="text-red-600" />
-                </div>
-                <h3 className="font-semibold text-slate-900 mb-2">{title}</h3>
-                <p className="text-sm text-slate-500 leading-relaxed">{desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Product categories carousel */}
-      <section className="pt-10 pb-16 bg-slate-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-end justify-between mb-10">
-            <div>
-              <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-3">Categorias</h2>
-              <p className="text-slate-500">Soluções completas para todos os departamentos da sua oficina.</p>
+        {/* Left: editorial dark panel */}
+        <div className="lg:w-[55%] bg-slate-900 flex items-center relative">
+          <div
+            className="absolute inset-0 opacity-[0.03]"
+            style={{
+              backgroundImage:
+                'linear-gradient(rgba(255,255,255,1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,1) 1px, transparent 1px)',
+              backgroundSize: '60px 60px',
+            }}
+          />
+          <div className="relative w-full px-8 pt-28 pb-14 lg:px-16 lg:pt-0 lg:pb-0">
+            <div className="flex items-center gap-2 mb-8">
+              <span className="w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse" />
+              <span className="text-red-400 text-xs font-semibold uppercase tracking-widest">Sintra, Portugal</span>
             </div>
-            <Link
-              to="/produtos"
-              className="hidden sm:inline-flex items-center gap-1 text-red-600 hover:text-red-700 font-medium text-sm transition-colors"
-            >
-              Ver todos <ArrowRight size={16} />
-            </Link>
+
+            <h1 className="text-5xl sm:text-6xl font-extrabold text-white leading-[1.05] tracking-tight mb-6">
+              Tudo o que<br />a sua oficina<br />
+              <span className="text-red-500">precisa.</span>
+            </h1>
+
+            <p className="text-slate-400 text-lg max-w-sm mb-10 leading-relaxed">
+              Mais de 3000 referências em ferramentas, mecânica, higiene e consumíveis para profissionais do setor automóvel.
+            </p>
+
+            <div className="flex flex-col sm:flex-row gap-3 mb-14">
+              <Link
+                to="/produtos"
+                className="inline-flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white font-semibold px-7 py-3.5 rounded-lg transition-colors"
+              >
+                Ver Produtos <ArrowRight size={17} />
+              </Link>
+              <a
+                href="tel:939044050"
+                className="inline-flex items-center justify-center gap-2 border border-slate-700 hover:border-slate-500 text-slate-300 hover:text-white font-semibold px-7 py-3.5 rounded-lg transition-colors tabular-nums"
+              >
+                939 044 050
+              </a>
+            </div>
+
+            <div className="flex gap-12 border-t border-slate-800 pt-8">
+              {proofPoints.map(({ value, label }) => (
+                <div key={label}>
+                  <p className="text-2xl font-black text-white">{value}</p>
+                  <p className="text-slate-500 text-xs uppercase tracking-wide mt-1">{label}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* Right: gears photo */}
+        <div className="lg:w-[45%] h-72 sm:h-96 lg:h-auto relative overflow-hidden">
+          <img
+            src="/hero-gears.jpg"
+            alt=""
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-slate-900/25" />
+        </div>
+      </section>
+
+      {/* Category grid */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="mb-12">
+            <p className="text-red-500 text-sm font-semibold uppercase tracking-widest mb-3">O que fornecemos</p>
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900">
+              6 categorias, tudo num só lugar.
+            </h2>
           </div>
 
-          <CategoryCarousel />
-
-          <div className="mt-6 text-center sm:hidden">
-            <Link to="/produtos" className="inline-flex items-center gap-1 text-red-600 font-medium text-sm">
-              Ver todos os produtos <ArrowRight size={16} />
-            </Link>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {CATEGORIES.map(cat => {
+              const img = catImages[cat.id]
+              const Icon = cat.Icon
+              return (
+                <Link
+                  key={cat.id}
+                  to={`/produtos?category=${cat.id}`}
+                  className="group relative overflow-hidden rounded-2xl aspect-[4/3] flex flex-col justify-end bg-slate-900"
+                >
+                  {img ? (
+                    <img
+                      src={img}
+                      alt={cat.label}
+                      className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                  ) : (
+                    <div className="absolute inset-0 bg-slate-800 flex items-center justify-center">
+                      <Icon size={72} className="text-red-500 opacity-30" />
+                    </div>
+                  )}
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/20 to-transparent" />
+                  <div className="relative p-6">
+                    <p className="text-white font-bold text-lg leading-tight">{cat.label}</p>
+                    <p className="mt-1 flex items-center gap-1.5 text-sm text-slate-400 group-hover:text-red-400 transition-colors">
+                      Ver produtos <ArrowRight size={13} />
+                    </p>
+                  </div>
+                </Link>
+              )
+            })}
           </div>
         </div>
       </section>
 
-      {/* CTA Banner */}
+      {/* Proof strip */}
       <section className="py-16 bg-slate-900">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-10">
+            {proofPoints.map(({ value, label, detail }) => (
+              <div key={label} className="text-center sm:text-left">
+                <p className="text-5xl font-black text-red-500 mb-2">{value}</p>
+                <p className="text-white font-semibold text-sm uppercase tracking-wide mb-2">{label}</p>
+                <p className="text-slate-400 text-sm leading-relaxed">{detail}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="py-20 bg-red-600">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-4">
             Pronto para encomendar?
           </h2>
-          <p className="text-slate-400 mb-8 max-w-md mx-auto">
-            Entre em contacto connosco e saiba como a Taysil pode ser o seu parceiro de confiança.
+          <p className="text-red-100 text-lg mb-10 max-w-md mx-auto">
+            Fale connosco e descubra como a Taysil pode servir a sua oficina.
           </p>
-          <Link
-            to="/contactos"
-            className="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white font-semibold px-8 py-3.5 rounded-lg transition-colors"
-          >
-            Falar Connosco <ArrowRight size={18} />
-          </Link>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-5">
+            <Link
+              to="/contactos"
+              className="inline-flex items-center gap-2 bg-white text-red-600 hover:bg-red-50 font-bold px-8 py-3.5 rounded-lg transition-colors"
+            >
+              Contactar <ArrowRight size={17} />
+            </Link>
+            <a
+              href="tel:939044050"
+              className="text-white text-xl font-semibold tabular-nums hover:text-red-100 transition-colors"
+            >
+              939 044 050
+            </a>
+          </div>
         </div>
       </section>
     </>
