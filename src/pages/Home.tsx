@@ -66,7 +66,7 @@ export default function Home() {
               </a>
             </div>
 
-            <div className="flex gap-12 border-t border-slate-800 pt-8">
+            <div className="flex gap-12 pt-8">
               {proofPoints.map(({ value, label }) => (
                 <div key={label}>
                   <p className="text-2xl font-black text-white">{value}</p>
