@@ -1,12 +1,11 @@
-import { FileText, Download, ExternalLink } from 'lucide-react'
+import { FileText, ExternalLink } from 'lucide-react'
 
 const catalogs = [
   {
     name: 'KROFTOOLS',
     subtitle: 'Catálogo Geral 2025',
     description: 'Ferramentas profissionais para oficinas automóvel. Gama completa de equipamentos e acessórios.',
-    url: 'https://kroftools.sharepoint.com/:f:/s/externo/EprZ0EH4VGxPm30SrZ2A1tgBn-qGBVcSZMh5VH1U9-8oYA',
-    directDownload: false,
+    url: 'https://kroftools.sharepoint.com/sites/externo/Kroftools/Forms/AllItems.aspx?viewid=6575a712%2D5b03%2D44ec%2Db41a%2D833cdc2de8ba&ga=1&id=%2Fsites%2Fexterno%2FKroftools%2F05%20%2D%20Cat%C3%A1logos%20KROFTOOLS%2FCat%C3%A1logo%20geral%202025%2FPT%20%2D%20ESP%2FK25%20PT%20ES%2Epdf&parent=%2Fsites%2Fexterno%2FKroftools%2F05%20%2D%20Cat%C3%A1logos%20KROFTOOLS%2FCat%C3%A1logo%20geral%202025%2FPT%20%2D%20ESP',
     color: 'from-slate-700 to-slate-900',
     accent: 'bg-orange-500',
   },
@@ -15,7 +14,6 @@ const catalogs = [
     subtitle: 'Catálogo 2026',
     description: 'Vasta gama de ferramentas e equipamentos para diagnóstico, mecânica e manutenção automóvel.',
     url: 'https://publi.jbmcamp.com/CATALOGO/2026/PT_CAT2026_JBM_LQ.pdf',
-    directDownload: true,
     color: 'from-blue-800 to-blue-950',
     accent: 'bg-blue-500',
   },
@@ -49,7 +47,7 @@ export default function Catalogos() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
-            {catalogs.map(({ name, subtitle, description, url, directDownload, color, accent }) => (
+            {catalogs.map(({ name, subtitle, description, url, color, accent }) => (
               <div
                 key={name}
                 className="rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow border border-slate-100"
@@ -68,30 +66,14 @@ export default function Catalogos() {
                 {/* Card body */}
                 <div className="p-6">
                   <p className="text-slate-500 text-sm leading-relaxed mb-6">{description}</p>
-                  <div className="flex gap-3">
-                    <a
-                      href={url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex-1 inline-flex items-center justify-center gap-2 bg-slate-900 hover:bg-slate-800 text-white font-semibold px-4 py-3 rounded-lg text-sm transition-colors"
-                    >
-                      {directDownload
-                        ? <><Download size={16} /> Descarregar PDF</>
-                        : <><ExternalLink size={16} /> Ver Catálogo PDF</>
-                      }
-                    </a>
-                    {directDownload && (
-                      <a
-                        href={url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center justify-center p-3 border border-slate-200 rounded-lg hover:border-slate-300 hover:bg-slate-50 transition-colors text-slate-600"
-                        title="Abrir em nova aba"
-                      >
-                        <ExternalLink size={16} />
-                      </a>
-                    )}
-                  </div>
+                  <a
+                    href={url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-2 w-full bg-slate-900 hover:bg-slate-800 text-white font-semibold px-4 py-3 rounded-lg text-sm transition-colors"
+                  >
+                    <ExternalLink size={16} /> Ver Catálogo PDF
+                  </a>
                 </div>
               </div>
             ))}

@@ -29,6 +29,7 @@ Thumbs.db
 # Screenshots (session artifacts)
 /*.png
 /*.jpg
+/*.jpeg
 
 # Playwright session cache
 .playwright-mcp/
