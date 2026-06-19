@@ -29,7 +29,7 @@ export default function Home() {
         {/* Left: editorial dark panel */}
         <div className="lg:w-[55%] bg-slate-900 flex items-center relative">
           <div
-            className="absolute inset-0 opacity-[0.03]"
+            className="absolute inset-0 opacity-5"
             style={{
               backgroundImage:
                 'linear-gradient(rgba(255,255,255,1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,1) 1px, transparent 1px)',
