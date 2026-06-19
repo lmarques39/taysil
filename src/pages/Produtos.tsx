@@ -11,7 +11,7 @@ import type { EnrichedProduct } from '../hooks/useProductFilter'
 
 const BRAND_STYLES: Record<Brand, string> = {
   KROFTOOLS: 'bg-slate-800 text-white',
-  JBM:       'bg-blue-700 text-white',
+  JBM:       'bg-slate-700 text-white',
   TAYSIL:    'bg-red-600 text-white',
 }
 
@@ -32,20 +32,20 @@ const ProductCard = ({ product, catConfig, onClick }: {
   return (
     <button
       onClick={onClick}
-      className="bg-white border border-slate-100 rounded-xl overflow-hidden flex flex-col hover:shadow-md hover:border-slate-200 hover:-translate-y-0.5 transition-all text-left group w-full"
+      className="bg-white border border-slate-100 rounded-xl overflow-hidden flex flex-row sm:flex-col hover:shadow-md hover:border-slate-200 hover:-translate-y-0.5 transition-all text-left group w-full"
     >
-      <div className="aspect-square bg-slate-50 flex items-center justify-center p-4 shrink-0">
+      <div className="w-20 h-20 sm:w-full sm:h-auto sm:aspect-square bg-slate-50 flex items-center justify-center p-2 sm:p-4 shrink-0">
         {img ? (
           <img src={img} alt={name} className="w-full h-full object-contain" loading="lazy" />
         ) : (
-          <div className={`w-16 h-16 ${iconBg ?? 'bg-slate-200'} rounded-2xl flex items-center justify-center`}>
-            {Icon && <Icon size={26} className="text-white opacity-75" />}
+          <div className={`w-10 h-10 sm:w-16 sm:h-16 ${iconBg ?? 'bg-slate-200'} rounded-xl sm:rounded-2xl flex items-center justify-center`}>
+            {Icon && <Icon size={18} className="text-white opacity-75" />}
           </div>
         )}
       </div>
-      <div className="p-3 flex flex-col gap-1.5 flex-1 min-w-0">
+      <div className="p-3 flex flex-col gap-1.5 flex-1 min-w-0 justify-center sm:justify-start">
         <p className="text-[10px] text-slate-400 leading-tight truncate">{sub}</p>
-        <p className="text-sm font-semibold text-slate-800 leading-snug line-clamp-2 flex-1">{name}</p>
+        <p className="text-sm font-semibold text-slate-800 leading-snug line-clamp-2 sm:flex-1">{name}</p>
         <div className="pt-0.5">
           <BrandBadge brand={brand} />
         </div>
@@ -381,7 +381,7 @@ export default function Produtos() {
 
             {/* Product grid */}
             {filteredProducts.length > 0 ? (
-              <div className="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
                 {filteredProducts.map(product => {
                   const catConfig = CATEGORIES.find(c => c.id === product.category)
                   return (

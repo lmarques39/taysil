@@ -5,7 +5,7 @@ import CategoryCarousel from '../components/CategoryCarousel'
 const stats = [
   { value: '3000+', label: 'Referências' },
   { value: '6', label: 'Categorias' },
-  { value: '100%', label: 'Compromisso' },
+  { value: 'B2B', label: 'Grossista' },
 ]
 
 const features = [
@@ -100,7 +100,7 @@ export default function Home() {
       </section>
 
       {/* Features */}
-      <section className="py-20 bg-white">
+      <section className="pt-16 pb-10 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
             <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">Porque a Taysil?</h2>
@@ -126,7 +126,7 @@ export default function Home() {
       </section>
 
       {/* Product categories carousel */}
-      <section className="py-20 bg-slate-50">
+      <section className="pt-10 pb-16 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-end justify-between mb-10">
             <div>

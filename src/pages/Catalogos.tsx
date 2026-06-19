@@ -43,7 +43,7 @@ export default function Catalogos() {
       </section>
 
       {/* Catalog list */}
-      <section className="py-20 bg-white">
+      <section className="pt-8 pb-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="divide-y divide-slate-100">
             {catalogs.map(({ name, subtitle, description, url }) => (
