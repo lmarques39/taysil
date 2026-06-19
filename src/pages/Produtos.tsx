@@ -257,8 +257,8 @@ export default function Produtos() {
 
       {/* Page header */}
       <section className="pt-32 pb-16 bg-slate-900 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-5" style={{
-          backgroundImage: 'linear-gradient(rgba(255,255,255,.15) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.15) 1px,transparent 1px)',
+        <div className="absolute inset-0 opacity-[0.07]" style={{
+          backgroundImage: 'linear-gradient(rgba(255,255,255,1) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,1) 1px,transparent 1px)',
           backgroundSize: '60px 60px',
         }} />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

@@ -5,10 +5,10 @@ export default function Footer() {
   return (
     <footer className="bg-slate-900 text-slate-400 relative overflow-hidden">
       <div
-        className="absolute inset-0 opacity-5"
+        className="absolute inset-0 opacity-[0.07]"
         style={{
           backgroundImage:
-            'linear-gradient(rgba(255,255,255,.15) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.15) 1px, transparent 1px)',
+            'linear-gradient(rgba(255,255,255,1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,1) 1px, transparent 1px)',
           backgroundSize: '60px 60px',
         }}
       />
