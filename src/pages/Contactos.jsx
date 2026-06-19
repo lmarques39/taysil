@@ -43,7 +43,7 @@ export default function Contactos() {
                 2725-152
               </p>
               <a
-                href="https://www.openstreetmap.org/?mlat=38.80546&mlon=-9.34012#map=16/38.80546/-9.34012"
+                href="https://maps.google.com/?q=38.80546,-9.34012"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1.5 mt-4 text-sm text-red-600 hover:text-red-700 font-medium transition-colors"
@@ -109,11 +109,12 @@ export default function Contactos() {
           <div className="rounded-2xl overflow-hidden border border-slate-100 shadow-sm" style={{ height: 420 }}>
             <iframe
               title="Localização Taysil"
-              src="https://www.openstreetmap.org/export/embed.html?bbox=-9.3460%2C38.8034%2C-9.3342%2C38.8075&layer=mapnik&marker=38.80546%2C-9.34012"
+              src="https://maps.google.com/maps?q=38.80546,-9.34012&z=16&output=embed"
               width="100%"
               height="100%"
               style={{ border: 0, display: 'block' }}
               loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
             />
           </div>
         </div>
