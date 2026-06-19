@@ -11,9 +11,9 @@ const catalogs = [
   },
   {
     name: 'JBM',
-    subtitle: 'Catálogo 2024',
+    subtitle: 'Catálogo 2026',
     description: 'Vasta gama de ferramentas e equipamentos para diagnóstico, mecânica e manutenção automóvel.',
-    url: 'https://publi.jbmcamp.com/CATALOGO/PT_CAT_JBM_2024_LQ.pdf',
+    url: 'https://publi.jbmcamp.com/CATALOGO/2026/PT_CAT2026_JBM_LQ.pdf',
     color: 'from-blue-800 to-blue-950',
     accent: 'bg-blue-500',
   },
@@ -22,6 +22,9 @@ const catalogs = [
 export default function Catalogos() {
   return (
     <>
+      <title>Catálogos | Taysil</title>
+      <meta name="description" content="Consulte e descarregue os catálogos PDF das marcas KROFTOOLS e JBM disponíveis na Taysil." />
+
       {/* Page header */}
       <section className="pt-32 pb-16 bg-slate-900 relative overflow-hidden">
         <div className="absolute inset-0 opacity-5"

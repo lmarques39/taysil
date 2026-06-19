@@ -35,6 +35,9 @@ const features = [
 export default function Home() {
   return (
     <>
+      <title>Taysil – Ferramentas e Consumíveis Automóvel | Sintra</title>
+      <meta name="description" content="Comércio por grosso de químicos, ferramentas e consumíveis para o setor automóvel em Sintra. Mais de 3000 referências das marcas KROFTOOLS e JBM." />
+
       {/* Hero */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         {/* Background image */}

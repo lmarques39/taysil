@@ -36,6 +36,9 @@ const values = ['Profissionalismo', 'Confiança', 'Eficiência', 'Coragem', 'Res
 export default function Empresa() {
   return (
     <>
+      <title>Empresa | Taysil</title>
+      <meta name="description" content="Conheça a Taysil — dedicados ao comércio por grosso de produtos para o setor automóvel com profissionalismo, confiança e eficiência." />
+
       {/* Page header */}
       <section className="pt-32 pb-16 bg-slate-900 relative overflow-hidden">
         <div className="absolute inset-0 opacity-5"

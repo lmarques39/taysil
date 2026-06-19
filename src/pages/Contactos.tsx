@@ -9,6 +9,9 @@ const phones = [
 export default function Contactos() {
   return (
     <>
+      <title>Contactos | Taysil</title>
+      <meta name="description" content="Entre em contacto com a Taysil. Rua Vasco da Gama nº33, Algueirão Mem-Martins. Tel: 939 044 050 | 216 019 522. Email: geral.taysil@gmail.com." />
+
       {/* Page header */}
       <section className="pt-32 pb-16 bg-slate-900 relative overflow-hidden">
         <div className="absolute inset-0 opacity-5"

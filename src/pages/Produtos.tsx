@@ -1,33 +1,13 @@
-import { useState, useMemo, useRef, useEffect } from 'react'
-import Fuse from 'fuse.js'
-import { Link, useSearchParams } from 'react-router-dom'
-import type { LucideIcon } from 'lucide-react'
+import { useState, useRef, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import {
-  HardHat, Zap, Settings, Droplets, PaintBucket, Wrench,
   Search, X, ArrowRight, SlidersHorizontal,
 } from 'lucide-react'
-import { PRODUCTS } from '../data/products'
-import type { Brand, CategoryId, Product } from '../data/products'
-
-type CategoryConfig = {
-  id: CategoryId
-  label: string
-  Icon: LucideIcon
-  iconBg: string
-  textAccent: string
-  borderAccent: string
-}
-
-type EnrichedProduct = Product & { categoryLabel: string }
-
-const CATEGORIES: CategoryConfig[] = [
-  { id: 'ferramentas',       label: 'Ferramentas',        Icon: Wrench,      iconBg: 'bg-orange-500',  textAccent: 'text-orange-600',  borderAccent: 'border-orange-500'  },
-  { id: 'mecanica',          label: 'Mecânica',            Icon: Settings,    iconBg: 'bg-blue-600',    textAccent: 'text-blue-700',    borderAccent: 'border-blue-600'    },
-  { id: 'chapa-pintura',     label: 'Chapa e Pintura',     Icon: PaintBucket, iconBg: 'bg-violet-600',  textAccent: 'text-violet-700',  borderAccent: 'border-violet-600'  },
-  { id: 'higiene-seguranca', label: 'Higiene e Segurança', Icon: HardHat,     iconBg: 'bg-emerald-600', textAccent: 'text-emerald-700', borderAccent: 'border-emerald-600' },
-  { id: 'eletricidade',      label: 'Eletricidade',        Icon: Zap,         iconBg: 'bg-amber-500',   textAccent: 'text-amber-600',   borderAccent: 'border-amber-500'   },
-  { id: 'lavagens',          label: 'Lavagens',            Icon: Droplets,    iconBg: 'bg-cyan-500',    textAccent: 'text-cyan-700',    borderAccent: 'border-cyan-500'    },
-]
+import type { Brand } from '../data/products'
+import { CATEGORIES } from '../data/categories'
+import type { CategoryConfig } from '../data/categories'
+import { useProductFilter } from '../hooks/useProductFilter'
+import type { EnrichedProduct } from '../hooks/useProductFilter'
 
 const BRAND_STYLES: Record<Brand, string> = {
   KROFTOOLS: 'bg-slate-800 text-white',
@@ -147,99 +127,30 @@ const ProductModal = ({ product, catConfig, onClose }: {
 }
 
 export default function Produtos() {
-  const [searchParams, setSearchParams]        = useSearchParams()
-  const [showSuggestions, setShowSuggestions]  = useState(false)
-  const [selectedProduct, setSelectedProduct]  = useState<EnrichedProduct | null>(null)
+  const {
+    activeCategory,
+    activeSubcategory,
+    activeBrands,
+    searchQuery,
+    filteredProducts,
+    suggestions,
+    availableSubcategories,
+    brandCounts,
+    hasFilters,
+    updateParams,
+    clearAll,
+    selectCategory,
+    toggleBrand,
+  } = useProductFilter()
+
+  const [showSuggestions, setShowSuggestions]     = useState(false)
+  const [selectedProduct, setSelectedProduct]     = useState<EnrichedProduct | null>(null)
   const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false)
   const searchInputRef = useRef<HTMLInputElement>(null)
 
-  const activeCategory    = searchParams.get('category') as CategoryId | null
-  const activeSubcategory = searchParams.get('sub')
-  const activeBrands      = (searchParams.get('brands')?.split(',').filter(Boolean) ?? []) as Brand[]
-  const searchQuery       = searchParams.get('q') ?? ''
-
-  const updateParams = (updates: Record<string, string | null>) => {
-    setSearchParams(prev => {
-      const next = new URLSearchParams(prev)
-      Object.entries(updates).forEach(([k, v]) => {
-        if (v === null || v === '') next.delete(k)
-        else next.set(k, v)
-      })
-      return next
-    }, { replace: true })
-  }
-
-  const enriched = useMemo<EnrichedProduct[]>(() =>
-    PRODUCTS.map(p => ({
-      ...p,
-      categoryLabel: CATEGORIES.find(c => c.id === p.category)?.label ?? '',
-    }))
-  , [])
-
-  const fuse = useMemo(() => new Fuse<EnrichedProduct>(enriched, {
-    keys: [
-      { name: 'name',          weight: 3   },
-      { name: 'sub',           weight: 2   },
-      { name: 'categoryLabel', weight: 1.5 },
-      { name: 'brand',         weight: 1   },
-      { name: 'desc',          weight: 0.5 },
-    ],
-    threshold: 0.4,
-    includeScore: true,
-  }), [enriched])
-
-  const filteredProducts = useMemo(() => {
-    let pool: EnrichedProduct[] = searchQuery.trim().length >= 2
-      ? fuse.search(searchQuery).map(r => r.item)
-      : enriched
-    if (activeCategory)    pool = pool.filter(p => p.category === activeCategory)
-    if (activeSubcategory) pool = pool.filter(p => p.sub === activeSubcategory)
-    if (activeBrands.length > 0) pool = pool.filter(p => activeBrands.includes(p.brand))
-    return pool
-  }, [searchQuery, activeCategory, activeSubcategory, activeBrands, fuse, enriched])
-
-  const suggestions = useMemo(() => {
-    if (searchQuery.trim().length < 2) return []
-    const seen = new Set<string>()
-    return fuse.search(searchQuery, { limit: 12 })
-      .map(r => r.item.name)
-      .filter(n => !seen.has(n) && seen.add(n))
-      .slice(0, 6)
-  }, [searchQuery, fuse])
-
-  const availableSubcategories = useMemo(() => {
-    const pool = activeCategory
-      ? enriched.filter(p => p.category === activeCategory)
-      : enriched
-    const counts: Record<string, number> = {}
-    pool.forEach(p => { counts[p.sub] = (counts[p.sub] ?? 0) + 1 })
-    return Object.entries(counts).sort((a, b) => a[0].localeCompare(b[0]))
-  }, [activeCategory, enriched])
-
-  const brandCounts = useMemo(() => {
-    const pool = activeCategory
-      ? enriched.filter(p => p.category === activeCategory)
-      : enriched
-    return (['KROFTOOLS', 'JBM', 'TAYSIL'] as Brand[]).map(brand => ({
-      brand,
-      count: pool.filter(p => p.brand === brand).length,
-    }))
-  }, [activeCategory, enriched])
-
-  const hasFilters = !!(activeCategory || activeSubcategory || activeBrands.length > 0 || searchQuery.trim())
-
-  const clearAll = () => setSearchParams({}, { replace: true })
-
-  const selectCategory = (id: CategoryId | null) => {
-    updateParams({ category: id, sub: null })
+  const handleSelectCategory = (id: Parameters<typeof selectCategory>[0]) => {
+    selectCategory(id)
     setMobileSidebarOpen(false)
-  }
-
-  const toggleBrand = (brand: Brand) => {
-    const next = activeBrands.includes(brand)
-      ? activeBrands.filter(b => b !== brand)
-      : [...activeBrands, brand]
-    updateParams({ brands: next.join(',') || null })
   }
 
   const sidebarContent = (
@@ -258,7 +169,7 @@ export default function Produtos() {
         <p className="text-[10px] uppercase tracking-widest text-slate-400 font-semibold mb-2.5">Categorias</p>
         <nav className="space-y-0.5">
           <button
-            onClick={() => selectCategory(null)}
+            onClick={() => handleSelectCategory(null)}
             className={`w-full text-left px-3 py-2 rounded-lg text-sm transition-colors ${
               !activeCategory
                 ? 'bg-slate-900 text-white font-medium'
@@ -270,7 +181,7 @@ export default function Produtos() {
           {CATEGORIES.map(cat => (
             <button
               key={cat.id}
-              onClick={() => selectCategory(cat.id)}
+              onClick={() => handleSelectCategory(cat.id)}
               className={`w-full flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm transition-all text-left ${
                 activeCategory === cat.id
                   ? `bg-slate-900 text-white font-medium border-l-2 ${cat.borderAccent} pl-[10px]`
@@ -341,6 +252,9 @@ export default function Produtos() {
 
   return (
     <>
+      <title>Produtos | Taysil</title>
+      <meta name="description" content="Explore mais de 3000 referências em ferramentas, mecânica, chapa e pintura, higiene, eletricidade e lavagens das marcas KROFTOOLS e JBM." />
+
       {/* Page header */}
       <section className="pt-32 pb-16 bg-slate-900 relative overflow-hidden">
         <div className="absolute inset-0 opacity-5" style={{
