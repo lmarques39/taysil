@@ -30,7 +30,7 @@ export default function Contactos() {
             <p className="text-slate-500 text-xs uppercase tracking-widest mb-2">Linha principal</p>
             <a
               href="tel:939044050"
-              className="text-3xl sm:text-4xl font-black text-red-400 hover:text-white transition-colors tracking-tight"
+              className="text-3xl sm:text-4xl font-black text-red-500 hover:text-white transition-colors tracking-tight"
             >
               939 044 050
             </a>
