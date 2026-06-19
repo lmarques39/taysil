@@ -47,8 +47,10 @@ export default function Contactos() {
             <div>
               {/* Morada */}
               <div className="mb-10">
-                <p className="text-red-500 text-xs font-semibold uppercase tracking-widest mb-3">Morada</p>
-                <address className="not-italic text-slate-700 leading-relaxed">
+                <div className="border-l-4 border-red-600 pl-4 mb-4">
+                  <h3 className="text-sm font-extrabold text-slate-900 uppercase tracking-wide">Morada</h3>
+                </div>
+                <address className="not-italic text-slate-600 leading-relaxed">
                   Rua Vasco da Gama nº33<br />
                   Algueirão Mem-Martins<br />
                   2725-152, Sintra
@@ -64,8 +66,10 @@ export default function Contactos() {
               </div>
 
               {/* Telefone */}
-              <div className="border-t border-slate-100 pt-8 mb-10">
-                <p className="text-red-500 text-xs font-semibold uppercase tracking-widest mb-4">Telefone</p>
+              <div className="mb-10">
+                <div className="border-l-4 border-red-600 pl-4 mb-4">
+                  <h3 className="text-sm font-extrabold text-slate-900 uppercase tracking-wide">Telefone</h3>
+                </div>
                 <ul className="space-y-3">
                   {phones.map(({ number, href, label }) => (
                     <li key={href} className="flex items-baseline justify-between">
@@ -82,8 +86,10 @@ export default function Contactos() {
               </div>
 
               {/* Email */}
-              <div className="border-t border-slate-100 pt-8 mb-10">
-                <p className="text-red-500 text-xs font-semibold uppercase tracking-widest mb-3">Email</p>
+              <div className="mb-10">
+                <div className="border-l-4 border-red-600 pl-4 mb-4">
+                  <h3 className="text-sm font-extrabold text-slate-900 uppercase tracking-wide">Email</h3>
+                </div>
                 <a
                   href="mailto:geral.taysil@gmail.com"
                   className="text-lg font-bold text-slate-900 hover:text-red-600 transition-colors"
@@ -93,8 +99,10 @@ export default function Contactos() {
               </div>
 
               {/* Horário */}
-              <div className="border-t border-slate-100 pt-8">
-                <p className="text-red-500 text-xs font-semibold uppercase tracking-widest mb-4">Horário</p>
+              <div>
+                <div className="border-l-4 border-red-600 pl-4 mb-4">
+                  <h3 className="text-sm font-extrabold text-slate-900 uppercase tracking-wide">Horário</h3>
+                </div>
                 <div className="space-y-2 text-sm">
                   <div className="flex justify-between">
                     <span className="text-slate-600">Segunda – Sexta</span>
