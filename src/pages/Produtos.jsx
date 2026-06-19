@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
-import { HardHat, Zap, Settings, Droplets, PaintBucket, Wrench, ChevronRight } from 'lucide-react'
+import { HardHat, Zap, Settings, Droplets, PaintBucket, Wrench, ChevronRight, ChevronDown } from 'lucide-react'
 
 const BRAND_KROFTOOLS = 'KROFTOOLS'
 const BRAND_JBM = 'JBM'
@@ -222,6 +222,7 @@ const BrandBadge = ({ brand }) => (
 
 export default function Produtos() {
   const [activeId, setActiveId] = useState(categories[0].id)
+  const [expandedId, setExpandedId] = useState(categories[0].id)
   const sectionRefs = useRef({})
 
   useEffect(() => {
@@ -241,6 +242,7 @@ export default function Produtos() {
   }, [])
 
   const scrollTo = (id) => {
+    setExpandedId(id)
     const el = document.getElementById(id)
     if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' })
   }
@@ -309,8 +311,11 @@ export default function Produtos() {
                 ref={el => sectionRefs.current[id] = el}
                 className="scroll-mt-24"
               >
-                {/* Category header */}
-                <div className={`flex items-start gap-4 pb-6 mb-8 border-b-2 ${accent}`}>
+                {/* Category header — click to expand/collapse */}
+                <button
+                  className={`w-full flex items-start gap-4 pb-6 border-b-2 ${accent} text-left cursor-pointer group`}
+                  onClick={() => setExpandedId(expandedId === id ? null : id)}
+                >
                   {image ? (
                     <img
                       src={image}
@@ -331,27 +336,33 @@ export default function Produtos() {
                     </div>
                     <p className="text-slate-500 text-sm leading-relaxed">{desc}</p>
                   </div>
-                </div>
+                  <ChevronDown
+                    size={20}
+                    className={`shrink-0 mt-1 text-slate-400 transition-transform duration-200 ${expandedId === id ? 'rotate-180' : ''}`}
+                  />
+                </button>
 
-                {/* Subcategory grid */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4">
-                  {subcategories.map(({ name, items }) => (
-                    <div key={name} className="bg-white border border-slate-100 rounded-xl p-5 hover:border-slate-200 hover:shadow-sm transition-all">
-                      <h3 className={`font-semibold text-sm ${textAccent} mb-3 flex items-center gap-1.5`}>
-                        <ChevronRight size={13} />
-                        {name}
-                      </h3>
-                      <ul className="space-y-1.5">
-                        {items.map(item => (
-                          <li key={item} className="flex items-start gap-2 text-xs text-slate-500">
-                            <span className="mt-1.5 w-1 h-1 rounded-full bg-slate-300 shrink-0" />
-                            {item}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  ))}
-                </div>
+                {/* Subcategory grid — only when expanded */}
+                {expandedId === id && (
+                  <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 mt-8">
+                    {subcategories.map(({ name, items }) => (
+                      <div key={name} className="bg-white border border-slate-100 rounded-xl p-5 hover:border-slate-200 hover:shadow-sm transition-all">
+                        <h3 className={`font-semibold text-sm ${textAccent} mb-3 flex items-center gap-1.5`}>
+                          <ChevronRight size={13} />
+                          {name}
+                        </h3>
+                        <ul className="space-y-1.5">
+                          {items.map(item => (
+                            <li key={item} className="flex items-start gap-2 text-xs text-slate-500">
+                              <span className="mt-1.5 w-1 h-1 rounded-full bg-slate-300 shrink-0" />
+                              {item}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    ))}
+                  </div>
+                )}
               </section>
             ))}
 

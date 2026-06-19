@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
-import { ArrowRight, ShieldCheck, Truck, Award, Users, Wrench, Zap, Droplets, PaintBucket, HardHat, Package } from 'lucide-react'
+import { ArrowRight, ShieldCheck, Truck, Award, Users } from 'lucide-react'
+import CategoryCarousel from '../components/CategoryCarousel'
 
 const stats = [
   { value: '3000+', label: 'Referências' },
@@ -30,14 +31,6 @@ const features = [
   },
 ]
 
-const categories = [
-  { icon: HardHat, label: 'Higiene e Segurança', color: 'bg-green-600', path: '/produtos' },
-  { icon: Zap, label: 'Eletricidade', color: 'bg-yellow-500', path: '/produtos' },
-  { icon: Wrench, label: 'Mecânica', color: 'bg-blue-600', path: '/produtos' },
-  { icon: Droplets, label: 'Lavagens', color: 'bg-cyan-500', path: '/produtos' },
-  { icon: PaintBucket, label: 'Chapa e Pintura', color: 'bg-purple-600', path: '/produtos' },
-  { icon: Package, label: 'Ferramentas', color: 'bg-orange-500', path: '/produtos' },
-]
 
 export default function Home() {
   return (
@@ -129,10 +122,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Product categories preview */}
+      {/* Product categories carousel */}
       <section className="py-20 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-end justify-between mb-12">
+          <div className="flex items-end justify-between mb-10">
             <div>
               <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-3">Categorias</h2>
               <p className="text-slate-500">Soluções completas para todos os departamentos da sua oficina.</p>
@@ -145,20 +138,7 @@ export default function Home() {
             </Link>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
-            {categories.map(({ icon: Icon, label, color, path }) => (
-              <Link
-                key={label}
-                to={path}
-                className="group flex flex-col items-center gap-3 p-5 bg-white rounded-xl border border-slate-100 hover:border-slate-200 hover:shadow-md transition-all text-center"
-              >
-                <div className={`w-12 h-12 ${color} rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform`}>
-                  <Icon size={22} className="text-white" />
-                </div>
-                <span className="text-xs font-medium text-slate-700 leading-tight">{label}</span>
-              </Link>
-            ))}
-          </div>
+          <CategoryCarousel />
 
           <div className="mt-6 text-center sm:hidden">
             <Link to="/produtos" className="inline-flex items-center gap-1 text-red-600 font-medium text-sm">
