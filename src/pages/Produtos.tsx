@@ -1,6 +1,6 @@
 import { useState, useMemo, useRef, useEffect } from 'react'
 import Fuse from 'fuse.js'
-import { Link } from 'react-router-dom'
+import { Link, useSearchParams } from 'react-router-dom'
 import type { LucideIcon } from 'lucide-react'
 import {
   HardHat, Zap, Settings, Droplets, PaintBucket, Wrench,
@@ -147,14 +147,27 @@ const ProductModal = ({ product, catConfig, onClose }: {
 }
 
 export default function Produtos() {
-  const [activeCategory, setActiveCategory]       = useState<CategoryId | null>(null)
-  const [activeSubcategory, setActiveSubcategory] = useState<string | null>(null)
-  const [activeBrands, setActiveBrands]           = useState<Brand[]>([])
-  const [searchQuery, setSearchQuery]             = useState('')
-  const [showSuggestions, setShowSuggestions]     = useState(false)
-  const [selectedProduct, setSelectedProduct]     = useState<EnrichedProduct | null>(null)
+  const [searchParams, setSearchParams]        = useSearchParams()
+  const [showSuggestions, setShowSuggestions]  = useState(false)
+  const [selectedProduct, setSelectedProduct]  = useState<EnrichedProduct | null>(null)
   const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false)
   const searchInputRef = useRef<HTMLInputElement>(null)
+
+  const activeCategory    = searchParams.get('category') as CategoryId | null
+  const activeSubcategory = searchParams.get('sub')
+  const activeBrands      = (searchParams.get('brands')?.split(',').filter(Boolean) ?? []) as Brand[]
+  const searchQuery       = searchParams.get('q') ?? ''
+
+  const updateParams = (updates: Record<string, string | null>) => {
+    setSearchParams(prev => {
+      const next = new URLSearchParams(prev)
+      Object.entries(updates).forEach(([k, v]) => {
+        if (v === null || v === '') next.delete(k)
+        else next.set(k, v)
+      })
+      return next
+    }, { replace: true })
+  }
 
   const enriched = useMemo<EnrichedProduct[]>(() =>
     PRODUCTS.map(p => ({
@@ -215,23 +228,19 @@ export default function Produtos() {
 
   const hasFilters = !!(activeCategory || activeSubcategory || activeBrands.length > 0 || searchQuery.trim())
 
-  const clearAll = () => {
-    setActiveCategory(null)
-    setActiveSubcategory(null)
-    setActiveBrands([])
-    setSearchQuery('')
-  }
+  const clearAll = () => setSearchParams({}, { replace: true })
 
   const selectCategory = (id: CategoryId | null) => {
-    setActiveCategory(id)
-    setActiveSubcategory(null)
+    updateParams({ category: id, sub: null })
     setMobileSidebarOpen(false)
   }
 
-  const toggleBrand = (brand: Brand) =>
-    setActiveBrands(prev =>
-      prev.includes(brand) ? prev.filter(b => b !== brand) : [...prev, brand]
-    )
+  const toggleBrand = (brand: Brand) => {
+    const next = activeBrands.includes(brand)
+      ? activeBrands.filter(b => b !== brand)
+      : [...activeBrands, brand]
+    updateParams({ brands: next.join(',') || null })
+  }
 
   const sidebarContent = (
     <div className="space-y-7">
@@ -287,7 +296,7 @@ export default function Produtos() {
             {availableSubcategories.map(([sub, count]) => (
               <button
                 key={sub}
-                onClick={() => setActiveSubcategory(activeSubcategory === sub ? null : sub)}
+                onClick={() => updateParams({ sub: activeSubcategory === sub ? null : sub })}
                 className={`w-full flex items-center justify-between gap-2 px-3 py-1.5 rounded-lg text-xs transition-colors text-left ${
                   activeSubcategory === sub
                     ? 'bg-slate-100 text-slate-900 font-semibold'
@@ -371,7 +380,7 @@ export default function Produtos() {
                 ref={searchInputRef}
                 type="text"
                 value={searchQuery}
-                onChange={e => setSearchQuery(e.target.value)}
+                onChange={e => updateParams({ q: e.target.value })}
                 onFocus={() => setShowSuggestions(true)}
                 onBlur={() => setTimeout(() => setShowSuggestions(false), 150)}
                 placeholder="Pesquisar produtos... (ex: chave torx, luvas nitrilo)"
@@ -379,7 +388,7 @@ export default function Produtos() {
               />
               {searchQuery && (
                 <button
-                  onClick={() => { setSearchQuery(''); searchInputRef.current?.focus() }}
+                  onClick={() => { updateParams({ q: null }); searchInputRef.current?.focus() }}
                   className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 transition-colors"
                   aria-label="Limpar pesquisa"
                 >
@@ -393,7 +402,7 @@ export default function Produtos() {
                   {suggestions.map((name, i) => (
                     <button
                       key={i}
-                      onMouseDown={() => { setSearchQuery(name); setShowSuggestions(false) }}
+                      onMouseDown={() => { updateParams({ q: name }); setShowSuggestions(false) }}
                       className="w-full text-left px-4 py-2.5 text-sm text-slate-700 hover:bg-slate-50 flex items-center gap-2.5 border-b border-slate-50 last:border-0"
                     >
                       <Search size={12} className="text-slate-300 shrink-0" />
@@ -410,7 +419,7 @@ export default function Produtos() {
                 {activeCategory && (
                   <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-slate-900 text-white text-xs rounded-full font-medium">
                     {CATEGORIES.find(c => c.id === activeCategory)?.label}
-                    <button onClick={() => { setActiveCategory(null); setActiveSubcategory(null) }} className="hover:opacity-70 transition-opacity">
+                    <button onClick={() => updateParams({ category: null, sub: null })} className="hover:opacity-70 transition-opacity">
                       <X size={11} />
                     </button>
                   </span>
@@ -418,7 +427,7 @@ export default function Produtos() {
                 {activeSubcategory && (
                   <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-slate-100 text-slate-700 text-xs rounded-full">
                     {activeSubcategory}
-                    <button onClick={() => setActiveSubcategory(null)} className="hover:opacity-70 transition-opacity">
+                    <button onClick={() => updateParams({ sub: null })} className="hover:opacity-70 transition-opacity">
                       <X size={11} />
                     </button>
                   </span>
@@ -434,7 +443,7 @@ export default function Produtos() {
                 {searchQuery.trim() && (
                   <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-slate-100 text-slate-700 text-xs rounded-full">
                     &ldquo;{searchQuery}&rdquo;
-                    <button onClick={() => setSearchQuery('')} className="hover:opacity-70 transition-opacity">
+                    <button onClick={() => updateParams({ q: null })} className="hover:opacity-70 transition-opacity">
                       <X size={11} />
                     </button>
                   </span>
