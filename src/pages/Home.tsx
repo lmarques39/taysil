@@ -66,11 +66,11 @@ export default function Home() {
               </a>
             </div>
 
-            <div className="flex gap-12 pt-8">
+            <div className="flex gap-8 pt-8">
               {proofPoints.map(({ value, label }) => (
-                <div key={label}>
+                <div key={label} className="flex flex-col items-center w-24">
                   <p className="text-2xl font-black text-white">{value}</p>
-                  <p className="text-slate-500 text-xs uppercase tracking-wide mt-1">{label}</p>
+                  <p className="text-slate-500 text-xs uppercase tracking-wide mt-1 text-center">{label}</p>
                 </div>
               ))}
             </div>
