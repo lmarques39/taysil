@@ -35,7 +35,7 @@ export default function Empresa() {
           <p className="text-slate-400 text-lg max-w-xl mb-10">
             Dedicados ao setor automóvel com profissionalismo, confiança e eficiência desde o primeiro dia.
           </p>
-          <div className="flex gap-8 border-t border-slate-700 pt-10">
+          <div className="flex gap-8 pt-10">
             {stats.map(({ value, label }) => (
               <div key={label} className="flex flex-col items-center w-28">
                 <p className="text-3xl sm:text-4xl font-black text-red-500 leading-none mb-1">{value}</p>

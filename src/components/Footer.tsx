@@ -69,7 +69,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-10 pt-6 border-t border-slate-800 grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs text-slate-600">
+        <div className="mt-10 pt-6 grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs text-slate-600">
           <p>© {new Date().getFullYear()} Taysil. Todos os direitos reservados.</p>
           <p className="sm:text-center">Developed by Luís Marques</p>
           <p className="sm:text-right">Sintra, Portugal</p>
