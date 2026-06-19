@@ -32,10 +32,10 @@ export default function Empresa() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="text-red-400 text-sm font-semibold uppercase tracking-widest mb-3">A empresa</p>
           <h1 className="text-4xl sm:text-5xl font-extrabold text-white mb-4">Sobre a Taysil</h1>
-          <p className="text-slate-400 text-lg max-w-xl mb-16">
+          <p className="text-slate-400 text-lg max-w-xl mb-10">
             Dedicados ao setor automóvel com profissionalismo, confiança e eficiência desde o primeiro dia.
           </p>
-          <div className="grid grid-cols-3 gap-8 border-t border-slate-700 pt-10 max-w-xs sm:max-w-sm">
+          <div className="flex gap-10 border-t border-slate-700 pt-10">
             {stats.map(({ value, label }) => (
               <div key={label}>
                 <p className="text-3xl sm:text-4xl font-black text-red-500 leading-none mb-1">{value}</p>
