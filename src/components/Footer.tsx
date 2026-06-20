@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { Phone, Mail } from 'lucide-react'
 
 const navLinks = [
   { to: '/', label: 'Início' },
@@ -39,11 +40,13 @@ export default function Footer() {
           </nav>
 
           {/* Contact */}
-          <div className="flex flex-col items-center lg:items-end gap-1 text-sm shrink-0">
-            <a href="tel:939044050" className="hover:text-white transition-colors tabular-nums">
+          <div className="flex flex-col items-center lg:items-end gap-2 text-sm shrink-0">
+            <a href="tel:939044050" className="flex items-center gap-2 hover:text-white transition-colors tabular-nums">
+              <Phone size={14} className="text-red-500 shrink-0" />
               939 044 050
             </a>
-            <a href="mailto:geral.taysil@gmail.com" className="hover:text-white transition-colors">
+            <a href="mailto:geral.taysil@gmail.com" className="flex items-center gap-2 hover:text-white transition-colors">
+              <Mail size={14} className="text-red-500 shrink-0" />
               geral.taysil@gmail.com
             </a>
           </div>
