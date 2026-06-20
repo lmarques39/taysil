@@ -50,10 +50,17 @@ export const productType = defineType({
       type: 'string',
     }),
     defineField({
+      name: 'image',
+      title: 'Imagem (upload)',
+      type: 'image',
+      description: 'Faça upload de uma imagem do produto a partir do seu computador',
+      options: { hotspot: true },
+    }),
+    defineField({
       name: 'imageUrl',
-      title: 'URL da Imagem',
+      title: 'URL da Imagem (alternativo)',
       type: 'url',
-      description: 'Cole o URL da imagem do produto (ex: https://supplier.com/img/produto.jpg)',
+      description: 'Alternativa ao upload — cole o URL da imagem. A imagem carregada tem prioridade.',
     }),
     defineField({
       name: 'desc',

@@ -13,6 +13,6 @@ export const PRODUCTS_QUERY = `*[_type == "product"] | order(_createdAt asc) {
   brand,
   category,
   sub,
-  "img": imageUrl,
+  "img": coalesce(image.asset->url, imageUrl),
   desc
 }`
