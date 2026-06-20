@@ -105,13 +105,13 @@ export default function Contactos() {
                 <div className="border-l-4 border-red-600 pl-4 mb-4">
                   <h3 className="text-sm font-extrabold text-red-500 uppercase tracking-wide">Horário</h3>
                 </div>
-                <div className="space-y-2 text-sm max-w-xs">
-                  <div className="flex justify-between">
-                    <span className="text-slate-600">Segunda – Sexta</span>
+                <div className="space-y-2 text-sm">
+                  <div className="flex gap-4">
+                    <span className="text-slate-600 w-36">Segunda – Sexta</span>
                     <span className="font-semibold text-slate-900 tabular-nums">09:00 – 18:00</span>
                   </div>
-                  <div className="flex justify-between">
-                    <span className="text-slate-600">Sábado – Domingo</span>
+                  <div className="flex gap-4">
+                    <span className="text-slate-600 w-36">Sábado – Domingo</span>
                     <span className="text-slate-400">Encerrado</span>
                   </div>
                 </div>
