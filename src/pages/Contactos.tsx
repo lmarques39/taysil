@@ -1,3 +1,4 @@
+import { MessageCircle } from 'lucide-react'
 import GridOverlay from '../components/atoms/GridOverlay'
 
 const phones = [
@@ -92,6 +93,19 @@ export default function Contactos() {
                   className="text-lg font-bold text-slate-900 hover:text-red-600 transition-colors"
                 >
                   geral.taysil@gmail.com
+                </a>
+              </div>
+
+              {/* WhatsApp */}
+              <div className="mb-10">
+                <a
+                  href="https://wa.me/351939044050"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-3 bg-[#25D366] hover:bg-[#1ebe5d] text-white font-semibold px-6 py-3 rounded-xl transition-colors"
+                >
+                  <MessageCircle size={20} />
+                  Falar no WhatsApp
                 </a>
               </div>
 

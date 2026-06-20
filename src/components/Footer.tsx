@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Phone, Mail } from 'lucide-react'
+import { Phone, Mail, MessageCircle } from 'lucide-react'
 import GridOverlay from './atoms/GridOverlay'
 
 const navLinks = [
@@ -42,6 +42,15 @@ export default function Footer() {
             <a href="mailto:geral.taysil@gmail.com" className="flex items-center gap-2 hover:text-white transition-colors">
               <Mail size={14} className="text-red-500 shrink-0" />
               geral.taysil@gmail.com
+            </a>
+            <a
+              href="https://wa.me/351939044050"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-[#25D366] hover:text-[#1ebe5d] transition-colors"
+            >
+              <MessageCircle size={14} className="shrink-0" />
+              WhatsApp
             </a>
           </div>
 

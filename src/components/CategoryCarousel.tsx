@@ -85,6 +85,7 @@ export default function CategoryCarousel() {
                 <img
                   src={img}
                   alt={label}
+                  loading="lazy"
                   className="w-48 h-48 sm:w-56 sm:h-56 lg:w-64 lg:h-64 object-contain drop-shadow-md"
                 />
               ) : (
