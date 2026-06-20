@@ -1,5 +1,6 @@
-import { MessageCircle } from 'lucide-react'
+import { MessageCircle, MapPin } from 'lucide-react'
 import GridOverlay from '../components/atoms/GridOverlay'
+import { useCookieConsent } from '../components/CookieBanner'
 
 const phones = [
   { number: '939 044 050', href: 'tel:939044050', label: 'Telemóvel' },
@@ -8,6 +9,8 @@ const phones = [
 ]
 
 export default function Contactos() {
+  const { consent, accept } = useCookieConsent()
+
   return (
     <>
       <title>Contactos | Taysil</title>
@@ -129,15 +132,38 @@ export default function Contactos() {
 
             {/* Right: map */}
             <div className="rounded-xl overflow-hidden ring-1 ring-slate-100 h-[500px] lg:h-full lg:min-h-[520px]">
-              <iframe
-                title="Localização Taysil"
-                src="https://maps.google.com/maps?q=38.80546,-9.34012&z=16&output=embed"
-                width="100%"
-                height="100%"
-                style={{ border: 0, display: 'block', minHeight: 520 }}
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              />
+              {consent === 'accepted' ? (
+                <iframe
+                  title="Localização Taysil"
+                  src="https://maps.google.com/maps?q=38.80546,-9.34012&z=16&output=embed"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0, display: 'block', minHeight: 520 }}
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
+              ) : (
+                <div className="w-full h-full bg-slate-100 flex flex-col items-center justify-center gap-4 p-8 text-center">
+                  <MapPin size={36} className="text-slate-300" />
+                  <p className="text-slate-500 text-sm max-w-xs">
+                    O mapa está desativado. Aceite os cookies para ver a localização interativa.
+                  </p>
+                  <button
+                    onClick={accept}
+                    className="px-4 py-2 text-sm font-semibold bg-red-600 hover:bg-red-700 text-white rounded-lg transition-colors"
+                  >
+                    Aceitar cookies
+                  </button>
+                  <a
+                    href="https://maps.google.com/?q=38.80546,-9.34012"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-red-600 hover:text-red-700 font-medium transition-colors"
+                  >
+                    Abrir no Google Maps →
+                  </a>
+                </div>
+              )}
             </div>
           </div>
         </div>
