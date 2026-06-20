@@ -146,7 +146,7 @@ export default function Home() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-10">
             {proofPoints.map(({ value, label, detail }) => (
-              <div key={label} className="text-center sm:text-left">
+              <div key={label} className="flex flex-col items-center sm:items-start">
                 <p className="text-5xl font-black text-red-500 mb-2">{value}</p>
                 <p className="text-white font-semibold text-sm uppercase tracking-wide mb-2">{label}</p>
                 <p className="text-slate-400 text-sm leading-relaxed">{detail}</p>
