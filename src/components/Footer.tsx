@@ -31,7 +31,7 @@ export default function Footer() {
           </div>
 
           {/* Nav links */}
-          <nav className="flex flex-wrap items-center justify-center gap-x-8 gap-y-2 text-sm">
+          <nav className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-x-8 text-sm">
             {navLinks.map(({ to, label }) => (
               <Link key={to} to={to} className="hover:text-white transition-colors">
                 {label}
