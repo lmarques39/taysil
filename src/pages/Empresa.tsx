@@ -93,15 +93,15 @@ export default function Empresa() {
       </section>
 
       {/* Values manifesto */}
-      <section className="py-20 bg-slate-900">
+      <section className="py-20 bg-red-600">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="text-red-400 text-sm font-semibold uppercase tracking-widest mb-2">Os nossos valores</p>
+          <p className="text-red-200 text-sm font-semibold uppercase tracking-widest mb-2">Os nossos valores</p>
           <h2 className="text-3xl font-extrabold text-white mb-12">Os pilares que nos guiam</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-10">
             {values.map(({ name, desc }) => (
               <div key={name}>
-                <p className="text-2xl font-black text-red-500 mb-1">{name}</p>
-                <p className="text-slate-400 text-sm leading-relaxed">{desc}</p>
+                <p className="text-2xl font-black text-white mb-1">{name}</p>
+                <p className="text-red-100 text-sm leading-relaxed">{desc}</p>
               </div>
             ))}
           </div>
