@@ -1,7 +1,7 @@
 import { type ReactNode } from 'react'
 import Navbar from '../Navbar'
 import Footer from '../Footer'
-import CookieBanner from '../CookieBanner'
+import CookieBanner from '../organisms/CookieBanner'
 
 export default function PageLayout({ children }: { children: ReactNode }) {
   return (

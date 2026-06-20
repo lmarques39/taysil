@@ -1,6 +1,6 @@
 import { MessageCircle, MapPin } from 'lucide-react'
 import GridOverlay from '../components/atoms/GridOverlay'
-import { useCookieConsent } from '../components/CookieBanner'
+import { useCookieConsent } from '../components/organisms/CookieBanner'
 
 const phones = [
   { number: '939 044 050', href: 'tel:939044050', label: 'Telemóvel' },
