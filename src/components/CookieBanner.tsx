@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 const STORAGE_KEY = 'taysil_cookie_consent'
@@ -25,13 +25,8 @@ export function useCookieConsent() {
 
 export default function CookieBanner() {
   const { consent, accept, decline } = useCookieConsent()
-  const [visible, setVisible] = useState(false)
 
-  useEffect(() => {
-    if (consent === null) setVisible(true)
-  }, [consent])
-
-  if (!visible) return null
+  if (consent !== null) return null
 
   return (
     <div className="fixed bottom-0 left-0 right-0 z-50 p-4 sm:p-6">
