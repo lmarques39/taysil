@@ -1,3 +1,5 @@
+import GridOverlay from '../components/atoms/GridOverlay'
+
 const stats = [
   { value: '+3000', label: 'Referências' },
   { value: '6', label: 'Categorias' },
@@ -21,14 +23,7 @@ export default function Empresa() {
 
       {/* Header with stats */}
       <section className="pt-32 pb-20 bg-slate-900 relative overflow-hidden">
-        <div
-          className="absolute inset-0 opacity-[0.07]"
-          style={{
-            backgroundImage:
-              'linear-gradient(rgba(255,255,255,1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,1) 1px, transparent 1px)',
-            backgroundSize: '60px 60px',
-          }}
-        />
+        <GridOverlay />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="text-red-400 text-sm font-semibold uppercase tracking-widest mb-3">A empresa</p>
           <h1 className="text-4xl sm:text-5xl font-extrabold text-white mb-4">Sobre a Taysil</h1>

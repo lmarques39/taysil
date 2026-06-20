@@ -1,130 +1,17 @@
-import { useState, useRef, useEffect } from 'react'
+import { useState, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import {
   Search, X, ArrowRight, SlidersHorizontal,
 } from 'lucide-react'
 import type { Brand } from '../data/products'
 import { CATEGORIES } from '../data/categories'
-import type { CategoryConfig } from '../data/categories'
 import { useProductFilter } from '../hooks/useProductFilter'
 import type { EnrichedProduct } from '../hooks/useProductFilter'
-
-const BRAND_STYLES: Record<Brand, string> = {
-  KROFTOOLS: 'bg-slate-800 text-white',
-  JBM:       'bg-slate-700 text-white',
-  TAYSIL:    'bg-red-600 text-white',
-}
-
-const BrandBadge = ({ brand }: { brand: Brand }) => (
-  <span className={`inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold tracking-wide ${BRAND_STYLES[brand]}`}>
-    {brand}
-  </span>
-)
-
-const ProductCard = ({ product, catConfig, onClick }: {
-  product: EnrichedProduct
-  catConfig: CategoryConfig | undefined
-  onClick: () => void
-}) => {
-  const { img, name, brand, sub } = product
-  const Icon = catConfig?.Icon
-  const iconBg = catConfig?.iconBg
-  return (
-    <button
-      onClick={onClick}
-      className="bg-white border border-slate-100 rounded-xl overflow-hidden flex flex-row sm:flex-col hover:shadow-md hover:border-slate-200 hover:-translate-y-0.5 transition-all text-left group w-full"
-    >
-      <div className="w-20 h-20 sm:w-full sm:h-auto sm:aspect-square bg-slate-50 flex items-center justify-center p-2 sm:p-4 shrink-0">
-        {img ? (
-          <img src={img} alt={name} className="w-full h-full object-contain" loading="lazy" />
-        ) : (
-          <div className={`w-10 h-10 sm:w-16 sm:h-16 ${iconBg ?? 'bg-slate-200'} rounded-xl sm:rounded-2xl flex items-center justify-center`}>
-            {Icon && <Icon size={18} className="text-white opacity-75" />}
-          </div>
-        )}
-      </div>
-      <div className="p-3 flex flex-col gap-1.5 flex-1 min-w-0 justify-center sm:justify-start">
-        <p className="text-[10px] text-slate-400 leading-tight truncate">{sub}</p>
-        <p className="text-sm font-semibold text-slate-800 leading-snug line-clamp-2 sm:flex-1">{name}</p>
-        <div className="pt-0.5">
-          <BrandBadge brand={brand} />
-        </div>
-      </div>
-    </button>
-  )
-}
-
-const ProductModal = ({ product, catConfig, onClose }: {
-  product: EnrichedProduct
-  catConfig: CategoryConfig | undefined
-  onClose: () => void
-}) => {
-  const { img, name, brand, sub, desc, categoryLabel } = product
-  const Icon = catConfig?.Icon
-  const iconBg = catConfig?.iconBg
-
-  useEffect(() => {
-    const handler = (e: KeyboardEvent) => { if (e.key === 'Escape') onClose() }
-    document.addEventListener('keydown', handler)
-    document.body.style.overflow = 'hidden'
-    return () => {
-      document.removeEventListener('keydown', handler)
-      document.body.style.overflow = ''
-    }
-  }, [onClose])
-
-  return (
-    <div
-      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-sm"
-      onClick={onClose}
-    >
-      <div
-        className="bg-white rounded-2xl shadow-2xl w-full max-w-sm p-6 relative"
-        onClick={e => e.stopPropagation()}
-      >
-        <button
-          onClick={onClose}
-          className="absolute top-4 right-4 w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 flex items-center justify-center transition-colors"
-          aria-label="Fechar"
-        >
-          <X size={15} className="text-slate-600" />
-        </button>
-
-        <div className="flex justify-center mb-5 pt-2">
-          {img ? (
-            <img src={img} alt={name} className="w-40 h-40 object-contain" />
-          ) : (
-            <div className={`w-40 h-40 ${iconBg ?? 'bg-slate-200'} rounded-2xl flex items-center justify-center`}>
-              {Icon && <Icon size={52} className="text-white opacity-75" />}
-            </div>
-          )}
-        </div>
-
-        <p className="text-[11px] text-slate-400 mb-1 uppercase tracking-wide">{sub}</p>
-        <h3 className="text-lg font-bold text-slate-900 mb-3 leading-snug pr-4">{name}</h3>
-
-        <div className="flex items-center gap-2 mb-4">
-          <BrandBadge brand={brand} />
-          <span className="text-xs text-slate-400">{categoryLabel}</span>
-        </div>
-
-        {desc && (
-          <p className="text-sm text-slate-500 leading-relaxed mb-5">{desc}</p>
-        )}
-
-        <div className="border-t border-slate-100 pt-4">
-          <Link
-            to="/contactos"
-            onClick={onClose}
-            className="flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white font-semibold px-5 py-2.5 rounded-lg text-sm transition-colors w-full"
-          >
-            Pedir Informação <ArrowRight size={15} />
-          </Link>
-        </div>
-      </div>
-    </div>
-  )
-}
+import GridOverlay from '../components/atoms/GridOverlay'
+import BrandBadge from '../components/atoms/BrandBadge'
+import ProductCard from '../components/molecules/ProductCard'
+import ProductModal from '../components/organisms/ProductModal'
+import ProductSidebar from '../components/organisms/ProductSidebar'
 
 export default function Produtos() {
   const {
@@ -153,102 +40,18 @@ export default function Produtos() {
     setMobileSidebarOpen(false)
   }
 
-  const sidebarContent = (
-    <div className="space-y-7">
-      {hasFilters && (
-        <button
-          onClick={clearAll}
-          className="flex items-center gap-1.5 text-xs text-red-600 font-semibold hover:text-red-700 transition-colors"
-        >
-          <X size={12} /> Limpar filtros
-        </button>
-      )}
-
-      {/* Categories */}
-      <div>
-        <p className="text-[10px] uppercase tracking-widest text-slate-400 font-semibold mb-2.5">Categorias</p>
-        <nav className="space-y-0.5">
-          <button
-            onClick={() => handleSelectCategory(null)}
-            className={`w-full text-left px-3 py-2 rounded-lg text-sm transition-colors ${
-              !activeCategory
-                ? 'bg-slate-900 text-white font-medium'
-                : 'text-slate-500 hover:text-slate-800 hover:bg-slate-100'
-            }`}
-          >
-            Todas as categorias
-          </button>
-          {CATEGORIES.map(cat => (
-            <button
-              key={cat.id}
-              onClick={() => handleSelectCategory(cat.id)}
-              className={`w-full flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm transition-all text-left ${
-                activeCategory === cat.id
-                  ? `bg-slate-900 text-white font-medium border-l-2 ${cat.borderAccent} pl-[10px]`
-                  : 'text-slate-500 hover:text-slate-800 hover:bg-slate-100'
-              }`}
-            >
-              <span className={`w-5 h-5 rounded shrink-0 flex items-center justify-center transition-colors ${
-                activeCategory === cat.id ? cat.iconBg : 'bg-slate-200'
-              }`}>
-                <cat.Icon size={11} className={activeCategory === cat.id ? 'text-white' : 'text-slate-500'} />
-              </span>
-              {cat.label}
-            </button>
-          ))}
-        </nav>
-      </div>
-
-      {/* Subcategories — only when a category is selected */}
-      {activeCategory && availableSubcategories.length > 0 && (
-        <div>
-          <p className="text-[10px] uppercase tracking-widest text-slate-400 font-semibold mb-2.5">Subcategoria</p>
-          <div className="space-y-0.5">
-            {availableSubcategories.map(([sub, count]) => (
-              <button
-                key={sub}
-                onClick={() => updateParams({ sub: activeSubcategory === sub ? null : sub })}
-                className={`w-full flex items-center justify-between gap-2 px-3 py-1.5 rounded-lg text-xs transition-colors text-left ${
-                  activeSubcategory === sub
-                    ? 'bg-slate-100 text-slate-900 font-semibold'
-                    : 'text-slate-500 hover:text-slate-800 hover:bg-slate-50'
-                }`}
-              >
-                <span className="leading-snug">{sub}</span>
-                <span className="text-[10px] text-slate-400 shrink-0">{count}</span>
-              </button>
-            ))}
-          </div>
-        </div>
-      )}
-
-      {/* Brands */}
-      <div>
-        <p className="text-[10px] uppercase tracking-widest text-slate-400 font-semibold mb-2.5">Marca</p>
-        <div className="space-y-2">
-          {brandCounts.map(({ brand, count }) => count > 0 && (
-            <label key={brand} className="flex items-center gap-2.5 cursor-pointer group">
-              <input
-                type="checkbox"
-                checked={activeBrands.includes(brand)}
-                onChange={() => toggleBrand(brand)}
-                className="w-3.5 h-3.5 rounded accent-slate-800 cursor-pointer"
-              />
-              <span className="text-sm text-slate-600 group-hover:text-slate-900 transition-colors flex-1">{brand}</span>
-              <span className="text-[11px] text-slate-400">{count}</span>
-            </label>
-          ))}
-        </div>
-      </div>
-
-      <div className="p-3 bg-slate-50 rounded-xl border border-slate-100 text-xs text-slate-500 leading-relaxed">
-        Não encontrou o que procura?{' '}
-        <Link to="/contactos" className="text-red-600 font-medium hover:underline">
-          Contacte-nos
-        </Link>
-      </div>
-    </div>
-  )
+  const sidebarProps = {
+    hasFilters,
+    clearAll,
+    activeCategory,
+    onSelectCategory: handleSelectCategory,
+    availableSubcategories,
+    activeSubcategory,
+    updateParams,
+    activeBrands,
+    brandCounts,
+    toggleBrand,
+  }
 
   return (
     <>
@@ -257,10 +60,7 @@ export default function Produtos() {
 
       {/* Page header */}
       <section className="pt-32 pb-16 bg-slate-900 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-[0.07]" style={{
-          backgroundImage: 'linear-gradient(rgba(255,255,255,1) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,1) 1px,transparent 1px)',
-          backgroundSize: '60px 60px',
-        }} />
+        <GridOverlay />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="text-red-400 text-sm font-semibold uppercase tracking-widest mb-3">Catálogo</p>
           <h1 className="text-4xl sm:text-5xl font-extrabold text-white mb-4">Produtos</h1>
@@ -281,7 +81,7 @@ export default function Produtos() {
 
           {/* Desktop sidebar */}
           <aside className="hidden lg:block w-56 shrink-0 sticky top-24 self-start">
-            {sidebarContent}
+            <ProductSidebar {...sidebarProps} />
           </aside>
 
           {/* Main content */}
@@ -445,7 +245,7 @@ export default function Produtos() {
               </button>
             </div>
             <div className="flex-1 overflow-y-auto px-6 py-6">
-              {sidebarContent}
+              <ProductSidebar {...sidebarProps} />
             </div>
           </div>
         </div>
