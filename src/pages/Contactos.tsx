@@ -72,14 +72,16 @@ export default function Contactos() {
                 </div>
                 <ul className="space-y-3">
                   {phones.map(({ number, href, label }) => (
-                    <li key={href} className="flex items-baseline justify-between">
+                    <li key={href} className="flex items-center gap-3">
                       <a
                         href={href}
                         className="text-lg font-bold text-slate-900 hover:text-red-600 transition-colors tabular-nums"
                       >
                         {number}
                       </a>
-                      <span className="text-xs text-slate-400 uppercase tracking-wide">{label}</span>
+                      <span className="text-xs bg-slate-100 text-slate-500 px-2 py-0.5 rounded-full uppercase tracking-wide">
+                        {label}
+                      </span>
                     </li>
                   ))}
                 </ul>
@@ -103,7 +105,7 @@ export default function Contactos() {
                 <div className="border-l-4 border-red-600 pl-4 mb-4">
                   <h3 className="text-sm font-extrabold text-red-500 uppercase tracking-wide">Horário</h3>
                 </div>
-                <div className="space-y-2 text-sm">
+                <div className="space-y-2 text-sm max-w-xs">
                   <div className="flex justify-between">
                     <span className="text-slate-600">Segunda – Sexta</span>
                     <span className="font-semibold text-slate-900 tabular-nums">09:00 – 18:00</span>
