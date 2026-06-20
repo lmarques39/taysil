@@ -1,37 +1,91 @@
-import { useEffect } from 'react'
+import { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import { X, ArrowRight } from 'lucide-react'
 import type { EnrichedProduct } from '../../hooks/useProductFilter'
 import type { CategoryConfig } from '../../data/categories'
 import BrandBadge from '../atoms/BrandBadge'
+import NavArrowButton from '../atoms/NavArrowButton'
+import ModalDotPagination from '../molecules/ModalDotPagination'
 
-export default function ProductModal({ product, catConfig, onClose }: {
+export default function ProductModal({
+  product,
+  catConfig,
+  onClose,
+  onPrev,
+  onNext,
+  canGoPrev = false,
+  canGoNext = false,
+  currentIndex = 0,
+  total = 1,
+}: {
   product: EnrichedProduct
   catConfig: CategoryConfig | undefined
   onClose: () => void
+  onPrev?: () => void
+  onNext?: () => void
+  canGoPrev?: boolean
+  canGoNext?: boolean
+  currentIndex?: number
+  total?: number
 }) {
   const { img, name, brand, sub, desc, categoryLabel } = product
   const Icon = catConfig?.Icon
   const iconBg = catConfig?.iconBg
+  const touchStart = useRef<{ x: number; y: number } | null>(null)
+  const hasNav = !!(onPrev || onNext)
 
   useEffect(() => {
-    const handler = (e: KeyboardEvent) => { if (e.key === 'Escape') onClose() }
+    const handler = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') onClose()
+      if (e.key === 'ArrowRight' && canGoNext) onNext?.()
+      if (e.key === 'ArrowLeft' && canGoPrev) onPrev?.()
+    }
     document.addEventListener('keydown', handler)
     document.body.style.overflow = 'hidden'
     return () => {
       document.removeEventListener('keydown', handler)
       document.body.style.overflow = ''
     }
-  }, [onClose])
+  }, [onClose, onNext, onPrev, canGoNext, canGoPrev])
+
+  const handleTouchStart = (e: React.TouchEvent) => {
+    touchStart.current = { x: e.touches[0].clientX, y: e.touches[0].clientY }
+  }
+
+  const handleTouchEnd = (e: React.TouchEvent) => {
+    if (!touchStart.current) return
+    const dx = e.changedTouches[0].clientX - touchStart.current.x
+    const dy = e.changedTouches[0].clientY - touchStart.current.y
+    touchStart.current = null
+    if (Math.abs(dx) > Math.abs(dy) && Math.abs(dx) > 60) {
+      if (dx < 0 && canGoNext) onNext?.()
+      if (dx > 0 && canGoPrev) onPrev?.()
+    } else if (dy > 80 && Math.abs(dy) > Math.abs(dx)) {
+      onClose()
+    }
+  }
 
   return (
     <div
       className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-sm"
       onClick={onClose}
     >
+      {hasNav && (
+        <>
+          <div className="absolute left-4 hidden sm:flex" onClick={e => e.stopPropagation()}>
+            <NavArrowButton direction="prev" onClick={() => onPrev?.()} disabled={!canGoPrev} />
+          </div>
+          <div className="absolute right-4 hidden sm:flex" onClick={e => e.stopPropagation()}>
+            <NavArrowButton direction="next" onClick={() => onNext?.()} disabled={!canGoNext} />
+          </div>
+        </>
+      )}
+
       <div
         className="bg-white rounded-2xl shadow-2xl w-full max-w-sm p-6 relative"
         onClick={e => e.stopPropagation()}
+        onTouchStart={handleTouchStart}
+        onTouchEnd={handleTouchEnd}
       >
         <button
           onClick={onClose}
@@ -61,6 +115,12 @@ export default function ProductModal({ product, catConfig, onClose }: {
 
         {desc && (
           <p className="text-sm text-slate-500 leading-relaxed mb-5">{desc}</p>
+        )}
+
+        {hasNav && (
+          <div className="mb-4">
+            <ModalDotPagination total={total} current={currentIndex} />
+          </div>
         )}
 
         <div className="border-t border-slate-100 pt-4">

@@ -19,7 +19,8 @@ export default function Contactos() {
           <p className="text-red-400 text-sm font-semibold uppercase tracking-widest mb-3">Fale Connosco</p>
           <h1 className="text-4xl sm:text-5xl font-extrabold text-white mb-4">Contactos</h1>
           <p className="text-slate-400 text-lg max-w-xl mb-10">
-            Estamos disponíveis para o ajudar. Contacte-nos por telefone, e-mail ou venha visitar-nos.
+            Estamos disponíveis para o ajudar. Contacte-nos por telefone, 
+            e-mail ou venha visitar-nos.
           </p>
           <div>
             <p className="text-slate-500 text-xs uppercase tracking-widest mb-2">Linha principal</p>

@@ -1,4 +1,5 @@
 import { useState, useRef } from 'react'
+import { useModalNavigation } from '../hooks/useModalNavigation'
 import { Link } from 'react-router-dom'
 import {
   Search, X, ArrowRight, SlidersHorizontal,
@@ -6,7 +7,6 @@ import {
 import type { Brand } from '../data/products'
 import { CATEGORIES } from '../data/categories'
 import { useProductFilter } from '../hooks/useProductFilter'
-import type { EnrichedProduct } from '../hooks/useProductFilter'
 import GridOverlay from '../components/atoms/GridOverlay'
 import BrandBadge from '../components/atoms/BrandBadge'
 import ProductCard from '../components/molecules/ProductCard'
@@ -31,8 +31,19 @@ export default function Produtos() {
   } = useProductFilter()
 
   const [showSuggestions, setShowSuggestions]     = useState(false)
-  const [selectedProduct, setSelectedProduct]     = useState<EnrichedProduct | null>(null)
   const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false)
+
+  const {
+    selectedProduct,
+    selectedIndex,
+    open: openProduct,
+    close: closeProduct,
+    goNext,
+    goPrev,
+    canGoNext,
+    canGoPrev,
+    total: modalTotal,
+  } = useModalNavigation(filteredProducts)
   const searchInputRef = useRef<HTMLInputElement>(null)
 
   const handleSelectCategory = (id: Parameters<typeof selectCategory>[0]) => {
@@ -189,7 +200,7 @@ export default function Produtos() {
                       key={product.id}
                       product={product}
                       catConfig={catConfig}
-                      onClick={() => setSelectedProduct(product)}
+                      onClick={() => openProduct(product)}
                     />
                   )
                 })}
@@ -255,7 +266,13 @@ export default function Produtos() {
         <ProductModal
           product={selectedProduct}
           catConfig={CATEGORIES.find(c => c.id === selectedProduct.category)}
-          onClose={() => setSelectedProduct(null)}
+          onClose={closeProduct}
+          onPrev={goPrev}
+          onNext={goNext}
+          canGoPrev={canGoPrev}
+          canGoNext={canGoNext}
+          currentIndex={selectedIndex}
+          total={modalTotal}
         />
       )}
     </>

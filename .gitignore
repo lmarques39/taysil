@@ -30,6 +30,7 @@ Thumbs.db
 /*.png
 /*.jpg
 /*.jpeg
+screenshots/
 
 # Playwright session cache
 .playwright-mcp/
