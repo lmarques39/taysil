@@ -1,6 +1,6 @@
-import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { ArrowRight, ChevronLeft, ChevronRight, HardHat, Zap, Wrench, Droplets, PaintBucket, Package } from 'lucide-react'
+import { useCarousel } from '../hooks/useCarousel'
 
 const categories = [
   {
@@ -48,24 +48,13 @@ const categories = [
 ]
 
 export default function CategoryCarousel() {
-  const [current, setCurrent] = useState(0)
-  const [paused, setPaused] = useState(false)
-  const total = categories.length
-
-  useEffect(() => {
-    if (paused) return
-    const timer = setInterval(() => setCurrent(c => (c + 1) % total), 4500)
-    return () => clearInterval(timer)
-  }, [paused, total])
-
-  const prev = () => setCurrent(c => (c - 1 + total) % total)
-  const next = () => setCurrent(c => (c + 1) % total)
+  const { current, pause, resume, prev, next, goTo } = useCarousel(categories.length)
 
   return (
     <div
       className="relative overflow-hidden rounded-2xl shadow-sm border border-slate-100"
-      onMouseEnter={() => setPaused(true)}
-      onMouseLeave={() => setPaused(false)}
+      onMouseEnter={pause}
+      onMouseLeave={resume}
     >
       {/* Track */}
       <div
@@ -129,7 +118,7 @@ export default function CategoryCarousel() {
         {categories.map((_, i) => (
           <button
             key={i}
-            onClick={() => setCurrent(i)}
+            onClick={() => goTo(i)}
             aria-label={`Slide ${i + 1}`}
             className={`h-1.5 rounded-full transition-all duration-300 ${
               i === current ? 'w-5 bg-slate-700' : 'w-1.5 bg-slate-400'
