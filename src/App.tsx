@@ -5,6 +5,7 @@ import Empresa from './pages/Empresa'
 import Produtos from './pages/Produtos'
 import Catalogos from './pages/Catalogos'
 import Contactos from './pages/Contactos'
+import NotFound from './pages/NotFound'
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
           <Route path="/produtos" element={<Produtos />} />
           <Route path="/catalogos" element={<Catalogos />} />
           <Route path="/contactos" element={<Contactos />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </PageLayout>
     </BrowserRouter>

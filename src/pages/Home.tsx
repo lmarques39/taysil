@@ -66,7 +66,7 @@ export default function Home() {
         {/* Right: gears photo */}
         <div className="lg:w-[45%] h-72 sm:h-96 lg:h-auto relative overflow-hidden">
           <img
-            src="/hero-gears.jpg"
+            src="/hero-gears.webp"
             alt=""
             className="absolute inset-0 w-full h-full object-cover"
           />

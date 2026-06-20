@@ -37,3 +37,4 @@ screenshots/
 
 # Claude Code local config (contains local paths and permission history)
 .claude/
+.vercel
