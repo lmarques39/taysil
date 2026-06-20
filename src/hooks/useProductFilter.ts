@@ -1,14 +1,23 @@
-import { useMemo } from 'react'
+import { useState, useEffect, useMemo } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import Fuse from 'fuse.js'
-import { PRODUCTS } from '../data/products'
 import type { Brand, CategoryId, Product } from '../data/products'
 import { CATEGORIES } from '../data/categories'
+import { sanityClient, PRODUCTS_QUERY } from '../lib/sanity'
 
 export type EnrichedProduct = Product & { categoryLabel: string }
 
 export function useProductFilter() {
   const [searchParams, setSearchParams] = useSearchParams()
+  const [products, setProducts] = useState<Product[]>([])
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    sanityClient.fetch<Product[]>(PRODUCTS_QUERY).then(data => {
+      setProducts(data)
+      setLoading(false)
+    })
+  }, [])
 
   const activeCategory    = searchParams.get('category') as CategoryId | null
   const activeSubcategory = searchParams.get('sub')
@@ -27,11 +36,11 @@ export function useProductFilter() {
   }
 
   const enriched = useMemo<EnrichedProduct[]>(() =>
-    PRODUCTS.map(p => ({
+    products.map(p => ({
       ...p,
       categoryLabel: CATEGORIES.find(c => c.id === p.category)?.label ?? '',
     }))
-  , [])
+  , [products])
 
   const fuse = useMemo(() => new Fuse<EnrichedProduct>(enriched, {
     keys: [
@@ -98,6 +107,7 @@ export function useProductFilter() {
   }
 
   return {
+    loading,
     activeCategory,
     activeSubcategory,
     activeBrands,

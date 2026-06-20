@@ -1,0 +1,13 @@
+{
+  "name": "taysil-studio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "sanity dev",
+    "build": "sanity build",
+    "deploy": "sanity deploy"
+  },
+  "dependencies": {
+    "sanity": "^6.1.0"
+  }
+}

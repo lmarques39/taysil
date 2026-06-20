@@ -15,6 +15,7 @@ import ProductSidebar from '../components/organisms/ProductSidebar'
 
 export default function Produtos() {
   const {
+    loading,
     activeCategory,
     activeSubcategory,
     activeBrands,
@@ -191,7 +192,11 @@ export default function Produtos() {
             </div>
 
             {/* Product grid */}
-            {filteredProducts.length > 0 ? (
+            {loading ? (
+              <div className="flex items-center justify-center py-24 text-slate-400 text-sm">
+                A carregar produtos...
+              </div>
+            ) : filteredProducts.length > 0 ? (
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
                 {filteredProducts.map(product => {
                   const catConfig = CATEGORIES.find(c => c.id === product.category)
