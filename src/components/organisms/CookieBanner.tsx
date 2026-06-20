@@ -1,27 +1,5 @@
-import { useState } from 'react'
 import { Link } from 'react-router-dom'
-
-const STORAGE_KEY = 'taysil_cookie_consent'
-
-export type CookieConsent = 'accepted' | 'declined' | null
-
-export function useCookieConsent() {
-  const [consent, setConsent] = useState<CookieConsent>(() => {
-    return (localStorage.getItem(STORAGE_KEY) as CookieConsent) ?? null
-  })
-
-  const accept = () => {
-    localStorage.setItem(STORAGE_KEY, 'accepted')
-    setConsent('accepted')
-  }
-
-  const decline = () => {
-    localStorage.setItem(STORAGE_KEY, 'declined')
-    setConsent('declined')
-  }
-
-  return { consent, accept, decline }
-}
+import { useCookieConsent } from '../../context/CookieConsentContext'
 
 export default function CookieBanner() {
   const { consent, accept, decline } = useCookieConsent()
