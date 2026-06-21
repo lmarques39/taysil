@@ -16,6 +16,7 @@ import ProductSidebar from '../components/organisms/ProductSidebar'
 export default function Produtos() {
   const {
     loading,
+    error,
     activeCategory,
     activeSubcategory,
     activeBrands,
@@ -195,6 +196,15 @@ export default function Produtos() {
             {loading ? (
               <div className="flex items-center justify-center py-24 text-slate-400 text-sm">
                 A carregar produtos...
+              </div>
+            ) : error ? (
+              <div className="flex flex-col items-center justify-center py-24 text-center">
+                <p className="text-slate-700 font-semibold mb-1">Não foi possível carregar os produtos</p>
+                <p className="text-slate-400 text-sm mb-5">Verifique a sua ligação e{' '}
+                  <button onClick={() => window.location.reload()} className="text-red-600 hover:underline font-medium">
+                    recarregue a página
+                  </button>.
+                </p>
               </div>
             ) : filteredProducts.length > 0 ? (
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">

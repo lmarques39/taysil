@@ -11,12 +11,12 @@ export function useProductFilter() {
   const [searchParams, setSearchParams] = useSearchParams()
   const [products, setProducts] = useState<Product[]>([])
   const [loading, setLoading] = useState(true)
+  const [error, setError] = useState(false)
 
   useEffect(() => {
-    sanityClient.fetch<Product[]>(PRODUCTS_QUERY).then(data => {
-      setProducts(data)
-      setLoading(false)
-    })
+    sanityClient.fetch<Product[]>(PRODUCTS_QUERY)
+      .then(data => { setProducts(data); setLoading(false) })
+      .catch(() => { setLoading(false); setError(true) })
   }, [])
 
   const activeCategory    = searchParams.get('category') as CategoryId | null
@@ -108,6 +108,7 @@ export function useProductFilter() {
 
   return {
     loading,
+    error,
     activeCategory,
     activeSubcategory,
     activeBrands,

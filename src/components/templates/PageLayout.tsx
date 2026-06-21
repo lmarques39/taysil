@@ -1,6 +1,6 @@
 import { type ReactNode } from 'react'
-import Navbar from '../Navbar'
-import Footer from '../Footer'
+import Navbar from '../organisms/Navbar'
+import Footer from '../organisms/Footer'
 import CookieBanner from '../organisms/CookieBanner'
 import { CookieConsentProvider } from '../../context/CookieConsentContext'
 

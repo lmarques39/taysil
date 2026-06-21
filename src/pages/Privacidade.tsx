@@ -6,14 +6,14 @@ export default function Privacidade() {
 
       <div className="pt-32 pb-20 max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-3xl font-extrabold text-slate-900 mb-2">Política de Privacidade</h1>
-        <p className="text-sm text-slate-400 mb-10">Última atualização: junho de 2025</p>
+        <p className="text-sm text-slate-400 mb-10">Última atualização: junho de 2026</p>
 
         <div className="prose prose-slate max-w-none space-y-8 text-slate-600 leading-relaxed">
 
           <section>
             <h2 className="text-lg font-bold text-slate-900 mb-3">1. Quem somos</h2>
             <p>
-              A <strong>Taysil</strong> é uma empresa de comércio por grosso de produtos para o setor automóvel,
+              A <strong>Taysil, Lda.</strong> é uma empresa de comércio por grosso de produtos para o setor automóvel,
               com sede na Rua Vasco da Gama nº33, Algueirão Mem-Martins, 2725-152 Sintra, Portugal.
               Para questões relacionadas com privacidade, pode contactar-nos através do email{' '}
               <a href="mailto:geral.taysil@gmail.com" className="text-red-600 hover:text-red-700">
