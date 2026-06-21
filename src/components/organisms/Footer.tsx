@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { Phone, Mail, MessageCircle } from 'lucide-react'
-import GridOverlay from './atoms/GridOverlay'
+import GridOverlay from '../atoms/GridOverlay'
 
 const navLinks = [
   { to: '/', label: 'Início' },
