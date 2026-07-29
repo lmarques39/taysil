@@ -1,139 +1,75 @@
-# A Evolução da Tecnologia na Sociedade Moderna
+# Taysil
 
-## Introdução
+Modernized website and product catalog for [Taysil](https://taysil.pt), a Portuguese B2B wholesale distributor of automotive parts and tools based in Algueirão-Mem-Martins, Sintra.
 
-A tecnologia tem evoluído de forma extraordinária ao longo das últimas décadas, impactando profundamente a forma como vivemos, trabalhamos e comunicamos. Desde os primeiros computadores até aos dispositivos inteligentes atuais, o progresso tecnológico tem sido constante e acelerado.
+**Live:** https://taysil-demo.vercel.app
 
-## Contexto Histórico
+## Stack
 
-### O início da Era Digital
+- [Vite](https://vitejs.dev/) + [React 19](https://react.dev/) + [React Router v7](https://reactrouter.com/)
+- [TypeScript](https://www.typescriptlang.org/) (strict mode)
+- [Tailwind CSS v4](https://tailwindcss.com/) (via `@tailwindcss/vite`, no config file)
+- [Sanity CMS](https://www.sanity.io/) — product catalog and content management
+- [Fuse.js](https://www.fusejs.io/) — fuzzy product search
+- [Lucide React](https://lucide.dev/) — icons
 
-A era digital começou com o desenvolvimento dos primeiros computadores, máquinas de grandes dimensões e capacidade limitada, mas que representaram um avanço significativo para a ciência e para a indústria.
+## Project structure
 
-### A Popularização da Tecnologia
+```
+src/
+  pages/            Home, Empresa, Produtos, Catálogos, Contactos
+  components/
+    atoms/          GridOverlay, BrandBadge, NavArrowButton, DotIndicator
+    molecules/      ProductCard, ModalDotPagination
+    organisms/      Navbar, Footer, CategoryGrid, ProductModal, ProductSidebar, ...
+    templates/      PageLayout
+  hooks/            useProductFilter, useCarousel, useModalNavigation
+  context/          CookieConsentContext
+  data/             products.ts (types only), categories.ts
+  lib/              sanity.ts (Sanity client)
+studio/             Sanity Studio config + schema (deployed separately)
+public/             Static assets, product images, SEO files
+```
 
-Com o passar do tempo, os computadores tornaram-se mais acessíveis, dando origem ao computador pessoal. Este marco permitiu que a tecnologia chegasse às casas e escolas, democratizando o acesso à informação.
+## Getting started
 
-### A Revolução da Internet
+```bash
+npm install
+npm run dev        # http://localhost:5173
+```
 
-A criação da internet transformou completamente a forma como as pessoas comunicam e acedem à informação. O mundo tornou-se mais conectado, permitindo a partilha instantânea de conteúdos.
+Other scripts:
 
-## Áreas Fundamentais de Evolução
+```bash
+npm run build       # production build
+npm run preview     # preview the production build locally
+npm run typecheck   # tsc --noEmit
+```
 
-### Computação
+## Product data (Sanity)
 
-A computação evoluiu de sistemas centralizados para dispositivos móveis altamente potentes. Atualmente, é possível realizar tarefas complexas através de smartphones e tablets.
+Product data is managed in Sanity CMS, not hardcoded. The frontend fetches products via GROQ in `src/hooks/useProductFilter.ts`.
 
-### *Subáreas da Computação*
+- Studio: https://taysil.sanity.studio/
+- Project ID: `wi8pxzpf`, dataset: `production`
 
-- Computação pessoal
-- Computação móvel
-- Computação em nuvem
-- Computação distribuída
+Schema changes must be deployed via the Sanity MCP tools (`deploy_schema` + `deploy_studio`) rather than the Sanity CLI — `sanity schema deploy` crashes on some machines.
 
-### Comunicação
+## Deployment
 
-A comunicação sofreu uma transformação radical com o aparecimento de novas tecnologias digitais.
+Hosted on [Vercel](https://vercel.com/), connected to GitHub for automatic deploys.
 
-### *Formas de Comunicação*
+- `main` → production (https://taysil-demo.vercel.app)
+- `dev` → preview deployment
 
-1. Comunicação escrita tradicional
-2. Comunicação digital
-3. Comunicação em tempo real
+Workflow: branch off `dev`, push, verify on the preview URL, then open a PR into `main`.
 
-## Inteligência Artificial
+## Roadmap
 
-A Inteligência Artificial representa uma das áreas mais inovadores da tecnologia moderna.
+1. ✅ **Phase 1** — Sanity CMS product catalog (complete)
+2. **Phase 2** — Supabase for user accounts and order history
+3. **Phase 3** — Stripe checkout + AT-certified invoicing for full e-commerce
 
-A Inteligência Artificial permite que as máquinas simulem capacidades humanas, como aprendizagem, reconhecimento de padrões e tomada de decisão.
+## License
 
-### *Aplicações da Inteligência Artificial*
-
-- Assistentes virtuais
-- Sistemas de recomendação
-- Veículos autónomos
-- Análise de dados
-
-## Impacto na Sociedade 
-
-### Educação
-
-A tecnologia revolucionou a educação, permitindo o acesso a plataformas online, cursos digitais e ferramentas interativas.
-
-### *Vantagens*
-
-- Acesso facilitado ao conhecimento
-- Flexibilidade na aprendizagem
-- Recursos multimédia
-
-### *Desafios*
-
-- Dependência tecnológica
-- Desigualdade de acesso
-- Distrações digitais
-
-### Mercado de Trabalho
-
-O mercado de trabalho também foi profundamente afetado pela evolução tecnológica.
-
-### *Mudanças Observadas*
-
-- Automatização de tarefas
-- Criação de novas profissões
-- Necessidade de competências digitais
-
-### Vida Quotidiana
-
-A tecnologia está presente em praticamente todos os aspectos da vida quotidiana.
-
-### *Exemplos práticos*
-
-- Compras online
-- Redes sociais
-- Serviços digitais
-
-## Comparação Tecnológica
-
-| Área           |   Antes    |          Depois |
-| :------------- | :--------: | --------------: |
-| Armazenamento  | Disquetes  |           Cloud |
-| Comunicação    |   Cartas   |      Email/Chat |
-| Computação     |  Desktop   |      Smartphone |
-| Entretenimento | Televisão  |       Streaming |
-| Trabalho       | Presencial | Remoto/ Híbrido |
-
-## Representação Visual
-
-![Inteligência Artificial](https://mitsloan.mit.edu/sites/default/files/styles/article_header_desktop/public/2026-02/agentic-ai-dobi.jpg.webp?h=7691f918&itok=VpvW7VKx)
-
-## Recursos Digitais (Links)
-
-- [Google](https://www.google.pt)
-- [Wikipedia](https://www.wikipedia.pt)
-## Perspectivas Futuras
-
-### Tendências Emergentes
-
-A tecnologia continuará a evoluir, com destaque para áreas como:
-
-- Inteligência Artificial avançada
-- Realidade aumentada e virtual
-- Internet das Coisas (IoT)
-### Possíveis Impactos
-
-As transformações futuras poderão trazer benefícios significativos, mas também desafios éticos e sociais.
-
-## Conclusão 
-
-A evolução tecnológica tem moldado o mundo moderno de forma profunda. Compreender esta evolução é essencial para acompanhar as mudanças e aproveitar as oportunidades que surgem.
-
-## Reflexão
-
-**Responde às seguintes questões:
-1. Qual foi a tecnologia que mais impactou a tua vida?
-	``` O facto de não haver tanta facilidade na geração de código como quando comecei a estudar engenharia informática ```
-2. Como imaginas o futuro da tecnologia? 
-	```Imagino que na área de desenvolvimento de software, os engenheiros irão se já não estão, a passar mais de fazer código para rever código gerado por estas LLMs ```
-3. Quais são os primeiros benefícios e riscos associados ao avanço tecnológico?
-	```A nível de benefícios creio que veio trazer muita produtivadade para muitas áreas. Aspectos negativos, especialmente nos jovens que não se aplicam tanto e habituam-se a usar a AI como moleta e não como ferramenta.```
-	
+Private project — all rights reserved.
