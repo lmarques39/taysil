@@ -50,6 +50,12 @@ export const productType = defineType({
       type: 'string',
     }),
     defineField({
+      name: 'sku',
+      title: 'Referência Interna',
+      type: 'string',
+      description: 'Código interno do cliente (ex: 0710-234307 FER)',
+    }),
+    defineField({
       name: 'image',
       title: 'Imagem (upload)',
       type: 'image',
