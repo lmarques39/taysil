@@ -82,7 +82,7 @@ export default function ProductModal({
       )}
 
       <div
-        className="bg-white rounded-2xl shadow-2xl w-full max-w-sm p-6 relative"
+        className="bg-white rounded-2xl shadow-2xl w-full max-w-sm lg:max-w-4xl p-6 lg:p-10 relative"
         onClick={e => e.stopPropagation()}
         onTouchStart={handleTouchStart}
         onTouchEnd={handleTouchEnd}
@@ -95,42 +95,46 @@ export default function ProductModal({
           <X size={15} className="text-slate-600" />
         </button>
 
-        <div className="flex justify-center mb-5 pt-2">
-          {img ? (
-            <img src={img} alt={name} className="w-40 h-40 object-contain" />
-          ) : (
-            <div className={`w-40 h-40 ${iconBg ?? 'bg-slate-200'} rounded-2xl flex items-center justify-center`}>
-              {Icon && <Icon size={52} className="text-white opacity-75" />}
-            </div>
-          )}
-        </div>
-
-        <p className="text-[11px] text-slate-400 mb-1 uppercase tracking-wide">{sub}</p>
-        <h3 className="text-lg font-bold text-slate-900 mb-3 leading-snug pr-4">{name}</h3>
-
-        <div className="flex items-center gap-2 mb-4">
-          <BrandBadge brand={brand} />
-          <span className="text-xs text-slate-400">{categoryLabel}</span>
-        </div>
-
-        {desc && (
-          <p className="text-sm text-slate-500 leading-relaxed mb-5">{desc}</p>
-        )}
-
-        {hasNav && (
-          <div className="mb-4">
-            <ModalDotPagination total={total} current={currentIndex} />
+        <div className="lg:flex lg:items-center lg:gap-10">
+          <div className="flex justify-center mb-5 pt-2 lg:mb-0 lg:pt-0 lg:w-1/2 lg:shrink-0">
+            {img ? (
+              <img src={img} alt={name} className="w-40 h-40 lg:w-full lg:h-96 object-contain" />
+            ) : (
+              <div className={`w-40 h-40 lg:w-full lg:h-96 ${iconBg ?? 'bg-slate-200'} rounded-2xl flex items-center justify-center`}>
+                {Icon && <Icon size={52} className="text-white opacity-75" />}
+              </div>
+            )}
           </div>
-        )}
 
-        <div className="border-t border-slate-100 pt-4">
-          <Link
-            to="/contactos"
-            onClick={onClose}
-            className="flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white font-semibold px-5 py-2.5 rounded-lg text-sm transition-colors w-full"
-          >
-            Pedir Informação <ArrowRight size={15} />
-          </Link>
+          <div className="lg:flex-1 lg:min-w-0">
+            <p className="text-[11px] text-slate-400 mb-1 uppercase tracking-wide">{sub}</p>
+            <h3 className="text-lg lg:text-2xl font-bold text-slate-900 mb-3 leading-snug pr-4">{name}</h3>
+
+            <div className="flex items-center gap-2 mb-4">
+              <BrandBadge brand={brand} />
+              <span className="text-xs text-slate-400">{categoryLabel}</span>
+            </div>
+
+            {desc && (
+              <p className="text-sm text-slate-500 leading-relaxed mb-5">{desc}</p>
+            )}
+
+            {hasNav && (
+              <div className="mb-4">
+                <ModalDotPagination total={total} current={currentIndex} />
+              </div>
+            )}
+
+            <div className="border-t border-slate-100 pt-4">
+              <Link
+                to="/contactos"
+                onClick={onClose}
+                className="flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white font-semibold px-5 py-2.5 rounded-lg text-sm transition-colors w-full"
+              >
+                Pedir Informação <ArrowRight size={15} />
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </div>
