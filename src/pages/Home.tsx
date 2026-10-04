@@ -14,13 +14,13 @@ export default function Home() {
   return (
     <>
       <title>Taysil – Ferramentas e Consumíveis Automóvel | Sintra</title>
-      <meta name="description" content="Comércio por grosso de químicos, ferramentas e consumíveis para o setor automóvel em Sintra. Mais de 3000 referências das marcas KROFTOOLS e JBM." />
+      <meta name="description" content="Comércio por grosso de químicos, ferramentas e consumíveis para o setor automóvel em Sintra. Mais de 3000 referências das marcas KROFTOOLS, JBM, OSRAM e M-TECH." />
 
       {/* Hero — split screen */}
       <section className="min-h-screen flex flex-col lg:flex-row">
 
         {/* Left: editorial dark panel */}
-        <div className="lg:w-[55%] bg-slate-900 flex items-center relative">
+        <div className="lg:w-[55%] xl:w-[45%] bg-slate-900 flex items-center relative">
           <GridOverlay />
           <div className="relative w-full px-8 pt-28 pb-14 lg:px-16 lg:pt-0 lg:pb-0">
             <div className="flex items-center gap-2 mb-8">
@@ -64,7 +64,7 @@ export default function Home() {
         </div>
 
         {/* Right: gears photo */}
-        <div className="lg:w-[45%] h-72 sm:h-96 lg:h-auto relative overflow-hidden">
+        <div className="lg:w-[45%] xl:w-[55%] h-72 sm:h-96 lg:h-auto relative overflow-hidden">
           <img
             src="/hero-gears.webp"
             alt=""

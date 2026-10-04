@@ -1,6 +1,7 @@
 import { useState, useEffect, useMemo } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import Fuse from 'fuse.js'
+import { BRANDS } from '../data/products'
 import type { Brand, CategoryId, Product } from '../data/products'
 import { CATEGORIES } from '../data/categories'
 import { sanityClient, PRODUCTS_QUERY } from '../lib/sanity'
@@ -86,7 +87,7 @@ export function useProductFilter() {
     const pool = activeCategory
       ? enriched.filter(p => p.category === activeCategory)
       : enriched
-    return (['KROFTOOLS', 'JBM', 'TAYSIL'] as Brand[]).map(brand => ({
+    return BRANDS.map(brand => ({
       brand,
       count: pool.filter(p => p.brand === brand).length,
     }))

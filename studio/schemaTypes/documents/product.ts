@@ -21,6 +21,8 @@ export const productType = defineType({
         list: [
           { title: 'KROFTOOLS', value: 'KROFTOOLS' },
           { title: 'JBM', value: 'JBM' },
+          { title: 'OSRAM', value: 'OSRAM' },
+          { title: 'M-TECH', value: 'M-TECH' },
           { title: 'TAYSIL', value: 'TAYSIL' },
         ],
         layout: 'radio',
