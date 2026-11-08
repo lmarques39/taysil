@@ -94,15 +94,21 @@ export function useProductFilter() {
       .slice(0, 6)
   }, [searchQuery, searchAllWords])
 
+  // Counts follow the selected category AND brands, so picking a distributor shows how many
+  // of its products are in each subcategory. Subcategories with none of them disappear,
+  // except the one currently selected (so it can still be unselected).
+  const brandsKey = activeBrands.join(',')
   const availableSubcategories = useMemo(() => {
-    const pool = activeCategory
-      ? enriched.filter(p => p.category === activeCategory)
-      : enriched
+    const pool = enriched.filter(p =>
+      (!activeCategory || p.category === activeCategory) &&
+      (activeBrands.length === 0 || activeBrands.includes(p.brand))
+    )
     const counts: Record<string, number> = {}
     // Products without a subcategory yet are simply left out of this list (no "null" entry)
     pool.forEach(p => { if (p.sub) counts[p.sub] = (counts[p.sub] ?? 0) + 1 })
+    if (activeSubcategory && !(activeSubcategory in counts)) counts[activeSubcategory] = 0
     return Object.entries(counts).sort((a, b) => a[0].localeCompare(b[0]))
-  }, [activeCategory, enriched])
+  }, [activeCategory, activeSubcategory, brandsKey, enriched]) // eslint-disable-line react-hooks/exhaustive-deps
 
   const brandCounts = useMemo(() => {
     const pool = activeCategory
