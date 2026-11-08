@@ -23,6 +23,7 @@ export const productType = defineType({
           { title: 'JBM', value: 'JBM' },
           { title: 'OSRAM', value: 'OSRAM' },
           { title: 'M-TECH', value: 'M-TECH' },
+          { title: 'TOOLHUB', value: 'TOOLHUB' },
           { title: 'TAYSIL', value: 'TAYSIL' },
         ],
         layout: 'radio',

@@ -4,12 +4,20 @@ import { CATEGORIES } from '../../data/categories'
 
 const catImages: Record<string, string | null> = {
   ferramentas:         '/cat-ferramentas.jpg',
-  mecanica:            '/cat-mecanica.jpg',
-  'chapa-pintura':     '/cat-chapa.jpg',
-  'higiene-seguranca': '/cat-higiene.jpg',
+  mecanica:            '/cat-mecanica-taysil.jpg',
+  'chapa-pintura':     '/cat-chapa-taysil.jpg',
+  'higiene-seguranca': '/cat-higiene-taysil.jpg',
   eletricidade:        '/cat-eletricidade.jpg',
-  lavagens:            null,
+  lavagens:            '/cat-lavagens-taysil.jpg',
 }
+
+// Taysil product photos are portrait — shown whole instead of cropped to 4:3
+const portraitImages = new Set([
+  '/cat-mecanica-taysil.jpg',
+  '/cat-chapa-taysil.jpg',
+  '/cat-higiene-taysil.jpg',
+  '/cat-lavagens-taysil.jpg',
+])
 
 export default function CategoryGrid() {
   return (
@@ -32,7 +40,20 @@ export default function CategoryGrid() {
                 to={`/produtos?category=${cat.id}`}
                 className="group relative overflow-hidden rounded-2xl aspect-[4/3] flex flex-col justify-end bg-slate-900"
               >
-                {img ? (
+                {img && portraitImages.has(img) ? (
+                  <>
+                    {/* Portrait product photo: shown whole on a neutral backdrop, edges faded */}
+                    <div className="absolute inset-0 bg-gradient-to-b from-[#e4e4e6] to-[#cfcfd2]" />
+                    <div className="absolute inset-0 flex items-center justify-center pb-14">
+                      <img
+                        src={img}
+                        alt={cat.label}
+                        loading="lazy"
+                        className="h-[88%] w-auto max-w-[90%] object-contain group-hover:scale-105 transition-transform duration-500 [mask-image:radial-gradient(ellipse_at_center,black_40%,transparent_70%)]"
+                      />
+                    </div>
+                  </>
+                ) : img ? (
                   <img
                     src={img}
                     alt={cat.label}

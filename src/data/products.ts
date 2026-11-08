@@ -1,6 +1,6 @@
-export type Brand = 'KROFTOOLS' | 'JBM' | 'OSRAM' | 'M-TECH' | 'TAYSIL'
+export type Brand = 'KROFTOOLS' | 'JBM' | 'OSRAM' | 'M-TECH' | 'TOOLHUB' | 'TAYSIL'
 
-export const BRANDS: Brand[] = ['KROFTOOLS', 'JBM', 'OSRAM', 'M-TECH', 'TAYSIL']
+export const BRANDS: Brand[] = ['KROFTOOLS', 'JBM', 'OSRAM', 'M-TECH', 'TOOLHUB', 'TAYSIL']
 
 export type CategoryId =
   | 'ferramentas'

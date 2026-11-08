@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
       <title>Taysil – Ferramentas e Consumíveis Automóvel | Sintra</title>
-      <meta name="description" content="Comércio por grosso de químicos, ferramentas e consumíveis para o setor automóvel em Sintra. Mais de 3000 referências das marcas KROFTOOLS, JBM, OSRAM e M-TECH." />
+      <meta name="description" content="Comércio por grosso de químicos, ferramentas e consumíveis para o setor automóvel em Sintra. Mais de 3000 referências das marcas KROFTOOLS, JBM, OSRAM, M-TECH e TOOLHUB." />
 
       {/* Hero — split screen */}
       <section className="min-h-screen flex flex-col lg:flex-row">
