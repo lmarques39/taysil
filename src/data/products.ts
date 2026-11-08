@@ -15,7 +15,7 @@ export type Product = {
   name: string
   brand: Brand
   category: CategoryId
-  sub: string
+  sub: string | null
   img: string | null
   desc: string
 }

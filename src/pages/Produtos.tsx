@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import { useModalNavigation } from '../hooks/useModalNavigation'
 import { Link } from 'react-router-dom'
 import {
@@ -47,6 +47,32 @@ export default function Produtos() {
     total: modalTotal,
   } = useModalNavigation(filteredProducts)
   const searchInputRef = useRef<HTMLInputElement>(null)
+  const resultsTopRef  = useRef<HTMLDivElement>(null)
+  const resultsListRef = useRef<HTMLDivElement>(null)
+
+  const NAVBAR_OFFSET = 96
+  const scrollToEl = (el: HTMLElement | null) => {
+    if (!el) return
+    window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - NAVBAR_OFFSET, behavior: 'smooth' })
+  }
+
+  // Enter / the keyboard's "Pesquisar" key: close suggestions, hide the mobile keyboard, show the results
+  const submitSearch = (e: React.FormEvent) => {
+    e.preventDefault()
+    setShowSuggestions(false)
+    searchInputRef.current?.blur()
+    scrollToEl(resultsListRef.current)
+  }
+
+  // When a filter changes while scrolled down the list, jump back to the top of the results
+  const filterKey = `${activeCategory}|${activeSubcategory}|${activeBrands.join(',')}`
+  const firstFilterRender = useRef(true)
+  useEffect(() => {
+    if (firstFilterRender.current) { firstFilterRender.current = false; return }
+    const el = resultsTopRef.current
+    if (!el || el.getBoundingClientRect().top >= 0) return
+    scrollToEl(el)
+  }, [filterKey]) // eslint-disable-line react-hooks/exhaustive-deps
 
   const handleSelectCategory = (id: Parameters<typeof selectCategory>[0]) => {
     selectCategory(id)
@@ -101,14 +127,16 @@ export default function Produtos() {
           </aside>
 
           {/* Main content */}
-          <div className="flex-1 min-w-0">
+          <div ref={resultsTopRef} className="flex-1 min-w-0">
 
             {/* Search bar */}
-            <div className="relative mb-5">
+            <form role="search" onSubmit={submitSearch} className="relative mb-5">
               <Search size={15} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none z-10" />
               <input
                 ref={searchInputRef}
                 type="text"
+                enterKeyHint="search"
+                aria-label="Pesquisar produtos"
                 value={searchQuery}
                 onChange={e => updateParams({ q: e.target.value })}
                 onFocus={() => setShowSuggestions(true)}
@@ -118,6 +146,7 @@ export default function Produtos() {
               />
               {searchQuery && (
                 <button
+                  type="button"
                   onClick={() => { updateParams({ q: null }); searchInputRef.current?.focus() }}
                   className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 transition-colors"
                   aria-label="Limpar pesquisa"
@@ -132,7 +161,8 @@ export default function Produtos() {
                   {suggestions.map((name, i) => (
                     <button
                       key={i}
-                      onMouseDown={() => { updateParams({ q: name }); setShowSuggestions(false) }}
+                      type="button"
+                      onMouseDown={e => { updateParams({ q: name }); submitSearch(e) }}
                       className="w-full text-left px-4 py-2.5 text-sm text-slate-700 hover:bg-slate-50 flex items-center gap-2.5 border-b border-slate-50 last:border-0"
                     >
                       <Search size={12} className="text-slate-300 shrink-0" />
@@ -141,7 +171,7 @@ export default function Produtos() {
                   ))}
                 </div>
               )}
-            </div>
+            </form>
 
             {/* Active filter chips */}
             {hasFilters && (
@@ -182,7 +212,7 @@ export default function Produtos() {
             )}
 
             {/* Results count + mobile filter trigger */}
-            <div className="flex items-center justify-between mb-5">
+            <div ref={resultsListRef} className="flex items-center justify-between mb-5">
               <p className="text-sm text-slate-500">
                 <span className="font-semibold text-slate-900">{filteredProducts.length}</span>{' '}
                 {filteredProducts.length === 1 ? 'produto encontrado' : 'produtos encontrados'}

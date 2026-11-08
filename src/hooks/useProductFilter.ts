@@ -51,35 +51,56 @@ export function useProductFilter() {
       { name: 'brand',         weight: 1   },
       { name: 'desc',          weight: 0.5 },
     ],
-    threshold: 0.4,
+    // Each word is matched on its own, so keep it a bit stricter than a whole-phrase search
+    threshold: 0.3,
+    ignoreDiacritics: true,
     includeScore: true,
   }), [enriched])
 
+  // Every word typed must match (in any field): "anticongelante amarelo" only returns
+  // yellow antifreeze, not every antifreeze. Results are ranked by their combined score.
+  const searchAllWords = useMemo(() => (query: string): EnrichedProduct[] => {
+    const words = query.trim().split(/\s+/).filter(w => w.length >= 2)
+    if (words.length === 0) return []
+    let scores: Map<string, { item: EnrichedProduct; score: number }> | null = null
+    for (const word of words) {
+      const next = new Map<string, { item: EnrichedProduct; score: number }>()
+      for (const { item, score = 0 } of fuse.search(word)) {
+        if (scores && !scores.has(item.id)) continue
+        next.set(item.id, { item, score: (scores?.get(item.id)?.score ?? 0) + score })
+      }
+      scores = next
+      if (scores.size === 0) break
+    }
+    return [...(scores?.values() ?? [])].sort((a, b) => a.score - b.score).map(r => r.item)
+  }, [fuse])
+
   const filteredProducts = useMemo(() => {
     let pool: EnrichedProduct[] = searchQuery.trim().length >= 2
-      ? fuse.search(searchQuery).map(r => r.item)
+      ? searchAllWords(searchQuery)
       : enriched
     if (activeCategory)           pool = pool.filter(p => p.category === activeCategory)
     if (activeSubcategory)        pool = pool.filter(p => p.sub === activeSubcategory)
     if (activeBrands.length > 0)  pool = pool.filter(p => activeBrands.includes(p.brand))
     return pool
-  }, [searchQuery, activeCategory, activeSubcategory, activeBrands, fuse, enriched])
+  }, [searchQuery, activeCategory, activeSubcategory, activeBrands, searchAllWords, enriched])
 
   const suggestions = useMemo(() => {
     if (searchQuery.trim().length < 2) return []
     const seen = new Set<string>()
-    return fuse.search(searchQuery, { limit: 12 })
-      .map(r => r.item.name)
+    return searchAllWords(searchQuery)
+      .map(p => p.name)
       .filter(n => !seen.has(n) && seen.add(n))
       .slice(0, 6)
-  }, [searchQuery, fuse])
+  }, [searchQuery, searchAllWords])
 
   const availableSubcategories = useMemo(() => {
     const pool = activeCategory
       ? enriched.filter(p => p.category === activeCategory)
       : enriched
     const counts: Record<string, number> = {}
-    pool.forEach(p => { counts[p.sub] = (counts[p.sub] ?? 0) + 1 })
+    // Products without a subcategory yet are simply left out of this list (no "null" entry)
+    pool.forEach(p => { if (p.sub) counts[p.sub] = (counts[p.sub] ?? 0) + 1 })
     return Object.entries(counts).sort((a, b) => a[0].localeCompare(b[0]))
   }, [activeCategory, enriched])
 
