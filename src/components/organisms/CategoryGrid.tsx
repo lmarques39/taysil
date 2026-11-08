@@ -1,7 +1,10 @@
+import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { ArrowRight } from 'lucide-react'
 import { CATEGORIES } from '../../data/categories'
+import { sanityClient, HOME_CATEGORY_PHOTOS_QUERY } from '../../lib/sanity'
 
+// Fallback images, used when the client hasn't chosen a photo in Sanity ("Página Inicial")
 const catImages: Record<string, string | null> = {
   ferramentas:         '/cat-ferramentas.jpg',
   mecanica:            '/cat-mecanica-taysil.jpg',
@@ -11,7 +14,7 @@ const catImages: Record<string, string | null> = {
   lavagens:            '/cat-lavagens-taysil.jpg',
 }
 
-// Taysil product photos are portrait — shown whole instead of cropped to 4:3
+// Portrait fallback photos — shown whole instead of cropped to 4:3
 const portraitImages = new Set([
   '/cat-mecanica-taysil.jpg',
   '/cat-chapa-taysil.jpg',
@@ -19,7 +22,22 @@ const portraitImages = new Set([
   '/cat-lavagens-taysil.jpg',
 ])
 
+type PhotoState = 'loading' | Record<string, string | null>
+
+// Resize Sanity CDN images; leave external URLs untouched
+const sized = (url: string) =>
+  url.startsWith('https://cdn.sanity.io/') ? `${url}?w=800&auto=format` : url
+
 export default function CategoryGrid() {
+  const [cmsPhotos, setCmsPhotos] = useState<PhotoState>('loading')
+
+  useEffect(() => {
+    sanityClient
+      .fetch<Record<string, string | null> | null>(HOME_CATEGORY_PHOTOS_QUERY)
+      .then(data => setCmsPhotos(data ?? {}))
+      .catch(() => setCmsPhotos({}))
+  }, [])
+
   return (
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -32,7 +50,10 @@ export default function CategoryGrid() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {CATEGORIES.map(cat => {
-            const img = catImages[cat.id]
+            const cmsImg = cmsPhotos === 'loading' ? null : cmsPhotos[cat.id]
+            const img = cmsPhotos === 'loading' ? null : cmsImg ? sized(cmsImg) : catImages[cat.id]
+            // CMS photos have unknown proportions (mostly portrait product shots) — show them whole
+            const showWhole = !!img && (!!cmsImg || portraitImages.has(img))
             const Icon = cat.Icon
             return (
               <Link
@@ -40,7 +61,9 @@ export default function CategoryGrid() {
                 to={`/produtos?category=${cat.id}`}
                 className="group relative overflow-hidden rounded-2xl aspect-[4/3] flex flex-col justify-end bg-slate-900"
               >
-                {img && portraitImages.has(img) ? (
+                {cmsPhotos === 'loading' ? (
+                  <div className="absolute inset-0 bg-gradient-to-b from-[#e4e4e6] to-[#cfcfd2]" />
+                ) : showWhole ? (
                   <>
                     {/* Portrait product photo: shown whole on a neutral backdrop, edges faded */}
                     <div className="absolute inset-0 bg-gradient-to-b from-[#e4e4e6] to-[#cfcfd2]" />
