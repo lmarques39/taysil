@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { X, ArrowRight } from 'lucide-react'
 import type { EnrichedProduct } from '../../hooks/useProductFilter'
@@ -31,7 +31,22 @@ export default function ProductModal({
   const { img, name, brand, sub, desc, categoryLabel } = product
   const Icon = catConfig?.Icon
   const iconBg = catConfig?.iconBg
-  const touchStart = useRef<{ x: number; y: number } | null>(null)
+  const touchStart = useRef<{ x: number; y: number; inDesc: boolean } | null>(null)
+  const descRef = useRef<HTMLDivElement>(null)
+  const [descHasMore, setDescHasMore] = useState(false)
+
+  const updateDescFade = () => {
+    const el = descRef.current
+    if (!el) return setDescHasMore(false)
+    setDescHasMore(el.scrollHeight - el.scrollTop - el.clientHeight > 4)
+  }
+
+  // Reset description scroll when navigating between products
+  useEffect(() => {
+    descRef.current?.scrollTo({ top: 0 })
+    updateDescFade()
+  }, [product])
+
   const hasNav = !!(onPrev || onNext)
 
   useEffect(() => {
@@ -49,14 +64,21 @@ export default function ProductModal({
   }, [onClose, onNext, onPrev, canGoNext, canGoPrev])
 
   const handleTouchStart = (e: React.TouchEvent) => {
-    touchStart.current = { x: e.touches[0].clientX, y: e.touches[0].clientY }
+    touchStart.current = {
+      x: e.touches[0].clientX,
+      y: e.touches[0].clientY,
+      inDesc: !!descRef.current?.contains(e.target as Node),
+    }
   }
 
   const handleTouchEnd = (e: React.TouchEvent) => {
     if (!touchStart.current) return
     const dx = e.changedTouches[0].clientX - touchStart.current.x
     const dy = e.changedTouches[0].clientY - touchStart.current.y
+    const inDesc = touchStart.current.inDesc
     touchStart.current = null
+    // Vertical swipes inside the description scroll the text, not close the modal
+    if (inDesc && Math.abs(dy) > Math.abs(dx)) return
     if (Math.abs(dx) > Math.abs(dy) && Math.abs(dx) > 60) {
       if (dx < 0 && canGoNext) onNext?.()
       if (dx > 0 && canGoPrev) onPrev?.()
@@ -82,7 +104,7 @@ export default function ProductModal({
       )}
 
       <div
-        className="bg-white rounded-2xl shadow-2xl w-full max-w-sm lg:max-w-4xl p-6 lg:p-10 relative"
+        className="bg-white rounded-2xl shadow-2xl w-full max-w-sm lg:max-w-4xl max-h-[90dvh] overflow-y-auto p-6 lg:p-10 relative"
         onClick={e => e.stopPropagation()}
         onTouchStart={handleTouchStart}
         onTouchEnd={handleTouchEnd}
@@ -116,7 +138,15 @@ export default function ProductModal({
             </div>
 
             {desc && (
-              <p className="text-sm text-slate-500 leading-relaxed mb-5">{desc}</p>
+              <div
+                ref={descRef}
+                onScroll={updateDescFade}
+                className={`max-h-52 lg:max-h-72 overflow-y-auto overscroll-contain pr-2 mb-5 [scrollbar-width:thin] ${
+                  descHasMore ? '[mask-image:linear-gradient(to_bottom,black_65%,transparent)]' : ''
+                }`}
+              >
+                <p className="text-sm text-slate-500 leading-relaxed whitespace-pre-line">{desc.trim()}</p>
+              </div>
             )}
 
             {hasNav && (
