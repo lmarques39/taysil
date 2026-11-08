@@ -20,9 +20,9 @@ export default function Home() {
       <section className="min-h-screen flex flex-col lg:flex-row">
 
         {/* Left: editorial dark panel */}
-        <div className="lg:w-[55%] xl:w-[45%] bg-slate-900 flex items-center relative">
+        <div className="lg:w-1/2 xl:w-[40%] bg-slate-900 flex items-center relative">
           <GridOverlay />
-          <div className="relative w-full px-8 pt-28 pb-14 lg:px-16 lg:pt-0 lg:pb-0">
+          <div className="relative w-full px-8 pt-28 pb-14 lg:px-12 xl:px-14 lg:pt-28 lg:pb-12">
             <div className="flex items-center gap-2 mb-8">
               <span className="w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse" />
               <span className="text-red-400 text-xs font-semibold uppercase tracking-widest">Sintra, Portugal</span>
@@ -64,7 +64,7 @@ export default function Home() {
         </div>
 
         {/* Right: gears photo */}
-        <div className="lg:w-[45%] xl:w-[55%] h-72 sm:h-96 lg:h-auto relative overflow-hidden">
+        <div className="lg:w-1/2 xl:w-[60%] h-96 sm:h-[32rem] lg:h-auto relative overflow-hidden">
           <img
             src="/hero-gears.webp"
             alt=""
