@@ -1,14 +1,8 @@
 import { defineField, defineType } from 'sanity'
 import { HomeIcon } from '@sanity/icons'
+import { CATEGORIES as CATEGORY_LIST } from '../categories'
 
-const CATEGORIES = [
-  { name: 'ferramentas', title: 'Ferramentas' },
-  { name: 'mecanica', title: 'Mecânica' },
-  { name: 'chapa-pintura', title: 'Chapa e Pintura' },
-  { name: 'higiene-seguranca', title: 'Higiene e Segurança' },
-  { name: 'eletricidade', title: 'Eletricidade' },
-  { name: 'lavagens', title: 'Lavagens' },
-] as const
+const CATEGORIES = CATEGORY_LIST.map(({ value, title }) => ({ name: value, title }))
 
 // Sanity field names can't contain "-", so "chapa-pintura" becomes "chapa_pintura"
 export const categoryFieldName = (id: string) => id.replace(/-/g, '_')

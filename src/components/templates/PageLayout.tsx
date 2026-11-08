@@ -2,11 +2,13 @@ import { type ReactNode } from 'react'
 import Navbar from '../organisms/Navbar'
 import Footer from '../organisms/Footer'
 import CookieBanner from '../organisms/CookieBanner'
+import ScrollToTop from '../atoms/ScrollToTop'
 import { CookieConsentProvider } from '../../context/CookieConsentContext'
 
 export default function PageLayout({ children }: { children: ReactNode }) {
   return (
     <CookieConsentProvider>
+      <ScrollToTop />
       <div className="flex flex-col min-h-screen bg-slate-50">
         <Navbar />
         <main className="flex-1">{children}</main>

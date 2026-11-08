@@ -7,12 +7,13 @@ export const sanityClient = createClient({
   useCdn: true,
 })
 
+// "sub": subcategory is a reference (renamable in Studio); plain "sub" text is the legacy fallback
 export const PRODUCTS_QUERY = `*[_type == "product"] | order(_createdAt asc) {
   "id": _id,
   name,
   brand,
   category,
-  sub,
+  "sub": coalesce(subcategory->name, sub),
   "img": coalesce(image.asset->url, imageUrl),
   desc
 }`
@@ -27,4 +28,13 @@ ${CATEGORY_IDS.map(id => {
   const f = id.replace(/-/g, '_')
   return `  "${id}": coalesce(${f}.image.asset->url, ${f}.product->image.asset->url, ${f}.product->imageUrl)`
 }).join(',\n')}
+}`
+
+// Catálogos page, edited in Studio → "Catálogo". Uploaded PDF wins over the pasted link.
+export const CATALOGS_QUERY = `*[_type == "catalog" && defined(coalesce(file.asset, url))] | order(order asc, _createdAt asc) {
+  "id": _id,
+  name,
+  subtitle,
+  description,
+  "url": coalesce(file.asset->url, url)
 }`

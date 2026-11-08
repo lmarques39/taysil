@@ -1,5 +1,6 @@
 import { defineField, defineType } from 'sanity'
 import { PackageIcon } from '@sanity/icons'
+import { CATEGORIES } from '../categories'
 
 export const productType = defineType({
   name: 'product',
@@ -35,22 +36,43 @@ export const productType = defineType({
       title: 'Categoria',
       type: 'string',
       options: {
-        list: [
-          { title: 'Ferramentas', value: 'ferramentas' },
-          { title: 'Mecânica', value: 'mecanica' },
-          { title: 'Chapa e Pintura', value: 'chapa-pintura' },
-          { title: 'Higiene e Segurança', value: 'higiene-seguranca' },
-          { title: 'Eletricidade', value: 'eletricidade' },
-          { title: 'Lavagens', value: 'lavagens' },
-        ],
+        list: [...CATEGORIES],
         layout: 'radio',
       },
       validation: (rule) => rule.required(),
     }),
     defineField({
-      name: 'sub',
+      name: 'subcategory',
       title: 'Subcategoria',
+      type: 'reference',
+      to: [{ type: 'subcategory' }],
+      description:
+        'Escolha da lista (mostra só as subcategorias da categoria escolhida). Para criar uma nova, use "Criar novo" ou a secção Subcategoria.',
+      options: {
+        filter: ({ document }) => ({
+          filter: 'category == $category',
+          params: { category: document?.category ?? '' },
+        }),
+      },
+      validation: (rule) =>
+        rule.custom(async (value, context) => {
+          if (!value?._ref) return true
+          const client = context.getClient({ apiVersion: '2026-06-20' })
+          const subCategory = await client.fetch<string | null>(
+            '*[_id in [$id, "drafts." + $id]][0].category',
+            { id: value._ref },
+          )
+          return !subCategory || subCategory === context.document?.category
+            ? true
+            : 'Esta subcategoria pertence a outra categoria.'
+        }),
+    }),
+    // Legacy free-text subcategory — migrated to "subcategory" references. Kept hidden so old data still reads.
+    defineField({
+      name: 'sub',
+      title: 'Subcategoria (antiga)',
       type: 'string',
+      hidden: true,
     }),
     defineField({
       name: 'sku',
@@ -81,7 +103,14 @@ export const productType = defineType({
   preview: {
     select: {
       title: 'name',
-      subtitle: 'brand',
+      brand: 'brand',
+      sub: 'subcategory.name',
+      media: 'image',
     },
+    prepare: ({ title, brand, sub, media }) => ({
+      title,
+      subtitle: [brand, sub].filter(Boolean).join(' · '),
+      media,
+    }),
   },
 })

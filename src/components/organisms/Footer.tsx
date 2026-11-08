@@ -21,7 +21,7 @@ export default function Footer() {
 
           {/* Logo */}
           <div className="shrink-0">
-            <img src="/logo.jpg" alt="Taysil" className="h-12 w-auto object-contain" />
+            <img src="/logo-footer.png" alt="Taysil" className="h-12 w-auto object-contain" />
           </div>
 
           {/* Nav links */}

@@ -1,8 +1,14 @@
+import { useEffect, useState } from 'react'
 import { ExternalLink } from 'lucide-react'
 import GridOverlay from '../components/atoms/GridOverlay'
+import { sanityClient, CATALOGS_QUERY } from '../lib/sanity'
 
-const catalogs = [
+type Catalog = { id: string; name: string; subtitle?: string; description?: string; url: string }
+
+// Shown until Sanity answers, and kept if Sanity is unreachable or has no catalogs yet
+const FALLBACK_CATALOGS: Catalog[] = [
   {
+    id: 'kroftools',
     name: 'KROFTOOLS',
     subtitle: 'Catálogo Geral · 2025',
     description:
@@ -10,6 +16,7 @@ const catalogs = [
     url: 'https://kroftools.sharepoint.com/sites/externo/Kroftools/Forms/AllItems.aspx?viewid=6575a712%2D5b03%2D44ec%2Db41a%2D833cdc2de8ba&ga=1&id=%2Fsites%2Fexterno%2FKroftools%2F05%20%2D%20Cat%C3%A1logos%20KROFTOOLS%2FCat%C3%A1logo%20geral%202025%2FPT%20%2D%20ESP%2FK25%20PT%20ES%2Epdf&parent=%2Fsites%2Fexterno%2FKroftools%2F05%20%2D%20Cat%C3%A1logos%20KROFTOOLS%2FCat%C3%A1logo%20geral%202025%2FPT%20%2D%20ESP',
   },
   {
+    id: 'jbm',
     name: 'JBM',
     subtitle: 'Catálogo · 2026',
     description:
@@ -19,10 +26,18 @@ const catalogs = [
 ]
 
 export default function Catalogos() {
+  const [catalogs, setCatalogs] = useState<Catalog[]>(FALLBACK_CATALOGS)
+
+  useEffect(() => {
+    sanityClient.fetch<Catalog[]>(CATALOGS_QUERY)
+      .then(data => { if (data.length > 0) setCatalogs(data) })
+      .catch(() => { /* keep fallback */ })
+  }, [])
+
   return (
     <>
       <title>Catálogos | Taysil</title>
-      <meta name="description" content="Consulte e descarregue os catálogos PDF das marcas KROFTOOLS e JBM disponíveis na Taysil." />
+      <meta name="description" content="Consulte e descarregue os catálogos PDF das marcas disponíveis na Taysil: KROFTOOLS, JBM, TOOLHUB e outras." />
 
       {/* Page header */}
       <section className="pt-32 pb-16 bg-slate-900 relative overflow-hidden">
@@ -40,17 +55,17 @@ export default function Catalogos() {
       <section className="pt-8 pb-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="divide-y divide-slate-100">
-            {catalogs.map(({ name, subtitle, description, url }) => (
+            {catalogs.map(({ id, name, subtitle, description, url }) => (
               <div
-                key={name}
+                key={id}
                 className="py-14 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8"
               >
                 <div>
                   <div className="border-l-4 border-red-600 pl-6 mb-4">
-                    <p className="text-slate-400 text-xs uppercase tracking-widest mb-2">{subtitle}</p>
+                    {subtitle && <p className="text-slate-400 text-xs uppercase tracking-widest mb-2">{subtitle}</p>}
                     <h2 className="text-3xl sm:text-4xl font-black text-slate-900">{name}</h2>
                   </div>
-                  <p className="text-slate-600 leading-relaxed max-w-lg">{description}</p>
+                  {description && <p className="text-slate-600 leading-relaxed max-w-lg whitespace-pre-line">{description}</p>}
                 </div>
                 <a
                   href={url}
