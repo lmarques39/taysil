@@ -5,6 +5,7 @@ const BRAND_STYLES: Record<Brand, string> = {
   JBM:       'bg-slate-700 text-white',
   OSRAM:     'bg-slate-600 text-white',
   'M-TECH':  'bg-slate-500 text-white',
+  TOOLHUB:   'bg-zinc-600 text-white',
   TAYSIL:    'bg-red-600 text-white',
 }
 

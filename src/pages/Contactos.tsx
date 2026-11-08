@@ -4,7 +4,7 @@ import { useCookieConsent } from '../context/CookieConsentContext'
 
 const phones = [
   { number: '939 044 050', href: 'tel:939044050', label: 'Telemóvel' },
-  { number: '963 495 811', href: 'tel:963495811', label: 'Telemóvel' },
+  { number: '936 645 930', href: 'tel:936645930', label: 'Telemóvel' },
   { number: '216 019 522', href: 'tel:216019522', label: 'Fixo' },
 ]
 

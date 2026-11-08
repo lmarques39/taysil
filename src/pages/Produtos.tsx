@@ -69,7 +69,7 @@ export default function Produtos() {
   return (
     <>
       <title>Produtos | Taysil</title>
-      <meta name="description" content="Explore mais de 3000 referências em ferramentas, mecânica, chapa e pintura, higiene, eletricidade e lavagens das marcas KROFTOOLS, JBM, OSRAM e M-TECH." />
+      <meta name="description" content="Explore mais de 3000 referências em ferramentas, mecânica, chapa e pintura, higiene, eletricidade e lavagens das marcas KROFTOOLS, JBM, OSRAM, M-TECH e TOOLHUB." />
 
       {/* Page header */}
       <section className="pt-32 pb-16 bg-slate-900 relative overflow-hidden">
@@ -78,11 +78,12 @@ export default function Produtos() {
           <p className="text-red-400 text-sm font-semibold uppercase tracking-widest mb-3">Catálogo</p>
           <h1 className="text-4xl sm:text-5xl font-extrabold text-white mb-4">Produtos</h1>
           <p className="text-slate-400 text-lg max-w-xl">
-            Mais de 3000 referências em 6 categorias, das marcas{' '}
+            Distribuidora das marcas{' '}
             <span className="text-white font-semibold">KROFTOOLS</span>,{' '}
             <span className="text-white font-semibold">JBM</span>,{' '}
-            <span className="text-white font-semibold">OSRAM</span> e{' '}
-            <span className="text-white font-semibold">M-TECH</span>, para cobrir todas as necessidades da sua oficina.
+            <span className="text-white font-semibold">OSRAM</span>,{' '}
+            <span className="text-white font-semibold">M-TECH</span> e{' '}
+            <span className="text-white font-semibold">TOOLHUB</span>. Mais de 3000 referências em 6 categorias para cobrir todas as necessidades da sua oficina.
           </p>
           <div className="mt-5 flex flex-wrap gap-2">
             {BRANDS.map(b => <BrandBadge key={b} brand={b} />)}
