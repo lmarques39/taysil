@@ -27,8 +27,8 @@ const SIZES = {
   sidebar: {
     category: 'px-3 py-2 text-sm',
     sub: 'px-3 py-1.5 text-xs',
-    type: 'px-2.5 py-1 text-[11px]',
-    brand: 'py-0 text-sm',
+    type: 'px-2.5 py-1.5 text-[11px]',
+    brand: 'py-0.5 text-sm',
     checkbox: 'w-3.5 h-3.5',
     sectionGap: 'space-y-7',
   },
@@ -42,7 +42,8 @@ const SIZES = {
   },
 }
 
-const sectionTitle = 'text-[10px] uppercase tracking-widest text-slate-400 font-semibold mb-2.5'
+// Section titles are headings, and each filter list is a named group (screen readers announce "Categorias, grupo")
+const sectionTitle = 'text-[10px] uppercase tracking-widest text-slate-500 font-semibold mb-2.5'
 
 export default function ProductSidebar({
   variant = 'sidebar',
@@ -63,6 +64,8 @@ export default function ProductSidebar({
 }: Props) {
   const s = SIZES[variant]
   const sheet = variant === 'sheet'
+  // In the mobile panel the sections sit under its "Filtros" heading (h2), on the page under the h1
+  const Heading = sheet ? 'h3' : 'h2'
 
   return (
     <div className={s.sectionGap}>
@@ -70,18 +73,19 @@ export default function ProductSidebar({
       {hasFilters && !sheet && (
         <button
           onClick={clearAll}
-          className="flex items-center gap-1.5 text-xs text-red-600 font-semibold hover:text-red-700 transition-colors"
+          className="flex items-center gap-1.5 py-1 text-xs text-red-600 font-semibold hover:text-red-700 transition-colors"
         >
-          <X size={12} /> Limpar filtros
+          <X size={12} aria-hidden /> Limpar filtros
         </button>
       )}
 
       {/* Categories */}
       <div>
-        <p className={sectionTitle}>Categorias</p>
-        <nav className="space-y-0.5">
+        <Heading id={`${variant}-titulo-categorias`} className={sectionTitle}>Categorias</Heading>
+        <div role="group" aria-labelledby={`${variant}-titulo-categorias`} className="space-y-0.5">
           <button
             onClick={() => onSelectCategory(null)}
+            aria-pressed={!activeCategory}
             className={`w-full text-left rounded-lg transition-colors ${s.category} ${
               !activeCategory
                 ? 'bg-slate-900 text-white font-medium'
@@ -94,13 +98,14 @@ export default function ProductSidebar({
             <button
               key={cat.id}
               onClick={() => onSelectCategory(cat.id)}
+              aria-pressed={activeCategory === cat.id}
               className={`w-full flex items-center gap-2.5 rounded-lg transition-all text-left ${s.category} ${
                 activeCategory === cat.id
                   ? `bg-slate-900 text-white font-medium border-l-2 ${cat.borderAccent} pl-[10px]`
                   : 'text-slate-500 hover:text-slate-800 hover:bg-slate-100'
               }`}
             >
-              <span className={`w-5 h-5 rounded shrink-0 flex items-center justify-center transition-colors ${
+              <span aria-hidden className={`w-5 h-5 rounded shrink-0 flex items-center justify-center transition-colors ${
                 activeCategory === cat.id ? cat.iconBg : 'bg-slate-200'
               }`}>
                 <cat.Icon size={11} className={activeCategory === cat.id ? 'text-white' : 'text-slate-500'} />
@@ -108,14 +113,14 @@ export default function ProductSidebar({
               {cat.label}
             </button>
           ))}
-        </nav>
+        </div>
       </div>
 
       {/* Subcategories — only when a category is selected */}
       {activeCategory && availableSubcategories.length > 0 && (
         <div>
-          <p className={sectionTitle}>Subcategoria</p>
-          <div className="space-y-0.5">
+          <Heading id={`${variant}-titulo-subcategoria`} className={sectionTitle}>Subcategoria</Heading>
+          <div role="group" aria-labelledby={`${variant}-titulo-subcategoria`} className="space-y-0.5">
             {availableSubcategories.map(([sub, count]) => {
               const selected = activeSubcategory === sub
               const hasTypes = subcategoriesWithTypes.has(sub)
@@ -137,14 +142,15 @@ export default function ProductSidebar({
                       {hasTypes && (
                         <ChevronRight
                           size={sheet ? 16 : 12}
-                          className={`shrink-0 text-slate-400 transition-transform ${open ? 'rotate-90' : ''}`}
+                          aria-hidden
+                          className={`shrink-0 text-slate-500 transition-transform ${open ? 'rotate-90' : ''}`}
                         />
                       )}
                       <span className="leading-snug">{sub}</span>
                     </span>
                     <span className="flex items-center gap-2 shrink-0">
-                      <span className="text-[10px] text-slate-400">{count}</span>
-                      {sheet && selected && !open && <Check size={16} className="text-slate-900" />}
+                      <span className="text-[10px] text-slate-600">{count}</span>
+                      {sheet && selected && !open && <Check size={16} aria-hidden className="text-slate-900" />}
                     </span>
                   </button>
 
@@ -166,8 +172,8 @@ export default function ProductSidebar({
                           >
                             <span className="leading-snug">{tipo}</span>
                             <span className="flex items-center gap-2 shrink-0">
-                              <span className="text-[10px] text-slate-400">{tipoCount}</span>
-                              {sheet && typeSelected && <Check size={16} className="text-slate-900" />}
+                              <span className="text-[10px] text-slate-600">{tipoCount}</span>
+                              {sheet && typeSelected && <Check size={16} aria-hidden className="text-slate-900" />}
                             </span>
                           </button>
                         )
@@ -183,8 +189,8 @@ export default function ProductSidebar({
 
       {/* Brands */}
       <div>
-        <p className={sectionTitle}>Marca</p>
-        <div className={sheet ? '' : 'space-y-2'}>
+        <Heading id={`${variant}-titulo-marca`} className={sectionTitle}>Marca</Heading>
+        <div role="group" aria-labelledby={`${variant}-titulo-marca`} className={sheet ? '' : 'space-y-1.5'}>
           {brandCounts.map(({ brand, count }) => count > 0 && (
             <label key={brand} className={`flex items-center gap-2.5 cursor-pointer group ${sheet ? 'px-3' : ''} ${s.brand}`}>
               <input
@@ -194,7 +200,7 @@ export default function ProductSidebar({
                 className={`rounded accent-slate-800 cursor-pointer ${s.checkbox}`}
               />
               <span className="text-slate-600 group-hover:text-slate-900 transition-colors flex-1">{brand}</span>
-              <span className="text-[11px] text-slate-400">{count}</span>
+              <span className="text-[11px] text-slate-600">{count}</span>
             </label>
           ))}
         </div>

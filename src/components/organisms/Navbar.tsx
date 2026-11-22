@@ -14,14 +14,14 @@ export default function Navbar() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-slate-200 shadow-sm">
-      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between">
+      <nav aria-label="Principal" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between">
         {/* Logo */}
         <Link
           to="/"
           className="flex items-center"
           onClick={() => setOpen(false)}
         >
-          <img src="/logo.jpg" alt="Taysil" className="h-12 sm:h-14 w-auto object-contain" />
+          <img src="/logo.jpg" alt="Taysil — página inicial" className="h-12 sm:h-14 w-auto object-contain" />
         </Link>
 
         {/* Desktop links */}
@@ -46,9 +46,11 @@ export default function Navbar() {
 
         {/* Mobile toggle */}
         <button
-          className="md:hidden p-2 text-slate-500 hover:text-slate-900 transition-colors"
+          className="md:hidden p-2 text-slate-600 hover:text-slate-900 transition-colors"
           onClick={() => setOpen((o) => !o)}
           aria-label="Menu"
+          aria-expanded={open}
+          aria-controls="menu-mobile"
         >
           {open ? <X size={22} /> : <Menu size={22} />}
         </button>
@@ -56,7 +58,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {open && (
-        <div className="md:hidden bg-white border-t border-slate-200 px-4 pb-4 pt-2 space-y-1">
+        <div id="menu-mobile" className="md:hidden bg-white border-t border-slate-200 px-4 pb-4 pt-2 space-y-1">
           {links.map(({ to, label }) => (
             <NavLink
               key={to}

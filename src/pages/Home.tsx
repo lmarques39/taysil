@@ -52,9 +52,10 @@ export default function Home() {
               </Link>
             </div>
 
-            <div className="flex gap-8 pt-8">
+            {/* Shrinks on very narrow screens so nothing scrolls sideways at 320px (WCAG 1.4.10) */}
+            <div className="flex gap-4 sm:gap-8 pt-8">
               {proofPoints.map(({ value, label }) => (
-                <div key={label} className="flex flex-col items-center w-24">
+                <div key={label} className="flex flex-col items-center flex-1 min-w-0 max-w-24 sm:flex-none sm:w-24">
                   <p className="text-2xl font-black text-white">{value}</p>
                   <p className="text-slate-500 text-xs uppercase tracking-wide mt-1 text-center">{label}</p>
                 </div>
@@ -83,7 +84,7 @@ export default function Home() {
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-4">
             Pronto para encomendar?
           </h2>
-          <p className="text-red-100 text-lg mb-10 max-w-md mx-auto">
+          <p className="text-white text-lg mb-10 max-w-md mx-auto">
             Fale connosco e descubra como a Taysil pode servir a sua oficina.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-5">
