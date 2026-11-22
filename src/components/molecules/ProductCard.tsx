@@ -16,7 +16,7 @@ export default function ProductCard({ product, catConfig, onClick }: {
       onClick={onClick}
       className="bg-white border border-slate-100 rounded-xl overflow-hidden flex flex-row sm:flex-col hover:shadow-md hover:border-slate-200 hover:-translate-y-0.5 transition-all text-left group w-full"
     >
-      <div className="relative w-20 h-20 sm:w-full sm:h-auto sm:aspect-square bg-slate-50 flex items-center justify-center shrink-0">
+      <div className="relative w-24 min-h-24 self-stretch sm:w-full sm:min-h-0 sm:h-auto sm:aspect-square bg-slate-50 flex items-center justify-center shrink-0">
         {img ? (
           // Photo without background when the script has made one; otherwise the original photo.
           // Absolute so a tall photo can't stretch the square (padding = space around the product)
