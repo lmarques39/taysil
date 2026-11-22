@@ -18,4 +18,6 @@ export type Product = {
   sub: string | null
   img: string | null
   desc: string
+  /** Same photo without background (null until the background-removal script has run) */
+  cutout?: string | null
 }
