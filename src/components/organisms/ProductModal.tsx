@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
-import { X, Mail, MessageCircle } from 'lucide-react'
+import { X, Mail } from 'lucide-react'
 import type { EnrichedProduct } from '../../hooks/useProductFilter'
 import type { CategoryConfig } from '../../data/categories'
 import BrandBadge from '../atoms/BrandBadge'
@@ -7,7 +7,7 @@ import ProductPhoto from '../atoms/ProductPhoto'
 import { useDialogFocus } from '../../hooks/useDialogFocus'
 import NavArrowButton from '../atoms/NavArrowButton'
 import ModalDotPagination from '../molecules/ModalDotPagination'
-import { productEnquiry } from '../../data/contacts'
+import { productEnquiryEmail } from '../../data/contacts'
 
 export default function ProductModal({
   product,
@@ -31,8 +31,8 @@ export default function ProductModal({
   total?: number
 }) {
   const { img, cutout, name, brand, sub, desc, categoryLabel, sku } = product
-  // WhatsApp / email already mentioning this product and its reference
-  const enquiry = productEnquiry(name, sku)
+  // Email already mentioning this product and its reference
+  const enquiryEmail = productEnquiryEmail(name, sku)
   const Icon = catConfig?.Icon
   const iconBg = catConfig?.iconBg
   const touchStart = useRef<{ x: number; y: number; inDesc: boolean } | null>(null)
@@ -179,24 +179,12 @@ export default function ProductModal({
             )}
 
             <div className="border-t border-slate-100 pt-4">
-              <p className="text-xs font-semibold text-slate-600 text-center mb-2">Pedir informação sobre este produto</p>
-              <div className="grid grid-cols-2 gap-2">
-                <a
-                  href={enquiry.whatsapp}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#1ebe5d] text-slate-900 font-semibold px-4 py-2.5 rounded-lg text-sm transition-colors"
-                >
-                  <MessageCircle size={16} aria-hidden /> WhatsApp
-                  <span className="sr-only"> (abre numa nova janela)</span>
-                </a>
-                <a
-                  href={enquiry.email}
-                  className="flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white font-semibold px-4 py-2.5 rounded-lg text-sm transition-colors"
-                >
-                  <Mail size={16} aria-hidden /> Email
-                </a>
-              </div>
+              <a
+                href={enquiryEmail}
+                className="flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white font-semibold px-5 py-2.5 rounded-lg text-sm transition-colors w-full"
+              >
+                <Mail size={16} aria-hidden /> Pedir informação por email
+              </a>
             </div>
           </div>
         </div>

@@ -28,14 +28,11 @@ export function whatsappHref(message?: string) {
   return `https://wa.me/${WHATSAPP_NUMBER}${message ? `?text=${encodeURIComponent(message)}` : ''}`
 }
 
-/** Pre-filled enquiry about one product (name + internal reference), for WhatsApp and email */
-export function productEnquiry(name: string, sku?: string | null) {
+/** Email about one product, pre-filled with its name and internal reference */
+export function productEnquiryEmail(name: string, sku?: string | null) {
   const product = sku ? `${name} (ref. ${sku})` : name
-  return {
-    whatsapp: whatsappHref(`Olá! Gostaria de pedir informação (preço e disponibilidade) sobre: ${product}.`),
-    email: mailtoHref(
-      `Pedido de informação – ${name}`,
-      `Olá,\n\nGostaria de pedir informação (preço e disponibilidade) sobre:\n${product}\n\nObrigado.`,
-    ),
-  }
+  return mailtoHref(
+    `Pedido de informação – ${name}`,
+    `Olá,\n\nGostaria de pedir informação (preço e disponibilidade) sobre:\n${product}\n\nObrigado.`,
+  )
 }
