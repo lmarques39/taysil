@@ -47,7 +47,7 @@ export default function Contactos() {
               {/* Morada */}
               <div className="mb-10">
                 <div className="border-l-4 border-red-600 pl-4 mb-4">
-                  <h3 className="text-sm font-extrabold text-red-500 uppercase tracking-wide">Morada</h3>
+                  <h3 className="text-sm font-extrabold text-red-600 uppercase tracking-wide">Morada</h3>
                 </div>
                 <address className="not-italic text-slate-600 leading-relaxed">
                   Rua Vasco da Gama nº33<br />
@@ -67,7 +67,7 @@ export default function Contactos() {
               {/* Telefone */}
               <div className="mb-10">
                 <div className="border-l-4 border-red-600 pl-4 mb-4">
-                  <h3 className="text-sm font-extrabold text-red-500 uppercase tracking-wide">Telefone</h3>
+                  <h3 className="text-sm font-extrabold text-red-600 uppercase tracking-wide">Telefone</h3>
                 </div>
                 <ul className="space-y-3">
                   {phones.map(({ number, href, label }) => (
@@ -78,7 +78,7 @@ export default function Contactos() {
                       >
                         {number}
                       </a>
-                      <span className="text-xs bg-slate-100 text-slate-500 px-2 py-0.5 rounded-full uppercase tracking-wide">
+                      <span className="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded-full uppercase tracking-wide">
                         {label}
                       </span>
                     </li>
@@ -89,7 +89,7 @@ export default function Contactos() {
               {/* Email */}
               <div className="mb-10">
                 <div className="border-l-4 border-red-600 pl-4 mb-4">
-                  <h3 className="text-sm font-extrabold text-red-500 uppercase tracking-wide">Email</h3>
+                  <h3 className="text-sm font-extrabold text-red-600 uppercase tracking-wide">Email</h3>
                 </div>
                 <a
                   href="mailto:geral.taysil@gmail.com"
@@ -105,9 +105,10 @@ export default function Contactos() {
                   href="https://wa.me/351939044050"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-3 bg-[#25D366] hover:bg-[#1ebe5d] text-white font-semibold px-6 py-3 rounded-xl transition-colors"
+                  // Dark text on the WhatsApp green (≈9:1); white on it was only 2:1
+                  className="inline-flex items-center gap-3 bg-[#25D366] hover:bg-[#1ebe5d] text-slate-900 font-semibold px-6 py-3 rounded-xl transition-colors"
                 >
-                  <MessageCircle size={20} />
+                  <MessageCircle size={20} aria-hidden />
                   Falar no WhatsApp
                 </a>
               </div>
@@ -115,7 +116,7 @@ export default function Contactos() {
               {/* Horário */}
               <div>
                 <div className="border-l-4 border-red-600 pl-4 mb-4">
-                  <h3 className="text-sm font-extrabold text-red-500 uppercase tracking-wide">Horário</h3>
+                  <h3 className="text-sm font-extrabold text-red-600 uppercase tracking-wide">Horário</h3>
                 </div>
                 <div className="space-y-2 text-sm">
                   <div className="flex gap-4">
@@ -124,7 +125,7 @@ export default function Contactos() {
                   </div>
                   <div className="flex gap-4">
                     <span className="text-slate-600 w-36">Sábado – Domingo</span>
-                    <span className="text-slate-400">Encerrado</span>
+                    <span className="text-slate-500">Encerrado</span>
                   </div>
                 </div>
               </div>
@@ -145,7 +146,7 @@ export default function Contactos() {
               ) : (
                 <div className="w-full h-full bg-slate-100 flex flex-col items-center justify-center gap-4 p-8 text-center">
                   <MapPin size={36} className="text-slate-300" />
-                  <p className="text-slate-500 text-sm max-w-xs">
+                  <p className="text-slate-600 text-sm max-w-xs">
                     O mapa está desativado. Aceite os cookies para ver a localização interativa.
                   </p>
                   <button
@@ -158,7 +159,7 @@ export default function Contactos() {
                     href="https://maps.google.com/?q=38.80546,-9.34012"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-sm text-red-600 hover:text-red-700 font-medium transition-colors"
+                    className="text-sm text-red-700 hover:text-red-800 font-medium transition-colors"
                   >
                     Abrir no Google Maps →
                   </a>

@@ -62,7 +62,7 @@ export default function Catalogos() {
               >
                 <div>
                   <div className="border-l-4 border-red-600 pl-6 mb-4">
-                    {subtitle && <p className="text-slate-400 text-xs uppercase tracking-widest mb-2">{subtitle}</p>}
+                    {subtitle && <p className="text-slate-500 text-xs uppercase tracking-widest mb-2">{subtitle}</p>}
                     <h2 className="text-3xl sm:text-4xl font-black text-slate-900">{name}</h2>
                   </div>
                   {description && <p className="text-slate-600 leading-relaxed max-w-lg whitespace-pre-line">{description}</p>}
@@ -80,7 +80,7 @@ export default function Catalogos() {
             ))}
           </div>
 
-          <p className="text-xs text-slate-400 pt-6">
+          <p className="text-xs text-slate-500 pt-6">
             Os catálogos são disponibilizados em formato PDF e abrem num novo separador.
           </p>
         </div>
