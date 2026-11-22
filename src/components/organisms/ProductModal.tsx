@@ -124,7 +124,6 @@ export default function ProductModal({
               <ProductPhoto
                 key={cutout ?? img}
                 src={cutout ?? img}
-                transparent={cutout ? true : 'auto'}
                 alt={name}
                 loading="eager"
                 className="w-40 h-40 lg:w-full lg:h-96"
