@@ -16,6 +16,10 @@ export type Product = {
   brand: Brand
   category: CategoryId
   sub: string | null
+  /** Optional 3rd level, inside "sub" (e.g. sub "Chaves", sub2 "Chaves Torx") */
+  sub2: string | null
   img: string | null
   desc: string
+  /** Same photo without background (null until the background-removal script has run) */
+  cutout?: string | null
 }

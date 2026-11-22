@@ -4,6 +4,7 @@ import { X, ArrowRight } from 'lucide-react'
 import type { EnrichedProduct } from '../../hooks/useProductFilter'
 import type { CategoryConfig } from '../../data/categories'
 import BrandBadge from '../atoms/BrandBadge'
+import ProductPhoto from '../atoms/ProductPhoto'
 import NavArrowButton from '../atoms/NavArrowButton'
 import ModalDotPagination from '../molecules/ModalDotPagination'
 
@@ -28,7 +29,7 @@ export default function ProductModal({
   currentIndex?: number
   total?: number
 }) {
-  const { img, name, brand, sub, desc, categoryLabel } = product
+  const { img, cutout, name, brand, sub, desc, categoryLabel } = product
   const Icon = catConfig?.Icon
   const iconBg = catConfig?.iconBg
   const touchStart = useRef<{ x: number; y: number; inDesc: boolean } | null>(null)
@@ -120,7 +121,14 @@ export default function ProductModal({
         <div className="lg:flex lg:items-center lg:gap-10">
           <div className="flex justify-center mb-5 pt-2 lg:mb-0 lg:pt-0 lg:w-1/2 lg:shrink-0">
             {img ? (
-              <img src={img} alt={name} className="w-40 h-40 lg:w-full lg:h-96 object-contain" />
+              <ProductPhoto
+                key={cutout ?? img}
+                src={cutout ?? img}
+                transparent={cutout ? true : 'auto'}
+                alt={name}
+                loading="eager"
+                className="w-40 h-40 lg:w-full lg:h-96"
+              />
             ) : (
               <div className={`w-40 h-40 lg:w-full lg:h-96 ${iconBg ?? 'bg-slate-200'} rounded-2xl flex items-center justify-center`}>
                 {Icon && <Icon size={52} className="text-white opacity-75" />}

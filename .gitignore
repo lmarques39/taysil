@@ -1,5 +1,5 @@
 # Dependencies
-node_modules/
+node_modules
 
 # Build output
 dist/
@@ -41,3 +41,6 @@ screenshots/
 
 # Sanity Studio build runtime
 .sanity/
+
+# Background-removal tool binary and cut-outs (studio/scripts/remove-backgrounds.ts)
+studio/scripts/.bin/

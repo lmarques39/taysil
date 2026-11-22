@@ -47,7 +47,7 @@ export const productType = defineType({
       type: 'reference',
       to: [{ type: 'subcategory' }],
       description:
-        'Escolha da lista (mostra só as subcategorias da categoria escolhida). Para criar uma nova, use "Criar novo" ou a secção Subcategoria.',
+        'Escolha da lista (mostra só as subcategorias da categoria escolhida). Pode escolher uma subcategoria ou um tipo dentro dela (aparece como "Chaves › Chaves Torx"). Para criar uma nova, use "Criar novo" ou a secção Subcategoria.',
       options: {
         filter: ({ document }) => ({
           filter: 'category == $category',
@@ -93,6 +93,23 @@ export const productType = defineType({
       type: 'url',
       description: 'Alternativa ao upload — cole o URL da imagem. A imagem carregada tem prioridade.',
     }),
+    // Filled by studio/scripts/remove-backgrounds.ts — the site only uses it while "cutoutOf"
+    // still matches the current photo, so replacing the photo never shows an old cut-out.
+    defineField({
+      name: 'cutout',
+      title: 'Foto sem fundo (automática)',
+      type: 'image',
+      readOnly: true,
+      description:
+        'Gerada automaticamente a partir da imagem acima. Não precisa de mexer — se trocar a imagem, o site mostra a nova até ser gerada outra.',
+    }),
+    defineField({
+      name: 'cutoutOf',
+      title: 'Imagem de origem do recorte',
+      type: 'string',
+      hidden: true,
+      readOnly: true,
+    }),
     defineField({
       name: 'desc',
       title: 'Descrição',
@@ -105,11 +122,12 @@ export const productType = defineType({
       title: 'name',
       brand: 'brand',
       sub: 'subcategory.name',
+      parentSub: 'subcategory.parent.name',
       media: 'image',
     },
-    prepare: ({ title, brand, sub, media }) => ({
+    prepare: ({ title, brand, sub, parentSub, media }) => ({
       title,
-      subtitle: [brand, sub].filter(Boolean).join(' · '),
+      subtitle: [brand, [parentSub, sub].filter(Boolean).join(' › ')].filter(Boolean).join(' · '),
       media,
     }),
   },

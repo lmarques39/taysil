@@ -1,13 +1,14 @@
 import type { EnrichedProduct } from '../../hooks/useProductFilter'
 import type { CategoryConfig } from '../../data/categories'
 import BrandBadge from '../atoms/BrandBadge'
+import ProductPhoto from '../atoms/ProductPhoto'
 
 export default function ProductCard({ product, catConfig, onClick }: {
   product: EnrichedProduct
   catConfig: CategoryConfig | undefined
   onClick: () => void
 }) {
-  const { img, name, brand, sub } = product
+  const { img, cutout, name, brand, sub } = product
   const Icon = catConfig?.Icon
   const iconBg = catConfig?.iconBg
   return (
@@ -15,9 +16,16 @@ export default function ProductCard({ product, catConfig, onClick }: {
       onClick={onClick}
       className="bg-white border border-slate-100 rounded-xl overflow-hidden flex flex-row sm:flex-col hover:shadow-md hover:border-slate-200 hover:-translate-y-0.5 transition-all text-left group w-full"
     >
-      <div className="w-20 h-20 sm:w-full sm:h-auto sm:aspect-square bg-slate-50 flex items-center justify-center p-2 sm:p-4 shrink-0">
+      <div className="relative w-24 min-h-24 self-stretch sm:w-full sm:min-h-0 sm:h-auto sm:aspect-square bg-slate-50 flex items-center justify-center shrink-0">
         {img ? (
-          <img src={img} alt={name} className="w-full h-full object-contain" loading="lazy" />
+          // Photo without background when the script has made one; otherwise the original photo.
+          // Absolute so a tall photo can't stretch the square (padding = space around the product)
+          <ProductPhoto
+            src={cutout ?? img}
+            transparent={cutout ? true : 'auto'}
+            alt={name}
+            className="absolute inset-0 w-full h-full p-2 sm:p-4"
+          />
         ) : (
           <div className={`w-10 h-10 sm:w-16 sm:h-16 ${iconBg ?? 'bg-slate-200'} rounded-xl sm:rounded-2xl flex items-center justify-center`}>
             {Icon && <Icon size={18} className="text-white opacity-75" />}

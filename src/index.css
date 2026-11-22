@@ -2,6 +2,19 @@
 
 @theme {
   --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+
+  /* Mobile filter panel: slides up from the bottom, backdrop fades in */
+  --animate-sheet-up: sheet-up 0.28s cubic-bezier(0.32, 0.72, 0, 1);
+  --animate-fade-in: fade-in 0.2s ease-out;
+
+  @keyframes sheet-up {
+    from { transform: translateY(100%); }
+    to   { transform: translateY(0); }
+  }
+  @keyframes fade-in {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
 }
 
 * {

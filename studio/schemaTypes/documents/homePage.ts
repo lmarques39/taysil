@@ -29,8 +29,26 @@ const categoryPhotoField = ({ name, title }: { name: string; title: string }) =>
         name: 'image',
         title: 'Ou carregue uma foto',
         type: 'image',
-        description: 'Opcional. Se carregar uma foto aqui, ela tem prioridade sobre a foto do produto.',
+        description:
+          'Opcional. Se carregar uma foto aqui, ela tem prioridade sobre a foto do produto. Fotos já com fundo transparente (PNG) são usadas tal como estão.',
         options: { hotspot: true },
+      }),
+      // Filled by studio/scripts/remove-backgrounds.ts — the site only uses it while "cutoutOf"
+      // still matches the current photo, so a new product/photo never shows an old cut-out.
+      defineField({
+        name: 'cutout',
+        title: 'Foto sem fundo (automática)',
+        type: 'image',
+        readOnly: true,
+        description:
+          'Gerada automaticamente a partir da foto acima. Não precisa de mexer — se mudar a foto, o site usa a nova até ser gerada outra.',
+      }),
+      defineField({
+        name: 'cutoutOf',
+        title: 'Foto de origem do recorte',
+        type: 'string',
+        hidden: true,
+        readOnly: true,
       }),
     ],
   })
