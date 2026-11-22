@@ -3,6 +3,7 @@ import { ArrowRight } from 'lucide-react'
 import GridOverlay from '../components/atoms/GridOverlay'
 import CategoryGrid from '../components/organisms/CategoryGrid'
 import ProofStrip from '../components/organisms/ProofStrip'
+import { MAIN_PHONE } from '../data/contacts'
 
 const proofPoints = [
   { value: '+3000', label: 'Referências', detail: 'Ferramentas, mecânica, higiene e muito mais.' },
@@ -95,10 +96,10 @@ export default function Home() {
               Contactar <ArrowRight size={17} />
             </Link>
             <a
-              href="tel:939044050"
+              href={MAIN_PHONE.tel}
               className="text-white text-xl font-semibold tabular-nums hover:text-red-100 transition-colors"
             >
-              939 044 050
+              {MAIN_PHONE.display}
             </a>
           </div>
         </div>

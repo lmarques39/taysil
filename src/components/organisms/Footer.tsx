@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { Phone, Mail, MessageCircle } from 'lucide-react'
 import GridOverlay from '../atoms/GridOverlay'
+import { EMAIL, MAIN_PHONE, mailtoHref, whatsappHref } from '../../data/contacts'
 
 const navLinks = [
   { to: '/', label: 'Início' },
@@ -35,16 +36,16 @@ export default function Footer() {
 
           {/* Contact */}
           <div className="flex flex-col items-center lg:items-end gap-2 text-sm shrink-0">
-            <a href="tel:939044050" className="flex items-center gap-2 hover:text-white transition-colors tabular-nums">
-              <Phone size={14} className="text-red-500 shrink-0" />
-              939 044 050
+            <a href={MAIN_PHONE.tel} className="flex items-center gap-2 hover:text-white transition-colors tabular-nums">
+              <Phone size={14} aria-hidden className="text-red-500 shrink-0" />
+              {MAIN_PHONE.display}
             </a>
-            <a href="mailto:geral.taysil@gmail.com" className="flex items-center gap-2 hover:text-white transition-colors">
-              <Mail size={14} className="text-red-500 shrink-0" />
-              geral.taysil@gmail.com
+            <a href={mailtoHref()} className="flex items-center gap-2 hover:text-white transition-colors">
+              <Mail size={14} aria-hidden className="text-red-500 shrink-0" />
+              {EMAIL}
             </a>
             <a
-              href="https://wa.me/351939044050"
+              href={whatsappHref()}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-[#25D366] hover:text-[#1ebe5d] transition-colors"
