@@ -1,0 +1,6519 @@
+[
+ {
+  "id": "1990c3b1-1708-41f2-b851-39817eaa08ce",
+  "category": "chapa-pintura",
+  "sub": "Colas, Selantes e Fitas",
+  "tipo": null,
+  "name": "Activador para Sealing Tape 400ml"
+ },
+ {
+  "id": "e0b7224d-8d64-4b1c-9a04-40c22c42fefd",
+  "category": "chapa-pintura",
+  "sub": "Rebites e Fixação",
+  "tipo": "Rebites",
+  "name": "Alicate p/ Rebites Plasticos"
+ },
+ {
+  "id": "557acddb-24c7-48ac-a281-b2942ef6b1f5",
+  "category": "chapa-pintura",
+  "sub": "Rebites e Fixação",
+  "tipo": "Porcas, Anilhas e Parafusos",
+  "name": "Anilha de Chapa DIN 125 ZN M4"
+ },
+ {
+  "id": "a4e08a54-d9c3-4cf3-9c8e-59078e2f8e95",
+  "category": "chapa-pintura",
+  "sub": "Rebites e Fixação",
+  "tipo": "Porcas, Anilhas e Parafusos",
+  "name": "Anilha de Chapa DIN 125 ZN M5"
+ },
+ {
+  "id": "622188bf-3e99-4f17-9994-3c6efff71c38",
+  "category": "chapa-pintura",
+  "sub": "Betumes",
+  "tipo": null,
+  "name": "Betume Fibra de Vidro 1.7kg"
+ },
+ {
+  "id": "22567f54-0be9-46fe-9587-a54a865d4bc1",
+  "category": "chapa-pintura",
+  "sub": "Betumes",
+  "tipo": null,
+  "name": "Betume Light 1L"
+ },
+ {
+  "id": "72ed9ee9-c08e-4204-bd6a-b260dbe0324e",
+  "category": "chapa-pintura",
+  "sub": "Betumes",
+  "tipo": null,
+  "name": "Betume de Estanho 1,5 Kg"
+ },
+ {
+  "id": "3879001d-3008-4aa5-abfe-a972ba39d2bf",
+  "category": "chapa-pintura",
+  "sub": "Betumes",
+  "tipo": null,
+  "name": "Betume de Plásticos 1Kg"
+ },
+ {
+  "id": "e763f631-9c32-46ec-b389-38ff2ac5ab24",
+  "category": "chapa-pintura",
+  "sub": "Colas, Selantes e Fitas",
+  "tipo": null,
+  "name": "Bicos Rapid Bond 50 Ml (Quadrado)"
+ },
+ {
+  "id": "0ab32827-e124-4695-875d-d9ecf6533df4",
+  "category": "chapa-pintura",
+  "sub": "Abrasivos e Corte",
+  "tipo": "Brocas e Fresas",
+  "name": "Broca Conica ESCAL.TITANIO 4 a 39mm"
+ },
+ {
+  "id": "b0e65308-a567-4cd1-a3e2-d08bdc34c13e",
+  "category": "chapa-pintura",
+  "sub": "Abrasivos e Corte",
+  "tipo": "Brocas e Fresas",
+  "name": "Broca Descravar Pontos M6"
+ },
+ {
+  "id": "70af73e6-4109-4aea-8d20-2f24bbca377a",
+  "category": "chapa-pintura",
+  "sub": "Abrasivos e Corte",
+  "tipo": "Brocas e Fresas",
+  "name": "Broca Descravar Pontos M8"
+ },
+ {
+  "id": "2204592b-3333-439c-bf7b-40b085be0500",
+  "category": "chapa-pintura",
+  "sub": "Abrasivos e Corte",
+  "tipo": "Brocas e Fresas",
+  "name": "CONJ.DE Fresas Metalicas 10pcs"
+ },
+ {
+  "id": "25d73909-9802-46a9-928f-4f4e9acdded7",
+  "category": "chapa-pintura",
+  "sub": "Molas de Friso",
+  "tipo": "Conjuntos",
+  "name": "CONJ.MOLAS de Friso (BMW)"
+ },
+ {
+  "id": "6c4c02e2-6b60-4e03-be15-bb8e7aa8593a",
+  "category": "chapa-pintura",
+  "sub": "Molas de Friso",
+  "tipo": "Conjuntos",
+  "name": "CONJ.MOLAS de Friso (Fiat)"
+ },
+ {
+  "id": "a5eb4e93-0a70-45bf-b95d-7e754b9ea0ec",
+  "category": "chapa-pintura",
+  "sub": "Molas de Friso",
+  "tipo": "Conjuntos",
+  "name": "CONJ.MOLAS de Friso (Ford)"
+ },
+ {
+  "id": "83e7dd3e-3d25-43a9-a6e1-cc97fbd0eea9",
+  "category": "chapa-pintura",
+  "sub": "Molas de Friso",
+  "tipo": "Conjuntos",
+  "name": "CONJ.MOLAS de Friso (Hunday/Kia))"
+ },
+ {
+  "id": "af45be1a-f223-4042-8cce-c68d8c394334",
+  "category": "chapa-pintura",
+  "sub": "Molas de Friso",
+  "tipo": "Conjuntos",
+  "name": "CONJ.MOLAS de Friso (Mercedes)"
+ },
+ {
+  "id": "21261b4b-c567-40e4-aaa0-826e294547f2",
+  "category": "chapa-pintura",
+  "sub": "Molas de Friso",
+  "tipo": "Conjuntos",
+  "name": "CONJ.MOLAS de Friso (Opel)"
+ },
+ {
+  "id": "a16ced3d-3417-4c8e-b8ed-05e2c9a7db60",
+  "category": "chapa-pintura",
+  "sub": "Molas de Friso",
+  "tipo": "Conjuntos",
+  "name": "CONJ.MOLAS de Friso (Renault)"
+ },
+ {
+  "id": "2e47203a-25fd-4d3d-973d-b622a2cff6f0",
+  "category": "chapa-pintura",
+  "sub": "Rebites e Fixação",
+  "tipo": "Rebites",
+  "name": "CONJ.REBITES Trebol"
+ },
+ {
+  "id": "98ee274d-abe0-484a-bcbf-8d7fef2330b1",
+  "category": "chapa-pintura",
+  "sub": "Consumíveis",
+  "tipo": "Mascaramento e Proteção",
+  "name": "CONJ.ROLOS p/Volante 10 un + Punho"
+ },
+ {
+  "id": "c01af999-1b5f-4182-9ec6-67b89df5e753",
+  "category": "chapa-pintura",
+  "sub": "Reparação de Carroçaria",
+  "tipo": "Soldadura de Plásticos",
+  "name": "CONJ.SOLDAR Grampos p/Plasticos"
+ },
+ {
+  "id": "fee36684-8aab-4adc-b13f-8c868cb4157a",
+  "category": "chapa-pintura",
+  "sub": "Consumíveis",
+  "tipo": "Mascaramento e Proteção",
+  "name": "Capas p/Bancos 13 Micras ( 250 U )"
+ },
+ {
+  "id": "67d7d56c-7cf1-4c0f-a9a5-ba44c00c9744",
+  "category": "chapa-pintura",
+  "sub": "Sprays de Pintura",
+  "tipo": "Proteção de Cavidades",
+  "name": "Cera p/Cavidades 1 Lt"
+ },
+ {
+  "id": "f507fdb1-0db2-4a7a-9a19-2a723d4bed85",
+  "category": "chapa-pintura",
+  "sub": "Colas, Selantes e Fitas",
+  "tipo": null,
+  "name": "Cola Bicomponente Rapido Bond 50 Ml"
+ },
+ {
+  "id": "e1c47093-347f-4c0b-9ad7-c30c9f69e09d",
+  "category": "chapa-pintura",
+  "sub": "Colas, Selantes e Fitas",
+  "tipo": null,
+  "name": "Cola Biconponente Rapid Bond Preta"
+ },
+ {
+  "id": "b7a2b97a-b7cd-4e88-aeaf-e9ea7c019477",
+  "category": "chapa-pintura",
+  "sub": "Colas, Selantes e Fitas",
+  "tipo": null,
+  "name": "Cola Parabrisas Ms 310 Ml"
+ },
+ {
+  "id": "551a2a99-ac70-4050-baa7-d0899a0bc4f7",
+  "category": "chapa-pintura",
+  "sub": "Molas de Friso",
+  "tipo": "Conjuntos",
+  "name": "Conj. Molas de Friso (Ford)"
+ },
+ {
+  "id": "f5e1036a-46c5-4e86-aa61-a994ef666d31",
+  "category": "chapa-pintura",
+  "sub": "Molas de Friso",
+  "tipo": "Conjuntos",
+  "name": "Conj. Molas de Friso (Honda)"
+ },
+ {
+  "id": "fb8736e3-ed51-40d2-9e6d-3579acdadac1",
+  "category": "chapa-pintura",
+  "sub": "Molas de Friso",
+  "tipo": "Conjuntos",
+  "name": "Conj. Molas de Friso (Lexus)"
+ },
+ {
+  "id": "17dc4dd1-57bb-4d77-b0c1-e681e480030b",
+  "category": "chapa-pintura",
+  "sub": "Molas de Friso",
+  "tipo": "Conjuntos",
+  "name": "Conj. Molas de Friso (PSA)"
+ },
+ {
+  "id": "c67e589a-8cc6-4fa1-bb45-abccda0a1a1b",
+  "category": "chapa-pintura",
+  "sub": "Molas de Friso",
+  "tipo": "Conjuntos",
+  "name": "Conj. Molas de Friso Mercedes"
+ },
+ {
+  "id": "2a57db5f-156a-4016-b0d3-05a4d050f098",
+  "category": "chapa-pintura",
+  "sub": "Molas de Friso",
+  "tipo": "Conjuntos",
+  "name": "Conj. Molas de Friso Universal"
+ },
+ {
+  "id": "de689a04-8cd1-4317-9d3e-f654f9aa904d",
+  "category": "chapa-pintura",
+  "sub": "Colas, Selantes e Fitas",
+  "tipo": null,
+  "name": "Cordao de Espuma Autoadesivo 13 X 50"
+ },
+ {
+  "id": "0699b2a5-b673-4b67-90d5-9c89ac04ccd7",
+  "category": "chapa-pintura",
+  "sub": "Consumíveis",
+  "tipo": "Diluentes e Limpeza",
+  "name": "Diluente Celuloso Dc 400 25L"
+ },
+ {
+  "id": "7a401a2a-38ed-4308-a9eb-0220da2450fd",
+  "category": "chapa-pintura",
+  "sub": "Consumíveis",
+  "tipo": "Diluentes e Limpeza",
+  "name": "Diluente Celuloso G300 Usos Gerais"
+ },
+ {
+  "id": "af75ef6a-fcf8-4075-9f05-e28fbbf3091c",
+  "category": "chapa-pintura",
+  "sub": "Abrasivos e Corte",
+  "tipo": "Discos de Lixar e Polir",
+  "name": "Disco Star Brite TR-3 - 75mm"
+ },
+ {
+  "id": "dde4e972-75ac-49ea-a29a-44e8b31cf5b1",
+  "category": "chapa-pintura",
+  "sub": "Abrasivos e Corte",
+  "tipo": "Discos de Lixar e Polir",
+  "name": "Disco Velcro Gold Nexus 150mm / 15 A. / P-80"
+ },
+ {
+  "id": "d7364e35-351f-4548-a027-96337c70aa9e",
+  "category": "chapa-pintura",
+  "sub": "Abrasivos e Corte",
+  "tipo": "Discos de Lixar e Polir",
+  "name": "Disco de Caramelo Dentado p/Mbx"
+ },
+ {
+  "id": "a51ceb2b-29f3-4ccb-810b-f135501f4525",
+  "category": "chapa-pintura",
+  "sub": "Abrasivos e Corte",
+  "tipo": "Discos de Corte",
+  "name": "Disco de Corte Aço Pro F41 Metalynx"
+ },
+ {
+  "id": "12605d0a-1a78-4e26-b0c2-6914f6024bf7",
+  "category": "chapa-pintura",
+  "sub": "Abrasivos e Corte",
+  "tipo": "Discos de Corte",
+  "name": "Disco de Corte Diamantado p/Pedra"
+ },
+ {
+  "id": "bbf80a6a-e5c4-42fd-b4fb-070fce96dc5c",
+  "category": "chapa-pintura",
+  "sub": "Abrasivos e Corte",
+  "tipo": "Discos de Corte",
+  "name": "Disco de Corte Inox 125mm"
+ },
+ {
+  "id": "f261fae2-f04c-4348-96f9-45d581dee07f",
+  "category": "chapa-pintura",
+  "sub": "Abrasivos e Corte",
+  "tipo": "Discos de Corte",
+  "name": "Disco de Corte Inox F41 Metalynx"
+ },
+ {
+  "id": "0b92bff9-6e71-407b-864b-e3071dbc4455",
+  "category": "chapa-pintura",
+  "sub": "Abrasivos e Corte",
+  "tipo": "Discos de Corte",
+  "name": "Disco de Corte Inox Pro F41 230X1.9"
+ },
+ {
+  "id": "e8c212da-b2ab-4348-a66a-9061a9db09b0",
+  "category": "chapa-pintura",
+  "sub": "Abrasivos e Corte",
+  "tipo": "Discos de Corte",
+  "name": "Disco de Corte de 0.75X1.0mm"
+ },
+ {
+  "id": "66dc136c-c8af-4c99-bead-097cebe0987a",
+  "category": "chapa-pintura",
+  "sub": "Abrasivos e Corte",
+  "tipo": "Discos de Lixar e Polir",
+  "name": "Disco de Nylon com Base"
+ },
+ {
+  "id": "edea1268-811d-41e6-b9b7-705844576338",
+  "category": "chapa-pintura",
+  "sub": "Abrasivos e Corte",
+  "tipo": "Discos de Lixar e Polir",
+  "name": "Discos Velcro Gold Nexus 150mm / 15 A. / P-220"
+ },
+ {
+  "id": "e0d8b1eb-8dd7-4019-828d-7d4c3f16ce71",
+  "category": "chapa-pintura",
+  "sub": "Abrasivos e Corte",
+  "tipo": "Discos de Corte",
+  "name": "Discos de Corte Inox 115X1"
+ },
+ {
+  "id": "97a35918-8a83-42a7-8325-f59936945f0c",
+  "category": "chapa-pintura",
+  "sub": "Abrasivos e Corte",
+  "tipo": "Discos de Lixar e Polir",
+  "name": "Discos de Fibra Kn"
+ },
+ {
+  "id": "e4358984-00e4-4d2b-9385-b7255c8bfba2",
+  "category": "chapa-pintura",
+  "sub": "Abrasivos e Corte",
+  "tipo": "Discos de Lixar e Polir",
+  "name": "Discos de Lamela 115 G60"
+ },
+ {
+  "id": "575f8352-1d3d-4660-aaf6-e0294f505f9e",
+  "category": "chapa-pintura",
+  "sub": "Abrasivos e Corte",
+  "tipo": "Discos de Lixar e Polir",
+  "name": "Discos de Lamela G36"
+ },
+ {
+  "id": "486fb0d7-7ec4-473a-a3bf-ffee12caeece",
+  "category": "chapa-pintura",
+  "sub": "Abrasivos e Corte",
+  "tipo": "Discos de Lixar e Polir",
+  "name": "Discos de Nylon 150mm"
+ },
+ {
+  "id": "47fbcc55-b611-489c-a90e-94b9c47eb434",
+  "category": "chapa-pintura",
+  "sub": "Abrasivos e Corte",
+  "tipo": "Discos de Lixar e Polir",
+  "name": "Discos de Velcro Rhynogrip L.BR 150mm"
+ },
+ {
+  "id": "1643a931-ce63-4217-be46-93d38af33f95",
+  "category": "chapa-pintura",
+  "sub": "Abrasivos e Corte",
+  "tipo": "Lixas e Esponjas",
+  "name": "Esponja Amarela Corte Rapido 80 Mm"
+ },
+ {
+  "id": "1e522987-ff36-4a56-b3a0-13a89872b842",
+  "category": "chapa-pintura",
+  "sub": "Abrasivos e Corte",
+  "tipo": "Lixas e Esponjas",
+  "name": "Esponja Dupla Face Microfina"
+ },
+ {
+  "id": "8f35b006-5c9a-48d6-bf24-4120fa506479",
+  "category": "chapa-pintura",
+  "sub": "Abrasivos e Corte",
+  "tipo": "Lixas e Esponjas",
+  "name": "Esponja Dupla Face Super Fina"
+ },
+ {
+  "id": "5c9d036f-35c6-472a-874f-52c4f95139df",
+  "category": "chapa-pintura",
+  "sub": "Abrasivos e Corte",
+  "tipo": "Lixas e Esponjas",
+  "name": "Esponja Dupla Face Ultra Fina Azul"
+ },
+ {
+  "id": "19c7a9ae-f646-40bf-99fb-8b3e8c4c2039",
+  "category": "chapa-pintura",
+  "sub": "Abrasivos e Corte",
+  "tipo": "Lixas e Esponjas",
+  "name": "Esponja Laranja Polimento 80 Mm"
+ },
+ {
+  "id": "a67c0907-98d4-472b-975f-95f11e7269a7",
+  "category": "chapa-pintura",
+  "sub": "Reparação de Carroçaria",
+  "tipo": "Soldadura de Plásticos",
+  "name": "Estrelas para Maquina de Soldar 20un"
+ },
+ {
+  "id": "2e9c7866-3ac4-4858-b0ea-1bc3b218b4db",
+  "category": "chapa-pintura",
+  "sub": "Consumíveis",
+  "tipo": "Mascaramento e Proteção",
+  "name": "Filme Protector p/Sensores de"
+ },
+ {
+  "id": "bbd41ba2-ac1e-4707-8750-f07fbc0effe0",
+  "category": "chapa-pintura",
+  "sub": "Consumíveis",
+  "tipo": "Mascaramento e Proteção",
+  "name": "Filtro Chao p/Estufa Rolo 20 M"
+ },
+ {
+  "id": "1575da70-5a66-46af-8342-06f523e09447",
+  "category": "chapa-pintura",
+  "sub": "Consumíveis",
+  "tipo": "Mascaramento e Proteção",
+  "name": "Filtro de Chao p/ Estufas 20M"
+ },
+ {
+  "id": "d15358de-65e4-4233-a3d3-0f1dffd4b634",
+  "category": "chapa-pintura",
+  "sub": "Consumíveis",
+  "tipo": "Mascaramento e Proteção",
+  "name": "Filtro de Chao p/Estufa Rolo 20M"
+ },
+ {
+  "id": "a97d812d-0e95-489a-9bb0-84b7cb48865e",
+  "category": "chapa-pintura",
+  "sub": "Colas, Selantes e Fitas",
+  "tipo": null,
+  "name": "Fita Dupla Face Acrilica 12 Mm X 10 Mt"
+ },
+ {
+  "id": "61c3c7de-6068-4d1a-81c0-805ec38d8682",
+  "category": "chapa-pintura",
+  "sub": "Colas, Selantes e Fitas",
+  "tipo": null,
+  "name": "Fita Dupla Face Acrilica 4 Mm X 10 Mt"
+ },
+ {
+  "id": "7831ea60-ae31-4ba7-bf11-251a1d2630ce",
+  "category": "chapa-pintura",
+  "sub": "Colas, Selantes e Fitas",
+  "tipo": null,
+  "name": "Fita Dupla Face Acrilica 6 Mm X 10 Mt"
+ },
+ {
+  "id": "29dfa0c7-d6e7-4a55-bd5c-1eddeb3155cd",
+  "category": "chapa-pintura",
+  "sub": "Colas, Selantes e Fitas",
+  "tipo": null,
+  "name": "Fita Dupla Face Acrilica 9 Mm X 10 Mt"
+ },
+ {
+  "id": "0c769126-42c8-4cc8-92b0-cc4b4b5139e7",
+  "category": "chapa-pintura",
+  "sub": "Colas, Selantes e Fitas",
+  "tipo": null,
+  "name": "Fita Dupla Face Transparente Fina"
+ },
+ {
+  "id": "e601f0c5-d398-47d7-bf38-19395fa3b2f2",
+  "category": "chapa-pintura",
+  "sub": "Colas, Selantes e Fitas",
+  "tipo": null,
+  "name": "Fita Esponjosa Adesiva VED.EPDM"
+ },
+ {
+  "id": "8541625b-333f-4602-9c60-f8f3b2009d72",
+  "category": "chapa-pintura",
+  "sub": "Colas, Selantes e Fitas",
+  "tipo": null,
+  "name": "Fita Esponjosa VED.ADESIVA Epdm"
+ },
+ {
+  "id": "c8cc7ab4-cbf4-456d-90d3-bd0b02af4fb3",
+  "category": "chapa-pintura",
+  "sub": "Consumíveis",
+  "tipo": "Mascaramento e Proteção",
+  "name": "Fita de Mascarar p/Brisas"
+ },
+ {
+  "id": "9a6ceace-0946-4290-9857-08d928dddd6d",
+  "category": "chapa-pintura",
+  "sub": "Abrasivos e Corte",
+  "tipo": "Lixas e Esponjas",
+  "name": "Folha de Lixa Pano Metal 230X280 G120"
+ },
+ {
+  "id": "bc7498ee-737a-4aac-8e1b-3410cbe77371",
+  "category": "chapa-pintura",
+  "sub": "Abrasivos e Corte",
+  "tipo": "Lixas e Esponjas",
+  "name": "Folha de Lixa Pano Metal 230X280 G40"
+ },
+ {
+  "id": "78f27e82-634d-4819-bab9-262a33829fc4",
+  "category": "chapa-pintura",
+  "sub": "Abrasivos e Corte",
+  "tipo": "Lixas e Esponjas",
+  "name": "Folha de Lixa Pano Metal 230X280 G80"
+ },
+ {
+  "id": "9610d037-d27f-492a-bb4d-8636057d9225",
+  "category": "chapa-pintura",
+  "sub": "Abrasivos e Corte",
+  "tipo": "Lixas e Esponjas",
+  "name": "Folha de Lixa de Agua P-1000"
+ },
+ {
+  "id": "767d3696-0bee-454a-95cf-5c90de8aeade",
+  "category": "chapa-pintura",
+  "sub": "Abrasivos e Corte",
+  "tipo": "Lixas e Esponjas",
+  "name": "Folha de Lixa de Agua P-1200"
+ },
+ {
+  "id": "e6d6be18-6f4c-423d-a381-e4291b8377ac",
+  "category": "chapa-pintura",
+  "sub": "Abrasivos e Corte",
+  "tipo": "Lixas e Esponjas",
+  "name": "Folha de Lixa de Agua P-600"
+ },
+ {
+  "id": "a57ab70a-76f2-46ea-b3c6-c664155bb4e1",
+  "category": "chapa-pintura",
+  "sub": "Abrasivos e Corte",
+  "tipo": "Lixas e Esponjas",
+  "name": "Folha de Lixa de Agua P-800"
+ },
+ {
+  "id": "ec646148-5ea8-4b0b-b9e2-e5db334e8997",
+  "category": "chapa-pintura",
+  "sub": "Reparação de Carroçaria",
+  "tipo": "Soldadura de Plásticos",
+  "name": "Grampo p/Soldar Plastico Tipo U N:2"
+ },
+ {
+  "id": "b352b738-1cf6-44e5-8d8b-563ed0b4bef7",
+  "category": "chapa-pintura",
+  "sub": "Reparação de Carroçaria",
+  "tipo": "Soldadura de Plásticos",
+  "name": "Grampo p/Soldar Plasticos Tipo \"M\""
+ },
+ {
+  "id": "19be2509-fda0-48e3-b441-6dd39f67bde3",
+  "category": "chapa-pintura",
+  "sub": "Reparação de Carroçaria",
+  "tipo": "Soldadura de Plásticos",
+  "name": "Grampo p/Soldar Plasticos Tipo \"S\""
+ },
+ {
+  "id": "9001956f-7ce7-48d2-90fb-d29e1cf21f09",
+  "category": "chapa-pintura",
+  "sub": "Reparação de Carroçaria",
+  "tipo": "Soldadura de Plásticos",
+  "name": "Grampo p/Soldar Plasticos Tipo \"V\""
+ },
+ {
+  "id": "44f58034-0ba3-4f88-9fe1-836eb1f97836",
+  "category": "chapa-pintura",
+  "sub": "Reparação de Carroçaria",
+  "tipo": null,
+  "name": "Lima de Chapeiro"
+ },
+ {
+  "id": "18d69abd-5c03-4972-af48-e3cc805bb15d",
+  "category": "chapa-pintura",
+  "sub": "Consumíveis",
+  "tipo": "Diluentes e Limpeza",
+  "name": "Liquido Polir Farois 800ml"
+ },
+ {
+  "id": "262a9a68-3958-4e6e-886b-a41bb0735688",
+  "category": "chapa-pintura",
+  "sub": "Abrasivos e Corte",
+  "tipo": null,
+  "name": "Lixadora Pneumatica Nexus 150mm"
+ },
+ {
+  "id": "e7db09f8-5cc8-4dda-9429-ece363e90460",
+  "category": "chapa-pintura",
+  "sub": "Abrasivos e Corte",
+  "tipo": "Discos de Corte",
+  "name": "Mo Diamantada Profi Turbo St 115X22,23"
+ },
+ {
+  "id": "750d9cc3-5834-4668-86d8-0d830afb29fd",
+  "category": "chapa-pintura",
+  "sub": "Molas de Friso",
+  "tipo": "Por Marca",
+  "name": "Mola de Friso Cava Rodas Renault"
+ },
+ {
+  "id": "7fc437c4-c949-45fd-94a3-b37bc8d6f0fb",
+  "category": "chapa-pintura",
+  "sub": "Molas de Friso",
+  "tipo": "Por Marca",
+  "name": "Mola de Friso Embaladeira Peugeot"
+ },
+ {
+  "id": "6ca6ecc6-fff2-4674-8421-842f4d0e00d1",
+  "category": "chapa-pintura",
+  "sub": "Molas de Friso",
+  "tipo": "Por Marca",
+  "name": "Mola de Friso Fiat ( Luzes )"
+ },
+ {
+  "id": "e40401f1-9352-440f-aa19-c229e131d81c",
+  "category": "chapa-pintura",
+  "sub": "Molas de Friso",
+  "tipo": "Por Marca",
+  "name": "Mola de Friso Ford ( Forro de Portas )"
+ },
+ {
+  "id": "1d8b5797-a065-43f1-a852-6ee63bc2d914",
+  "category": "chapa-pintura",
+  "sub": "Molas de Friso",
+  "tipo": "Por Marca",
+  "name": "Mola de Friso Lateral p/ Fiat"
+ },
+ {
+  "id": "3a0db6c0-a925-49f4-b6f3-8ca2f7b79181",
+  "category": "chapa-pintura",
+  "sub": "Molas de Friso",
+  "tipo": "Por Marca",
+  "name": "Mola de Friso Mercedes (A2019972281)"
+ },
+ {
+  "id": "034e9270-f9cc-4594-8506-e6ba7dc566ae",
+  "category": "chapa-pintura",
+  "sub": "Molas de Friso",
+  "tipo": "Por Marca",
+  "name": "Mola de Friso Nissan Mitsubishi"
+ },
+ {
+  "id": "49b9ffff-63e2-49b1-810e-d34d7df857ba",
+  "category": "chapa-pintura",
+  "sub": "Molas de Friso",
+  "tipo": "Por Marca",
+  "name": "Mola de Friso Opel (GM 90560163)"
+ },
+ {
+  "id": "1197263c-3a3a-4590-ab0a-adc6b98fab2c",
+  "category": "chapa-pintura",
+  "sub": "Molas de Friso",
+  "tipo": "Por Marca",
+  "name": "Mola de Friso Painel Exterior Fiat"
+ },
+ {
+  "id": "db572d3c-db63-4b86-9285-0e9b3b918d87",
+  "category": "chapa-pintura",
+  "sub": "Molas de Friso",
+  "tipo": "Por Marca",
+  "name": "Mola de Friso Painel Porta"
+ },
+ {
+  "id": "d58c0762-ec74-49dd-8f69-f14044bbea7a",
+  "category": "chapa-pintura",
+  "sub": "Molas de Friso",
+  "tipo": "Por Marca",
+  "name": "Mola de Friso Painel Portas Fiat/Lancia"
+ },
+ {
+  "id": "4d4cc77d-9564-4acc-8deb-b3d09d5228bd",
+  "category": "chapa-pintura",
+  "sub": "Molas de Friso",
+  "tipo": "Por Marca",
+  "name": "Mola de Friso Painel Portas Renault"
+ },
+ {
+  "id": "9f9ded2e-a282-4e24-99b6-fee354ce0a9b",
+  "category": "chapa-pintura",
+  "sub": "Molas de Friso",
+  "tipo": "Por Marca",
+  "name": "Mola de Friso Peugeot ( Embaladeira )"
+ },
+ {
+  "id": "961fb08f-715a-4a17-9200-3581ed4bb58a",
+  "category": "chapa-pintura",
+  "sub": "Molas de Friso",
+  "tipo": "Por Marca",
+  "name": "Mola de Friso Renault, Peugeot"
+ },
+ {
+  "id": "f892d39b-26ee-4483-abde-44827c8b3916",
+  "category": "chapa-pintura",
+  "sub": "Molas de Friso",
+  "tipo": "Por Marca",
+  "name": "Mola de Friso Renault/Toyota"
+ },
+ {
+  "id": "7f2f24f7-a95c-4d63-8886-c37de4d32e9d",
+  "category": "chapa-pintura",
+  "sub": "Molas de Friso",
+  "tipo": "Tipo Rebite",
+  "name": "Mola de Friso T/Rebite c/PARAF.8MM"
+ },
+ {
+  "id": "5e66e837-1cae-41a6-b569-e1c5d9201941",
+  "category": "chapa-pintura",
+  "sub": "Molas de Friso",
+  "tipo": "Tipo Rebite",
+  "name": "Mola de Friso Tipo Rebite 8 Mm"
+ },
+ {
+  "id": "0910316c-5e22-475a-901d-b47b73564cd2",
+  "category": "chapa-pintura",
+  "sub": "Molas de Friso",
+  "tipo": "Tipo Rebite",
+  "name": "Mola de Friso Tipo Rebite Aba Larga"
+ },
+ {
+  "id": "9cc95db3-c382-48a0-b9ca-886af70ac527",
+  "category": "chapa-pintura",
+  "sub": "Molas de Friso",
+  "tipo": "Tipo Rebite",
+  "name": "Mola de Friso Tipo Rebite Carros"
+ },
+ {
+  "id": "3a07c35e-358b-428e-a7ea-63dfd30136ed",
+  "category": "chapa-pintura",
+  "sub": "Molas de Friso",
+  "tipo": "Tipo Rebite",
+  "name": "Mola de Friso Tipo Rebite p/Carros"
+ },
+ {
+  "id": "a5648bbb-7eb2-47ba-a173-1c3a67cc0e1a",
+  "category": "chapa-pintura",
+  "sub": "Molas de Friso",
+  "tipo": "Por Marca",
+  "name": "Mola de Friso p/Citroen"
+ },
+ {
+  "id": "27027458-88de-4316-8d80-dbffffeaedd2",
+  "category": "chapa-pintura",
+  "sub": "Molas de Friso",
+  "tipo": "Por Marca",
+  "name": "Mola de Friso p/Peugeot"
+ },
+ {
+  "id": "a19be061-3547-4e58-938f-783ef944a2a4",
+  "category": "chapa-pintura",
+  "sub": "Molas de Friso",
+  "tipo": "Por Marca",
+  "name": "Mola de Friso p/Portas Renault"
+ },
+ {
+  "id": "634f4d9b-de31-4137-a7e0-c98869984ea1",
+  "category": "chapa-pintura",
+  "sub": "Molas de Friso",
+  "tipo": "Por Marca",
+  "name": "Molas de Friso -BMW"
+ },
+ {
+  "id": "03f2a22e-f291-4d74-a5e4-7699d30f2d90",
+  "category": "chapa-pintura",
+  "sub": "Molas de Friso",
+  "tipo": "Por Marca",
+  "name": "Molas de Friso Fiat"
+ },
+ {
+  "id": "379e97c6-703c-4e79-a31e-fa87bb9919aa",
+  "category": "chapa-pintura",
+  "sub": "Molas de Friso",
+  "tipo": "Por Marca",
+  "name": "Molas de Friso Ford"
+ },
+ {
+  "id": "428ad62a-0743-4b13-afd5-d06bb5b1101d",
+  "category": "chapa-pintura",
+  "sub": "Molas de Friso",
+  "tipo": "Por Marca",
+  "name": "Molas de Friso GM"
+ },
+ {
+  "id": "1374553e-7c4c-4abc-9f18-82100d25ae88",
+  "category": "chapa-pintura",
+  "sub": "Molas de Friso",
+  "tipo": "Por Marca",
+  "name": "Molas de Friso GM-BMW"
+ },
+ {
+  "id": "7149b3d2-e350-4176-a000-455bd91781fe",
+  "category": "chapa-pintura",
+  "sub": "Molas de Friso",
+  "tipo": "Por Marca",
+  "name": "Molas de Friso GM-Crysler-Ford-"
+ },
+ {
+  "id": "9de08f2d-0bf8-42d2-8c4c-6504fb19ea5d",
+  "category": "chapa-pintura",
+  "sub": "Molas de Friso",
+  "tipo": "Por Marca",
+  "name": "Molas de Friso GM-Ford-Crysler"
+ },
+ {
+  "id": "ae03410c-57c3-4938-976a-0d12b72cb6e5",
+  "category": "chapa-pintura",
+  "sub": "Molas de Friso",
+  "tipo": "Por Marca",
+  "name": "Molas de Friso Honda"
+ },
+ {
+  "id": "2e2c66f1-6ffb-47f6-b2c3-6636de13a3e3",
+  "category": "chapa-pintura",
+  "sub": "Molas de Friso",
+  "tipo": "Por Marca",
+  "name": "Molas de Friso Honda-Nissan"
+ },
+ {
+  "id": "ff776cb3-480d-4c9a-a375-da75e3ab38d4",
+  "category": "chapa-pintura",
+  "sub": "Molas de Friso",
+  "tipo": "Por Marca",
+  "name": "Molas de Friso Hyundai"
+ },
+ {
+  "id": "52926af5-0521-416f-9d71-245be19f3904",
+  "category": "chapa-pintura",
+  "sub": "Molas de Friso",
+  "tipo": "Por Marca",
+  "name": "Molas de Friso Mazda"
+ },
+ {
+  "id": "2cb0db5a-70d2-43f4-b632-851beb47ccfb",
+  "category": "chapa-pintura",
+  "sub": "Molas de Friso",
+  "tipo": "Por Marca",
+  "name": "Molas de Friso Mazda-Ford-Hundai"
+ },
+ {
+  "id": "75f37002-0211-4891-a6f0-c1469fc581bf",
+  "category": "chapa-pintura",
+  "sub": "Molas de Friso",
+  "tipo": "Por Marca",
+  "name": "Molas de Friso Mercedes A1249900492"
+ },
+ {
+  "id": "e421588c-d121-40f5-8776-51e38d7281de",
+  "category": "chapa-pintura",
+  "sub": "Molas de Friso",
+  "tipo": "Por Marca",
+  "name": "Molas de Friso Mercedes- BMW-Fiat-Vw"
+ },
+ {
+  "id": "8e7fa42c-646b-4e7e-9b9c-c599bedf339c",
+  "category": "chapa-pintura",
+  "sub": "Molas de Friso",
+  "tipo": "Por Marca",
+  "name": "Molas de Friso Nissan-Mitsubishi"
+ },
+ {
+  "id": "badafe66-0ee2-44c7-9625-901cef74b5ad",
+  "category": "chapa-pintura",
+  "sub": "Molas de Friso",
+  "tipo": "Por Marca",
+  "name": "Molas de Friso Nissan-Subaru"
+ },
+ {
+  "id": "f8fea907-16c7-44a7-863f-4f073dbe91a7",
+  "category": "chapa-pintura",
+  "sub": "Molas de Friso",
+  "tipo": "Por Marca",
+  "name": "Molas de Friso PSA-Renault"
+ },
+ {
+  "id": "cde59631-a669-47f1-af85-7e83e52c49f6",
+  "category": "chapa-pintura",
+  "sub": "Molas de Friso",
+  "tipo": "Por Marca",
+  "name": "Molas de Friso Renault Guarda-Lamas"
+ },
+ {
+  "id": "e8c9f1aa-4e1e-4ca3-878a-2fec9b18237a",
+  "category": "chapa-pintura",
+  "sub": "Molas de Friso",
+  "tipo": "Por Marca",
+  "name": "Molas de Friso Toyota-GM"
+ },
+ {
+  "id": "809b8d10-81e1-43a8-beb4-84edf73b1ea3",
+  "category": "chapa-pintura",
+  "sub": "Molas de Friso",
+  "tipo": "Por Marca",
+  "name": "Molas de Friso Toyota-Mazda"
+ },
+ {
+  "id": "1006b360-1fba-4a5c-b45d-f472ff4fc4a9",
+  "category": "chapa-pintura",
+  "sub": "Molas de Friso",
+  "tipo": "Por Marca",
+  "name": "Molas de Friso Toyota-PSA-Mitsubishi"
+ },
+ {
+  "id": "86b964db-14aa-4647-8710-f2f912e6aeba",
+  "category": "chapa-pintura",
+  "sub": "Molas de Friso",
+  "tipo": "Por Marca",
+  "name": "Molas de Friso Vw"
+ },
+ {
+  "id": "7ef9dd68-eb67-4833-b506-544918eac2e4",
+  "category": "chapa-pintura",
+  "sub": "Molas de Friso",
+  "tipo": "Por Marca",
+  "name": "Molas de Friso Vw-GM-PSA-Mercedes"
+ },
+ {
+  "id": "95bc5589-1555-48fe-8e77-099a23341832",
+  "category": "chapa-pintura",
+  "sub": "Molas de Friso",
+  "tipo": "Por Marca",
+  "name": "Molas de Friso Vw-PSA-Tata-Mercedes"
+ },
+ {
+  "id": "7cbbc830-624a-4e8c-bf71-29501685a74a",
+  "category": "chapa-pintura",
+  "sub": "Rebites e Fixação",
+  "tipo": "Porcas, Anilhas e Parafusos",
+  "name": "PARAF.C/Broca 4,8X19mm"
+ },
+ {
+  "id": "bd03d6df-1cb9-43e2-b8bf-59cb6f7bfc8a",
+  "category": "chapa-pintura",
+  "sub": "Consumíveis",
+  "tipo": "Diluentes e Limpeza",
+  "name": "Paintclean Limpeza de Estufas"
+ },
+ {
+  "id": "2a186280-4edd-4dab-b357-be5f5aac7a93",
+  "category": "chapa-pintura",
+  "sub": "Consumíveis",
+  "tipo": "Mascaramento e Proteção",
+  "name": "Papel Kraft de Isolamento 120cm X300m"
+ },
+ {
+  "id": "49d3a4d7-ca34-4878-aca1-2fea053d0121",
+  "category": "chapa-pintura",
+  "sub": "Consumíveis",
+  "tipo": "Mascaramento e Proteção",
+  "name": "Papel Kraft de Isolamento 45cm X 300m"
+ },
+ {
+  "id": "a42de49e-3b5d-41bd-bc78-f2c5667dd06a",
+  "category": "chapa-pintura",
+  "sub": "Consumíveis",
+  "tipo": "Mascaramento e Proteção",
+  "name": "Papel Kraft de Isolamento 60cm X 300m"
+ },
+ {
+  "id": "28f24852-ba14-4afb-a8b3-f512d211f408",
+  "category": "chapa-pintura",
+  "sub": "Rebites e Fixação",
+  "tipo": "Porcas, Anilhas e Parafusos",
+  "name": "Parafuso Chapa de Matricula 5.1X21mm"
+ },
+ {
+  "id": "771cae5e-e6f7-46b1-9c2f-6cb4996f1a61",
+  "category": "chapa-pintura",
+  "sub": "Rebites e Fixação",
+  "tipo": "Porcas, Anilhas e Parafusos",
+  "name": "Parafuso Chapa de Matricula 5.1X25mm"
+ },
+ {
+  "id": "a470996e-7a06-4a08-a717-c16816100e95",
+  "category": "chapa-pintura",
+  "sub": "Reparação de Carroçaria",
+  "tipo": null,
+  "name": "Placas de Insonorizaçao 50X50 (10un)"
+ },
+ {
+  "id": "d8ba5ad4-603a-4f3c-bb08-cc5f9c93b8c5",
+  "category": "chapa-pintura",
+  "sub": "Betumes",
+  "tipo": null,
+  "name": "Plast-Pt Preto Tubo 75ml"
+ },
+ {
+  "id": "4f13ac0a-c00d-4f57-ac8e-a97def84a725",
+  "category": "chapa-pintura",
+  "sub": "Rebites e Fixação",
+  "tipo": "Porcas, Anilhas e Parafusos",
+  "name": "Porca SEXT.DIN 934 ZN M 6"
+ },
+ {
+  "id": "61df199f-7b3b-4931-b4cd-4017009111d3",
+  "category": "chapa-pintura",
+  "sub": "Rebites e Fixação",
+  "tipo": "Porcas, Anilhas e Parafusos",
+  "name": "Porca SEXT.DIN 934 ZN M4"
+ },
+ {
+  "id": "5458408c-44e1-46bf-b42d-78588110fb1d",
+  "category": "chapa-pintura",
+  "sub": "Rebites e Fixação",
+  "tipo": "Porcas, Anilhas e Parafusos",
+  "name": "Porca Sext. DIN 934 ZN M5"
+ },
+ {
+  "id": "5009eee1-1316-46f2-848b-00255bcf56a8",
+  "category": "chapa-pintura",
+  "sub": "Rebites e Fixação",
+  "tipo": "Porcas, Anilhas e Parafusos",
+  "name": "Porca de Cravar c/Aba 6mm"
+ },
+ {
+  "id": "8e003b70-81f6-4718-bcac-9ea7ee4fc259",
+  "category": "chapa-pintura",
+  "sub": "Colas, Selantes e Fitas",
+  "tipo": null,
+  "name": "Pulioretano p/Pistola 780ml"
+ },
+ {
+  "id": "c37f9c2b-ca15-4f11-9327-0ceb9addfb37",
+  "category": "chapa-pintura",
+  "sub": "Rebites e Fixação",
+  "tipo": "Rebites",
+  "name": "Rebite Flor 4,8X21 Alu/Aço"
+ },
+ {
+  "id": "63fa8b4f-1832-4d64-b8d1-c70707222b87",
+  "category": "chapa-pintura",
+  "sub": "Rebites e Fixação",
+  "tipo": "Rebites",
+  "name": "Rebite Flor Aba Larga 12mm Branco"
+ },
+ {
+  "id": "9ed4efc2-4ee2-46d3-9508-566139e53de6",
+  "category": "chapa-pintura",
+  "sub": "Rebites e Fixação",
+  "tipo": "Rebites",
+  "name": "Rebite Flor Aba Larga 14mm Preto"
+ },
+ {
+  "id": "e6e2ed01-70ec-4d02-b520-ec03b77903f9",
+  "category": "chapa-pintura",
+  "sub": "Rebites e Fixação",
+  "tipo": "Rebites",
+  "name": "Rebite Flor Aba Larga 4,8X18"
+ },
+ {
+  "id": "af90f9ce-9e50-423c-8595-fe0b4de53f19",
+  "category": "chapa-pintura",
+  "sub": "Rebites e Fixação",
+  "tipo": "Rebites",
+  "name": "Rebite Flor Aba Larga c/14mm"
+ },
+ {
+  "id": "053bb63b-6473-469f-b4ae-cb33b2fedd8e",
+  "category": "chapa-pintura",
+  "sub": "Rebites e Fixação",
+  "tipo": "Rebites",
+  "name": "Rebite Flor Preto 48X21mm"
+ },
+ {
+  "id": "fe52146f-8f9a-4d3e-a16e-c043407449dc",
+  "category": "chapa-pintura",
+  "sub": "Rebites e Fixação",
+  "tipo": "Rebites",
+  "name": "Rebite Multi-Grip Aba Larga 48X17"
+ },
+ {
+  "id": "cfb744c4-bd39-455d-a38c-4ece34021d7b",
+  "category": "chapa-pintura",
+  "sub": "Rebites e Fixação",
+  "tipo": "Rebites",
+  "name": "Rebite Plastico Preto 5X17.5"
+ },
+ {
+  "id": "78d683e6-8427-4810-b43a-41117e055c4f",
+  "category": "chapa-pintura",
+  "sub": "Rebites e Fixação",
+  "tipo": "Rebites",
+  "name": "Rebite Plastico Preto 6.5X18"
+ },
+ {
+  "id": "0821750c-134a-4d77-88ef-575bace42f97",
+  "category": "chapa-pintura",
+  "sub": "Rebites e Fixação",
+  "tipo": "Rebites",
+  "name": "Rebite Plastico Preto 6X25"
+ },
+ {
+  "id": "2c15b18a-9d6a-4faf-87f5-54cdde93d9eb",
+  "category": "chapa-pintura",
+  "sub": "Rebites e Fixação",
+  "tipo": "Rebites",
+  "name": "Rebite Pop Aluminio/Aço"
+ },
+ {
+  "id": "b21eb3a4-55d9-4e74-8e50-3c23fc192e7c",
+  "category": "chapa-pintura",
+  "sub": "Rebites e Fixação",
+  "tipo": "Rebites",
+  "name": "Rebite Trebol 4.0X10.5mm"
+ },
+ {
+  "id": "6f07f4b3-2a6e-462a-9997-522619de05f8",
+  "category": "chapa-pintura",
+  "sub": "Rebites e Fixação",
+  "tipo": "Rebites",
+  "name": "Rebite Trebol 4.0X18.8mm"
+ },
+ {
+  "id": "c16cf574-c8a4-47df-8060-100782920f83",
+  "category": "chapa-pintura",
+  "sub": "Rebites e Fixação",
+  "tipo": "Rebites",
+  "name": "Rebite Trebol 4.8X15.3mm"
+ },
+ {
+  "id": "59ec46bf-0d84-436f-9365-b4ce7a772481",
+  "category": "chapa-pintura",
+  "sub": "Rebites e Fixação",
+  "tipo": "Rebites",
+  "name": "Rebite Trebol 4.8X20.5"
+ },
+ {
+  "id": "839557c9-9fd2-4b28-b348-c87a75ed698f",
+  "category": "chapa-pintura",
+  "sub": "Rebites e Fixação",
+  "tipo": "Rebites",
+  "name": "Rebite Trebol 4.8X20.5 Branco"
+ },
+ {
+  "id": "3cb3ef79-32d4-4d2f-aa34-b5007da2aed4",
+  "category": "chapa-pintura",
+  "sub": "Consumíveis",
+  "tipo": "Diluentes e Limpeza",
+  "name": "Recarga para Limpeza de Espatulas 3 un"
+ },
+ {
+  "id": "460afb7c-1286-4b3f-a4c1-f663da5c0861",
+  "category": "chapa-pintura",
+  "sub": "Abrasivos e Corte",
+  "tipo": "Lixas e Esponjas",
+  "name": "Rolo Star-Brite Super Fino 10M"
+ },
+ {
+  "id": "bd221208-68bd-4857-8de8-c2de0c1565a8",
+  "category": "chapa-pintura",
+  "sub": "Colas, Selantes e Fitas",
+  "tipo": null,
+  "name": "Sealing Tape 10mm"
+ },
+ {
+  "id": "aa66ab50-ca12-4ba6-8c65-b7c78bc6eb94",
+  "category": "chapa-pintura",
+  "sub": "Colas, Selantes e Fitas",
+  "tipo": null,
+  "name": "Sealing Tape 8mm"
+ },
+ {
+  "id": "96393358-1482-4509-9191-c149e0747fb6",
+  "category": "chapa-pintura",
+  "sub": "Colas, Selantes e Fitas",
+  "tipo": null,
+  "name": "Silicone Poliuretano Branco 310ml"
+ },
+ {
+  "id": "5951b27f-d49b-4f1e-8402-7db37f36bcb2",
+  "category": "chapa-pintura",
+  "sub": "Colas, Selantes e Fitas",
+  "tipo": null,
+  "name": "Silicone Poliuretano Negro 310 Ml"
+ },
+ {
+  "id": "2a691a42-637c-46f1-a607-e42902ddfa4d",
+  "category": "chapa-pintura",
+  "sub": "Colas, Selantes e Fitas",
+  "tipo": null,
+  "name": "Silicone Pulioretano Cinz 310 Ml"
+ },
+ {
+  "id": "19ef904e-ef6a-43a9-b399-abf1df30e1d3",
+  "category": "chapa-pintura",
+  "sub": "Sprays de Pintura",
+  "tipo": "Tintas e Vernizes",
+  "name": "Spray Aluminio p/Jantes"
+ },
+ {
+  "id": "f104190e-bb62-466c-9cc1-1e3e012b729e",
+  "category": "chapa-pintura",
+  "sub": "Sprays de Pintura",
+  "tipo": "Antigravilha",
+  "name": "Spray Antigravilha 500ml Cinz"
+ },
+ {
+  "id": "eb58ec30-7b07-4110-b2df-2ecd9d2e7661",
+  "category": "chapa-pintura",
+  "sub": "Sprays de Pintura",
+  "tipo": "Antigravilha",
+  "name": "Spray Antigravilha Branco 500ml"
+ },
+ {
+  "id": "53839b2c-3479-4fc0-aca5-156cb651adc2",
+  "category": "chapa-pintura",
+  "sub": "Sprays de Pintura",
+  "tipo": "Antigravilha",
+  "name": "Spray Antigravilha HS preto 680ml"
+ },
+ {
+  "id": "5c823052-41b9-4523-bdfd-04edcf97bd3f",
+  "category": "chapa-pintura",
+  "sub": "Sprays de Pintura",
+  "tipo": "Aparelhos e Primários",
+  "name": "Spray Aparelho Cinz 500ml"
+ },
+ {
+  "id": "191f2a8f-6867-4353-8efe-ee5b0a354663",
+  "category": "chapa-pintura",
+  "sub": "Sprays de Pintura",
+  "tipo": "Aparelhos e Primários",
+  "name": "Spray Aparelho HS Cinza Médio 500 Ml"
+ },
+ {
+  "id": "095bf0f4-e2c9-4c1e-92db-3d8e9846a207",
+  "category": "chapa-pintura",
+  "sub": "Sprays de Pintura",
+  "tipo": "Aparelhos e Primários",
+  "name": "Spray Aparelho Preto Medio 500 Ml"
+ },
+ {
+  "id": "d66be481-f063-466b-bf19-5e6083ba5022",
+  "category": "chapa-pintura",
+  "sub": "Consumíveis",
+  "tipo": "Diluentes e Limpeza",
+  "name": "Spray Gel Renovador Plasticos 400 Ml"
+ },
+ {
+  "id": "2456f1ac-03ac-4d4b-bd4d-c02647d8dcba",
+  "category": "chapa-pintura",
+  "sub": "Consumíveis",
+  "tipo": "Diluentes e Limpeza",
+  "name": "Spray Limpeza Aço Inox 3 In 1"
+ },
+ {
+  "id": "ee7cf3c1-df25-4dfe-9733-601b91aacc10",
+  "category": "chapa-pintura",
+  "sub": "Sprays de Pintura",
+  "tipo": "Tintas e Vernizes",
+  "name": "Spray Preto Gloss 400ml"
+ },
+ {
+  "id": "bddb74cd-422b-4b0e-8abe-e3543f25774a",
+  "category": "chapa-pintura",
+  "sub": "Sprays de Pintura",
+  "tipo": "Tintas e Vernizes",
+  "name": "Spray Preto Matt 400ml"
+ },
+ {
+  "id": "02b8925f-4ee9-4a9a-93df-0f273a0fa423",
+  "category": "chapa-pintura",
+  "sub": "Sprays de Pintura",
+  "tipo": "Aparelhos e Primários",
+  "name": "Spray Promotor de Adesão 500 ml"
+ },
+ {
+  "id": "432b9dcb-993a-439a-9ad3-675c358ec968",
+  "category": "chapa-pintura",
+  "sub": "Sprays de Pintura",
+  "tipo": "Tintas e Vernizes",
+  "name": "Spray Satin Preto 400ml"
+ },
+ {
+  "id": "22a2b589-e961-4051-9202-9c04aef90a63",
+  "category": "chapa-pintura",
+  "sub": "Sprays de Pintura",
+  "tipo": "Tintas e Vernizes",
+  "name": "Spray X4 Texturado Antracite 400ml"
+ },
+ {
+  "id": "c5061ef4-e128-4716-835c-04c530d937b1",
+  "category": "chapa-pintura",
+  "sub": "Sprays de Pintura",
+  "tipo": "Tintas e Vernizes",
+  "name": "Spray X4 Texturado Preto Fino 400ml"
+ },
+ {
+  "id": "f3ebe460-7431-4943-a40d-885e278d95da",
+  "category": "chapa-pintura",
+  "sub": "Sprays de Pintura",
+  "tipo": "Tintas e Vernizes",
+  "name": "Spray X4 Texturado Preto Médio 400ml"
+ },
+ {
+  "id": "99c3b871-7ccf-40c3-bd43-84bacc7b4c82",
+  "category": "chapa-pintura",
+  "sub": "Sprays de Pintura",
+  "tipo": "Aparelhos e Primários",
+  "name": "Spray de Aparelho de Enchimento HS Branco"
+ },
+ {
+  "id": "bc0807e6-c008-43eb-afda-9d73de466685",
+  "category": "chapa-pintura",
+  "sub": "Sprays de Pintura",
+  "tipo": "Proteção de Cavidades",
+  "name": "Spray de Cera p/Cavidades 500ml"
+ },
+ {
+  "id": "0470fb15-197f-413a-8f1b-f02e36ef4d7f",
+  "category": "chapa-pintura",
+  "sub": "Sprays de Pintura",
+  "tipo": "Tintas e Vernizes",
+  "name": "Spray de Verniz Brilho"
+ },
+ {
+  "id": "392f6649-8e66-4a07-9736-67bcbe19dcb9",
+  "category": "chapa-pintura",
+  "sub": "Sprays de Pintura",
+  "tipo": "Proteção de Cavidades",
+  "name": "Spray de Zinco 400 Ml"
+ },
+ {
+  "id": "a7f7d9a3-5ef9-4e97-9047-19c21f645901",
+  "category": "chapa-pintura",
+  "sub": "Rebites e Fixação",
+  "tipo": "Porcas, Anilhas e Parafusos",
+  "name": "Tampas p/Parafuso Chapa de Matricula"
+ },
+ {
+  "id": "926a723e-e072-4b58-a8f3-79053d224269",
+  "category": "chapa-pintura",
+  "sub": "Rebites e Fixação",
+  "tipo": "Rebites",
+  "name": "Tampas p/Rebites Brancas"
+ },
+ {
+  "id": "41d95a7c-96f7-4038-b325-85aa84265cea",
+  "category": "eletricidade",
+  "sub": "Cablagem e Ligações",
+  "tipo": "Abraçadeiras Plásticas",
+  "name": "Abraçadeira Plastica 2,5-100"
+ },
+ {
+  "id": "5729b52c-54e8-42ba-a555-0292ef76898b",
+  "category": "eletricidade",
+  "sub": "Cablagem e Ligações",
+  "tipo": "Abraçadeiras Plásticas",
+  "name": "Abraçadeira Plastica 3,6-150"
+ },
+ {
+  "id": "feea4a00-2b2c-44f9-8773-fc26f4abc9ff",
+  "category": "eletricidade",
+  "sub": "Cablagem e Ligações",
+  "tipo": "Abraçadeiras Plásticas",
+  "name": "Abraçadeira Plastica 4,8-200"
+ },
+ {
+  "id": "b3876ca3-0561-4e39-bc32-6cd84095e78e",
+  "category": "eletricidade",
+  "sub": "Cablagem e Ligações",
+  "tipo": "Abraçadeiras Plásticas",
+  "name": "Abraçadeira Plastica 4,8-300"
+ },
+ {
+  "id": "9419e3fe-9ad9-4215-a8b6-0d531a83e584",
+  "category": "eletricidade",
+  "sub": "Cablagem e Ligações",
+  "tipo": "Abraçadeiras Plásticas",
+  "name": "Abraçadeira Plastica 4,8X390mm"
+ },
+ {
+  "id": "4b5080c8-cac2-470f-bd13-9830feece9dd",
+  "category": "eletricidade",
+  "sub": "Cablagem e Ligações",
+  "tipo": "Abraçadeiras Plásticas",
+  "name": "Abraçadeira Plastica 7,6X390mm"
+ },
+ {
+  "id": "508b6216-b349-4617-a94b-1b7a3090159d",
+  "category": "eletricidade",
+  "sub": "Cablagem e Ligações",
+  "tipo": "Abraçadeiras Plásticas",
+  "name": "Abraçadeira Plastica 7.5-350"
+ },
+ {
+  "id": "49f1cfc2-2e0a-4ad2-9747-767a8eba39fc",
+  "category": "eletricidade",
+  "sub": "Cablagem e Ligações",
+  "tipo": "Abraçadeiras Plásticas",
+  "name": "Abraçadeira Plastica 9.0-550"
+ },
+ {
+  "id": "0ab25c34-aa95-4abf-9666-2cc6b047ccee",
+  "category": "eletricidade",
+  "sub": "Cablagem e Ligações",
+  "tipo": "Abraçadeiras Plásticas",
+  "name": "Abraçadeira Plastica de Chassis"
+ },
+ {
+  "id": "eb63ab90-ec49-4fad-bcff-30587507abe4",
+  "category": "eletricidade",
+  "sub": "Iluminação Profissional",
+  "tipo": "Barras LED",
+  "name": "Barra Osram Leddriving Lightbar MX250"
+ },
+ {
+  "id": "0df2a5db-0f4b-417c-bdc0-ad5cd49ab29e",
+  "category": "eletricidade",
+  "sub": "Iluminação Profissional",
+  "tipo": "Barras LED",
+  "name": "Barra Osram Ledriving Lightbar SX-300"
+ },
+ {
+  "id": "f46e4c30-4cc5-48cb-92d1-39d86e091501",
+  "category": "eletricidade",
+  "sub": "Cablagem e Ligações",
+  "tipo": "Fios e Terminais",
+  "name": "CONJ.DE Passa-Fios Borracha"
+ },
+ {
+  "id": "486e4106-0fc5-415d-aac6-b3e7aff3bd6a",
+  "category": "eletricidade",
+  "sub": "Fusíveis",
+  "tipo": null,
+  "name": "CONJ.FUSIVEIS 252 Pza"
+ },
+ {
+  "id": "ce81af4e-ba63-4317-8357-a73dab3604d6",
+  "category": "eletricidade",
+  "sub": "Fusíveis",
+  "tipo": null,
+  "name": "CONJ.FUSIVEIS Mini"
+ },
+ {
+  "id": "384f0494-4ce2-4a11-9017-32703d9fd62c",
+  "category": "eletricidade",
+  "sub": "Cablagem e Ligações",
+  "tipo": "Mangas Termorretráteis",
+  "name": "CONJ.MANGA Termoretratil"
+ },
+ {
+  "id": "db960d84-ee3f-4132-8745-96999f30d282",
+  "category": "eletricidade",
+  "sub": "Cablagem e Ligações",
+  "tipo": "Fios e Terminais",
+  "name": "Conj. Terminais de Derivaçao"
+ },
+ {
+  "id": "0cb52da9-4447-4991-b415-9a90822f18a9",
+  "category": "eletricidade",
+  "sub": "Cablagem e Ligações",
+  "tipo": "Fios e Terminais",
+  "name": "Fio Eletrico 0.75mm Azul 200mt"
+ },
+ {
+  "id": "130515ee-f99c-4e0a-bb65-0c671d128114",
+  "category": "eletricidade",
+  "sub": "Cablagem e Ligações",
+  "tipo": "Fios e Terminais",
+  "name": "Fio Eletrico 1.0mm Branco 200mt"
+ },
+ {
+  "id": "01cd190b-785d-492a-8250-6f2b542c1dc2",
+  "category": "eletricidade",
+  "sub": "Cablagem e Ligações",
+  "tipo": "Fitas Adesivas e Isoladoras",
+  "name": "Fita Adesiva Eqpvc 35 My Transp."
+ },
+ {
+  "id": "1dbe4e47-0cc1-4062-942f-d78a5f723dcc",
+  "category": "eletricidade",
+  "sub": "Cablagem e Ligações",
+  "tipo": "Fitas Adesivas e Isoladoras",
+  "name": "Fita Americana Cinz. e Preta"
+ },
+ {
+  "id": "9291f144-4ca7-4d11-bf02-a1e42f109fde",
+  "category": "eletricidade",
+  "sub": "Cablagem e Ligações",
+  "tipo": "Fitas Adesivas e Isoladoras",
+  "name": "Fita Americana Duct Tesa 50X50 Preto"
+ },
+ {
+  "id": "500c76cd-9cb1-4b76-85f0-1072e35f3733",
+  "category": "eletricidade",
+  "sub": "Cablagem e Ligações",
+  "tipo": "Fitas Adesivas e Isoladoras",
+  "name": "Fita Americana Extra Band 50X50 Preto"
+ },
+ {
+  "id": "f1ab990b-3d52-498a-93fe-f20a344efb5b",
+  "category": "eletricidade",
+  "sub": "Cablagem e Ligações",
+  "tipo": "Fitas Adesivas e Isoladoras",
+  "name": "Fita Americana Extra Power 50X50"
+ },
+ {
+  "id": "6c50566b-d72a-4196-ba9d-2b6f14eeb038",
+  "category": "eletricidade",
+  "sub": "Cablagem e Ligações",
+  "tipo": "Fitas Adesivas e Isoladoras",
+  "name": "Fita Americana Extra Preta"
+ },
+ {
+  "id": "d9d9057f-ea09-42a0-96f2-9ce67436f943",
+  "category": "eletricidade",
+  "sub": "Cablagem e Ligações",
+  "tipo": "Fitas Adesivas e Isoladoras",
+  "name": "Fita Isoladora 19X20 Preto"
+ },
+ {
+  "id": "0a738b8e-6372-4db7-a8a9-b9895195cc9e",
+  "category": "eletricidade",
+  "sub": "Cablagem e Ligações",
+  "tipo": "Fitas Adesivas e Isoladoras",
+  "name": "Fita de Pano Tesa 19X25 M"
+ },
+ {
+  "id": "21f24811-a1b0-4c19-9beb-8c3a9b03ae90",
+  "category": "eletricidade",
+  "sub": "Fusíveis",
+  "tipo": null,
+  "name": "Fusivel de Ficha Auto 05 Amp"
+ },
+ {
+  "id": "87323bcc-0f9e-4657-a22f-bc56061e87f9",
+  "category": "eletricidade",
+  "sub": "Fusíveis",
+  "tipo": null,
+  "name": "Fusivel de Ficha Auto 10 Amp"
+ },
+ {
+  "id": "5fa36334-ce44-4c06-9b53-264c1b66e45d",
+  "category": "eletricidade",
+  "sub": "Fusíveis",
+  "tipo": null,
+  "name": "Fusivel de Ficha Auto 15 Amp"
+ },
+ {
+  "id": "f5290edd-f0c7-46e7-ad55-97071a48ca1e",
+  "category": "eletricidade",
+  "sub": "Fusíveis",
+  "tipo": null,
+  "name": "Fusivel de Ficha Auto 20 Amp"
+ },
+ {
+  "id": "158154dc-0db4-4e1d-a180-6a9565ad0bb4",
+  "category": "eletricidade",
+  "sub": "Fusíveis",
+  "tipo": null,
+  "name": "Fusivel de Ficha Auto 25 Amp"
+ },
+ {
+  "id": "0d5922d3-4346-4701-b3db-f59125e2e956",
+  "category": "eletricidade",
+  "sub": "Fusíveis",
+  "tipo": null,
+  "name": "Fusivel de Ficha Auto 30 Amp"
+ },
+ {
+  "id": "89e4799d-dff7-40fb-aa37-8f45aa095612",
+  "category": "eletricidade",
+  "sub": "Fusíveis",
+  "tipo": null,
+  "name": "Fusivel de Ficha Auto 7,5 Amp"
+ },
+ {
+  "id": "ae8ccccf-645a-4580-bb0e-b7a3cb09c84f",
+  "category": "eletricidade",
+  "sub": "Iluminação Profissional",
+  "tipo": "Gambiarras",
+  "name": "Gambiarra 176 Leds p/Capot Automovel"
+ },
+ {
+  "id": "1ca3490c-ce1d-4b17-a0df-fbca5e3e67ba",
+  "category": "eletricidade",
+  "sub": "Iluminação Profissional",
+  "tipo": "Gambiarras",
+  "name": "Gambiarra 3W COB LED"
+ },
+ {
+  "id": "dae861e9-ed7a-4ada-ab8f-b7958ea62701",
+  "category": "eletricidade",
+  "sub": "Iluminação Profissional",
+  "tipo": "Gambiarras",
+  "name": "Gambiarra COB 5W"
+ },
+ {
+  "id": "a47ac66c-e085-4cc0-882f-e65141d5555c",
+  "category": "eletricidade",
+  "sub": "Iluminação Profissional",
+  "tipo": "Gambiarras",
+  "name": "Gambiarra Kroftool 7WCOB+3W Smd"
+ },
+ {
+  "id": "2440ab6a-99be-431a-8ddf-368aafc5615a",
+  "category": "eletricidade",
+  "sub": "Iluminação Profissional",
+  "tipo": "Gambiarras",
+  "name": "Gambiarra LED Recarregável Magnética 100lm"
+ },
+ {
+  "id": "1979b130-baf2-46f1-82c6-51ae05bd8091",
+  "category": "eletricidade",
+  "sub": "Iluminação Profissional",
+  "tipo": "Gambiarras",
+  "name": "Gambiarra OSRAM LEDinspect FAST CHARGE PRO 500"
+ },
+ {
+  "id": "1693f863-0047-45a8-989f-9e1b12ac3425",
+  "category": "eletricidade",
+  "sub": "Iluminação Profissional",
+  "tipo": "Gambiarras",
+  "name": "Gambiarra OSRAM LEDinspect HEADTORCH 250"
+ },
+ {
+  "id": "150ba230-8925-4164-9b62-a1bd3ce889d0",
+  "category": "eletricidade",
+  "sub": "Iluminação Profissional",
+  "tipo": "Gambiarras",
+  "name": "Gambiarra OSRAM LEDinspect PRO BONNET 1400"
+ },
+ {
+  "id": "652f6b30-e119-4881-b8a6-cd7d666c2c35",
+  "category": "eletricidade",
+  "sub": "Iluminação Profissional",
+  "tipo": "Gambiarras",
+  "name": "Gambiarra Osram LEDinspect POCKET 200"
+ },
+ {
+  "id": "1902bfe8-6874-449e-aeff-7858b0f3fd57",
+  "category": "eletricidade",
+  "sub": "Iluminação Profissional",
+  "tipo": "Gambiarras",
+  "name": "Gambiarra Osram LEDinspect POCKET PRO 400"
+ },
+ {
+  "id": "94dc9283-4269-44be-a66c-d8dad85d7e9e",
+  "category": "eletricidade",
+  "sub": "Iluminação Profissional",
+  "tipo": "Gambiarras",
+  "name": "Gambiarra Osram LEDinspect SLIM MAX 1000"
+ },
+ {
+  "id": "8dda38d9-9267-46a1-8516-b6a918dced16",
+  "category": "eletricidade",
+  "sub": "Iluminação Profissional",
+  "tipo": "Gambiarras",
+  "name": "Gambiarra Osram LEDinspect TWIST 250"
+ },
+ {
+  "id": "ffc4df25-c3b8-4385-bd59-7a23f7501b9a",
+  "category": "eletricidade",
+  "sub": "Iluminação Profissional",
+  "tipo": "Gambiarras",
+  "name": "Gambiarra Osram LEDinspect Utility 1000"
+ },
+ {
+  "id": "51e879df-e553-496a-824c-4b0e9a999a73",
+  "category": "eletricidade",
+  "sub": "Iluminação Profissional",
+  "tipo": "Gambiarras",
+  "name": "Gambiarra Ultrafina Kroftool"
+ },
+ {
+  "id": "49d30ed5-8f09-43e7-848d-12082a4e9d6c",
+  "category": "eletricidade",
+  "sub": "Iluminação Profissional",
+  "tipo": "Gambiarras",
+  "name": "Gambiarra de Capot Rbl 1000"
+ },
+ {
+  "id": "a3f1c99e-8303-47e6-ac87-71d9f553aacf",
+  "category": "eletricidade",
+  "sub": "Fusíveis",
+  "tipo": null,
+  "name": "Kit de Fusiveis 120pcs"
+ },
+ {
+  "id": "d8c81bfb-0bc6-4f64-851a-48aff84238db",
+  "category": "eletricidade",
+  "sub": "Fusíveis",
+  "tipo": null,
+  "name": "Kit de Fusiveis Maxi"
+ },
+ {
+  "id": "a249b250-ead9-4266-b19f-1ee4fd3d3e75",
+  "category": "eletricidade",
+  "sub": "Fusíveis",
+  "tipo": null,
+  "name": "Kit de Fusiveis Mini"
+ },
+ {
+  "id": "20db273a-6768-42c5-9ad6-96aca4ce25e9",
+  "category": "eletricidade",
+  "sub": "Lâmpadas",
+  "tipo": "Sinalização e Presença",
+  "name": "LAMPADAS PY21W OSRAM 12V 21W BAU15S DIADEM CHROME"
+ },
+ {
+  "id": "2a4b7cc2-50a8-4692-8bb7-6230983f1282",
+  "category": "eletricidade",
+  "sub": "Lâmpadas",
+  "tipo": "Faróis",
+  "name": "Lampada Auto HB4-9006 12V 55W"
+ },
+ {
+  "id": "b5ee21d9-841b-4bee-bf70-1abc9db4bc46",
+  "category": "eletricidade",
+  "sub": "Lâmpadas",
+  "tipo": "Sinalização e Presença",
+  "name": "Lampada OSRAM BaU15s 12v 21w (P21w) AMBAR"
+ },
+ {
+  "id": "fef26aca-d7e2-45c3-87c8-b963bea21900",
+  "category": "eletricidade",
+  "sub": "Lâmpadas",
+  "tipo": "Sinalização e Presença",
+  "name": "Lampada T10 Osram cool blue intense NG 5w 12v"
+ },
+ {
+  "id": "ebf78f53-04f1-4243-9eaa-9dc54fe5ba4d",
+  "category": "eletricidade",
+  "sub": "Lâmpadas",
+  "tipo": "Sinalização e Presença",
+  "name": "Lampada T10 WY5W 12V 5W Ambar"
+ },
+ {
+  "id": "7557088b-1a47-4815-bb8b-d9e6382b60ba",
+  "category": "eletricidade",
+  "sub": "Lâmpadas",
+  "tipo": "Sinalização e Presença",
+  "name": "Lampadas Auto 12V 21/5W"
+ },
+ {
+  "id": "5e1b78d3-060c-402c-872d-cd55c10e40e2",
+  "category": "eletricidade",
+  "sub": "Lâmpadas",
+  "tipo": "Sinalização e Presença",
+  "name": "Lampadas Auto 12V 5W"
+ },
+ {
+  "id": "625b8201-3ed1-441d-934d-2d1b6d735d29",
+  "category": "eletricidade",
+  "sub": "Lâmpadas",
+  "tipo": "Sinalização e Presença",
+  "name": "Lampadas Auto 12v21w"
+ },
+ {
+  "id": "b3f2a046-13f3-4c67-8cde-5ed8260ae1d0",
+  "category": "eletricidade",
+  "sub": "Lâmpadas",
+  "tipo": "Sinalização e Presença",
+  "name": "Lampadas Auto 24V C5W T11X36"
+ },
+ {
+  "id": "f70d93c8-f6ec-42fe-bb52-c0a35e657948",
+  "category": "eletricidade",
+  "sub": "Lâmpadas",
+  "tipo": "Faróis",
+  "name": "Lampadas Auto 24V H4 75/70W"
+ },
+ {
+  "id": "54db8d7e-27ed-4436-abcd-a3a5add332eb",
+  "category": "eletricidade",
+  "sub": "Lâmpadas",
+  "tipo": "Sinalização e Presença",
+  "name": "Lampadas Auto Ambar (Pisca) 12V 21/5W"
+ },
+ {
+  "id": "81661d27-9926-4ab3-800a-2b36bc22daa8",
+  "category": "eletricidade",
+  "sub": "Lâmpadas",
+  "tipo": "Sinalização e Presença",
+  "name": "Lampadas Auto BA15 24V 21W"
+ },
+ {
+  "id": "d1596861-e8a8-4f18-bc60-851fd9f41e9f",
+  "category": "eletricidade",
+  "sub": "Lâmpadas",
+  "tipo": "Sinalização e Presença",
+  "name": "Lampadas Auto BA15s 24V 5W"
+ },
+ {
+  "id": "8b5aa08d-96af-48b6-89ca-5b309790af50",
+  "category": "eletricidade",
+  "sub": "Lâmpadas",
+  "tipo": "Sinalização e Presença",
+  "name": "Lampadas Auto BA95 12V 4W"
+ },
+ {
+  "id": "556846da-09a3-401c-a8e2-9749d2d243e2",
+  "category": "eletricidade",
+  "sub": "Lâmpadas",
+  "tipo": "Faróis",
+  "name": "Lampadas Auto H1 12v55w"
+ },
+ {
+  "id": "74d45935-c769-4112-868c-f155bef45a52",
+  "category": "eletricidade",
+  "sub": "Lâmpadas",
+  "tipo": "Faróis",
+  "name": "Lampadas Auto H11 12V55W"
+ },
+ {
+  "id": "8d9b1bee-046a-4109-ac0f-f1f40488c9c4",
+  "category": "eletricidade",
+  "sub": "Lâmpadas",
+  "tipo": "Faróis",
+  "name": "Lampadas Auto H3 12V 55W"
+ },
+ {
+  "id": "28010e98-b8a0-4599-8d88-2dc7ec6d0f11",
+  "category": "eletricidade",
+  "sub": "Lâmpadas",
+  "tipo": "Faróis",
+  "name": "Lampadas Auto H4 12V 60/55W"
+ },
+ {
+  "id": "40ed71f5-48cd-40ee-9ddd-929806393b92",
+  "category": "eletricidade",
+  "sub": "Lâmpadas",
+  "tipo": "Faróis",
+  "name": "Lampadas Auto H7 12V 55W"
+ },
+ {
+  "id": "b4ef0d61-08d3-47ab-b3fb-83ce1bc71232",
+  "category": "eletricidade",
+  "sub": "Lâmpadas",
+  "tipo": "Sinalização e Presença",
+  "name": "Lampadas Auto T10 W5W 24V 5W"
+ },
+ {
+  "id": "614ad02b-88ce-43c1-b691-e499d40a32fa",
+  "category": "eletricidade",
+  "sub": "Lâmpadas",
+  "tipo": "Sinalização e Presença",
+  "name": "Lampadas Auto T10 s/Casquilho 12v5w"
+ },
+ {
+  "id": "721a5103-b927-4226-8212-d2c4148ba3a5",
+  "category": "eletricidade",
+  "sub": "Lâmpadas",
+  "tipo": "Sinalização e Presença",
+  "name": "Lampadas Auto T15 16W12V"
+ },
+ {
+  "id": "62f65d26-1f6c-405e-b3e3-df97915b84fc",
+  "category": "eletricidade",
+  "sub": "Lâmpadas",
+  "tipo": "Sinalização e Presença",
+  "name": "Lampadas Auto Tubular"
+ },
+ {
+  "id": "94490f1b-f279-4777-96c5-81b174d90010",
+  "category": "eletricidade",
+  "sub": "Lâmpadas",
+  "tipo": "Sinalização e Presença",
+  "name": "Lampadas Auto s/Casquilho 12V 1,2W"
+ },
+ {
+  "id": "e18e427c-04e0-4532-8b28-480e66fff44a",
+  "category": "eletricidade",
+  "sub": "Lâmpadas",
+  "tipo": "Sinalização e Presença",
+  "name": "Lampadas Auto s/Casquilho Z46 12v21/5W"
+ },
+ {
+  "id": "f1af864d-ff70-4073-9040-7253a17f425e",
+  "category": "eletricidade",
+  "sub": "Lâmpadas",
+  "tipo": "Faróis",
+  "name": "Lampadas H4 Osram 12V 60/55W"
+ },
+ {
+  "id": "be4a4481-bf69-419a-9e0b-00a57ed62c4d",
+  "category": "eletricidade",
+  "sub": "Lâmpadas",
+  "tipo": "Sinalização e Presença",
+  "name": "Lampadas H6W BAx95 12V 6W"
+ },
+ {
+  "id": "186388ac-ad8f-4a3b-89fc-b675c8f3992b",
+  "category": "eletricidade",
+  "sub": "Lâmpadas",
+  "tipo": "Xénon (HID)",
+  "name": "Lampadas HID D3S M-Teck 6000K"
+ },
+ {
+  "id": "9cbef3cc-2179-4c8a-88cb-03bcf67a1ba6",
+  "category": "eletricidade",
+  "sub": "Lâmpadas",
+  "tipo": "Xénon (HID)",
+  "name": "Lampadas HID M-Teck D15 6000K"
+ },
+ {
+  "id": "d4f96f4e-bca3-4b7b-97e8-36b05516f379",
+  "category": "eletricidade",
+  "sub": "Lâmpadas",
+  "tipo": "Xénon (HID)",
+  "name": "Lampadas HID M-Teck D2S Basic 6000K"
+ },
+ {
+  "id": "eb02eba2-4230-4eff-9888-cf44f7893db1",
+  "category": "eletricidade",
+  "sub": "Lâmpadas",
+  "tipo": "Sinalização e Presença",
+  "name": "Lampadas M-Tech 12V 21W (Polo"
+ },
+ {
+  "id": "b3630c13-0829-4c82-b3f6-6e60158ef68f",
+  "category": "eletricidade",
+  "sub": "Lâmpadas",
+  "tipo": "Sinalização e Presença",
+  "name": "Lampadas Osram BA15s 12V 21W (P21w)"
+ },
+ {
+  "id": "67b24207-b09c-4a0f-97f8-cdcd5b5817fa",
+  "category": "eletricidade",
+  "sub": "Lâmpadas",
+  "tipo": "Sinalização e Presença",
+  "name": "Lampadas Osram C5W 12V 5W"
+ },
+ {
+  "id": "68a2afa5-575e-440d-8891-86bae05878df",
+  "category": "eletricidade",
+  "sub": "Lâmpadas",
+  "tipo": "Faróis",
+  "name": "Lampadas Osram H1 12V 55W"
+ },
+ {
+  "id": "fd953f76-e7d3-4b3d-a754-12a92cc3132d",
+  "category": "eletricidade",
+  "sub": "Lâmpadas",
+  "tipo": "Faróis",
+  "name": "Lampadas Osram H7 12V 55W"
+ },
+ {
+  "id": "fbd7a4a6-e69f-49cc-8de0-accb01b46e46",
+  "category": "eletricidade",
+  "sub": "Lâmpadas",
+  "tipo": "Sinalização e Presença",
+  "name": "Lampadas Osram R10W(Ba15s) 12V 10W"
+ },
+ {
+  "id": "3d895315-53ac-49d6-a195-cab49b4ba06a",
+  "category": "eletricidade",
+  "sub": "Lâmpadas",
+  "tipo": "Sinalização e Presença",
+  "name": "Lampadas Osram R5W (BA15s) 12V 5W"
+ },
+ {
+  "id": "4e5d9050-31fa-4b48-b223-96a708dd8f74",
+  "category": "eletricidade",
+  "sub": "Lâmpadas",
+  "tipo": "Sinalização e Presença",
+  "name": "Lampadas Osram W21/5W 12V 21/5W"
+ },
+ {
+  "id": "efd31c84-b73e-4894-9957-a970c841afb5",
+  "category": "eletricidade",
+  "sub": "Lâmpadas",
+  "tipo": "Sinalização e Presença",
+  "name": "Lampadas Osram W5W (T10) 12V 5W"
+ },
+ {
+  "id": "ebc03ae6-804a-473f-ab8e-a16bc8cb23d5",
+  "category": "eletricidade",
+  "sub": "Lâmpadas",
+  "tipo": "Sinalização e Presença",
+  "name": "Lampadas Osram WY5W 5XF510"
+ },
+ {
+  "id": "d27450c6-53b0-46ef-bd77-4bb5297712ac",
+  "category": "eletricidade",
+  "sub": "Cablagem e Ligações",
+  "tipo": "Mangas Termorretráteis",
+  "name": "Manga Termoretratil Cx 2,4 Mm Preta"
+ },
+ {
+  "id": "b1aae645-c8e5-46b9-8e37-1c5fcb35d205",
+  "category": "eletricidade",
+  "sub": "Cablagem e Ligações",
+  "tipo": "Mangas Termorretráteis",
+  "name": "Manga Termoretratil Cx 3.2mm Preta"
+ },
+ {
+  "id": "0f01c721-f1f2-4ab8-ae5c-5089b0e513db",
+  "category": "eletricidade",
+  "sub": "Cablagem e Ligações",
+  "tipo": "Mangas Termorretráteis",
+  "name": "Manga Termoretratil Cx 4.8mm Preta"
+ },
+ {
+  "id": "db75d4c7-5732-49d3-a350-46dfb24e3511",
+  "category": "eletricidade",
+  "sub": "Cablagem e Ligações",
+  "tipo": "Mangas Termorretráteis",
+  "name": "Manga Termoretratil Cx 6.4mm Preta"
+ },
+ {
+  "id": "881c9e7d-2dfa-4ba6-a94b-0834dd483de9",
+  "category": "eletricidade",
+  "sub": "Cablagem e Ligações",
+  "tipo": "Mangas Termorretráteis",
+  "name": "Manga Termoretratil Cx 9.5mm Preta"
+ },
+ {
+  "id": "7393ee14-f04b-4d9d-9e86-b4c1c59ae0a1",
+  "category": "eletricidade",
+  "sub": "Cablagem e Ligações",
+  "tipo": "Fios e Terminais",
+  "name": "Terminal Isolado Azul Femea"
+ },
+ {
+  "id": "b375bf8a-d8c1-4952-9011-0785ff606bcc",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Caixa e Roquetes",
+  "name": "Acrescente de 1/2 F X 3/4 M"
+ },
+ {
+  "id": "d099aa85-20f6-4073-a527-08ff098ac41f",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Caixa e Roquetes",
+  "name": "Acrescente de 1/2¨ 75mm"
+ },
+ {
+  "id": "1f302f31-61a1-43a5-b9cd-3a77bda50257",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Caixa e Roquetes",
+  "name": "Acrescente de 3/4 200mm"
+ },
+ {
+  "id": "6ee1a784-0fbf-49d9-8f5b-300e557a22db",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Caixa e Roquetes",
+  "name": "Acrescente de Impacto 3/4 23mm"
+ },
+ {
+  "id": "351c197d-cd7e-47a2-8427-776a47258dc3",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Caixa e Roquetes",
+  "name": "Acrescento de 1/4 100mm"
+ },
+ {
+  "id": "18a6f5b4-5bb1-498d-87d5-1c9b9ba2f748",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Alavancas",
+  "name": "Alavanca para Pneumáticos 16\" (40-64cm)"
+ },
+ {
+  "id": "6ff94234-fa3e-4b05-8f0f-41afa0556812",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Alavancas",
+  "name": "Alavanca para Pneumáticos 24\" (60,96cm)"
+ },
+ {
+  "id": "5a64c3fa-d248-457e-acb3-cc4cc991f873",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Alicates",
+  "name": "Alicate Abraçadeiras Transmissoes"
+ },
+ {
+  "id": "4362363a-29f8-4123-878b-070a635d69f5",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Alicates",
+  "name": "Alicate Abraçadeiras Tubo de Escape"
+ },
+ {
+  "id": "b361b372-1719-4887-b995-9e1b04dcd125",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Alicates",
+  "name": "Alicate Corte Diagonal 200mm"
+ },
+ {
+  "id": "bd142643-a721-42a0-98d5-b1b8d616afe0",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Alicates",
+  "name": "Alicate Descarnar Fio LY-700B"
+ },
+ {
+  "id": "9d147598-aecf-494a-9068-eed95f7124cc",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Alicates",
+  "name": "Alicate Pentru p/Tubo de Combustivel"
+ },
+ {
+  "id": "40bc3e45-577c-4243-bb7a-78b96e4051dd",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Alicates",
+  "name": "Alicate de Corte"
+ },
+ {
+  "id": "c2f02cd2-a186-488a-af10-26104ebbdf28",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Alicates",
+  "name": "Alicate de Corte 150mm"
+ },
+ {
+  "id": "474d4f42-bb44-4a68-b221-879181719948",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Alicates",
+  "name": "Alicate de Corte Diagonal 180mm"
+ },
+ {
+  "id": "315153d0-6c79-445d-a00b-6084f749e137",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Alicates",
+  "name": "Alicate de Freios Abrir Direito 175mm"
+ },
+ {
+  "id": "6a730ac9-3bda-4122-885e-3e36e7e16806",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Alicates",
+  "name": "Alicate de Molas de Travao"
+ },
+ {
+  "id": "75d9f2ca-c415-4922-83da-5ac255c044f3",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Alicates",
+  "name": "Alicate de Pontas Curvas"
+ },
+ {
+  "id": "774258f8-b681-41a8-b7a6-e16a6f06139d",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Alicates",
+  "name": "Alicate de Pontas Direitas"
+ },
+ {
+  "id": "910b574d-617c-4825-ad36-6f2684782e3c",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Alicates",
+  "name": "Alicate p/Abraçadeiras Cabo Rigido"
+ },
+ {
+  "id": "bac7fa8a-e5b1-49bb-973b-ac55af1c7eb2",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Alicates",
+  "name": "Alicate p/Abraçadeiras com Cabo Flexível"
+ },
+ {
+  "id": "1ea26565-3aa4-49bd-b813-09429f9581cd",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Alicates",
+  "name": "Alicate para Abraçadeiras"
+ },
+ {
+  "id": "8e59498a-3016-430a-8c1e-c3c03902773b",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Alicates",
+  "name": "Alicate para Abraçadeiras Coifa da Junta"
+ },
+ {
+  "id": "4f00b15b-4a13-472a-89e7-d8c55321ad5e",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Alicates",
+  "name": "Alicate para Abraçadeiras para Foles"
+ },
+ {
+  "id": "793a7d21-e855-4541-b222-f3a454f22701",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Alicates",
+  "name": "Alicate para Retirar Molas de Friso"
+ },
+ {
+  "id": "e7dec659-6fcd-41fd-8e6c-ced37ae75278",
+  "category": "ferramentas",
+  "sub": "Equipamento de Oficina",
+  "tipo": "Conforto do Mecânico",
+  "name": "Almofada p/Joelhos e Cabeça c/Luz LED"
+ },
+ {
+  "id": "06982c23-9c59-461a-a23c-0f774878923c",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Caixa e Roquetes",
+  "name": "Alongamento para Chaves de Cx de 1/4"
+ },
+ {
+  "id": "7e6ca70a-6abf-49ed-9bf3-35bf786e21e0",
+  "category": "ferramentas",
+  "sub": "Diagnóstico e Medição",
+  "tipo": "Medição",
+  "name": "Apalpa Folgas 32 Laminas"
+ },
+ {
+  "id": "8efe4c13-d11c-4ce0-b676-e73d4d618ec6",
+  "category": "ferramentas",
+  "sub": "Equipamento de Oficina",
+  "tipo": "Carros e Arrumação",
+  "name": "Armario de 4 Gavetas Vazio"
+ },
+ {
+  "id": "9984a386-accd-4fc5-8551-908553b937d9",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Caixa e Roquetes",
+  "name": "Aumento de 3/4\" 200mm"
+ },
+ {
+  "id": "0bcd7a28-3dce-49eb-91f0-7949eb28d670",
+  "category": "ferramentas",
+  "sub": "Equipamento de Oficina",
+  "tipo": "Elevação",
+  "name": "Bancada de Elevaçao para Motas até 400kg"
+ },
+ {
+  "id": "bbda0bef-4bf1-4715-8a28-a49fd1011aa5",
+  "category": "ferramentas",
+  "sub": "Equipamento de Oficina",
+  "tipo": "Conforto do Mecânico",
+  "name": "Banco para Mecânico com Bandeja"
+ },
+ {
+  "id": "d72cbe93-3f84-4902-9f00-40b215011051",
+  "category": "ferramentas",
+  "sub": "Equipamento de Oficina",
+  "tipo": null,
+  "name": "Base Magnetica c/Pinça p/Estufa"
+ },
+ {
+  "id": "9fba3757-f3ff-46ec-af01-9da2d7de2ea4",
+  "category": "ferramentas",
+  "sub": "Equipamento de Oficina",
+  "tipo": "Elevação",
+  "name": "Base p/Macaco Hidraulico 10299"
+ },
+ {
+  "id": "92fa93da-a810-4d78-b481-20d1f5e4aebb",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Bits e Pontas",
+  "name": "Bit Phillips PH2 p/Jogo 66160"
+ },
+ {
+  "id": "0e0298f9-6386-4c39-b0f1-17231ee41332",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Bits e Pontas",
+  "name": "Bit TORXT30 p/Jogo 6160"
+ },
+ {
+  "id": "b318421b-3256-4f22-9748-c5fc4d568f13",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Bits e Pontas",
+  "name": "Bit Torx 1/4 TX30"
+ },
+ {
+  "id": "8309aeb3-261d-402e-8190-d3866645a8de",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Bits e Pontas",
+  "name": "Bit Torx 1/4 c/Ponta Inveolavel TX30"
+ },
+ {
+  "id": "68afa07a-bf76-4567-90b9-94670d81ef55",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Bits e Pontas",
+  "name": "Bit Torx Curto 10mm T30"
+ },
+ {
+  "id": "48dacbff-1c06-4a6d-9013-9b5c869b51e8",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Bits e Pontas",
+  "name": "Bit Torx Curto 10mm T40"
+ },
+ {
+  "id": "5246d4cf-aba3-4d7b-9606-3951b8d4e204",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Bits e Pontas",
+  "name": "Bit Torx T30 Longo p/Jogo 6160"
+ },
+ {
+  "id": "861758cb-88c7-4e45-8a5a-e16600b6ac89",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Bits e Pontas",
+  "name": "Bit Torx T40 5/16\""
+ },
+ {
+  "id": "2ce77de4-78d8-448b-9422-3c24de27044b",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Bits e Pontas",
+  "name": "Bit Torx T40 Longo p/Jogo 6160"
+ },
+ {
+  "id": "0810785f-03f2-4284-bb42-c01ad21f9a87",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Bits e Pontas",
+  "name": "Bit Torx T40 p/Jogo 6160"
+ },
+ {
+  "id": "eab4ca83-c40b-4629-b8a6-a931017114d7",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Bits e Pontas",
+  "name": "Bit Torx T45 p/Jogo 6160"
+ },
+ {
+  "id": "b3f6cea0-43a2-47c0-82e2-449a55f516bf",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Bits e Pontas",
+  "name": "Bit Torx T50 10mm Curto"
+ },
+ {
+  "id": "23fb380f-9539-4cad-b496-4d8c01712cdf",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Bits e Pontas",
+  "name": "Bit Torx T50 5/16\""
+ },
+ {
+  "id": "8649a7a4-b87e-49cf-9335-d17a5d57f9ef",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Bits e Pontas",
+  "name": "Bit Torx Tx 30 1/4"
+ },
+ {
+  "id": "f59883bb-506d-4488-a0c2-d5216d9c614f",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Bits e Pontas",
+  "name": "Bit Umbraco 12mm p/Jogo 6160"
+ },
+ {
+  "id": "8ea3fc5e-e5ae-46f1-949d-47d6549b6afe",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Bits e Pontas",
+  "name": "Bit Umbraco Longo 10mm p/Jogo 6160"
+ },
+ {
+  "id": "448be15e-3ae7-4f26-9e9d-74aa056e9f27",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Bits e Pontas",
+  "name": "Bit Xzm Longo M8 p/Jogo 6160"
+ },
+ {
+  "id": "4e63e4de-fe87-4517-a994-5212cf56adf6",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Bits e Pontas",
+  "name": "Bit Xzn Longo M6 p/Jogo 6160"
+ },
+ {
+  "id": "a7a00c00-b372-4435-bfe5-6ec7ad39a360",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Bits e Pontas",
+  "name": "Bit de 1/4 c/ Ponta Torx Inviolavel T15"
+ },
+ {
+  "id": "966e63c4-9850-4451-8864-7e328d95b066",
+  "category": "ferramentas",
+  "sub": "Equipamento de Oficina",
+  "tipo": "Elevação",
+  "name": "Bloco de Borracha p/Elevador"
+ },
+ {
+  "id": "de26e0a7-da45-4cba-8337-2125391f475c",
+  "category": "ferramentas",
+  "sub": "Ferramenta Especial",
+  "tipo": "Travões",
+  "name": "Bocal para Sangrar Travoes"
+ },
+ {
+  "id": "94301a23-e7d6-442d-80d3-2f8a8cd17540",
+  "category": "ferramentas",
+  "sub": "Equipamento de Oficina",
+  "tipo": "Bombas e Fluidos",
+  "name": "Bomba Bateria Diesel"
+ },
+ {
+  "id": "f874e913-0583-42f7-b578-adc513987ca4",
+  "category": "ferramentas",
+  "sub": "Equipamento de Oficina",
+  "tipo": "Bombas e Fluidos",
+  "name": "Bomba de Massa Duplo Pistao 450CC"
+ },
+ {
+  "id": "adb1767a-571f-4c8f-8533-0a2ab1cfe0f9",
+  "category": "ferramentas",
+  "sub": "Equipamento de Oficina",
+  "tipo": "Bombas e Fluidos",
+  "name": "Bomba de Transfega 12 Volts"
+ },
+ {
+  "id": "a69011e4-7ada-4ef2-8542-24d098ff7686",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Bits e Pontas",
+  "name": "CONJ.BIT Torx 1/2 12pzs"
+ },
+ {
+  "id": "e369f27c-d779-40d1-bf9b-e1e9d35032f0",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Boca e Luneta",
+  "name": "CONJ.CHAVES Inglesas de Gancho"
+ },
+ {
+  "id": "2c5b8b30-bbd4-4b93-b622-c7805bf32ebd",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Bits e Pontas",
+  "name": "CONJ.DE BIT'S 100 Pza"
+ },
+ {
+  "id": "f996ff2f-9c00-4030-b3d7-fdef57c4821b",
+  "category": "ferramentas",
+  "sub": "Roscas e Fixação",
+  "tipo": null,
+  "name": "CONJ.DE Cavilhas Elasticas 300 pzs"
+ },
+ {
+  "id": "ed13f1f3-8b3d-441f-ade0-b67f8aa81b3c",
+  "category": "ferramentas",
+  "sub": "Roscas e Fixação",
+  "tipo": null,
+  "name": "CONJ.DE Molas 200 pcs (Compressao e"
+ },
+ {
+  "id": "e6447783-1e86-4dc9-ba65-039cc84e91d2",
+  "category": "ferramentas",
+  "sub": "Ferramenta Especial",
+  "tipo": "Injeção",
+  "name": "CONJ.DE Testes p/Injectores com"
+ },
+ {
+  "id": "86a735f7-ca69-480e-ac79-0b7d7afc2601",
+  "category": "ferramentas",
+  "sub": "Equipamento de Oficina",
+  "tipo": "Carros e Arrumação",
+  "name": "Caixa de Ferramentas 216 un c/Chaves"
+ },
+ {
+  "id": "fd53bdd0-0dd7-4d1c-a93b-1545afecb9b4",
+  "category": "ferramentas",
+  "sub": "Equipamento de Oficina",
+  "tipo": "Elevação",
+  "name": "Calços Borracha p/Elevador"
+ },
+ {
+  "id": "bb80ea08-9566-47fc-ae0c-f9cf06c3a5c9",
+  "category": "ferramentas",
+  "sub": "Equipamento de Oficina",
+  "tipo": "Elevação",
+  "name": "Calços de Borracha p/Elevador"
+ },
+ {
+  "id": "6f8fa5d3-4aac-407c-9307-0bb65cdd6758",
+  "category": "ferramentas",
+  "sub": "Equipamento de Oficina",
+  "tipo": "Elevação",
+  "name": "Calços de Borracha p/Elevadores 40mm"
+ },
+ {
+  "id": "3a99fa5b-44e1-454f-b63e-a08299db81ce",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Caixa e Roquetes",
+  "name": "Cardan Universal 1/2\""
+ },
+ {
+  "id": "9907be26-e5ef-4d95-bae3-ebcc8f56a66e",
+  "category": "ferramentas",
+  "sub": "Equipamento de Oficina",
+  "tipo": "Carros e Arrumação",
+  "name": "Carrinho com 3 Prateleiras"
+ },
+ {
+  "id": "0b513ead-0412-4eec-ab24-1cf13d857684",
+  "category": "ferramentas",
+  "sub": "Equipamento de Oficina",
+  "tipo": "Carros e Arrumação",
+  "name": "Carrinho de 3 Prateleiras c/Suporte"
+ },
+ {
+  "id": "e97335ad-a3d6-4175-9a08-1b583d05a6c5",
+  "category": "ferramentas",
+  "sub": "Equipamento de Oficina",
+  "tipo": "Carros e Arrumação",
+  "name": "Carro de 3 Prateleiras Plastico 180kg"
+ },
+ {
+  "id": "52aee2e6-d532-4fac-9c29-055f4015f67d",
+  "category": "ferramentas",
+  "sub": "Equipamento de Oficina",
+  "tipo": "Carros e Arrumação",
+  "name": "Carro de 7 Gavetas com Ferramentas"
+ },
+ {
+  "id": "30f2ec62-1f52-4efc-b82e-928a175d8bf3",
+  "category": "ferramentas",
+  "sub": "Equipamento de Oficina",
+  "tipo": "Carros e Arrumação",
+  "name": "Carro de Ferramentas de 3 Tabuleiros"
+ },
+ {
+  "id": "faa5a6ec-5d99-4435-a995-1cd76764ceeb",
+  "category": "ferramentas",
+  "sub": "Equipamento de Oficina",
+  "tipo": "Carros e Arrumação",
+  "name": "Carro p/Maq. de Soldar Vazio"
+ },
+ {
+  "id": "c9c4fc06-68cd-445b-b62c-dea827ec935d",
+  "category": "ferramentas",
+  "sub": "Equipamento de Oficina",
+  "tipo": "Elevação",
+  "name": "Cavaletes de 3 Ton (2un)"
+ },
+ {
+  "id": "5d83bb63-ae09-4f7d-999e-0b3be93cbf03",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves Torx e Allen",
+  "name": "Chae Torx T9"
+ },
+ {
+  "id": "fb47dcbd-a50e-491d-89bf-448d2d7e1546",
+  "category": "ferramentas",
+  "sub": "Ferramenta Especial",
+  "tipo": "Motor e Distribuição",
+  "name": "Chave Ajustavel Femea Tanque"
+ },
+ {
+  "id": "d0f97198-fc9a-4495-a5aa-82317ca38eb2",
+  "category": "ferramentas",
+  "sub": "Ferramenta Especial",
+  "tipo": "Motor e Distribuição",
+  "name": "Chave Articulada p/Velas 3/8 Dozeavada"
+ },
+ {
+  "id": "6be18480-64fd-4cb5-b191-d223f88162d9",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Boca e Luneta",
+  "name": "Chave Boca Luneta 10mm"
+ },
+ {
+  "id": "c661f0a3-7898-48cf-80b2-eec3149050f4",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Boca e Luneta",
+  "name": "Chave Boca Luneta 13mm"
+ },
+ {
+  "id": "eae684c2-363b-4584-86be-50d7407962f5",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Boca e Luneta",
+  "name": "Chave Boca Luneta 16mm"
+ },
+ {
+  "id": "70469568-26b9-45ce-b03f-de244e82fc07",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Boca e Luneta",
+  "name": "Chave Boca Luneta 19mm"
+ },
+ {
+  "id": "7b7fa66d-c25e-46d7-a789-65d2a9624604",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Boca e Luneta",
+  "name": "Chave Boca Luneta 366mm"
+ },
+ {
+  "id": "206f0548-0b2e-4d9a-a8b3-dce7a2d5df29",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Boca e Luneta",
+  "name": "Chave Boca Luneta 8mm"
+ },
+ {
+  "id": "0d5f0002-4fbc-4eb6-a90b-20e6c28ebd53",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Boca e Luneta",
+  "name": "Chave Boca Luneta 9mm"
+ },
+ {
+  "id": "70a80ec7-aa8e-48fd-adc5-754c5aa5d590",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Boca e Luneta",
+  "name": "Chave Boca Luneta c/Roquete 10mm"
+ },
+ {
+  "id": "08152384-c962-49f3-9635-c9b64ad5e8b2",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Boca e Luneta",
+  "name": "Chave Boca Luneta c/Roquete 12mm"
+ },
+ {
+  "id": "155e40a9-fc6e-45b4-b981-519243eb0ac4",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Boca e Luneta",
+  "name": "Chave Boca Luneta c/Roquete 8mm"
+ },
+ {
+  "id": "9442e148-c930-4191-8b6e-0fe4f8d315df",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Boca e Luneta",
+  "name": "Chave Boca Luneta c/Roquete Flexivel"
+ },
+ {
+  "id": "6905ac6a-1bf5-435a-8915-db970898555f",
+  "category": "ferramentas",
+  "sub": "Ferramenta Especial",
+  "tipo": "Motor e Distribuição",
+  "name": "Chave Bomba Conbustivel Vag 120mm"
+ },
+ {
+  "id": "67e62e71-72f8-4ef4-87ca-a7c6e1202975",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Caixa e Roquetes",
+  "name": "Chave Caixa Curta 1/4 SEXT.13MM"
+ },
+ {
+  "id": "e57916d1-0a5e-489a-beea-1723e65f49d1",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Caixa e Roquetes",
+  "name": "Chave Caixa Curta 3/4 Hex 26mm"
+ },
+ {
+  "id": "22648f00-e09f-4a1d-a8a7-bf7df3bc5538",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Caixa e Roquetes",
+  "name": "Chave Caixa Curta 3/4 Hex 30mm"
+ },
+ {
+  "id": "589df6f7-dc53-467c-9d6d-0110a71a913e",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Caixa e Roquetes",
+  "name": "Chave Caixa Curta 3/4HEX 29mm"
+ },
+ {
+  "id": "18272cde-52eb-420b-a113-1ea39ea4b717",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Caixa e Roquetes",
+  "name": "Chave Caixa Curta 9mm"
+ },
+ {
+  "id": "2875e868-4e30-4c78-829a-9380838ba8b9",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Caixa e Roquetes",
+  "name": "Chave Cx 1/2 Torx T40 60mm"
+ },
+ {
+  "id": "4ea5e376-3cf6-42dc-ac0f-59f81b31182e",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Caixa e Roquetes",
+  "name": "Chave Cx 1/2IMPACTO T-20 78mm"
+ },
+ {
+  "id": "a777d18e-6512-4578-8008-9202105804c9",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Caixa e Roquetes",
+  "name": "Chave Cx 1/4 de 08mm"
+ },
+ {
+  "id": "cf608ec5-9bda-4789-984a-51f7cd5d5fff",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Caixa e Roquetes",
+  "name": "Chave Cx Curta Impacto 3/4\" 27mm"
+ },
+ {
+  "id": "342677ea-6c29-4d9c-84cf-3b70fde6e567",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Caixa e Roquetes",
+  "name": "Chave Cx c/Bit Torx 1/4 T15"
+ },
+ {
+  "id": "2cf33240-bf7f-4eed-9a45-5956820c02ad",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Fendas",
+  "name": "Chave Fhilips #1X75mm"
+ },
+ {
+  "id": "29ad138e-2eee-410d-96b9-eda24c378f69",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Fendas",
+  "name": "Chave Fhillips #2X100mm"
+ },
+ {
+  "id": "f84e9367-0f5a-4c83-ab66-ad732d9b8641",
+  "category": "ferramentas",
+  "sub": "Diagnóstico e Medição",
+  "tipo": "Inspeção",
+  "name": "Chave Iman Flexivel c/LED 600mm"
+ },
+ {
+  "id": "c8ae5ea1-382b-4bed-a9c1-1e9a0204442d",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Boca e Luneta",
+  "name": "Chave Inglesa Ajustavel 12\""
+ },
+ {
+  "id": "4a21cc4b-57a4-4b1c-81a8-900e88bd8826",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Boca e Luneta",
+  "name": "Chave Inglesa Ajustavel 15\""
+ },
+ {
+  "id": "165dd0d4-fa0e-48e8-80bf-e2b98bea1eff",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Boca e Luneta",
+  "name": "Chave Luneta Curva 18X19mm"
+ },
+ {
+  "id": "75864fc7-2846-4334-bfb0-6e118c44ca68",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Boca e Luneta",
+  "name": "Chave Luneta Curva 20X22mm"
+ },
+ {
+  "id": "95effd91-8963-4aeb-bc0f-0397951d26dc",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Boca e Luneta",
+  "name": "Chave Luneta Curva c/Fibra Carbono"
+ },
+ {
+  "id": "c82fd731-a071-45d1-8ef0-e9ecb03340e3",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Caixa e Roquetes",
+  "name": "Chave Rabo de Força 3/4 460mm"
+ },
+ {
+  "id": "ac4ba6a3-8288-4546-abc5-19acbf59e521",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Caixa e Roquetes",
+  "name": "Chave Rabo de Força 3/4 500mm"
+ },
+ {
+  "id": "90a4f417-69ea-4030-8f73-6b4d4599a00c",
+  "category": "ferramentas",
+  "sub": "Ferramenta Especial",
+  "tipo": "Extratores e Sacadores",
+  "name": "Chave Saca Retentores"
+ },
+ {
+  "id": "2f69657d-356d-47b7-9f62-bfd5c948e4b6",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves Torx e Allen",
+  "name": "Chave Torx T10"
+ },
+ {
+  "id": "40979867-8a0c-4180-889b-35271cf7b826",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves Torx e Allen",
+  "name": "Chave Torx T15"
+ },
+ {
+  "id": "d74af7db-43c2-4a16-8970-4c92d3c9aea1",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves Torx e Allen",
+  "name": "Chave Torx T20"
+ },
+ {
+  "id": "e60f9e7a-a528-4e53-9986-c0dff516f6c3",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves Torx e Allen",
+  "name": "Chave Torx T25"
+ },
+ {
+  "id": "010090f8-04ef-4da5-8a26-c82ab9df0cbd",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves Torx e Allen",
+  "name": "Chave Torx T27"
+ },
+ {
+  "id": "f425e9e0-16a5-4bce-a530-dbcaffda159a",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves Torx e Allen",
+  "name": "Chave Torx T30"
+ },
+ {
+  "id": "befffcd8-d40e-41f2-a895-c330fab0bbfd",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves Torx e Allen",
+  "name": "Chave Torx T40"
+ },
+ {
+  "id": "5347681b-3397-4ef0-ac3a-c3c72841df58",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves Torx e Allen",
+  "name": "Chave Torx T7"
+ },
+ {
+  "id": "5a675693-b739-4285-a98e-4d0b65669e6a",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves Torx e Allen",
+  "name": "Chave Torx T8"
+ },
+ {
+  "id": "b3efb4d8-be4b-4c53-962d-55be67faf6ea",
+  "category": "ferramentas",
+  "sub": "Diagnóstico e Medição",
+  "tipo": "Inspeção",
+  "name": "Chave c/Iman Flexibel"
+ },
+ {
+  "id": "11f94b68-926f-472b-a30c-4f81a2192a67",
+  "category": "ferramentas",
+  "sub": "Ferramenta Especial",
+  "tipo": null,
+  "name": "Chave de Aperto Angular com Pinça"
+ },
+ {
+  "id": "419dc24b-6dbd-4341-858d-3e8802fc957f",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Boca e Luneta",
+  "name": "Chave de Boca Luneta 30mm"
+ },
+ {
+  "id": "e4671f65-7e0b-4f6c-99be-a8eefa7ac83e",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Boca e Luneta",
+  "name": "Chave de Boca Luneta 32mm"
+ },
+ {
+  "id": "a85995e7-1f99-410e-9193-bb201a512aec",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Boca e Luneta",
+  "name": "Chave de Boca Luneta 36mm"
+ },
+ {
+  "id": "8e261952-8b0f-478f-87b5-a90128880fe3",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Caixa e Roquetes",
+  "name": "Chave de Caixa 1/4\" Sext. 5mm"
+ },
+ {
+  "id": "462928e0-a372-4288-9c50-b9e90be35d4a",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Caixa e Roquetes",
+  "name": "Chave de Caixa 1/4\" Sext. 6mm"
+ },
+ {
+  "id": "8e31cd51-4c14-457d-8162-aa149857042f",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Caixa e Roquetes",
+  "name": "Chave de Caixa Curta 1/4 6mm"
+ },
+ {
+  "id": "b82e78eb-ce3d-43fc-9559-86d04442dad5",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Caixa e Roquetes",
+  "name": "Chave de Caixa Curta 1/4 SEXT.10MM"
+ },
+ {
+  "id": "29c58bdf-37cb-4e2a-b277-763923076af1",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Caixa e Roquetes",
+  "name": "Chave de Caixa Curta 1/4\" 5mm"
+ },
+ {
+  "id": "74b7c4bc-a162-4e71-a57a-480a4015aba1",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Caixa e Roquetes",
+  "name": "Chave de Caixa Curta 3/8 Sext. 10mm"
+ },
+ {
+  "id": "258d0cce-7bf9-4af5-a377-50201e41049d",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Caixa e Roquetes",
+  "name": "Chave de Caixa Curta 7mm"
+ },
+ {
+  "id": "80d8f5fd-00c7-4803-b035-8ceef5a635b5",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Caixa e Roquetes",
+  "name": "Chave de Caixa Longa 1/4 10mm"
+ },
+ {
+  "id": "70dd6cec-6336-48b3-8dd7-2adce4f6712b",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Caixa e Roquetes",
+  "name": "Chave de Caixa c/Bit Torx 1/4 T50"
+ },
+ {
+  "id": "59c93ef2-405d-48ac-a49e-7b849d9d7328",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Caixa e Roquetes",
+  "name": "Chave de Cx 1/2 17mm"
+ },
+ {
+  "id": "e6feff9a-d4e9-4b95-9729-e4bce17f53ed",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Caixa e Roquetes",
+  "name": "Chave de Cx 1/2 18mm"
+ },
+ {
+  "id": "e0261b4a-e94d-447d-a8d4-aec2963c12c1",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Caixa e Roquetes",
+  "name": "Chave de Cx 1/2\" 60mm Hexag 06mm"
+ },
+ {
+  "id": "8b2248f2-a067-4a0f-8481-9b6ef05ea4be",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Caixa e Roquetes",
+  "name": "Chave de Cx 1/2\" Sext."
+ },
+ {
+  "id": "b3f5269a-4a20-4958-ad11-1a7ead8fe95b",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Caixa e Roquetes",
+  "name": "Chave de Cx 1/2\" Torx T-50 100mm"
+ },
+ {
+  "id": "7de73a27-307e-40d3-bc7b-55b88806e8bd",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Caixa e Roquetes",
+  "name": "Chave de Cx 1/4 Comprida 11mm"
+ },
+ {
+  "id": "b946a6a3-cde6-4c66-86c7-6109996a6a81",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Caixa e Roquetes",
+  "name": "Chave de Cx 1/4 SEXT.8MM"
+ },
+ {
+  "id": "25c30ec3-ed5c-408c-855a-1c789e91ea2c",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Caixa e Roquetes",
+  "name": "Chave de Cx Curta 1/2 08mm"
+ },
+ {
+  "id": "1b7edae6-eeb0-4ef1-9915-c15eabd490c1",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Caixa e Roquetes",
+  "name": "Chave de Cx Curta 1/2 12mm"
+ },
+ {
+  "id": "9dec7bc7-7cdd-4c8c-9855-f24ee19aa890",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Caixa e Roquetes",
+  "name": "Chave de Cx Curta 1/2 17mm"
+ },
+ {
+  "id": "cbef6ada-347f-4f76-ad0b-06db736c3a69",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Caixa e Roquetes",
+  "name": "Chave de Cx Curta 1/2 18mm"
+ },
+ {
+  "id": "939e5a4e-2836-4e44-a67b-6568e02324a1",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Caixa e Roquetes",
+  "name": "Chave de Cx Curta 1/2 21mm"
+ },
+ {
+  "id": "95d8aeef-ef6a-454f-9a03-d6ccb66f17c4",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Caixa e Roquetes",
+  "name": "Chave de Cx Curta 1/2 24mm"
+ },
+ {
+  "id": "04689198-d62d-4350-b43a-26657dd3f71a",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Caixa e Roquetes",
+  "name": "Chave de Cx Curta 1/2 Bihex 30mm"
+ },
+ {
+  "id": "ed21d0a0-7829-480f-bd67-8941203ffd92",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Caixa e Roquetes",
+  "name": "Chave de Cx Curta 1/2 Hex. 21mm"
+ },
+ {
+  "id": "6def5ca4-2a55-4bbc-981c-e4e3cf51b769",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Caixa e Roquetes",
+  "name": "Chave de Cx Curta 1/2\" 16mm"
+ },
+ {
+  "id": "a8933433-1133-4912-9af0-bec60c7f32d2",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Caixa e Roquetes",
+  "name": "Chave de Cx Curta 3/4 38mm"
+ },
+ {
+  "id": "996a6cf2-e57b-45a5-8e2b-82039abeb125",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Caixa e Roquetes",
+  "name": "Chave de Cx Curta 3/4 41mm"
+ },
+ {
+  "id": "73313dec-d61f-4c3c-a57b-8efd87649389",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Caixa e Roquetes",
+  "name": "Chave de Cx Curta 3/8\" 14mm"
+ },
+ {
+  "id": "a7c8f6d8-fb60-4c83-b52b-84e27cb4a88b",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Caixa e Roquetes",
+  "name": "Chave de Cx SEXT.1/4\" 13mm"
+ },
+ {
+  "id": "d2196fc6-2975-47a6-ae7d-cfe901022e42",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Caixa e Roquetes",
+  "name": "Chave de Cx Sext. 1/4 Longa 8mm"
+ },
+ {
+  "id": "193600df-3226-46d4-bca3-65c313c99123",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Caixa e Roquetes",
+  "name": "Chave de Cx Sext. Curta 1/2\" 15mm"
+ },
+ {
+  "id": "18a9f884-a5e2-4527-83ad-ab9a1b20c704",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Caixa e Roquetes",
+  "name": "Chave de Cx Sext. Longa 1/2\" 16mm"
+ },
+ {
+  "id": "34fa28b4-2b72-49a2-88a4-92f2c6eb004e",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Caixa e Roquetes",
+  "name": "Chave de Cx Sext. Longa 1/2\" 24mm"
+ },
+ {
+  "id": "b05093d6-06fd-41c1-90e9-5af26e27a335",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Caixa e Roquetes",
+  "name": "Chave de Cx Sextavada 10 Mm 1/4"
+ },
+ {
+  "id": "7ef989db-6cb8-42a4-a420-236c56b628e6",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Caixa e Roquetes",
+  "name": "Chave de Cx Torx Tx 40 1/2\\\""
+ },
+ {
+  "id": "31477a6a-b179-4ad0-b81f-7bf11f0636ea",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Caixa e Roquetes",
+  "name": "Chave de Cx c/Bit Torx 1/4 T20"
+ },
+ {
+  "id": "7b10d7cd-df15-4462-a3b7-87b6e46d0bbc",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Caixa e Roquetes",
+  "name": "Chave de Cx c/Bit Torx 1/4 T40"
+ },
+ {
+  "id": "813f779e-4636-49af-947c-6f28e4f7af2a",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Caixa e Roquetes",
+  "name": "Chave de Cx. 1/4 Sext. 12mm"
+ },
+ {
+  "id": "97964886-b6f4-4a07-972a-067cfdf70cdb",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves Dinamométricas",
+  "name": "Chave de Dinamometro 1/2\" 35-350nm"
+ },
+ {
+  "id": "6f73ce0a-3663-41dd-b2f0-75b7adefe502",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves Dinamométricas",
+  "name": "Chave de Dinamometro 200/1000nm 3/4\" Dr"
+ },
+ {
+  "id": "20f9fc67-782d-4a42-815f-44be1f62fee6",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves Dinamométricas",
+  "name": "Chave de Dinamometro c/Visor 1/2\" 20 -"
+ },
+ {
+  "id": "ee1da4c1-8537-4a70-aa8c-eec34ac32041",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Fendas",
+  "name": "Chave de Fenda 1.2X6.5 200mm"
+ },
+ {
+  "id": "0bd8ede6-140b-4699-80a5-45b9fa4fe738",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Fendas",
+  "name": "Chave de Fenda 6X150mm"
+ },
+ {
+  "id": "3432f08e-14b9-4f47-b998-7d39021f93cd",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Fendas",
+  "name": "Chave de Fenda 6X38mm"
+ },
+ {
+  "id": "cf2b7bc2-112e-4992-9272-5e0ae76bff63",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Fendas",
+  "name": "Chave de Fendas Plana 6X100"
+ },
+ {
+  "id": "16cb6d8c-97d2-4eb2-9808-7de5ef7bb24a",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Fendas",
+  "name": "Chave de Fendas SL6X100MM"
+ },
+ {
+  "id": "c3566db0-53d7-4e47-9e6a-d371e750053d",
+  "category": "ferramentas",
+  "sub": "Ferramenta Especial",
+  "tipo": "Filtros e Óleo",
+  "name": "Chave de Filtro 74-14 Aluminio"
+ },
+ {
+  "id": "07feb2d8-87bb-4824-b879-fd35d13f6fa5",
+  "category": "ferramentas",
+  "sub": "Ferramenta Especial",
+  "tipo": "Filtros e Óleo",
+  "name": "Chave de Filtros Gasoleo Ford Transit"
+ },
+ {
+  "id": "0b9a920d-28dc-4172-bfe4-1fed57154a26",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Boca e Luneta",
+  "name": "Chave de Grifo 600mm"
+ },
+ {
+  "id": "97210328-35e1-4b2f-897f-6b3e57702ef6",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Boca e Luneta",
+  "name": "Chave de Grifos Aluminio Alloy 14\\\""
+ },
+ {
+  "id": "e325262f-6a2e-46e4-8840-a287e509b820",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Caixa e Roquetes",
+  "name": "Chave de Impacto Articulada Universal"
+ },
+ {
+  "id": "5e33cbfc-704d-467c-bbc8-518eec6239c9",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Caixa e Roquetes",
+  "name": "Chave de Impacto Sext 1/2 X 5mm"
+ },
+ {
+  "id": "bda1322c-3a46-4920-9f01-f14f8ef12ff6",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Boca e Luneta",
+  "name": "Chave de Luneta Curva 14X15"
+ },
+ {
+  "id": "480c27fb-7a37-434c-983c-54b3d80e7623",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Boca e Luneta",
+  "name": "Chave de Luneta Curva 18X19"
+ },
+ {
+  "id": "e6982841-515f-4f38-8e34-30e8d8c50c64",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Boca e Luneta",
+  "name": "Chave de Luneta Curva 24X27"
+ },
+ {
+  "id": "1e265aac-52c4-4203-a774-2e59d83ceef3",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Fendas",
+  "name": "Chave de Pancada 1/2 de Fenda e Fhilips"
+ },
+ {
+  "id": "ec8f78ea-f3fe-4b9c-8652-c98f79988b08",
+  "category": "ferramentas",
+  "sub": "Diagnóstico e Medição",
+  "tipo": "Inspeção",
+  "name": "Chave de Pinças c/Iman e Luz LED"
+ },
+ {
+  "id": "faf70d60-3a4b-43bd-ae75-e7f4b44b372b",
+  "category": "ferramentas",
+  "sub": "Ferramenta Especial",
+  "tipo": "Motor e Distribuição",
+  "name": "Chave de Tensao da Correia de"
+ },
+ {
+  "id": "5d6552df-a205-4e29-8b95-a99f328c3090",
+  "category": "ferramentas",
+  "sub": "Ferramenta Especial",
+  "tipo": "Motor e Distribuição",
+  "name": "Chave de Velas 14X250mm - 3/8"
+ },
+ {
+  "id": "39eca5f5-e281-4527-82ee-0ffee80a9a59",
+  "category": "ferramentas",
+  "sub": "Ferramenta Especial",
+  "tipo": "Motor e Distribuição",
+  "name": "Chave de Velas 3/8 14X65mm"
+ },
+ {
+  "id": "3bddadf3-cf4e-4c71-9a57-0806d1428cd3",
+  "category": "ferramentas",
+  "sub": "Ferramenta Especial",
+  "tipo": "Motor e Distribuição",
+  "name": "Chave de Velas Magnetica Fina"
+ },
+ {
+  "id": "a37c4210-7203-4a7b-8aa3-a9e63bee2a34",
+  "category": "ferramentas",
+  "sub": "Ferramenta Especial",
+  "tipo": "Filtros e Óleo",
+  "name": "Chave p/Filtro de Oleo de Corrente"
+ },
+ {
+  "id": "3e2c59b7-69f1-48e0-90c8-71d5194135a6",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Caixa e Roquetes",
+  "name": "Chave p/Rabo de Força 1/2\""
+ },
+ {
+  "id": "28eac5ff-e9be-4041-a099-165c83ca165e",
+  "category": "ferramentas",
+  "sub": "Ferramenta Especial",
+  "tipo": "Carroçaria e Interiores",
+  "name": "Chave p/Retirar Mola de Friso"
+ },
+ {
+  "id": "5c8050e8-eac4-4895-bdd6-8df743acfdca",
+  "category": "ferramentas",
+  "sub": "Ferramenta Especial",
+  "tipo": "Motor e Distribuição",
+  "name": "Chave para Tensor Correias"
+ },
+ {
+  "id": "9fc232d2-cc3b-43de-9e7d-6c438df13525",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Boca e Luneta",
+  "name": "Chaves de Boca Luneta 12mm"
+ },
+ {
+  "id": "88c6ba19-9198-4b12-a2ce-6e48c99010c9",
+  "category": "ferramentas",
+  "sub": "Equipamento de Oficina",
+  "tipo": null,
+  "name": "Cola p/Tacos RV-0 163GR"
+ },
+ {
+  "id": "e113adab-c065-446e-a5b1-6f968c8978ad",
+  "category": "ferramentas",
+  "sub": "Diagnóstico e Medição",
+  "tipo": "Testes de Motor",
+  "name": "Compresimetro de Motores Diseal 17"
+ },
+ {
+  "id": "3729afcd-3349-4a0c-8b8e-76588185aaeb",
+  "category": "ferramentas",
+  "sub": "Ferramenta Especial",
+  "tipo": "Extratores e Sacadores",
+  "name": "Compressor de Molas 370mm"
+ },
+ {
+  "id": "60e6c275-6276-41d3-be6a-c6369bcd2ba3",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Boca e Luneta",
+  "name": "Conj. de 8 Chaves Tipo \"C\" Cabeça"
+ },
+ {
+  "id": "b748e477-e559-455c-b21a-1276630f1d45",
+  "category": "ferramentas",
+  "sub": "Ferramenta Especial",
+  "tipo": "Extratores e Sacadores",
+  "name": "Conjunto Universal p/Retirar Porcas"
+ },
+ {
+  "id": "d65b1fa5-d462-4043-8e95-90fede6a94dc",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Alicates",
+  "name": "Conjunto de 3 Alicates Angulares para Tubo"
+ },
+ {
+  "id": "e22fd0f5-acb3-47e1-8053-fbf69001c74f",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Alicates",
+  "name": "Conjunto de 3 Alicates de Pressao 380mm"
+ },
+ {
+  "id": "3ad9cf8b-e13b-44c1-8fa5-8a0f889c3fe3",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Alicates",
+  "name": "Conjunto de 3 Alicates para Tubos"
+ },
+ {
+  "id": "6022909f-a952-47c0-950d-38740187d588",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Alicates",
+  "name": "Conjunto de 3 alicates de bico fino de 275 mm"
+ },
+ {
+  "id": "bfc129b6-7635-4803-8afa-ac5c0e7e6fca",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Alicates",
+  "name": "Conjunto de 4 Alicates de Freio de 175mm 19-60mm"
+ },
+ {
+  "id": "7ea890e9-df74-4498-bd2d-d319b09f6176",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Alicates",
+  "name": "Conjunto de 4 Alicates de Freios"
+ },
+ {
+  "id": "017bed8f-b2e2-4704-bf7b-c241616290cc",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Alicates",
+  "name": "Conjunto de 4 Alicates para Freios 175mm 19-60mm"
+ },
+ {
+  "id": "6113589f-40cc-493b-953c-f52e23e0de6d",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Alicates",
+  "name": "Conjunto de 9 alicates para abraçadeiras de mangueira"
+ },
+ {
+  "id": "c627e902-1055-4ae5-bf1d-613caffda5b9",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Martelos e Punções",
+  "name": "Conjunto de Tais e Martelos 7 pzs"
+ },
+ {
+  "id": "08e95f2c-bf15-4e3e-92d9-6a60b222b055",
+  "category": "ferramentas",
+  "sub": "Ferramenta Especial",
+  "tipo": "Motor e Distribuição",
+  "name": "Conjunto de Trancas p/Motor Opel"
+ },
+ {
+  "id": "bfd6b6a7-9395-4ad8-93dc-a7239576a362",
+  "category": "ferramentas",
+  "sub": "Ferramenta Especial",
+  "tipo": "Motor e Distribuição",
+  "name": "Despolidor de Cilindros 89-370mm 4"
+ },
+ {
+  "id": "8af88b56-003c-480d-b88d-c7910a7928c1",
+  "category": "ferramentas",
+  "sub": "Diagnóstico e Medição",
+  "tipo": "Testes de Motor",
+  "name": "Detetor de Fugas Por Fumo"
+ },
+ {
+  "id": "d3cb8330-f627-40df-adfa-82a4a0e32229",
+  "category": "ferramentas",
+  "sub": "Pneus e Rodas",
+  "tipo": null,
+  "name": "Disco de Limpeza p/Cubos de"
+ },
+ {
+  "id": "d05eb8a9-837e-440e-a954-f975c4f2de71",
+  "category": "ferramentas",
+  "sub": "Equipamento de Oficina",
+  "tipo": "Ar Comprimido e Enroladores",
+  "name": "Enrolador Ar Comprimido Azul 13 Mt"
+ },
+ {
+  "id": "82660693-87c8-40d9-a0d0-d278b7786d3c",
+  "category": "ferramentas",
+  "sub": "Equipamento de Oficina",
+  "tipo": "Ar Comprimido e Enroladores",
+  "name": "Enrolador de Agua 1/2\" 15M"
+ },
+ {
+  "id": "925c76e2-89e9-43c5-928e-5093e66b8abb",
+  "category": "ferramentas",
+  "sub": "Equipamento de Oficina",
+  "tipo": "Ar Comprimido e Enroladores",
+  "name": "Enrolador de Ar Comprimido 8X12mm"
+ },
+ {
+  "id": "e5408e9d-9dd0-4ae1-b8cc-aa8d36bf91ce",
+  "category": "ferramentas",
+  "sub": "Equipamento de Oficina",
+  "tipo": "Ar Comprimido e Enroladores",
+  "name": "Enrolador de Cabo Eletrico 21M Verde"
+ },
+ {
+  "id": "1cf54a2e-b0b4-4c2e-bc46-0b000462232c",
+  "category": "ferramentas",
+  "sub": "Equipamento de Oficina",
+  "tipo": "Ar Comprimido e Enroladores",
+  "name": "Enrolador de Parede Ar COMP.10X14,5"
+ },
+ {
+  "id": "0070c4dd-c1b9-4fd6-a6de-a70d70f12da1",
+  "category": "ferramentas",
+  "sub": "Equipamento de Oficina",
+  "tipo": "Ar Comprimido e Enroladores",
+  "name": "Enrolador de Parede Ar/COMPR.11M"
+ },
+ {
+  "id": "ecf77e64-68e2-4257-9434-6da075f0f141",
+  "category": "ferramentas",
+  "sub": "Equipamento de Oficina",
+  "tipo": "Conforto do Mecânico",
+  "name": "Escada de Tres Degraus"
+ },
+ {
+  "id": "f796217f-ba63-41a8-a366-779b89ed073c",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": null,
+  "name": "Escova de Arame Aço 4 Filas"
+ },
+ {
+  "id": "28fbd419-5b31-4e37-8da3-b19fdfaca76c",
+  "category": "ferramentas",
+  "sub": "Diagnóstico e Medição",
+  "tipo": "Inspeção",
+  "name": "Espelho Inspeçao TELESC.EXTENCIVEL 280-"
+ },
+ {
+  "id": "eb247261-5ad6-4bd5-bdc2-75fed37f9a76",
+  "category": "ferramentas",
+  "sub": "Diagnóstico e Medição",
+  "tipo": "Inspeção",
+  "name": "Espelho Telescopico c/Luz LED"
+ },
+ {
+  "id": "e3739ecc-4b32-4f63-87b9-0638d0337732",
+  "category": "ferramentas",
+  "sub": "Equipamento de Oficina",
+  "tipo": "Conforto do Mecânico",
+  "name": "Estrado Convertivel em Banco"
+ },
+ {
+  "id": "6a3a8199-6ea9-402d-ba27-fb3b3aeacdc4",
+  "category": "ferramentas",
+  "sub": "Equipamento de Oficina",
+  "tipo": "Conforto do Mecânico",
+  "name": "Estrado p/Mecanico Plastico 48"
+ },
+ {
+  "id": "883d0bb4-d031-4a85-aa4c-5315fdfb044f",
+  "category": "ferramentas",
+  "sub": "Ferramenta Especial",
+  "tipo": "Extratores e Sacadores",
+  "name": "Estrator de Juntas Homocineticas"
+ },
+ {
+  "id": "862cc829-b527-44d8-84fd-dfbd71644b2f",
+  "category": "ferramentas",
+  "sub": "Ferramenta Especial",
+  "tipo": "Extratores e Sacadores",
+  "name": "Extrator Hidraulico p/Cubos da Roda"
+ },
+ {
+  "id": "31437fad-642a-4502-bbee-7a586c862666",
+  "category": "ferramentas",
+  "sub": "Ferramenta Especial",
+  "tipo": null,
+  "name": "Ferramenta Universal p/Remoçao M10"
+ },
+ {
+  "id": "9fb46937-89ac-4a83-9c5d-396354679f7c",
+  "category": "ferramentas",
+  "sub": "Diagnóstico e Medição",
+  "tipo": "Medição",
+  "name": "Fita Metrica 7.5M X 25mm"
+ },
+ {
+  "id": "1ab3c528-6abe-4153-9dfb-7ee1417181ff",
+  "category": "ferramentas",
+  "sub": "Equipamento de Oficina",
+  "tipo": "Bombas e Fluidos",
+  "name": "Funil de Plastico Bico Flexivel"
+ },
+ {
+  "id": "699bc694-1100-442e-b366-56d89b3a19fc",
+  "category": "ferramentas",
+  "sub": "Equipamento de Oficina",
+  "tipo": "Iluminação de Oficina",
+  "name": "Gambiarra Eletrica 220V 500LM"
+ },
+ {
+  "id": "c81ba0d0-2413-4870-96fe-c1f0794095a4",
+  "category": "ferramentas",
+  "sub": "Equipamento de Oficina",
+  "tipo": "Iluminação de Oficina",
+  "name": "Gambiarra Le Extra Plana c/Fio 200LM"
+ },
+ {
+  "id": "fc6b2c12-28fc-4c01-93ee-6f91ea62e0cb",
+  "category": "ferramentas",
+  "sub": "Equipamento de Oficina",
+  "tipo": "Iluminação de Oficina",
+  "name": "Gambiarra de Cabeça c/Sensor de"
+ },
+ {
+  "id": "55e1e23a-4f5d-484c-8403-d0876b6e0451",
+  "category": "ferramentas",
+  "sub": "Ferramenta Especial",
+  "tipo": "Extratores e Sacadores",
+  "name": "Gancho Universal p/Tirar Braços"
+ },
+ {
+  "id": "4fdc9bb3-ca5e-4f2f-a4a2-a0a1155e0e85",
+  "category": "ferramentas",
+  "sub": "Equipamento de Oficina",
+  "tipo": null,
+  "name": "Garrafa com Liquido para Limpar Farois"
+ },
+ {
+  "id": "2ca7ca14-b12f-4ed1-ac60-e2f1d67a21f7",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Caixa e Roquetes",
+  "name": "Goniometro 1/2\" Flexivel c/Ima"
+ },
+ {
+  "id": "0dcff3b0-f0c8-4679-aedd-f9621bad4fea",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Caixa e Roquetes",
+  "name": "Goniometro de 1/2\""
+ },
+ {
+  "id": "af1ebfae-7bfd-4cd5-9ee0-182fe66e8df1",
+  "category": "ferramentas",
+  "sub": "Diagnóstico e Medição",
+  "tipo": "Inspeção",
+  "name": "Iman Flexivel 300G"
+ },
+ {
+  "id": "6e5d31d3-54fd-4683-84ac-c759c1fe9870",
+  "category": "ferramentas",
+  "sub": "Diagnóstico e Medição",
+  "tipo": "Inspeção",
+  "name": "Iman Flexivel com Pinça e Luz 3 em 1"
+ },
+ {
+  "id": "2d692638-a878-419e-a8cb-c0645d66d847",
+  "category": "ferramentas",
+  "sub": "Ferramenta Especial",
+  "tipo": "Extratores e Sacadores",
+  "name": "Jogo 63pcs Sacar/Colocar Rolamentos"
+ },
+ {
+  "id": "eaf95264-aa99-47b6-8d93-71ea8e297e14",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves Torx e Allen",
+  "name": "Jogo Chaves Allen 90-230mm"
+ },
+ {
+  "id": "42799f50-b3a2-461b-ba3b-e0e77eb3fcd1",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves Torx e Allen",
+  "name": "Jogo Chaves Allen Torx 90-230mm"
+ },
+ {
+  "id": "8b6ddf02-1678-447a-a9cb-cf53184efa19",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Boca e Luneta",
+  "name": "Jogo Chaves Boca Luneta 25 pcs 6X32mm"
+ },
+ {
+  "id": "63329f5f-866d-4fa8-b718-4be566be8d21",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Boca e Luneta",
+  "name": "Jogo Chaves Boca Luneta 8pcs 33-50mm"
+ },
+ {
+  "id": "0f2ca336-4d1f-4615-881b-abb6a5e9b489",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Boca e Luneta",
+  "name": "Jogo Chaves Boca Luneta Polegada 12"
+ },
+ {
+  "id": "5fd7e808-a12d-441a-ad65-4ddd0e595dcd",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Boca e Luneta",
+  "name": "Jogo Chaves Boca/Luneta c/Roquete"
+ },
+ {
+  "id": "8d71c57c-5dda-4cb8-932b-c067db63dd7d",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Caixa e Roquetes",
+  "name": "Jogo Chaves Cachimbo 8 - 19mm 11pcs"
+ },
+ {
+  "id": "30a1ec37-1f52-46e4-9450-f38c447dade4",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Caixa e Roquetes",
+  "name": "Jogo Chaves Caixa c/Bit Torx 1/2 32pcs"
+ },
+ {
+  "id": "e563ab18-da1c-4c12-86fa-e052764e3387",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Caixa e Roquetes",
+  "name": "Jogo Chaves Cx 3/8 de 59 pzs"
+ },
+ {
+  "id": "ffe1ff4b-af31-4297-a707-dcc6c752456f",
+  "category": "ferramentas",
+  "sub": "Ferramenta Especial",
+  "tipo": "Direção e Transmissão",
+  "name": "Jogo Chaves Excentrica Axial Direçao"
+ },
+ {
+  "id": "7da6aaa3-9fe7-4853-b951-25bd0cb2fd7a",
+  "category": "ferramentas",
+  "sub": "Pneus e Rodas",
+  "tipo": null,
+  "name": "Jogo Chaves Impacto Jantes Aluminio 3"
+ },
+ {
+  "id": "67ae4c4b-0d2f-4075-8912-d569fe6ae9e7",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves Torx e Allen",
+  "name": "Jogo Chaves Luneta Torx Plana 4 pcs"
+ },
+ {
+  "id": "3610e66f-2228-4a73-b23c-9cb19da33c16",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves Torx e Allen",
+  "name": "Jogo Chaves Torx T10-T50"
+ },
+ {
+  "id": "80160cdb-a153-4655-8c0d-3003c1a9bf1a",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves Torx e Allen",
+  "name": "Jogo Chaves Torx em T (T10 - T30) 6pcs"
+ },
+ {
+  "id": "39504a37-d4bb-484e-b50a-c2bfcb6bcc3a",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Caixa e Roquetes",
+  "name": "Jogo Chaves c/Bit 1/2 HEX.4-19"
+ },
+ {
+  "id": "072e1817-9e4c-4bd3-a96e-bf3e732a1368",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Caixa e Roquetes",
+  "name": "Jogo Chaves de Caixa 46 pcs 1/4"
+ },
+ {
+  "id": "ba1a3a8a-3ef3-4380-9a3a-12d53e7e9147",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Caixa e Roquetes",
+  "name": "Jogo Chaves de Cx 218pcs 1/4-3/8-1/2"
+ },
+ {
+  "id": "1d8ac676-7a5b-47b8-b243-2217fd0fcf6f",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Boca e Luneta",
+  "name": "Jogo Chaves de Luneta 06-22mm"
+ },
+ {
+  "id": "e4ff7e8e-2ca1-4935-a2f4-9eaa0c22acae",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Boca e Luneta",
+  "name": "Jogo Chaves de Luneta 06-32mm"
+ },
+ {
+  "id": "6af78dc4-945c-4632-a00c-8545f4ccb1f7",
+  "category": "ferramentas",
+  "sub": "Ferramenta Especial",
+  "tipo": "Extratores e Sacadores",
+  "name": "Jogo Extrator de Rolamentos"
+ },
+ {
+  "id": "ae698395-7a7f-40f4-a82c-de5a9b15126d",
+  "category": "ferramentas",
+  "sub": "Ferramenta Especial",
+  "tipo": "Motor e Distribuição",
+  "name": "Jogo Ferramenta p/Alinhar Embraiagem"
+ },
+ {
+  "id": "0f397c1a-4de5-4d53-be42-a024e248db80",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Alavancas",
+  "name": "Jogo Mini Alavancas Rascadores 3 pzs"
+ },
+ {
+  "id": "746e9ce1-5fd8-4864-81ac-95825742941b",
+  "category": "ferramentas",
+  "sub": "Ferramenta Especial",
+  "tipo": "Extratores e Sacadores",
+  "name": "Jogo Pneumatico Extrator Injetores"
+ },
+ {
+  "id": "3749310f-5859-4af9-9480-5a744a1313d5",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Martelos e Punções",
+  "name": "Jogo Punçoes Alfabeticos e Numericos"
+ },
+ {
+  "id": "01eaeb59-28d4-421e-b341-90816048e8b2",
+  "category": "ferramentas",
+  "sub": "Ferramenta Especial",
+  "tipo": "Carroçaria e Interiores",
+  "name": "Jogo Remover Paineis 6pcs"
+ },
+ {
+  "id": "ef698a8f-8c7e-4d21-a623-47300bdf2693",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Martelos e Punções",
+  "name": "Jogo Saca Meia Lua 12pcs"
+ },
+ {
+  "id": "afd78e9f-fdbf-4464-9fb6-adfde13ae600",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Martelos e Punções",
+  "name": "Jogo Vazadores 9pcs 3-12mm"
+ },
+ {
+  "id": "6ba9abd7-63fe-4c96-84dc-ec04f5b271fb",
+  "category": "ferramentas",
+  "sub": "Ferramenta Especial",
+  "tipo": "Carroçaria e Interiores",
+  "name": "Jogo de 4 Desconetores de Tubo"
+ },
+ {
+  "id": "ee9252b2-23ce-475d-802b-59e93d3cc3c4",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Alavancas",
+  "name": "Jogo de Alavancas 4 pzs"
+ },
+ {
+  "id": "50b195c8-0709-455e-98e3-c65f4074c8ac",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Bits e Pontas",
+  "name": "Jogo de Bits 1/4 100pcs"
+ },
+ {
+  "id": "94f89860-421c-4b28-82e6-d95c3c4f9e27",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Bits e Pontas",
+  "name": "Jogo de Bits 10mm 75pcs"
+ },
+ {
+  "id": "5057cfb4-7918-47f3-8aa0-5431d4835ebf",
+  "category": "ferramentas",
+  "sub": "Ferramenta Especial",
+  "tipo": "Direção e Transmissão",
+  "name": "Jogo de Chaves 1/2 para Transmissoes 9"
+ },
+ {
+  "id": "bfbb62d3-426d-42a4-8669-8b395b32bc98",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Boca e Luneta",
+  "name": "Jogo de Chaves 3/8 c/Abertura 6 Pzcs"
+ },
+ {
+  "id": "93f8353d-7788-4aa4-9fe0-15b8413ce849",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves Torx e Allen",
+  "name": "Jogo de Chaves Allen HEXAG.LONGA"
+ },
+ {
+  "id": "13debba0-a3a8-4a05-8e09-05420913003b",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Boca e Luneta",
+  "name": "Jogo de Chaves Boca Luneta 25pcs 06-"
+ },
+ {
+  "id": "d4a0c902-581f-43bb-8c30-2ecf4228103b",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Boca e Luneta",
+  "name": "Jogo de Chaves Boca/Luneta c/Roquete"
+ },
+ {
+  "id": "43542a20-c5c2-4789-b990-051f5ac7aff3",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Fendas",
+  "name": "Jogo de Chaves Fh e Fenda Curtas"
+ },
+ {
+  "id": "f5b0415d-2c4e-4282-a865-3e7840d6b459",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Fendas",
+  "name": "Jogo de Chaves Isoladas"
+ },
+ {
+  "id": "c9f2a9a0-ec31-4e7c-ab35-d08f7bd78fd2",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Caixa e Roquetes",
+  "name": "Jogo de Chaves de Caixa 110pcs 1/4 - 1/2"
+ },
+ {
+  "id": "f0f4ac14-e8e8-441c-b56e-8ee51db0595c",
+  "category": "ferramentas",
+  "sub": "Ferramenta Especial",
+  "tipo": "Filtros e Óleo",
+  "name": "Jogo de Chaves de Filtros p/Oleo 30 pcs"
+ },
+ {
+  "id": "6acdb17e-0e90-4c54-8cb6-cb3e73869f52",
+  "category": "ferramentas",
+  "sub": "Ferramenta Especial",
+  "tipo": "Filtros e Óleo",
+  "name": "Jogo de Chaves p/Filtros de Oleo 19 pcs"
+ },
+ {
+  "id": "8d1a49c3-6a61-4acc-b3f6-ab5be30e4268",
+  "category": "ferramentas",
+  "sub": "Ferramenta Especial",
+  "tipo": "Travões",
+  "name": "Jogo de Chaves para Purgar Travoes"
+ },
+ {
+  "id": "f596931e-0667-42e4-843a-8849b5ed18b9",
+  "category": "ferramentas",
+  "sub": "Equipamento de Oficina",
+  "tipo": "Bombas e Fluidos",
+  "name": "Jogo de Funis 4 pzs"
+ },
+ {
+  "id": "394f3fe1-00cd-4929-89b5-cf15175d6592",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": null,
+  "name": "Jogo de Ganjos Flexiveis 2 pcs"
+ },
+ {
+  "id": "d3eeb1fb-9008-482b-aadc-c40a54335770",
+  "category": "ferramentas",
+  "sub": "Roscas e Fixação",
+  "tipo": null,
+  "name": "Jogo de Helicoides M6 20pzs"
+ },
+ {
+  "id": "a5387271-bdc2-4a22-a322-6e81e8fdab91",
+  "category": "ferramentas",
+  "sub": "Roscas e Fixação",
+  "tipo": null,
+  "name": "Jogo de Helicoides M8 20pzs"
+ },
+ {
+  "id": "46c2d036-9a42-4ed1-9bd0-1804ee23239f",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Martelos e Punções",
+  "name": "Jogo de Puncoes Numericos 3mm"
+ },
+ {
+  "id": "799ade14-58f2-460a-b03e-b75b40746e01",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Martelos e Punções",
+  "name": "Jogo de Punçoes 6 pcs"
+ },
+ {
+  "id": "a07b50c3-f087-4e72-a018-a1e91794b2a7",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Martelos e Punções",
+  "name": "Jogo de Punçoes Alfabetico 3mm"
+ },
+ {
+  "id": "77ca586b-f5e0-43b2-92ff-2eda0478bd31",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Martelos e Punções",
+  "name": "Jogo de Punçoes Alfabetico 4mm"
+ },
+ {
+  "id": "eae06c2b-8bdf-4f91-ba6e-e6f2ceb282a1",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Martelos e Punções",
+  "name": "Jogo de Punçoes Numericos 4mm"
+ },
+ {
+  "id": "6c5f191b-3547-416f-b148-0d2447669fed",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Caixa e Roquetes",
+  "name": "Jogo de Reduçoes 6 pcs"
+ },
+ {
+  "id": "ace2085d-2fac-4b5e-9059-b8fefbeaf083",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Caixa e Roquetes",
+  "name": "Jogo de Reduçoes de Impacto 6pcs"
+ },
+ {
+  "id": "d251306b-e767-4333-a400-3803fcf8849a",
+  "category": "ferramentas",
+  "sub": "Ferramenta Especial",
+  "tipo": "Travões",
+  "name": "Jogo p/Empurrar Embolos de Travao"
+ },
+ {
+  "id": "f07295d3-bc51-42e5-970e-b2815e7053e4",
+  "category": "ferramentas",
+  "sub": "Ferramenta Especial",
+  "tipo": null,
+  "name": "Kit Adaptadores p/Jogo 10723 de 4 pcs"
+ },
+ {
+  "id": "3168d391-4471-4194-876d-1360f26b262b",
+  "category": "ferramentas",
+  "sub": "Equipamento de Oficina",
+  "tipo": "Bombas e Fluidos",
+  "name": "Kit Bomba de Transfega de Bidons"
+ },
+ {
+  "id": "64846151-1d41-4dd1-9bf4-850b79a313bc",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Boca e Luneta",
+  "name": "Kit Chaves Boca/Luneta c/Roquete 09-"
+ },
+ {
+  "id": "212f4c8c-51c6-472d-a330-af88bd4e9d8e",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves Torx e Allen",
+  "name": "Kit Chaves Cardan T20 a T24"
+ },
+ {
+  "id": "94f80c63-a5c8-4541-9878-6e779fd7048b",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Fendas",
+  "name": "Kit Chaves Fenda c/Batente 05 pzs"
+ },
+ {
+  "id": "a340de21-eaf5-4cb2-b30a-7f337942ab05",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Boca e Luneta",
+  "name": "Kit Chaves Luneta Longas Direita 8-19"
+ },
+ {
+  "id": "59b57ec3-51b3-411a-910e-56f3af1e4558",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Fendas",
+  "name": "Kit Chaves Ph 04 pzs"
+ },
+ {
+  "id": "06d817af-eaae-4faf-90cf-967e70b8bd93",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Fendas",
+  "name": "Kit Chaves Ph c/Batente 04 pzs"
+ },
+ {
+  "id": "08390fbe-28b0-4d77-a74f-b964c02d0b75",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Fendas",
+  "name": "Kit Chaves Pz 04 pzs"
+ },
+ {
+  "id": "c798adf3-0509-4686-8a15-cd0105f7c1d1",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves Torx e Allen",
+  "name": "Kit Chaves T Torx T10 - T30 6pcs"
+ },
+ {
+  "id": "1a089fcf-9c01-4536-9075-b67321952697",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves Torx e Allen",
+  "name": "Kit Chaves Torx 10 pzs"
+ },
+ {
+  "id": "47db133f-3e85-4efe-a0bd-599b56701cc1",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Boca e Luneta",
+  "name": "Kit Chaves de Boca 06-32mm"
+ },
+ {
+  "id": "1d095cc7-bd8e-4c49-97bb-8f84b0d6754d",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Boca e Luneta",
+  "name": "Kit Chaves de Luneta 06-32mm"
+ },
+ {
+  "id": "70a8d493-5ab3-43d5-b886-8375196acc55",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Fendas",
+  "name": "Kit Chqaves Fenda 06 pzs"
+ },
+ {
+  "id": "2b677138-6515-4486-8e18-9b246eccce56",
+  "category": "ferramentas",
+  "sub": "Ferramenta Especial",
+  "tipo": "Filtros e Óleo",
+  "name": "Kit Drenagem Oleo Mercedes 9G Tronic"
+ },
+ {
+  "id": "e193c129-c8d2-4365-ac61-217a1d6492d3",
+  "category": "ferramentas",
+  "sub": "Ferramenta Especial",
+  "tipo": null,
+  "name": "Kit Ferramenta p/Mont. e Desmontar"
+ },
+ {
+  "id": "e9c5a7f7-ed4a-453f-a815-de9298818ea8",
+  "category": "ferramentas",
+  "sub": "Ferramenta Especial",
+  "tipo": "Carroçaria e Interiores",
+  "name": "Kit Ferramentas p/ Tirar Vedantes 3 pzs"
+ },
+ {
+  "id": "4facac4c-ab90-4b25-babb-816392d72fed",
+  "category": "ferramentas",
+  "sub": "Ferramenta Especial",
+  "tipo": "Injeção",
+  "name": "Kit Limpeza Assentos de Injetores Diesel"
+ },
+ {
+  "id": "7e095841-c645-4ea5-9b11-dc515fb8628b",
+  "category": "ferramentas",
+  "sub": "Roscas e Fixação",
+  "tipo": null,
+  "name": "Kit Reparacao de Helicoil M5-M12 131 pzs"
+ },
+ {
+  "id": "7dbaa085-26e2-448c-9dba-46bbc5c99375",
+  "category": "ferramentas",
+  "sub": "Equipamento de Oficina",
+  "tipo": null,
+  "name": "Kit Restauraçao de Farois Eletrico"
+ },
+ {
+  "id": "d28d24ae-da94-429c-adec-dad301221aae",
+  "category": "ferramentas",
+  "sub": "Ferramenta Especial",
+  "tipo": "Motor e Distribuição",
+  "name": "Kit Trancas de Motor Vag 1.0-1.2-1.4-1.6L"
+ },
+ {
+  "id": "0454f202-f357-4032-b80a-bf8bb46cdaee",
+  "category": "ferramentas",
+  "sub": "Ferramenta Especial",
+  "tipo": "Motor e Distribuição",
+  "name": "Kit Trancas p/Motor Gasolina PSA/Opel"
+ },
+ {
+  "id": "7655834a-b467-4cfa-bf2b-cbc6ec725eeb",
+  "category": "ferramentas",
+  "sub": "Ferramenta Especial",
+  "tipo": "Motor e Distribuição",
+  "name": "Kit Trancas para Motores BMW"
+ },
+ {
+  "id": "49d7953b-1c6e-4207-a2c8-0caef1d55cba",
+  "category": "ferramentas",
+  "sub": "Pneus e Rodas",
+  "tipo": null,
+  "name": "Kit de 3 Protetores de Jantes"
+ },
+ {
+  "id": "98aa1cd2-1666-44b2-9f20-a751183c2fa3",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Martelos e Punções",
+  "name": "Kit de 4 Cinzeis"
+ },
+ {
+  "id": "742370d3-a887-4a09-b075-5a77720622f6",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Fendas",
+  "name": "Kit de 7 Chaves Fenda c/Modulo de"
+ },
+ {
+  "id": "0b813ffa-9bcd-4913-8806-6725673735a1",
+  "category": "ferramentas",
+  "sub": "Equipamento de Oficina",
+  "tipo": "Conforto do Mecânico",
+  "name": "Kit de Almofadas Inflamaveis 5pcs"
+ },
+ {
+  "id": "bac91791-e732-49d7-88ba-a5ad8af9894c",
+  "category": "ferramentas",
+  "sub": "Ferramenta Especial",
+  "tipo": "Motor e Distribuição",
+  "name": "Kit de Bloqueio de Distribuiçao Vag"
+ },
+ {
+  "id": "6a8d8651-3565-4093-844d-0eed6d8e8759",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Boca e Luneta",
+  "name": "Kit de Chaves Pe de Galo 3/8 10pcs"
+ },
+ {
+  "id": "1a548d18-de57-41d1-b5ef-b4049512ab3c",
+  "category": "ferramentas",
+  "sub": "Ferramenta Especial",
+  "tipo": "Injeção",
+  "name": "Kit de Escovas Limpeza de Injetores"
+ },
+ {
+  "id": "51581340-9293-4d81-9d29-eaf61a0be45d",
+  "category": "ferramentas",
+  "sub": "Pneus e Rodas",
+  "tipo": null,
+  "name": "Kit de Reparaçao de Pneus"
+ },
+ {
+  "id": "a0d357a4-b9dd-4dbc-8ebd-2f03af6480e9",
+  "category": "ferramentas",
+  "sub": "Ferramenta Especial",
+  "tipo": "Motor e Distribuição",
+  "name": "Kit de Sincronizaçao BMW 1.5/2.0 Diesel"
+ },
+ {
+  "id": "318ad83c-07ef-435e-acf3-4d5751d64523",
+  "category": "ferramentas",
+  "sub": "Ferramenta Especial",
+  "tipo": "Motor e Distribuição",
+  "name": "Kit de Trancas Gasolina Ford 1.0 / 1.1"
+ },
+ {
+  "id": "fc364f10-9969-4f12-8d07-a861ad3cafd5",
+  "category": "ferramentas",
+  "sub": "Ferramenta Especial",
+  "tipo": "Ar Condicionado",
+  "name": "Kit de Valvulas para o Ar Condicionado"
+ },
+ {
+  "id": "c9f57f48-9229-4b5d-a681-9a4282788f5e",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Martelos e Punções",
+  "name": "Kit de Vazadores Metrico 12un"
+ },
+ {
+  "id": "7dc282cc-8790-477e-b763-0fed491ce685",
+  "category": "ferramentas",
+  "sub": "Equipamento de Oficina",
+  "tipo": "Iluminação de Oficina",
+  "name": "Lanterna LED de Cabeça COB"
+ },
+ {
+  "id": "e3d42fea-3419-4cf1-a0fc-e4d7b6034700",
+  "category": "ferramentas",
+  "sub": "Pneus e Rodas",
+  "tipo": null,
+  "name": "Limpador de Cubos de Rodas"
+ },
+ {
+  "id": "e1c56389-2a2e-4b12-aea0-3d2a474d12fa",
+  "category": "ferramentas",
+  "sub": "Ferramentas Elétricas",
+  "tipo": "Lixadoras",
+  "name": "Lixadora Orbital 150mm- 2.5mm Orbita"
+ },
+ {
+  "id": "c245ecb5-c89b-41a8-b123-f9b0a016afc5",
+  "category": "ferramentas",
+  "sub": "Ferramentas Elétricas",
+  "tipo": "Máquinas de Impacto",
+  "name": "MAQ.IMPACTO 1/2\" 1750 Nm"
+ },
+ {
+  "id": "57858102-92da-4c4d-ab4e-aec7a882ad29",
+  "category": "ferramentas",
+  "sub": "Equipamento de Oficina",
+  "tipo": "Elevação",
+  "name": "Macaco Garrafa 20T"
+ },
+ {
+  "id": "e41ba2c8-2cd0-4369-b1e6-77b429a6050a",
+  "category": "ferramentas",
+  "sub": "Equipamento de Oficina",
+  "tipo": "Elevação",
+  "name": "Macaco Hidropneumaticode Rodas"
+ },
+ {
+  "id": "dae3d74a-c823-4a74-b355-c31f5543b5e0",
+  "category": "ferramentas",
+  "sub": "Equipamento de Oficina",
+  "tipo": "Elevação",
+  "name": "Macaco de Transmissao 500kg"
+ },
+ {
+  "id": "855dd7df-386c-4275-93c0-b0c4fb4c6fec",
+  "category": "ferramentas",
+  "sub": "Equipamento de Oficina",
+  "tipo": "Ar Comprimido e Enroladores",
+  "name": "Mangueira Ar Comprimido Expiral PU"
+ },
+ {
+  "id": "01cb86ec-bf5a-4b90-b01b-b32d22a70114",
+  "category": "ferramentas",
+  "sub": "Equipamento de Oficina",
+  "tipo": "Ar Comprimido e Enroladores",
+  "name": "Mangueira em Espiral 8X12 15M PU"
+ },
+ {
+  "id": "ba904b62-da9c-4162-a0dd-be5580cf8354",
+  "category": "ferramentas",
+  "sub": "Pneus e Rodas",
+  "tipo": null,
+  "name": "Manometro de Pressao p/Pneus"
+ },
+ {
+  "id": "3cd878eb-90a9-4ddd-9e55-35bf40daa9be",
+  "category": "ferramentas",
+  "sub": "Ferramentas Elétricas",
+  "tipo": "Máquinas de Impacto",
+  "name": "Maq. de Impacto 3/4\" 2000nm"
+ },
+ {
+  "id": "ea36251f-fa9d-4430-a8eb-78c8880306cd",
+  "category": "ferramentas",
+  "sub": "Equipamento de Oficina",
+  "tipo": "Lavagem de Peças",
+  "name": "Maquina Lavar Peças Eletrica 75L"
+ },
+ {
+  "id": "4f6f112c-9fd4-4178-812c-3dd88093da8a",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Martelos e Punções",
+  "name": "Martelo Anti-Retrocesso 1.350kg"
+ },
+ {
+  "id": "a04d8fbd-baf0-41fa-8905-18fb67857553",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Martelos e Punções",
+  "name": "Martelo de Bola 300 Gr"
+ },
+ {
+  "id": "24e14888-ab21-4ffb-bf74-1a4ae29f1b38",
+  "category": "ferramentas",
+  "sub": "Diagnóstico e Medição",
+  "tipo": "Testes de Motor",
+  "name": "Medidor de Compressao p/Motores a"
+ },
+ {
+  "id": "5400d38c-625e-4b80-96c0-c2ff762bccc1",
+  "category": "ferramentas",
+  "sub": "Ferramentas Elétricas",
+  "tipo": "Máquinas de Impacto",
+  "name": "Mini MAQ.IMPACTO1/2\" 1200nm"
+ },
+ {
+  "id": "becfa2da-b3a2-434d-9a27-d3d19876493c",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves Torx e Allen",
+  "name": "Modulo 007 Torx c/Punho Vazio T10-T40"
+ },
+ {
+  "id": "18b32076-340b-4ea6-b6b9-a290e4ae3501",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Fendas",
+  "name": "Modulo 008pcs Chaves Fenda Fh Vazio"
+ },
+ {
+  "id": "0e9ba238-baa9-4ff2-a22f-f087ab467cb5",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Caixa e Roquetes",
+  "name": "Modulo Chaves Cx c/Punho 6pcs"
+ },
+ {
+  "id": "d6fecffc-960a-43cb-a48d-e013b8cc5182",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Boca e Luneta",
+  "name": "Modulo Chaves Luneta Curva 5 pcs"
+ },
+ {
+  "id": "c70583e6-f1fb-4206-869f-49f3be44517e",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Boca e Luneta",
+  "name": "Modulo Chaves de Boca 06-32mm"
+ },
+ {
+  "id": "f2b79e9b-4ed2-444b-b0a2-9e8b52489f7e",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Boca e Luneta",
+  "name": "Modulo Chaves de Luneta 21-32mm"
+ },
+ {
+  "id": "8091b94c-a6cd-447d-a7db-ee7b3f5e1503",
+  "category": "ferramentas",
+  "sub": "Equipamento de Oficina",
+  "tipo": "Carros e Arrumação",
+  "name": "Modulo de Arrumaçao 12"
+ },
+ {
+  "id": "347cb91b-60ae-4d81-886e-67e794ea0fb3",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Boca e Luneta",
+  "name": "Modulo de Chaves Combinadas"
+ },
+ {
+  "id": "6043c84a-6432-4724-9c84-0522662da25f",
+  "category": "ferramentas",
+  "sub": "Diagnóstico e Medição",
+  "tipo": "Medição",
+  "name": "Multimetro Digital"
+ },
+ {
+  "id": "fe862a8e-d530-408f-adb8-1f8c120319bf",
+  "category": "ferramentas",
+  "sub": "Diagnóstico e Medição",
+  "tipo": "Medição",
+  "name": "Multimetro Digital com Teste de"
+ },
+ {
+  "id": "89d1546e-751f-4d01-b2ef-ad3193f818ba",
+  "category": "ferramentas",
+  "sub": "Ferramentas Elétricas",
+  "tipo": "Pneumáticas e Outras",
+  "name": "Máquina Pneumática para Foles"
+ },
+ {
+  "id": "444684a4-50e5-454b-9251-6785c05ddfce",
+  "category": "ferramentas",
+  "sub": "Diagnóstico e Medição",
+  "tipo": "Medição",
+  "name": "Paquimetro Digital Escala 150mm"
+ },
+ {
+  "id": "fe713696-2539-452e-ab29-cdb79770a1f1",
+  "category": "ferramentas",
+  "sub": "Equipamento de Oficina",
+  "tipo": "Lavagem de Peças",
+  "name": "Pincel Lavar Peças com Tubo"
+ },
+ {
+  "id": "4126f293-ec12-4f47-b9cc-205e4f71fa60",
+  "category": "ferramentas",
+  "sub": "Equipamento de Oficina",
+  "tipo": "Lavagem de Peças",
+  "name": "Pincel Maquina Lavar Peças"
+ },
+ {
+  "id": "c39587f7-dcdd-41e2-a77c-5e8e971762df",
+  "category": "ferramentas",
+  "sub": "Ferramentas Elétricas",
+  "tipo": "Pneumáticas e Outras",
+  "name": "Pistola Limpeza p/Motores"
+ },
+ {
+  "id": "71d9e715-6df4-44e9-bb8c-851802409ac4",
+  "category": "ferramentas",
+  "sub": "Ferramentas Elétricas",
+  "tipo": "Pneumáticas e Outras",
+  "name": "Pistola Universal p/Antigravilha 1L"
+ },
+ {
+  "id": "e49d86b9-a790-4820-9a33-7feae0a0121b",
+  "category": "ferramentas",
+  "sub": "Pneus e Rodas",
+  "tipo": null,
+  "name": "Pistola de Ar para Pneumaticos"
+ },
+ {
+  "id": "52e828c6-b30f-42b9-8006-57d3b09acd61",
+  "category": "ferramentas",
+  "sub": "Pneus e Rodas",
+  "tipo": null,
+  "name": "Pistola de Enchimento Pneus Digital"
+ },
+ {
+  "id": "04c08a83-5ef0-48e8-96c9-2c1b7e61f34c",
+  "category": "ferramentas",
+  "sub": "Ferramentas Elétricas",
+  "tipo": "Máquinas de Impacto",
+  "name": "Pistola de Impacto c/Bateria 400nm 21V"
+ },
+ {
+  "id": "c4260f11-08a8-4fdb-b85f-8203b8c9f986",
+  "category": "ferramentas",
+  "sub": "Ferramentas Elétricas",
+  "tipo": "Máquinas de Impacto",
+  "name": "Pistola de Impacto s/Fio 1/2\\\" 1200nm com"
+ },
+ {
+  "id": "edda6784-2c92-463b-be1a-ec570904fbed",
+  "category": "ferramentas",
+  "sub": "Diagnóstico e Medição",
+  "tipo": "Testes de Motor",
+  "name": "Pistola de Ponto Motor"
+ },
+ {
+  "id": "784af056-592e-4659-b045-084270233df1",
+  "category": "ferramentas",
+  "sub": "Ferramentas Elétricas",
+  "tipo": "Pneumáticas e Outras",
+  "name": "Pistola de Tornado"
+ },
+ {
+  "id": "1143c250-ba69-4a4b-b81c-11200ebf5083",
+  "category": "ferramentas",
+  "sub": "Equipamento de Oficina",
+  "tipo": "Bombas e Fluidos",
+  "name": "Pistola p/Massa Consistente"
+ },
+ {
+  "id": "49a6bbec-17e3-4f7c-9af1-b00e349d66a3",
+  "category": "ferramentas",
+  "sub": "Ferramentas Elétricas",
+  "tipo": "Pneumáticas e Outras",
+  "name": "Pistola p/Rapid Bond 50ml"
+ },
+ {
+  "id": "d5f81667-b428-4d9c-838b-2701904cb9b4",
+  "category": "ferramentas",
+  "sub": "Ferramentas Elétricas",
+  "tipo": "Lixadoras",
+  "name": "Prato p/Lixadora de 150 Mm Nexus"
+ },
+ {
+  "id": "3d693da3-e622-4063-b8cc-5db3b75423e6",
+  "category": "ferramentas",
+  "sub": "Equipamento de Oficina",
+  "tipo": null,
+  "name": "Protector de Guarda-Lamas Anti-"
+ },
+ {
+  "id": "0d22a444-f31a-4ac8-b059-8a8d084d89ae",
+  "category": "ferramentas",
+  "sub": "Ferramentas Elétricas",
+  "tipo": "Pneumáticas e Outras",
+  "name": "Pulverizador a Precion IKS PRO2"
+ },
+ {
+  "id": "84d18ed1-07d1-4694-9ee2-b489035ae59c",
+  "category": "ferramentas",
+  "sub": "Ferramenta Especial",
+  "tipo": "Travões",
+  "name": "Purgador p/Liquido de Travao"
+ },
+ {
+  "id": "4a9cb1d4-dffe-4864-be47-c28414d94b5b",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Caixa e Roquetes",
+  "name": "Rabo de Força de 1/2\" 600mm"
+ },
+ {
+  "id": "592513b4-18b7-4acc-a3fd-225dc35b7aed",
+  "category": "ferramentas",
+  "sub": "Equipamento de Oficina",
+  "tipo": "Elevação",
+  "name": "Rampa p/Automoveis"
+ },
+ {
+  "id": "a90aa711-3085-425d-9096-15e7dbf0a26c",
+  "category": "ferramentas",
+  "sub": "Ferramentas Elétricas",
+  "tipo": "Pneumáticas e Outras",
+  "name": "Rebitadora Pneumatica"
+ },
+ {
+  "id": "cfb5f6f0-c913-4f74-8bbf-620be532ecee",
+  "category": "ferramentas",
+  "sub": "Ferramentas Elétricas",
+  "tipo": "Pneumáticas e Outras",
+  "name": "Rebitadora Profissional"
+ },
+ {
+  "id": "f6cf885e-6e33-4b09-80b1-1860ed478e7c",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Caixa e Roquetes",
+  "name": "Regua p/Chaves de 1/4 14 pcs"
+ },
+ {
+  "id": "fa651573-fe51-4837-811c-9010512c6668",
+  "category": "ferramentas",
+  "sub": "Roscas e Fixação",
+  "tipo": null,
+  "name": "Reparador de Roscas Metricas"
+ },
+ {
+  "id": "a2c5ff6e-7ed6-43d4-ba81-9b597d8e2c65",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Caixa e Roquetes",
+  "name": "Reposiçao p/Chave Articulada 1/2"
+ },
+ {
+  "id": "fb92b3b0-696e-4b56-8d49-bddf37f37588",
+  "category": "ferramentas",
+  "sub": "Pneus e Rodas",
+  "tipo": null,
+  "name": "Roda Rigida Preta /Vermelha 26\""
+ },
+ {
+  "id": "f87c381f-ac8a-40b2-ba25-99e0a78a098a",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Caixa e Roquetes",
+  "name": "Roquete Reversivel 1/2\""
+ },
+ {
+  "id": "40a93339-22db-4dc6-bc62-48a463ea65f9",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Caixa e Roquetes",
+  "name": "Roquete Reversivel de 1/4"
+ },
+ {
+  "id": "588ad318-200e-493e-b496-a0b6e43e04e0",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": "Chaves de Caixa e Roquetes",
+  "name": "Roquete de 1/4"
+ },
+ {
+  "id": "43846681-55b2-44d6-8fee-7a33454a80d5",
+  "category": "ferramentas",
+  "sub": "Ferramenta Especial",
+  "tipo": "Extratores e Sacadores",
+  "name": "Saca 2 Braçosd 9-10"
+ },
+ {
+  "id": "68a46b3d-14ea-4a7c-8304-aa1ba9f68614",
+  "category": "ferramentas",
+  "sub": "Ferramenta Especial",
+  "tipo": "Extratores e Sacadores",
+  "name": "Saca Extrator de Braço de Limpa para"
+ },
+ {
+  "id": "bf1fe477-b6d4-4389-bd34-62b656a43f3d",
+  "category": "ferramentas",
+  "sub": "Ferramenta Especial",
+  "tipo": "Extratores e Sacadores",
+  "name": "Saca Transmissoes Homocineticas"
+ },
+ {
+  "id": "af271cbe-0c6f-4a2d-84ab-0b534ec9baa0",
+  "category": "ferramentas",
+  "sub": "Ferramenta Especial",
+  "tipo": "Travões",
+  "name": "Sangrador de Travoes e Embraiagens"
+ },
+ {
+  "id": "e2e39dd4-6236-4380-ba0c-b13838758275",
+  "category": "ferramentas",
+  "sub": "Ferramenta Especial",
+  "tipo": "Extratores e Sacadores",
+  "name": "Separador de Braço de Suspençao"
+ },
+ {
+  "id": "1ceab3b0-f224-409b-a5c7-dbaabaf391e4",
+  "category": "ferramentas",
+  "sub": "Ferramenta Especial",
+  "tipo": "Filtros e Óleo",
+  "name": "Seringa Multiusos 200ml"
+ },
+ {
+  "id": "6eefca5b-2e6a-4b5c-97ba-3008e39ca00f",
+  "category": "ferramentas",
+  "sub": "Ferramenta Especial",
+  "tipo": "Filtros e Óleo",
+  "name": "Seringa p/Oleo 1500CC"
+ },
+ {
+  "id": "c6f47cf8-6c85-4d07-a430-973d098151f4",
+  "category": "ferramentas",
+  "sub": "Ferramenta Especial",
+  "tipo": "Filtros e Óleo",
+  "name": "Seringa para Injectar e Extrair Oleos"
+ },
+ {
+  "id": "e154c95f-a6ac-4648-a642-4be5ef37af31",
+  "category": "ferramentas",
+  "sub": "Equipamento de Oficina",
+  "tipo": "Elevação",
+  "name": "Suporte Caixas de Velocidade p/Macaco"
+ },
+ {
+  "id": "c4a8aac7-5983-403c-aabd-032e09c46671",
+  "category": "ferramentas",
+  "sub": "Ferramenta Especial",
+  "tipo": "Extratores e Sacadores",
+  "name": "Suporte de Ajuste para Braço de"
+ },
+ {
+  "id": "937a6759-bbb3-4cd6-b552-059969e07d97",
+  "category": "ferramentas",
+  "sub": "Equipamento de Oficina",
+  "tipo": "Bombas e Fluidos",
+  "name": "Suporte p/Bidons de 60L Galvanizado"
+ },
+ {
+  "id": "baddf15c-669f-4c54-8bf0-6d2d31c781d9",
+  "category": "ferramentas",
+  "sub": "Pneus e Rodas",
+  "tipo": null,
+  "name": "Taco p/Pneu VS03 Cx 30un"
+ },
+ {
+  "id": "d5f02458-044c-4750-95b4-44e4bb410fb1",
+  "category": "ferramentas",
+  "sub": "Equipamento de Oficina",
+  "tipo": "Elevação",
+  "name": "Tacos de Borracha para Elevadores"
+ },
+ {
+  "id": "d0298f1f-8ee0-4314-80aa-ae561608bc0e",
+  "category": "ferramentas",
+  "sub": "Diagnóstico e Medição",
+  "tipo": "Testes de Motor",
+  "name": "Teste Fugas do Turbo c/Manometro"
+ },
+ {
+  "id": "a545ded0-c01a-4913-803d-865aff84bf55",
+  "category": "ferramentas",
+  "sub": "Ferramenta Especial",
+  "tipo": "Injeção",
+  "name": "Teste de Corrente para Injectores"
+ },
+ {
+  "id": "3d64a651-2bcf-43bf-9f6d-8e6eb1839b3b",
+  "category": "ferramentas",
+  "sub": "Ferramenta Especial",
+  "tipo": "Motor e Distribuição",
+  "name": "Trancas p/Motor Gasolina Opel 104/1.6/1.8"
+ },
+ {
+  "id": "ed2cecb0-80da-412b-a721-8775f240076e",
+  "category": "ferramentas",
+  "sub": "Equipamento de Oficina",
+  "tipo": "Ar Comprimido e Enroladores",
+  "name": "Tubo Ar Comp. Expiral 6.5X9.5 15M"
+ },
+ {
+  "id": "2e3af5d1-694f-4910-8f9a-19c9bd19e434",
+  "category": "ferramentas",
+  "sub": "Ferramenta Especial",
+  "tipo": "Carroçaria e Interiores",
+  "name": "Ventosa Dupla CAB.FLEXIVEL"
+ },
+ {
+  "id": "4d2bd9f0-9088-4c9a-9daf-9883aab7945d",
+  "category": "ferramentas",
+  "sub": "Diagnóstico e Medição",
+  "tipo": "Verificadores",
+  "name": "Verificador Densidade de Baterias"
+ },
+ {
+  "id": "b259d18d-2b5a-499f-bbd5-ef0dd5da3acb",
+  "category": "ferramentas",
+  "sub": "Diagnóstico e Medição",
+  "tipo": "Verificadores",
+  "name": "Verificador de Anticongelante"
+ },
+ {
+  "id": "7a8839fd-96cc-416d-a307-9dcb328929fe",
+  "category": "ferramentas",
+  "sub": "Ferramentas Manuais",
+  "tipo": null,
+  "name": "X-Acto Profissional"
+ },
+ {
+  "id": "f8792284-1f33-471d-bd26-e7157f63e465",
+  "category": "higiene-seguranca",
+  "sub": "Higiene e Limpeza",
+  "tipo": "Limpeza de Oficina",
+  "name": "Absorvente Vegetal Ignifugo"
+ },
+ {
+  "id": "15ee5b75-7f59-48b1-a1bc-20b62a014cd2",
+  "category": "higiene-seguranca",
+  "sub": "Vestuário Profissional",
+  "tipo": null,
+  "name": "Calça de Trabalho Azul Marinho Pol-"
+ },
+ {
+  "id": "33312011-d605-4c14-bf96-16d2eb6d649f",
+  "category": "higiene-seguranca",
+  "sub": "Vestuário Profissional",
+  "tipo": null,
+  "name": "Calça de Trabalho Azul-Marinho Pol-"
+ },
+ {
+  "id": "ce525406-8485-4650-a46c-fce0c3dc533c",
+  "category": "higiene-seguranca",
+  "sub": "Proteção do Veículo",
+  "tipo": null,
+  "name": "Capas p/Bancos 25 Mc 250 un"
+ },
+ {
+  "id": "f4d7d5f1-bc05-463a-a3ba-1a5e03e81251",
+  "category": "higiene-seguranca",
+  "sub": "Higiene e Limpeza",
+  "tipo": "Limpeza de Oficina",
+  "name": "Desengrasante Sg 2 Bicomponente 20 L"
+ },
+ {
+  "id": "14a88896-b8d3-417e-8496-3c5056b12dad",
+  "category": "higiene-seguranca",
+  "sub": "Higiene e Limpeza",
+  "tipo": "Produtos de Lavagem Auto",
+  "name": "Elimos Limpeza de Insetos p/Automoveis"
+ },
+ {
+  "id": "2394c335-3062-4676-8778-7a40aeec76de",
+  "category": "higiene-seguranca",
+  "sub": "Vestuário Profissional",
+  "tipo": null,
+  "name": "Jardineira de Trabalho Comfort Cinza"
+ },
+ {
+  "id": "55d719c9-0e46-4840-a4fb-c0ef1bea9940",
+  "category": "higiene-seguranca",
+  "sub": "EPI",
+  "tipo": null,
+  "name": "Kit em Estojo de Emergencia Auto"
+ },
+ {
+  "id": "9f19ef00-234a-4335-a659-e55e169c871c",
+  "category": "higiene-seguranca",
+  "sub": "Higiene e Limpeza",
+  "tipo": "Mãos e Papel",
+  "name": "Lava Maos 25 Kg"
+ },
+ {
+  "id": "0bf316ac-6a99-4941-9559-09ac1587f596",
+  "category": "higiene-seguranca",
+  "sub": "Higiene e Limpeza",
+  "tipo": "Mãos e Papel",
+  "name": "Lava Maos 4 Kg"
+ },
+ {
+  "id": "f924eeb8-8d32-408b-a3d8-79dce18b38cc",
+  "category": "higiene-seguranca",
+  "sub": "Higiene e Limpeza",
+  "tipo": "Produtos de Lavagem Auto",
+  "name": "Limpeza de Estofos 20 L"
+ },
+ {
+  "id": "a5a57a7d-22f1-44a1-960b-8e0350900bc9",
+  "category": "higiene-seguranca",
+  "sub": "Higiene e Limpeza",
+  "tipo": "Produtos de Lavagem Auto",
+  "name": "Limpeza de Jantes Sg Acid 20 L"
+ },
+ {
+  "id": "aeecfe01-405e-4ed6-b11b-042af8c7453c",
+  "category": "higiene-seguranca",
+  "sub": "Higiene e Limpeza",
+  "tipo": "Limpeza de Oficina",
+  "name": "Limpeza de Pavimentos 20 L"
+ },
+ {
+  "id": "27571622-3317-4350-9251-81e0ba028a2f",
+  "category": "higiene-seguranca",
+  "sub": "EPI",
+  "tipo": "Luvas Descartáveis",
+  "name": "Luva de Nitrilo Preto L 8/9"
+ },
+ {
+  "id": "1e3e7d98-c2c5-426c-8992-9e94ab67036c",
+  "category": "higiene-seguranca",
+  "sub": "EPI",
+  "tipo": "Luvas Descartáveis",
+  "name": "Luva de Nitrilo Preto Xl 9/10"
+ },
+ {
+  "id": "4ef5b734-edb1-4576-bf6f-069de9e70abc",
+  "category": "higiene-seguranca",
+  "sub": "EPI",
+  "tipo": "Luvas de Trabalho",
+  "name": "Luvas Anti-Corte/Calor TAEKI5 Nitras 10"
+ },
+ {
+  "id": "eb946f3e-6c53-4fe5-8ca9-f5b828525b46",
+  "category": "higiene-seguranca",
+  "sub": "EPI",
+  "tipo": "Luvas de Trabalho",
+  "name": "Luvas Anti-Corte/Calor TAEKI5 Nitras 8"
+ },
+ {
+  "id": "7086184b-2db3-48d9-8c7f-a2008134bc2f",
+  "category": "higiene-seguranca",
+  "sub": "EPI",
+  "tipo": "Luvas de Trabalho",
+  "name": "Luvas Anti-Corte/Calor TAEKI5 Nitras 9"
+ },
+ {
+  "id": "84a3d346-9a6e-447c-b1ec-fcaf67446fa8",
+  "category": "higiene-seguranca",
+  "sub": "EPI",
+  "tipo": "Luvas de Trabalho",
+  "name": "Luvas Pele de Cabra Cinza T8"
+ },
+ {
+  "id": "8ef16ac7-1129-4843-b537-0aae88fd6200",
+  "category": "higiene-seguranca",
+  "sub": "EPI",
+  "tipo": "Luvas de Trabalho",
+  "name": "Luvas Pele de Cabra Cinza T9"
+ },
+ {
+  "id": "6172b577-ac35-4db1-9951-8273b4b1e43d",
+  "category": "higiene-seguranca",
+  "sub": "EPI",
+  "tipo": "Luvas Descartáveis",
+  "name": "Luvas de Latex Reforçadas Azul T-L"
+ },
+ {
+  "id": "2258ea9e-b82b-496a-9929-00b7f12d5c80",
+  "category": "higiene-seguranca",
+  "sub": "EPI",
+  "tipo": "Luvas Descartáveis",
+  "name": "Luvas de Nitrilo Laranja (L) 7.0 Mil"
+ },
+ {
+  "id": "8d0e5635-7d71-42cc-a791-42cdbd6dd053",
+  "category": "higiene-seguranca",
+  "sub": "EPI",
+  "tipo": "Luvas Descartáveis",
+  "name": "Luvas de Nitrilo Laranja (M) 7.0 Mil"
+ },
+ {
+  "id": "cf7defd6-462e-44ae-93a9-b753eda53ca3",
+  "category": "higiene-seguranca",
+  "sub": "EPI",
+  "tipo": "Luvas Descartáveis",
+  "name": "Luvas de Nitrilo Laranja (Xl) 7.0 Mil"
+ },
+ {
+  "id": "9fa2b781-2f94-40fa-8d79-a0059a89b31b",
+  "category": "higiene-seguranca",
+  "sub": "EPI",
+  "tipo": "Luvas Descartáveis",
+  "name": "Luvas de Nitrilo M"
+ },
+ {
+  "id": "d1f00903-432f-455f-9393-a1a76a1dc7c0",
+  "category": "higiene-seguranca",
+  "sub": "EPI",
+  "tipo": "Luvas Descartáveis",
+  "name": "Luvas de Nitrilo Pretas Diamond (L) 7.0"
+ },
+ {
+  "id": "70392080-08ca-4a87-aec8-30a41444ddac",
+  "category": "higiene-seguranca",
+  "sub": "EPI",
+  "tipo": "Luvas Descartáveis",
+  "name": "Luvas de Nitrilo Pretas Diamond (M) 7.0"
+ },
+ {
+  "id": "dcf1878c-d412-4587-92f2-88ca150ecf6e",
+  "category": "higiene-seguranca",
+  "sub": "EPI",
+  "tipo": "Luvas Descartáveis",
+  "name": "Luvas de Nitrilo Pretas Diamond (Xl) 7.0"
+ },
+ {
+  "id": "0f3455e1-f556-4710-ab85-a74658d14404",
+  "category": "higiene-seguranca",
+  "sub": "EPI",
+  "tipo": "Luvas de Trabalho",
+  "name": "Luvas de Nylon/Nitrilo Oil Grip 10"
+ },
+ {
+  "id": "fdd4d929-65bf-41c6-9932-a860756f3b16",
+  "category": "higiene-seguranca",
+  "sub": "EPI",
+  "tipo": "Luvas de Trabalho",
+  "name": "Luvas de Nylon/Nitrilo Oil Grip 8"
+ },
+ {
+  "id": "2d34ff2d-6991-4f32-abdb-d40781c02061",
+  "category": "higiene-seguranca",
+  "sub": "EPI",
+  "tipo": "Luvas de Trabalho",
+  "name": "Luvas de Nylon/Nitrilo Oil Grip 9"
+ },
+ {
+  "id": "cbaf2033-947e-4580-9e55-fc7bed034b63",
+  "category": "higiene-seguranca",
+  "sub": "Higiene e Limpeza",
+  "tipo": "Limpeza de Oficina",
+  "name": "Masterclean Desengrasante Multiusos"
+ },
+ {
+  "id": "3609363a-e7ef-4eab-a4b7-70a0f2bdadbc",
+  "category": "higiene-seguranca",
+  "sub": "Higiene e Limpeza",
+  "tipo": "Mãos e Papel",
+  "name": "Papel Industrial Azul Xl"
+ },
+ {
+  "id": "f8fdd084-0ed7-4260-891d-77fd1020640e",
+  "category": "higiene-seguranca",
+  "sub": "Higiene e Limpeza",
+  "tipo": "Mãos e Papel",
+  "name": "Papel Industrial XL2 Branco (pack)"
+ },
+ {
+  "id": "51060c08-27f1-4c37-bf37-8453fc133c58",
+  "category": "higiene-seguranca",
+  "sub": "Proteção do Veículo",
+  "tipo": null,
+  "name": "Rolo de Filme Preto"
+ },
+ {
+  "id": "1134bee9-915c-4658-baa7-32966a1e72ac",
+  "category": "higiene-seguranca",
+  "sub": "Proteção do Veículo",
+  "tipo": null,
+  "name": "Rolo de Filme Transparente 50cm"
+ },
+ {
+  "id": "cc6aeaa4-f8f1-4329-bb1d-540de8a1f67e",
+  "category": "higiene-seguranca",
+  "sub": "Proteção do Veículo",
+  "tipo": null,
+  "name": "Rolos de Filme p/Volantes"
+ },
+ {
+  "id": "fb8097f4-eb7b-496a-bb8a-2d971e305ab3",
+  "category": "higiene-seguranca",
+  "sub": "Calçado profissional",
+  "tipo": null,
+  "name": "Sapatilha Abarth 595 Black (nubuck) - S3 / SRC / HRO"
+ },
+ {
+  "id": "ba120e44-25fd-45c4-a878-22ca85da831e",
+  "category": "higiene-seguranca",
+  "sub": "Calçado profissional",
+  "tipo": null,
+  "name": "Sapatilha Abarth 595 Black/Red (Suede) - S3 / SRC / HRO"
+ },
+ {
+  "id": "1dd71f39-ab15-4fe5-9297-c1d9e492ea49",
+  "category": "higiene-seguranca",
+  "sub": "Calçado profissional",
+  "tipo": null,
+  "name": "Sapatilha Abarth 595 Challenge (Suede) - S3 / SRC / HRO"
+ },
+ {
+  "id": "81bdf42d-ec7b-4a5c-b6b8-e08ae8212823",
+  "category": "higiene-seguranca",
+  "sub": "Calçado profissional",
+  "tipo": null,
+  "name": "Sapatilha Abarth 595 Grey (suede) - S3 / SRC / HRO"
+ },
+ {
+  "id": "32e592f3-10e5-41c7-82f2-b5f506c31bb8",
+  "category": "higiene-seguranca",
+  "sub": "Calçado profissional",
+  "tipo": null,
+  "name": "Sapatilha Abarth 595 Navy (suede) - S3 / SRC / HRO"
+ },
+ {
+  "id": "ae7488be-7100-4544-8896-556b7c4d1fac",
+  "category": "higiene-seguranca",
+  "sub": "Calçado profissional",
+  "tipo": null,
+  "name": "Sapatilha Abarth 595 White (leather) - S3 / SRC / HRO"
+ },
+ {
+  "id": "57324f3e-4161-4df7-9602-e6953ee55e57",
+  "category": "higiene-seguranca",
+  "sub": "Calçado profissional",
+  "tipo": null,
+  "name": "Sapatilha Abarth Scorpion Welder (preto) - S3L / SR-FO / HRO"
+ },
+ {
+  "id": "88de1a8a-65a7-4095-8805-4617b0e9d855",
+  "category": "higiene-seguranca",
+  "sub": "Calçado profissional",
+  "tipo": null,
+  "name": "Sapatilha Abarth Scorpion Zerocento Basso (nubuck) - S3 / SRC"
+ },
+ {
+  "id": "40f8a020-feb4-48bf-87d4-b925f688c4cf",
+  "category": "higiene-seguranca",
+  "sub": "Calçado profissional",
+  "tipo": null,
+  "name": "Sapatilha Abarth Scorpion Zerocento Partenza (suede) - S3 / SRC"
+ },
+ {
+  "id": "cb6f720d-db43-4a5d-84c0-60add50429a2",
+  "category": "higiene-seguranca",
+  "sub": "Calçado profissional",
+  "tipo": null,
+  "name": "Sapatilha Abarth Truck (grey-blue) - S1-PL / SR-FO"
+ },
+ {
+  "id": "059a2cb3-6b2e-464a-8a9e-b56474e29bc0",
+  "category": "higiene-seguranca",
+  "sub": "Calçado profissional",
+  "tipo": null,
+  "name": "Sapatilha Scorpion Zerocento Alto (nubuck) - S3 / SRC"
+ },
+ {
+  "id": "59de222f-b60b-4c8d-9f13-21a21ba7ac0b",
+  "category": "higiene-seguranca",
+  "sub": "Calçado profissional",
+  "tipo": null,
+  "name": "Sapatilha Scorpion Zerocento X-TREM (Nubuck) - S3 / SRC / WR D-Umbretex"
+ },
+ {
+  "id": "479c37c0-c9c5-4069-ab5c-f8e47333b844",
+  "category": "higiene-seguranca",
+  "sub": "Calçado profissional",
+  "tipo": null,
+  "name": "Sapato Abarth Scorpion Esseesse (preto) - S1P / SRC / HRO"
+ },
+ {
+  "id": "0c0408cf-901f-49d2-b0bc-74c8ec0ad60f",
+  "category": "higiene-seguranca",
+  "sub": "Higiene e Limpeza",
+  "tipo": "Produtos de Lavagem Auto",
+  "name": "Shampo Car+ 20 L"
+ },
+ {
+  "id": "9ca572f6-8d12-4bdb-8272-09ce2cfbb09a",
+  "category": "higiene-seguranca",
+  "sub": "Higiene e Limpeza",
+  "tipo": "Mãos e Papel",
+  "name": "Suporte de Papel p/Chao"
+ },
+ {
+  "id": "945e57ba-bb8a-4787-a243-445cc69b7ac6",
+  "category": "higiene-seguranca",
+  "sub": "Higiene e Limpeza",
+  "tipo": "Mãos e Papel",
+  "name": "Suporte de Papel p/Parede"
+ },
+ {
+  "id": "9e640c21-949f-40bf-a032-49dc28715d14",
+  "category": "higiene-seguranca",
+  "sub": "Proteção do Veículo",
+  "tipo": null,
+  "name": "Tapetes de Proteçao Papel p/Chao"
+ },
+ {
+  "id": "2f422d9f-1336-4c47-a9fa-2cad6adcd09e",
+  "category": "lavagens",
+  "sub": "Limpeza Interior",
+  "tipo": null,
+  "name": "Abrilhantador de Plasticos White 5L"
+ },
+ {
+  "id": "4c0e3dbb-a0be-4fa9-8f8e-45d3bc658bbb",
+  "category": "lavagens",
+  "sub": "Limpeza Exterior",
+  "tipo": "Pneus e Jantes",
+  "name": "Abrilhantador de Pneus"
+ },
+ {
+  "id": "dc23a9e1-b0ac-4e61-8896-6095e5d4b574",
+  "category": "lavagens",
+  "sub": "Limpeza Exterior",
+  "tipo": "Champôs e Lavagem",
+  "name": "Champô Automóvel Profissional"
+ },
+ {
+  "id": "4d3d2867-df33-4470-8207-b56b3cb34c7a",
+  "category": "lavagens",
+  "sub": "Limpeza Exterior",
+  "tipo": "Desengordurantes",
+  "name": "Desengordurante Universal em Spray"
+ },
+ {
+  "id": "d1514688-f3d0-4e0c-a81d-0ad83c6df68a",
+  "category": "lavagens",
+  "sub": "Limpeza Exterior",
+  "tipo": "Desengordurantes",
+  "name": "Desengrasante Sg 44 Basic 20 L"
+ },
+ {
+  "id": "3bc8e0f9-4a5a-4725-894c-a7054c0898be",
+  "category": "lavagens",
+  "sub": "Limpeza Exterior",
+  "tipo": "Desengordurantes",
+  "name": "Desengrasante Sg Basic Biconponente"
+ },
+ {
+  "id": "fd6d6d4d-6569-48c0-a18e-7aae14fc7812",
+  "category": "lavagens",
+  "sub": "Limpeza Exterior",
+  "tipo": "Desengordurantes",
+  "name": "Desengrasante Sg F50 Basic"
+ },
+ {
+  "id": "2396295a-33a0-44f1-826d-5e27eb876155",
+  "category": "lavagens",
+  "sub": "Consumíveis de Lavagem",
+  "tipo": null,
+  "name": "Espatula de Secagem Flexy Blade X3"
+ },
+ {
+  "id": "7de099ef-d616-484c-8878-762811ee7834",
+  "category": "lavagens",
+  "sub": "Limpeza Exterior",
+  "tipo": "Desengordurantes",
+  "name": "Espuma Multiusos V5 750ml"
+ },
+ {
+  "id": "7a2d09be-cda2-40c2-9dae-a6bd8dc6b2c4",
+  "category": "lavagens",
+  "sub": "Limpeza Interior",
+  "tipo": null,
+  "name": "Kit de 48 Ambientadores Sortidos"
+ },
+ {
+  "id": "7c948ae3-0ad8-427e-a52a-689e78e3ac4e",
+  "category": "lavagens",
+  "sub": "Limpeza Exterior",
+  "tipo": "Champôs e Lavagem",
+  "name": "Lavagem Waterless Car Wash 10L"
+ },
+ {
+  "id": "f678c70f-4fa7-4603-ad48-941f7bda7c2d",
+  "category": "lavagens",
+  "sub": "Limpeza Exterior",
+  "tipo": "Champôs e Lavagem",
+  "name": "Lavagem Waterless Car Wash 5L"
+ },
+ {
+  "id": "142f029f-bed7-4fd3-ad0a-7bc36cffc654",
+  "category": "lavagens",
+  "sub": "Limpeza Exterior",
+  "tipo": "Pneus e Jantes",
+  "name": "Limpa-Jantes Concentrado"
+ },
+ {
+  "id": "1e8cdcda-9482-49c7-a14a-af95d5559236",
+  "category": "lavagens",
+  "sub": "Limpeza Interior",
+  "tipo": null,
+  "name": "Limpeza de Estofos 5L"
+ },
+ {
+  "id": "2efb7a31-cb70-466f-87b0-44153ae139b6",
+  "category": "lavagens",
+  "sub": "Limpeza Exterior",
+  "tipo": "Pneus e Jantes",
+  "name": "Limpeza de Jantes Acid 5L"
+ },
+ {
+  "id": "673bbf15-2509-4b58-8081-0db504061f8f",
+  "category": "lavagens",
+  "sub": "Consumíveis de Lavagem",
+  "tipo": null,
+  "name": "Microfibras de Lavagem (Pack 10)"
+ },
+ {
+  "id": "548fe616-9a9c-445f-9685-8309a591731e",
+  "category": "lavagens",
+  "sub": "Limpeza Interior",
+  "tipo": null,
+  "name": "Multiclean - Limpeza Multiusos"
+ },
+ {
+  "id": "64b48b9d-819f-4e94-a092-c8313fe891b1",
+  "category": "lavagens",
+  "sub": "Limpeza Interior",
+  "tipo": null,
+  "name": "Multiclean-Limpeza Multiusos"
+ },
+ {
+  "id": "75ea0e5b-15e4-4700-b1c0-5f760af9d9ff",
+  "category": "lavagens",
+  "sub": "Limpeza Interior",
+  "tipo": null,
+  "name": "P.B.R- Gel Renovador de Plasticos 1L"
+ },
+ {
+  "id": "4db04df5-9d9e-49eb-9044-d95cc6e484a5",
+  "category": "lavagens",
+  "sub": "Consumíveis de Lavagem",
+  "tipo": null,
+  "name": "Pano de Microfibras"
+ },
+ {
+  "id": "523360b4-214d-4de4-a7a6-d1924744b21d",
+  "category": "lavagens",
+  "sub": "Consumíveis de Lavagem",
+  "tipo": null,
+  "name": "Pano de Secagem Aqua Dry 43X32cm"
+ },
+ {
+  "id": "1993daa1-8959-4e72-92b8-851462e54e5f",
+  "category": "lavagens",
+  "sub": "Equipamento de Lavagem",
+  "tipo": null,
+  "name": "Pulverizador a Presion Viton 360 1 Lt"
+ },
+ {
+  "id": "81d79561-72ec-44e6-9d1b-619855917caa",
+  "category": "lavagens",
+  "sub": "Limpeza Exterior",
+  "tipo": "Champôs e Lavagem",
+  "name": "Shampo Isocar Cer+ 25L"
+ },
+ {
+  "id": "bf419c35-8b3b-4873-87a3-223a3e07d969",
+  "category": "lavagens",
+  "sub": "Limpeza Exterior",
+  "tipo": "Champôs e Lavagem",
+  "name": "Shampoo Auto"
+ },
+ {
+  "id": "af70aa2c-a5ac-4322-8415-f35afcb6a054",
+  "category": "mecanica",
+  "sub": "Consumíveis e Vedantes",
+  "tipo": "Abraçadeiras",
+  "name": "Abraçadeira Inox Stb 360"
+ },
+ {
+  "id": "a8fe2861-77ab-431c-aa0c-51cf2a6b2dd9",
+  "category": "mecanica",
+  "sub": "Consumíveis e Vedantes",
+  "tipo": "Abraçadeiras",
+  "name": "Abraçadeira Metalica ZN 12X22"
+ },
+ {
+  "id": "2f25bee2-a754-4a95-aaf4-4b9a787c502e",
+  "category": "mecanica",
+  "sub": "Consumíveis e Vedantes",
+  "tipo": "Abraçadeiras",
+  "name": "Abraçadeira Metalica ZN 16X27"
+ },
+ {
+  "id": "51769ae6-e0af-4e7a-9aba-030001211790",
+  "category": "mecanica",
+  "sub": "Consumíveis e Vedantes",
+  "tipo": "Abraçadeiras",
+  "name": "Abraçadeira Metalica ZN 20X32"
+ },
+ {
+  "id": "e6412da2-c3c7-4363-a816-e295bca79044",
+  "category": "mecanica",
+  "sub": "Consumíveis e Vedantes",
+  "tipo": "Abraçadeiras",
+  "name": "Abraçadeira Metalica ZN 25-40"
+ },
+ {
+  "id": "aee0e289-c30d-4f40-90d1-caea2e442a2d",
+  "category": "mecanica",
+  "sub": "Consumíveis e Vedantes",
+  "tipo": "Abraçadeiras",
+  "name": "Abraçadeira Metalica ZN 32X50"
+ },
+ {
+  "id": "499517d0-0bf9-4508-9fdf-82f73306bed8",
+  "category": "mecanica",
+  "sub": "Consumíveis e Vedantes",
+  "tipo": "Abraçadeiras",
+  "name": "Abraçadeira Metalica ZN 40X60"
+ },
+ {
+  "id": "ad836ba5-f96a-4c7b-9d2c-a1ced447ead2",
+  "category": "mecanica",
+  "sub": "Consumíveis e Vedantes",
+  "tipo": "Abraçadeiras",
+  "name": "Abraçadeira Metalica ZN 60X80"
+ },
+ {
+  "id": "f9e9e317-c74a-4a1d-a16e-f061ee0b02da",
+  "category": "mecanica",
+  "sub": "Consumíveis e Vedantes",
+  "tipo": "Abraçadeiras",
+  "name": "Abraçadeira Metalica ZN 70X90mm"
+ },
+ {
+  "id": "dc8a0b48-173f-4e4a-b0c0-89fbe52af8c3",
+  "category": "mecanica",
+  "sub": "Consumíveis e Vedantes",
+  "tipo": "Abraçadeiras",
+  "name": "Abraçadeira Metalica ZN 8X16"
+ },
+ {
+  "id": "2e531b37-4e5d-4706-a67d-2f9f111307a6",
+  "category": "mecanica",
+  "sub": "Consumíveis e Vedantes",
+  "tipo": "Abraçadeiras",
+  "name": "Abraçadeira Metalica ZN 90X110"
+ },
+ {
+  "id": "8ee9dce9-262a-452f-9138-18a55ffd2b86",
+  "category": "mecanica",
+  "sub": "Consumíveis e Vedantes",
+  "tipo": "Abraçadeiras",
+  "name": "Abraçadeiras para Foles Universais"
+ },
+ {
+  "id": "f17c273b-48c8-4895-bbaf-d809f2824cea",
+  "category": "mecanica",
+  "sub": "Anticongelantes",
+  "tipo": null,
+  "name": "Agua Destilada p/Anticongelantes"
+ },
+ {
+  "id": "2f6cfca4-f4de-4b47-a061-3a024d3a83e6",
+  "category": "mecanica",
+  "sub": "Lubrificação e Combustível",
+  "tipo": "Lubrificantes e Massas",
+  "name": "Almotolia de Metal p/Oleo 500ml"
+ },
+ {
+  "id": "e2865b0e-1a36-471f-ba2b-7de21dc49ecd",
+  "category": "mecanica",
+  "sub": "Consumíveis e Vedantes",
+  "tipo": "Anilhas",
+  "name": "Anilha Chapa DIN 125 ZN M 8"
+ },
+ {
+  "id": "bec5c800-66c9-4e7b-9442-50c35c3ac029",
+  "category": "mecanica",
+  "sub": "Consumíveis e Vedantes",
+  "tipo": "Anilhas",
+  "name": "Anilha de Bujao Carter Peugeot 16mm"
+ },
+ {
+  "id": "13593117-1d44-44eb-ad94-03b247aadae2",
+  "category": "mecanica",
+  "sub": "Consumíveis e Vedantes",
+  "tipo": "Anilhas",
+  "name": "Anilha de Chapa DIN 125 ZN M6"
+ },
+ {
+  "id": "df924b65-9ddf-41cc-b9bd-598d06790815",
+  "category": "mecanica",
+  "sub": "Consumíveis e Vedantes",
+  "tipo": "Anilhas",
+  "name": "Anilha de Cobre c/Amianto 14X20mm"
+ },
+ {
+  "id": "9902f885-ff81-4fa3-a500-7eb33cf8d704",
+  "category": "mecanica",
+  "sub": "Consumíveis e Vedantes",
+  "tipo": "Anilhas",
+  "name": "Anilha de Cobre c/Amianto 16X22"
+ },
+ {
+  "id": "6c0adfd6-42c1-4b70-b595-3b853a9170d8",
+  "category": "mecanica",
+  "sub": "Consumíveis e Vedantes",
+  "tipo": "Anilhas",
+  "name": "Anilha de Cobre p/Bujon 16X22"
+ },
+ {
+  "id": "faeaa049-9bec-4394-abeb-4b5451d36fd8",
+  "category": "mecanica",
+  "sub": "Anticongelantes",
+  "tipo": "Amarelo",
+  "name": "Anticongelante Amarelo 33% 20L"
+ },
+ {
+  "id": "5f2b4c25-cd3f-4719-8b97-dc37558e26ed",
+  "category": "mecanica",
+  "sub": "Anticongelantes",
+  "tipo": "Amarelo",
+  "name": "Anticongelante Amarelo 33% 5L"
+ },
+ {
+  "id": "c75e1c94-e808-477a-afe7-1dafbc4c5541",
+  "category": "mecanica",
+  "sub": "Anticongelantes",
+  "tipo": "Amarelo",
+  "name": "Anticongelante Amarelo 50% 25L"
+ },
+ {
+  "id": "1b258288-f4cc-49b3-87d5-497042942e89",
+  "category": "mecanica",
+  "sub": "Anticongelantes",
+  "tipo": "Amarelo",
+  "name": "Anticongelante Amarelo 50% 5L"
+ },
+ {
+  "id": "0174291c-1056-4c6c-9d9f-00ec976aa93f",
+  "category": "mecanica",
+  "sub": "Anticongelantes",
+  "tipo": "Amarelo",
+  "name": "Anticongelante Amarelo Puro 1L"
+ },
+ {
+  "id": "0af97950-f93c-467b-91d8-9c44acb86066",
+  "category": "mecanica",
+  "sub": "Anticongelantes",
+  "tipo": "Amarelo",
+  "name": "Anticongelante Amarelo Puro 20L"
+ },
+ {
+  "id": "c7417df7-792e-479f-860f-139136aaa69c",
+  "category": "mecanica",
+  "sub": "Anticongelantes",
+  "tipo": "Amarelo",
+  "name": "Anticongelante Amarelo Puro 5L"
+ },
+ {
+  "id": "488b232d-6586-44d6-9a32-9076334beb91",
+  "category": "mecanica",
+  "sub": "Anticongelantes",
+  "tipo": "Azul",
+  "name": "Anticongelante Azul 20% 5L"
+ },
+ {
+  "id": "1e57a0f1-be45-4002-88c5-63631ca9dc4d",
+  "category": "mecanica",
+  "sub": "Anticongelantes",
+  "tipo": "Azul",
+  "name": "Anticongelante Azul 33% 20L"
+ },
+ {
+  "id": "3262955d-a97b-4b5c-b508-71501e7d6c93",
+  "category": "mecanica",
+  "sub": "Anticongelantes",
+  "tipo": "Azul",
+  "name": "Anticongelante Azul 33% 5L"
+ },
+ {
+  "id": "3b530635-371c-41da-8395-ff0eeb247ae3",
+  "category": "mecanica",
+  "sub": "Anticongelantes",
+  "tipo": "Azul",
+  "name": "Anticongelante Azul 50% 20L"
+ },
+ {
+  "id": "0ba76c9b-8652-4702-89fc-fc18ab3dbfe5",
+  "category": "mecanica",
+  "sub": "Anticongelantes",
+  "tipo": "Azul",
+  "name": "Anticongelante Azul 50% 5L"
+ },
+ {
+  "id": "26a6dea3-f0a3-4605-be2e-25294578a42c",
+  "category": "mecanica",
+  "sub": "Anticongelantes",
+  "tipo": "Azul",
+  "name": "Anticongelante Azul Puro 1L"
+ },
+ {
+  "id": "12cffb66-1c3e-4094-b960-abe69fc1cab1",
+  "category": "mecanica",
+  "sub": "Anticongelantes",
+  "tipo": "Azul",
+  "name": "Anticongelante Azul Puro 20L"
+ },
+ {
+  "id": "fe5c33c9-3e57-43c3-a8fd-3b53226a7de8",
+  "category": "mecanica",
+  "sub": "Anticongelantes",
+  "tipo": "Azul",
+  "name": "Anticongelante Azul Puro 5L"
+ },
+ {
+  "id": "d5a5c4a1-5dde-4a35-a35c-88da873e71d5",
+  "category": "mecanica",
+  "sub": "Anticongelantes",
+  "tipo": null,
+  "name": "Anticongelante Puro Roxo G13"
+ },
+ {
+  "id": "becceb72-e0be-42fa-b636-d1e1cca1fd02",
+  "category": "mecanica",
+  "sub": "Anticongelantes",
+  "tipo": "Rosa",
+  "name": "Anticongelante Rosa 20% 5L"
+ },
+ {
+  "id": "12a195bb-1cf8-4885-a61b-192a38c264a7",
+  "category": "mecanica",
+  "sub": "Anticongelantes",
+  "tipo": "Rosa",
+  "name": "Anticongelante Rosa 33% 20L"
+ },
+ {
+  "id": "3235eb08-a93b-439b-902a-21a7c4437b31",
+  "category": "mecanica",
+  "sub": "Anticongelantes",
+  "tipo": "Rosa",
+  "name": "Anticongelante Rosa 33% 5L"
+ },
+ {
+  "id": "a3e7bee8-f675-4d2a-9007-0786d541b1ed",
+  "category": "mecanica",
+  "sub": "Anticongelantes",
+  "tipo": "Rosa",
+  "name": "Anticongelante Rosa 50% 20L"
+ },
+ {
+  "id": "c8a911d8-54bb-4b6f-8f3c-bc48bc93900c",
+  "category": "mecanica",
+  "sub": "Anticongelantes",
+  "tipo": "Rosa",
+  "name": "Anticongelante Rosa 50% 5L"
+ },
+ {
+  "id": "ae4fc25d-d391-47ab-94f1-da53a7ca10bd",
+  "category": "mecanica",
+  "sub": "Anticongelantes",
+  "tipo": "Rosa",
+  "name": "Anticongelante Rosa Puro 1L"
+ },
+ {
+  "id": "96de6d30-fcd6-44d5-b096-7786d7ef7937",
+  "category": "mecanica",
+  "sub": "Anticongelantes",
+  "tipo": "Rosa",
+  "name": "Anticongelante Rosa Puro 20L"
+ },
+ {
+  "id": "7a405180-d183-4108-bc87-6561b5c3b5cd",
+  "category": "mecanica",
+  "sub": "Anticongelantes",
+  "tipo": "Rosa",
+  "name": "Anticongelante Rosa Puro 5L"
+ },
+ {
+  "id": "61002369-f7b4-4be9-9017-4ddcf9969451",
+  "category": "mecanica",
+  "sub": "Anticongelantes",
+  "tipo": "Verde",
+  "name": "Anticongelante Verde 20% 5L"
+ },
+ {
+  "id": "40ec76aa-9f32-4cf9-bb4e-722b46e38fb5",
+  "category": "mecanica",
+  "sub": "Anticongelantes",
+  "tipo": "Verde",
+  "name": "Anticongelante Verde 33% 20L"
+ },
+ {
+  "id": "bec828e9-2681-4888-bd69-eb34e50f04d1",
+  "category": "mecanica",
+  "sub": "Anticongelantes",
+  "tipo": "Verde",
+  "name": "Anticongelante Verde 33% 5L"
+ },
+ {
+  "id": "50fbf4a7-2e81-497b-87a9-c42efaa37434",
+  "category": "mecanica",
+  "sub": "Anticongelantes",
+  "tipo": "Verde",
+  "name": "Anticongelante Verde 50% 20L"
+ },
+ {
+  "id": "1ee061fc-885e-4b21-8962-28738ac9e3b0",
+  "category": "mecanica",
+  "sub": "Anticongelantes",
+  "tipo": "Verde",
+  "name": "Anticongelante Verde 50% 5L"
+ },
+ {
+  "id": "27a1ab59-fa7e-422d-a12b-1222c6dfcc3d",
+  "category": "mecanica",
+  "sub": "Anticongelantes",
+  "tipo": "Verde",
+  "name": "Anticongelante Verde Puro 1L"
+ },
+ {
+  "id": "e023f9ef-27fb-4715-b82a-0e015a69a4e8",
+  "category": "mecanica",
+  "sub": "Anticongelantes",
+  "tipo": "Verde",
+  "name": "Anticongelante Verde Puro 20L"
+ },
+ {
+  "id": "84555b09-7588-4e04-b03d-0577f91cc96e",
+  "category": "mecanica",
+  "sub": "Anticongelantes",
+  "tipo": "Verde",
+  "name": "Anticongelante Verde Puro 5 L"
+ },
+ {
+  "id": "8e6ace11-0c6a-4578-94d9-6aed8dddb4b3",
+  "category": "mecanica",
+  "sub": "Colas e Fixadores",
+  "tipo": null,
+  "name": "Ativador Cianocrilato Spray 200 Ml"
+ },
+ {
+  "id": "e4f9b7e2-4f13-4712-82d9-36b94cb791d0",
+  "category": "mecanica",
+  "sub": "Consumíveis de Oficina",
+  "tipo": null,
+  "name": "BANDEJA/RECIPIENTE PARA DRENAGEM DE ÓLEO – 15L"
+ },
+ {
+  "id": "88e3a5ff-4958-4afc-afda-7b151b2e9e2c",
+  "category": "mecanica",
+  "sub": "Consumíveis de Oficina",
+  "tipo": null,
+  "name": "Bacia de Retençao 100 c/Grelha"
+ },
+ {
+  "id": "b61ea00f-fe6d-4bd8-9a09-a1a7eda12b7c",
+  "category": "mecanica",
+  "sub": "Ferramenta Especial de Motor",
+  "tipo": null,
+  "name": "Barra Reforçada para Motores 500kg"
+ },
+ {
+  "id": "fc744e29-b43a-440b-a585-8332160b1715",
+  "category": "mecanica",
+  "sub": "Brocas",
+  "tipo": null,
+  "name": "Brocas Hss DIN 338 - 10.0mm"
+ },
+ {
+  "id": "98e35f7b-549f-499e-9c84-840f3ec15dc1",
+  "category": "mecanica",
+  "sub": "Brocas",
+  "tipo": null,
+  "name": "Brocas Hss DIN 338 - 14.5mm"
+ },
+ {
+  "id": "89ecd850-08d9-4fcd-a3f4-6bfa08091652",
+  "category": "mecanica",
+  "sub": "Brocas",
+  "tipo": null,
+  "name": "Brocas Hss DIN 338 - 16.5mm"
+ },
+ {
+  "id": "6b754632-0fd5-4748-a06a-5cebdc625356",
+  "category": "mecanica",
+  "sub": "Brocas",
+  "tipo": null,
+  "name": "Brocas Hss DIN 338 - 2.5mm"
+ },
+ {
+  "id": "d434075e-5761-4947-9e15-e679a2db38bb",
+  "category": "mecanica",
+  "sub": "Brocas",
+  "tipo": null,
+  "name": "Brocas Hss DIN 338 - 20.0mm"
+ },
+ {
+  "id": "86c88631-9424-4922-b548-30da37480364",
+  "category": "mecanica",
+  "sub": "Brocas",
+  "tipo": null,
+  "name": "Brocas Hss DIN 338 - 3.0mm"
+ },
+ {
+  "id": "65f6d582-a4ba-44be-98ca-54bc04dcaef9",
+  "category": "mecanica",
+  "sub": "Brocas",
+  "tipo": null,
+  "name": "Brocas Hss DIN 338 - 3.5mm"
+ },
+ {
+  "id": "e21c4464-5dce-49a8-99da-2408883264da",
+  "category": "mecanica",
+  "sub": "Brocas",
+  "tipo": null,
+  "name": "Brocas Hss DIN 338 - 4.0mm"
+ },
+ {
+  "id": "76899ccf-ffd9-4689-be2d-161607e6cab4",
+  "category": "mecanica",
+  "sub": "Brocas",
+  "tipo": null,
+  "name": "Brocas Hss DIN 338 - 5.0mm"
+ },
+ {
+  "id": "4141354c-b3ee-443d-a800-fb68f3ff2b6d",
+  "category": "mecanica",
+  "sub": "Brocas",
+  "tipo": null,
+  "name": "Brocas Hss DIN 338 - 6.0mm"
+ },
+ {
+  "id": "3eea008b-86f2-4d64-9ec5-d37686005f75",
+  "category": "mecanica",
+  "sub": "Brocas",
+  "tipo": null,
+  "name": "Brocas Hss DIN 338 - 7.0mm"
+ },
+ {
+  "id": "66d74601-d830-4bdc-b653-5a0a91d207a1",
+  "category": "mecanica",
+  "sub": "Brocas",
+  "tipo": null,
+  "name": "Brocas Hss DIN 338 - 8.0mm"
+ },
+ {
+  "id": "5c6f401a-ba84-4092-95e6-df1b513263fc",
+  "category": "mecanica",
+  "sub": "Brocas",
+  "tipo": null,
+  "name": "Brocas Hss DIN 338 - 9.0mm"
+ },
+ {
+  "id": "ec1faf6b-8bb5-4662-bf3c-475371a0eb27",
+  "category": "mecanica",
+  "sub": "Consumíveis e Vedantes",
+  "tipo": "Anilhas",
+  "name": "CONJ.ANILHAS de Cobre p/Bujon"
+ },
+ {
+  "id": "e3c39342-5043-4875-b2de-0f1a9ebc46d2",
+  "category": "mecanica",
+  "sub": "Consumíveis e Vedantes",
+  "tipo": "Anilhas",
+  "name": "CONJ.ANILHAS de Cobre p/Injetores"
+ },
+ {
+  "id": "d7528dc7-e46e-4d17-9b20-227f6c48626b",
+  "category": "mecanica",
+  "sub": "Consumíveis e Vedantes",
+  "tipo": "Anilhas",
+  "name": "CONJ.ANILHAS de Mola ZN"
+ },
+ {
+  "id": "3cf4efe0-f528-4b40-b291-f312af4f9f0c",
+  "category": "mecanica",
+  "sub": "Consumíveis e Vedantes",
+  "tipo": "O-rings e Freios",
+  "name": "CONJ.FREIOS Benzing Exterior"
+ },
+ {
+  "id": "c5ba62fe-ff39-407f-9043-9903d26f9f33",
+  "category": "mecanica",
+  "sub": "Consumíveis de Oficina",
+  "tipo": null,
+  "name": "Caixa p/Baterias Amarelo"
+ },
+ {
+  "id": "75f1e9b0-cf09-42dc-8f55-cd29cc5ccf3c",
+  "category": "mecanica",
+  "sub": "Pneus e Rodas",
+  "tipo": null,
+  "name": "Capas para Rodas Rolo 250un"
+ },
+ {
+  "id": "f53f3636-e7c8-4058-931b-7612298ff270",
+  "category": "mecanica",
+  "sub": "Ferramenta Especial de Motor",
+  "tipo": null,
+  "name": "Chave de Cx Dozeavada 3/4 - 36mm"
+ },
+ {
+  "id": "363ddaed-044b-4bc4-bf07-9ab5c8f3cb3b",
+  "category": "mecanica",
+  "sub": "Colas e Fixadores",
+  "tipo": null,
+  "name": "Cola Cianocrilato Incolor 20 Gr"
+ },
+ {
+  "id": "10642a38-4752-48ce-89df-b5ede632a8b3",
+  "category": "mecanica",
+  "sub": "Colas e Fixadores",
+  "tipo": null,
+  "name": "Cola Contacto Lorprene Profissional"
+ },
+ {
+  "id": "a2656c1c-6ecc-4949-9aac-5a13481fec81",
+  "category": "mecanica",
+  "sub": "Colas e Fixadores",
+  "tipo": null,
+  "name": "Cola de Juntas Preta 200 Ml"
+ },
+ {
+  "id": "932f9473-cba1-4643-bfae-3afafd744710",
+  "category": "mecanica",
+  "sub": "Colas e Fixadores",
+  "tipo": null,
+  "name": "Cola de Juntas Threebond Cinz"
+ },
+ {
+  "id": "34299cea-2e7f-4d5d-bb41-c4e0f06018e4",
+  "category": "mecanica",
+  "sub": "Consumíveis e Vedantes",
+  "tipo": "Anilhas",
+  "name": "Conj. Anilhas Bujao Carter"
+ },
+ {
+  "id": "8f4cc45e-2229-40a0-a4df-29f0f4feefa0",
+  "category": "mecanica",
+  "sub": "Consumíveis e Vedantes",
+  "tipo": "O-rings e Freios",
+  "name": "Conj. de Freios Benzing"
+ },
+ {
+  "id": "c00841dc-780c-48c0-8ecd-882917877450",
+  "category": "mecanica",
+  "sub": "Consumíveis e Vedantes",
+  "tipo": "O-rings e Freios",
+  "name": "Conj. de Freios Benzing Interior"
+ },
+ {
+  "id": "0532658b-24d5-4630-ac7a-12c65dd68068",
+  "category": "mecanica",
+  "sub": "Consumíveis e Vedantes",
+  "tipo": "O-rings e Freios",
+  "name": "Conj. de O`RINGUES em Polgadas"
+ },
+ {
+  "id": "90f85e28-0d99-4b21-8ba5-08f02f6c0c25",
+  "category": "mecanica",
+  "sub": "Consumíveis e Vedantes",
+  "tipo": "O-rings e Freios",
+  "name": "Conj. de Oringues 225pzs"
+ },
+ {
+  "id": "0f9325bb-1876-4288-8bff-f1ac6f22f581",
+  "category": "mecanica",
+  "sub": "Consumíveis e Vedantes",
+  "tipo": "O-rings e Freios",
+  "name": "Conj. de Oringues Metricos"
+ },
+ {
+  "id": "bf9cc224-81a2-4cef-ad9a-3bf3a8cec728",
+  "category": "mecanica",
+  "sub": "Pneus e Rodas",
+  "tipo": null,
+  "name": "Contrapeso com Encaixe Jante Univ."
+ },
+ {
+  "id": "3f5dace8-2594-4897-9bc6-26683ffb1b85",
+  "category": "mecanica",
+  "sub": "Limpeza e Desengordurantes",
+  "tipo": null,
+  "name": "Descarbonizante 10 Lt"
+ },
+ {
+  "id": "8312e914-0685-4f8d-8859-d4a8faa24b0d",
+  "category": "mecanica",
+  "sub": "Limpeza e Desengordurantes",
+  "tipo": null,
+  "name": "Descarbonizante 20 L"
+ },
+ {
+  "id": "858dcbec-4987-4501-9cf6-c02ce76125eb",
+  "category": "mecanica",
+  "sub": "Limpeza e Desengordurantes",
+  "tipo": null,
+  "name": "Desengorduante p/Lavar Peças a"
+ },
+ {
+  "id": "e3092130-ae33-41bd-8acd-71c5153d4e39",
+  "category": "mecanica",
+  "sub": "Consumíveis de Oficina",
+  "tipo": null,
+  "name": "Desperdicio de Pano Branco 25 Kg (Esp)"
+ },
+ {
+  "id": "8f7fb25a-9283-4f3c-81b9-6ea2c71272a8",
+  "category": "mecanica",
+  "sub": "Consumíveis de Oficina",
+  "tipo": null,
+  "name": "Desperdicio de Pano Kg"
+ },
+ {
+  "id": "b11d3fdb-d00e-4b21-82cf-515df09b2962",
+  "category": "mecanica",
+  "sub": "Ar Comprimido",
+  "tipo": null,
+  "name": "ENC.RAPIDO p/Ar Comprimido 1/4 Macho"
+ },
+ {
+  "id": "9b625334-1b23-4709-a4b5-eea788cb0582",
+  "category": "mecanica",
+  "sub": "Ar Comprimido",
+  "tipo": null,
+  "name": "ENC.RAPIDO p/Mangueira Ar COMP.MACHO"
+ },
+ {
+  "id": "cf99cf95-4e20-417b-bfdd-6d090471632b",
+  "category": "mecanica",
+  "sub": "Ar Comprimido",
+  "tipo": null,
+  "name": "ENC.RAPIDO p/Mangueira Ar Comp. Femea"
+ },
+ {
+  "id": "460c7249-5e88-4896-be1c-56cda11be45f",
+  "category": "mecanica",
+  "sub": "Ar Comprimido",
+  "tipo": null,
+  "name": "ENC.RAPIDO p/Mangueira Ar Comprimido"
+ },
+ {
+  "id": "6f8fc452-7064-4609-bb5e-10e3406ded13",
+  "category": "mecanica",
+  "sub": "Ar Comprimido",
+  "tipo": null,
+  "name": "Enc. Rapido p/Mangueira Ar Comprimido"
+ },
+ {
+  "id": "a02a1426-3a16-4922-ab85-52b854eb8ec8",
+  "category": "mecanica",
+  "sub": "Consumíveis de Oficina",
+  "tipo": null,
+  "name": "Etiquetas Easy-Loop Amarelas"
+ },
+ {
+  "id": "4aff060b-d0c3-41df-ac16-f01f15a414ca",
+  "category": "mecanica",
+  "sub": "Consumíveis de Oficina",
+  "tipo": null,
+  "name": "Etiquetas Easy-Loop Brancas"
+ },
+ {
+  "id": "cf123a97-25e0-4dbd-9589-499ab7fb8c9c",
+  "category": "mecanica",
+  "sub": "Consumíveis de Oficina",
+  "tipo": null,
+  "name": "Etiquetas Easy-Loop Verdes"
+ },
+ {
+  "id": "30a60535-6c03-4bd0-bfdc-ca1efd8de16f",
+  "category": "mecanica",
+  "sub": "Consumíveis de Oficina",
+  "tipo": null,
+  "name": "Etiquetas Econo Id. Amarelas"
+ },
+ {
+  "id": "32d26b84-ad02-4a5d-8154-2a6b17d37dad",
+  "category": "mecanica",
+  "sub": "Consumíveis de Oficina",
+  "tipo": null,
+  "name": "Etiquetas Econo-Id Brancas"
+ },
+ {
+  "id": "d2bd105e-3120-406d-80ad-2f8ffd948e4d",
+  "category": "mecanica",
+  "sub": "Ferramenta Especial de Motor",
+  "tipo": null,
+  "name": "Ferramenta p/Rodar Valvulas"
+ },
+ {
+  "id": "e2f21842-bbdd-44ca-82cd-d0cfbc051254",
+  "category": "mecanica",
+  "sub": "Colas e Fixadores",
+  "tipo": null,
+  "name": "Fixador Alta Resistencia Verde 50ml"
+ },
+ {
+  "id": "a4592d46-fb8b-4f3a-beb1-8ec20f607785",
+  "category": "mecanica",
+  "sub": "Colas e Fixadores",
+  "tipo": null,
+  "name": "Fixador Médio Azul 50ml"
+ },
+ {
+  "id": "b26ff675-bc56-462e-a50c-ee0465ba1339",
+  "category": "mecanica",
+  "sub": "Consumíveis e Vedantes",
+  "tipo": "Foles",
+  "name": "Kit Fole de Transmissao Universal"
+ },
+ {
+  "id": "eeafeafa-b70b-4847-a050-da3dc8c45254",
+  "category": "mecanica",
+  "sub": "Ferramenta Especial de Motor",
+  "tipo": null,
+  "name": "Kit Mecanica"
+ },
+ {
+  "id": "1387cf94-61a1-461e-890d-6577eec990a6",
+  "category": "mecanica",
+  "sub": "Colas e Fixadores",
+  "tipo": null,
+  "name": "Kit de Cola Quick-Bond"
+ },
+ {
+  "id": "13d6d040-f961-462b-8ce9-c3b815395037",
+  "category": "mecanica",
+  "sub": "Consumíveis e Vedantes",
+  "tipo": "Foles",
+  "name": "Kit de Foles de Direção Universal"
+ },
+ {
+  "id": "530e1e23-9a9d-4f4a-8e39-81d18e0fa0bd",
+  "category": "mecanica",
+  "sub": "Consumíveis e Vedantes",
+  "tipo": "O-rings e Freios",
+  "name": "Kit de Oringues 419 pcs"
+ },
+ {
+  "id": "5e6300e2-911d-426d-a661-abce2ec4467f",
+  "category": "mecanica",
+  "sub": "Limpeza e Desengordurantes",
+  "tipo": null,
+  "name": "Limpeza de Motores 5L"
+ },
+ {
+  "id": "b4563237-591a-409d-96f9-5f0c63ba6814",
+  "category": "mecanica",
+  "sub": "Limpeza e Desengordurantes",
+  "tipo": null,
+  "name": "Limpeza de Peças 10L"
+ },
+ {
+  "id": "43f765c7-e378-4569-99f1-211437ca1e41",
+  "category": "mecanica",
+  "sub": "Limpeza e Desengordurantes",
+  "tipo": null,
+  "name": "Limpeza de Peças 25 Lt"
+ },
+ {
+  "id": "f96db364-9a57-496a-909a-6e6f4f91ec81",
+  "category": "mecanica",
+  "sub": "Anticongelantes",
+  "tipo": null,
+  "name": "Limpeza de Radiadores 300 Ml"
+ },
+ {
+  "id": "570b041a-9795-4464-8092-13ee2a1a188b",
+  "category": "mecanica",
+  "sub": "Limpeza e Desengordurantes",
+  "tipo": null,
+  "name": "Limpeza de Travoes 25 L"
+ },
+ {
+  "id": "056fc07d-9fb4-4cf1-8e09-547ca87de3c2",
+  "category": "mecanica",
+  "sub": "Limpeza e Desengordurantes",
+  "tipo": null,
+  "name": "Limpeza de Travoes 60L"
+ },
+ {
+  "id": "24967180-9790-44dc-a989-9b3375695b7e",
+  "category": "mecanica",
+  "sub": "Limpeza e Desengordurantes",
+  "tipo": null,
+  "name": "Limpeza de Travões 500ml"
+ },
+ {
+  "id": "27e37679-4eff-46fa-aff5-61365dec38c2",
+  "category": "mecanica",
+  "sub": "Limpeza e Desengordurantes",
+  "tipo": null,
+  "name": "Limpeza de p/Brisas Concentrado 32ml"
+ },
+ {
+  "id": "7321fab1-de81-432d-8999-0d0b28efa7ae",
+  "category": "mecanica",
+  "sub": "Ar Comprimido",
+  "tipo": null,
+  "name": "Mangueira p/Ar Comprimido 20 Bar 8mm"
+ },
+ {
+  "id": "e93da46f-95dd-46dd-8426-270eb21e4dca",
+  "category": "mecanica",
+  "sub": "Lubrificação e Combustível",
+  "tipo": "Lubrificantes e Massas",
+  "name": "Massa Consistente Preta 5kg Maxigras"
+ },
+ {
+  "id": "65a8afb8-ef83-43eb-ad0c-9bd606db1f95",
+  "category": "mecanica",
+  "sub": "Lubrificação e Combustível",
+  "tipo": "Lubrificantes e Massas",
+  "name": "Massa de Cobre 0,5kg"
+ },
+ {
+  "id": "5f578f32-1214-4e06-8876-953ae08ed815",
+  "category": "mecanica",
+  "sub": "Lubrificação e Combustível",
+  "tipo": "Lubrificantes e Massas",
+  "name": "Massa de Escapes"
+ },
+ {
+  "id": "f784c85d-36d2-4e54-9003-7f2dc7406af0",
+  "category": "mecanica",
+  "sub": "Limpeza e Desengordurantes",
+  "tipo": null,
+  "name": "Masterclean Desengrasante 1L"
+ },
+ {
+  "id": "6a357c95-06d7-42ef-86f2-af58c47e52b9",
+  "category": "mecanica",
+  "sub": "Limpeza e Desengordurantes",
+  "tipo": null,
+  "name": "Masterclean-Desengrasante 25L"
+ },
+ {
+  "id": "8e125293-c5f7-46c6-89dc-ff7feb830f55",
+  "category": "mecanica",
+  "sub": "Consumíveis de Oficina",
+  "tipo": null,
+  "name": "Microesferas de Vidro 100-300"
+ },
+ {
+  "id": "12069afd-b0bb-4016-9aea-7b8e0aa2d018",
+  "category": "mecanica",
+  "sub": "Lubrificação e Combustível",
+  "tipo": "Lubrificantes e Massas",
+  "name": "Oleo Hidraulico Galp 5L EP46"
+ },
+ {
+  "id": "daa635f1-c140-4966-ab96-606fe760e8ac",
+  "category": "mecanica",
+  "sub": "Pneus e Rodas",
+  "tipo": null,
+  "name": "Pesos p/Rodas Clip ZN 10G 100un"
+ },
+ {
+  "id": "f9f00be6-2560-4cad-afe6-9bf7cc5f9de7",
+  "category": "mecanica",
+  "sub": "Pneus e Rodas",
+  "tipo": null,
+  "name": "Pesos p/Rodas ZN 15G 100un"
+ },
+ {
+  "id": "1c090d9e-f44c-4c4b-bc79-e25b16dbf094",
+  "category": "mecanica",
+  "sub": "Pneus e Rodas",
+  "tipo": null,
+  "name": "Pesos p/Rodas ZN 20G 100un"
+ },
+ {
+  "id": "a478191f-18ca-4156-a545-e2f019ed8086",
+  "category": "mecanica",
+  "sub": "Consumíveis e Vedantes",
+  "tipo": "Porcas e Parafusos",
+  "name": "Porca Sext. DIN 934 ZN M 8"
+ },
+ {
+  "id": "4bc75349-6ae8-4c4e-81cd-890ab8fdfc96",
+  "category": "mecanica",
+  "sub": "Consumíveis e Vedantes",
+  "tipo": "Porcas e Parafusos",
+  "name": "Porca c/Freio de Nylon DIN 985 ZN M 6"
+ },
+ {
+  "id": "5b56fae7-b55f-4373-b5d6-86c61807b4ae",
+  "category": "mecanica",
+  "sub": "Consumíveis e Vedantes",
+  "tipo": "Porcas e Parafusos",
+  "name": "Porca c/Freio de Nylon DIN 985 ZN M 8"
+ },
+ {
+  "id": "12a635da-6a57-4a38-855a-660c66459fcf",
+  "category": "mecanica",
+  "sub": "Pneus e Rodas",
+  "tipo": null,
+  "name": "Remendos p/Pneus em Tiras 50pcs"
+ },
+ {
+  "id": "de4b9a0d-4e47-49e0-8789-b3d6be78307b",
+  "category": "mecanica",
+  "sub": "Colas e Fixadores",
+  "tipo": null,
+  "name": "Spray Cola de Contato 400ml"
+ },
+ {
+  "id": "ef1ca56c-504a-4fe5-9c0e-a0a5fe25b717",
+  "category": "mecanica",
+  "sub": "Limpeza e Desengordurantes",
+  "tipo": null,
+  "name": "Spray Descarbonizante 400ml"
+ },
+ {
+  "id": "3a218c68-62c0-44d5-b451-ee839fd1b88c",
+  "category": "mecanica",
+  "sub": "Limpeza e Desengordurantes",
+  "tipo": null,
+  "name": "Spray Limpeza Ar Condicionado 400ml"
+ },
+ {
+  "id": "b0991856-5f71-4af5-90f1-e47b8ca48514",
+  "category": "mecanica",
+  "sub": "Limpeza e Desengordurantes",
+  "tipo": null,
+  "name": "Spray Limpeza de Carburadores"
+ },
+ {
+  "id": "170353cd-a2f0-43ab-96ee-c2241cae3e6f",
+  "category": "mecanica",
+  "sub": "Lubrificação e Combustível",
+  "tipo": "Lubrificantes e Massas",
+  "name": "Spray Lubrificante Ceramica 400ml"
+ },
+ {
+  "id": "3b56c285-432d-4ccc-ac50-e42e67e1f53e",
+  "category": "mecanica",
+  "sub": "Lubrificação e Combustível",
+  "tipo": "Lubrificantes e Massas",
+  "name": "Spray Lubrificante Litio + Ptfe 400ml"
+ },
+ {
+  "id": "d70184cd-dbcd-4ba4-bae4-187b05c8a135",
+  "category": "mecanica",
+  "sub": "Lubrificação e Combustível",
+  "tipo": "Lubrificantes e Massas",
+  "name": "Spray Lubrificante Silicone 400ml"
+ },
+ {
+  "id": "207334a2-9e97-402c-a095-307ee3b4f743",
+  "category": "mecanica",
+  "sub": "Lubrificação e Combustível",
+  "tipo": "Lubrificantes e Massas",
+  "name": "Spray Massa Lubrificante 500ml"
+ },
+ {
+  "id": "8fd93372-f641-415a-a487-50fe0fba284c",
+  "category": "mecanica",
+  "sub": "Consumíveis de Oficina",
+  "tipo": null,
+  "name": "Spray Renovador de Farois 400 ml"
+ },
+ {
+  "id": "efce2f80-c8d4-4a24-a625-933968c287fe",
+  "category": "mecanica",
+  "sub": "Lubrificação e Combustível",
+  "tipo": "Lubrificantes e Massas",
+  "name": "Spray de Alta Temperatura"
+ },
+ {
+  "id": "1aabb262-d663-4a5d-8044-228e4ba315fb",
+  "category": "mecanica",
+  "sub": "Lubrificação e Combustível",
+  "tipo": "Lubrificantes e Massas",
+  "name": "Spray de Anti-Ferrugem MOS2 400ml"
+ },
+ {
+  "id": "f2f4f0df-84e2-4e09-afaa-4860d80bf3bd",
+  "category": "mecanica",
+  "sub": "Limpeza e Desengordurantes",
+  "tipo": null,
+  "name": "Spray de Limpeza de Contactos 400ml"
+ },
+ {
+  "id": "a7f1c762-b65b-47c3-880d-ffd714e1ee7b",
+  "category": "mecanica",
+  "sub": "Lubrificação e Combustível",
+  "tipo": "Lubrificantes e Massas",
+  "name": "Spray de Massa de Cobre"
+ },
+ {
+  "id": "5fde72c3-45f9-4d66-960f-043615de4c43",
+  "category": "mecanica",
+  "sub": "Lubrificação e Combustível",
+  "tipo": "Lubrificantes e Massas",
+  "name": "Spray de Teflon 400ml"
+ },
+ {
+  "id": "ee5c4abc-91d1-427d-8a1c-ed6b1ff49337",
+  "category": "mecanica",
+  "sub": "Lubrificação e Combustível",
+  "tipo": "Lubrificantes e Massas",
+  "name": "Spray de Vaselina 400ml"
+ },
+ {
+  "id": "abfed2b3-911d-42eb-9485-3b50adb453a1",
+  "category": "mecanica",
+  "sub": "Anticongelantes",
+  "tipo": null,
+  "name": "Tapa Fugas p/Radiador"
+ },
+ {
+  "id": "6f853126-710d-4572-9053-6cd26f4d2cd8",
+  "category": "mecanica",
+  "sub": "Lubrificação e Combustível",
+  "tipo": "Tubos de Combustível",
+  "name": "Tubo Conbustivel Trança INT.8 Mm"
+ },
+ {
+  "id": "9a959a18-813c-4d06-a041-a3748aba03c3",
+  "category": "mecanica",
+  "sub": "Lubrificação e Combustível",
+  "tipo": "Tubos de Combustível",
+  "name": "Tubo Conbustivel Trança Interior 6mm"
+ },
+ {
+  "id": "35719627-9e6c-4bcd-8d79-7b9bd921d5d2",
+  "category": "mecanica",
+  "sub": "Lubrificação e Combustível",
+  "tipo": "Tubos de Combustível",
+  "name": "Tubo Gasolina Trança Ext. 3mm"
+ },
+ {
+  "id": "d348eacd-979b-4f2c-a5b9-71f1d5ca9df4",
+  "category": "mecanica",
+  "sub": "Lubrificação e Combustível",
+  "tipo": "Tubos de Combustível",
+  "name": "Tubo Gasolina Trança Int. 3mm"
+ },
+ {
+  "id": "d19b63b9-f894-4fb4-8434-65471408809c",
+  "category": "mecanica",
+  "sub": "Lubrificação e Combustível",
+  "tipo": "Tubos de Combustível",
+  "name": "Tubo Ib 06X09 Cristal"
+ },
+ {
+  "id": "0d350e32-7617-4809-b849-9c254bfdf1dc",
+  "category": "mecanica",
+  "sub": "Lubrificação e Combustível",
+  "tipo": "Tubos de Combustível",
+  "name": "Tubo de Borracha p/Esguincho 3mm"
+ },
+ {
+  "id": "68a80104-5ec3-46d1-97b0-e9193a314bf5",
+  "category": "mecanica",
+  "sub": "Lubrificação e Combustível",
+  "tipo": "Tubos de Combustível",
+  "name": "Tubo de Borracha p/Esguincho 4mm"
+ },
+ {
+  "id": "63473a96-f43d-4970-be38-ea0bc50aa439",
+  "category": "mecanica",
+  "sub": "Lubrificação e Combustível",
+  "tipo": "Tubos de Combustível",
+  "name": "Tubo de Combustivel Trança Externa"
+ },
+ {
+  "id": "017c484a-fbdd-4e54-97ac-9416aafa8944",
+  "category": "mecanica",
+  "sub": "Lubrificação e Combustível",
+  "tipo": "Tubos de Combustível",
+  "name": "Tubo de Conbustivel Trança Interior"
+ },
+ {
+  "id": "11f3fd4c-cf0e-4f3c-893f-8b644f7c5c92",
+  "category": "mecanica",
+  "sub": "Lubrificação e Combustível",
+  "tipo": "Tubos de Combustível",
+  "name": "Tubo de Gasolina Revestido Cinza 2,8X07"
+ },
+ {
+  "id": "52793f6b-b909-437d-84c1-e0899572d155",
+  "category": "mecanica",
+  "sub": "Lubrificação e Combustível",
+  "tipo": "Lubrificantes e Massas",
+  "name": "Vaselina Liquida 1/4"
+ },
+ {
+  "id": "fb07e524-fd96-4d54-99bb-25f3ec574911",
+  "category": "mecanica",
+  "sub": "Ferramenta Especial de Motor",
+  "tipo": null,
+  "name": "Ventosas para Rodar Valvulas"
+ }
+]

@@ -1,3 +1,4 @@
+import { SubcategoryTreeInput } from '../../components/SubcategoryTreeInput'
 import { defineField, defineType } from 'sanity'
 import { PackageIcon } from '@sanity/icons'
 import { CATEGORIES } from '../categories'
@@ -47,7 +48,9 @@ export const productType = defineType({
       type: 'reference',
       to: [{ type: 'subcategory' }],
       description:
-        'Escolha da lista (mostra só as subcategorias da categoria escolhida). Pode escolher uma subcategoria ou um tipo dentro dela (aparece como "Chaves › Chaves Torx"). Para criar uma nova, use "Criar novo" ou a secção Subcategoria.',
+        'Clique na subcategoria, ou num tipo dentro dela. Mostra só as da categoria escolhida acima.',
+      // Tree picker (subcategories with their types) instead of the search box — stores the same reference
+      components: { input: SubcategoryTreeInput },
       options: {
         filter: ({ document }) => ({
           filter: 'category == $category',
