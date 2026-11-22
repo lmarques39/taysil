@@ -6,9 +6,10 @@
 //   exit 0 → transparent PNG written, cropped to the product; prints the method used
 //   exit 2 → no product found in the photo
 //   exit 3 → the photo already has a transparent background (nothing written)
-//   White packshots (supplier photos on plain white, often with a mirror reflection under the product)
-//   are NOT cut out: the output is the original cropped to the product + reflection, white kept. The site
-//   blends white backgrounds into the card (mix-blend multiply), which keeps the reflection natural.
+//   White packshots (supplier photos on plain white) are NOT cut out: the white is kept (the site blends it
+//   into the card) and the photo is cropped to the product. Their mirror reflection under the product is
+//   removed using Apple Vision's product mask — only when that mask clearly contains the whole product
+//   (white boxes on white are often missed by Vision; then the photo is kept with its reflection).
 // Two methods:
 //   - Plain backgrounds (the border is one flat colour, e.g. supplier packshots on white):
 //     flood-fill that colour from the edges, so every object in the photo is kept.
@@ -62,8 +63,31 @@ let med: (Double, Double, Double) = {
 }()
 let flat = Double(border.filter { dist($0, med) < 12 }.count) / Double(border.count) > 0.97
 
-// --- White packshot: crop to the product (and its reflection), keep the white background ---
+// --- White packshot: remove the reflection (when safe), crop to the product, keep the white background ---
 if flat && med.0 >= 240 && med.1 >= 240 && med.2 >= 240 {
+  var reflection = "kept"
+  let request = VNGenerateForegroundInstanceMaskRequest()
+  let handler = VNImageRequestHandler(cgImage: cg)
+  if (try? handler.perform([request])) != nil, let result = request.results?.first, !result.allInstances.isEmpty,
+     let mask = try? result.generateScaledMaskForImage(forInstances: result.allInstances, from: handler) {
+    CVPixelBufferLockBaseAddress(mask, .readOnly)
+    let base = CVPixelBufferGetBaseAddress(mask)!.assumingMemoryBound(to: Float32.self)
+    let stride = CVPixelBufferGetBytesPerRow(mask) / 4
+    var m = [Double](repeating: 0, count: W * H)
+    for y in 0..<H { for x in 0..<W { m[y*W + x] = Double(max(0, min(1, base[y*stride + x]))) } }
+    CVPixelBufferUnlockBaseAddress(mask, .readOnly)
+    // Safety: the mask must contain (almost) all the strongly coloured pixels — text, logos, outlines.
+    // Reflections are faded, so few of them are "strong"; a missed white box leaves its print outside.
+    var strong = 0, strongIn = 0
+    for i in 0..<(W * H) where dist(i, med) > 70 { strong += 1; if m[i] > 0.5 { strongIn += 1 } }
+    if strong > 0 && Double(strongIn) / Double(strong) >= 0.93 {
+      for i in 0..<(W * H) where m[i] < 1 {
+        let v = m[i]
+        for c in 0..<3 { px[i*4 + c] = UInt8(Double(px[i*4 + c]) * v + 255 * (1 - v)) }
+      }
+      reflection = "removed"
+    }
+  }
   var minX = W, minY = H, maxX = -1, maxY = -1
   for y in 0..<H { for x in 0..<W where dist(y*W + x, med) > 14 {
     minX = min(minX, x); maxX = max(maxX, x); minY = min(minY, y); maxY = max(maxY, y)
@@ -72,11 +96,15 @@ if flat && med.0 >= 240 && med.1 >= 240 && med.2 >= 240 {
   let m = max(4, max(maxX - minX, maxY - minY) / 33)   // ~3% white margin
   let rect = CGRect(x: max(0, minX - m), y: max(0, minY - m),
                     width: min(W - 1, maxX + m) - max(0, minX - m) + 1, height: min(H - 1, maxY + m) - max(0, minY - m) + 1)
-  let cropped = cg.cropping(to: rect)!
+  let painted = px.withUnsafeMutableBytes { ptr in
+    CGContext(data: ptr.baseAddress, width: W, height: H, bitsPerComponent: 8, bytesPerRow: W * 4,
+              space: sRGB, bitmapInfo: CGImageAlphaInfo.premultipliedLast.rawValue)!.makeImage()!
+  }
+  let cropped = painted.cropping(to: rect)!
   guard let dest = CGImageDestinationCreateWithURL(outURL as CFURL, UTType.png.identifier as CFString, 1, nil) else { exit(1) }
   CGImageDestinationAddImage(dest, cropped, nil)
   guard CGImageDestinationFinalize(dest) else { exit(1) }
-  print("white-packshot \(cropped.width)x\(cropped.height)")
+  print("white-packshot \(cropped.width)x\(cropped.height) reflection=\(reflection)")
   exit(0)
 }
 
