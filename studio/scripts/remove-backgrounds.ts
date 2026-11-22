@@ -13,6 +13,9 @@
 //   ./node_modules/.bin/sanity exec scripts/remove-backgrounds.ts --with-user-token
 //       uploads the cut-outs and links them in Sanity
 //   add --force to redo every cut-out, --skip=<id>,<id> to leave photos out (ids shown on the review page)
+//   --only=<id>,<id> processes just those products; --holes also clears background seen through the
+//   product (inside handles, loops, chains) — plain-background photos only, use it on products that need it:
+//   ... -- --only=<id>,<id> --holes --force
 // Patches published documents AND existing drafts directly (like migrate-subcategories.ts),
 // so the client's unpublished changes aren't published by us.
 import { getCliClient } from 'sanity/cli'
@@ -25,6 +28,10 @@ import { categoryFieldName } from '../schemaTypes/documents/homePage'
 const client = getCliClient({ apiVersion: '2026-06-20' })
 const DRY_RUN = process.argv.includes('--dry-run')
 const FORCE = process.argv.includes('--force')
+const HOLES = process.argv.includes('--holes')
+const ONLY = new Set(
+  (process.argv.find((a) => a.startsWith('--only='))?.slice('--only='.length) ?? '').split(',').filter(Boolean),
+)
 const SKIP = new Set(
   (process.argv.find((a) => a.startsWith('--skip='))?.slice('--skip='.length) ?? '').split(',').filter(Boolean),
 )
@@ -106,7 +113,7 @@ async function cut(source: string, url: string): Promise<Result> {
   if (!res.ok) return { kind: 'failed', reason: `download falhou (${res.status})` }
   writeFileSync(input, Buffer.from(await res.arrayBuffer()))
 
-  const tool = spawnSync(TOOL, [input, output], { encoding: 'utf8' })
+  const tool = spawnSync(TOOL, [...(HOLES ? ['--holes'] : []), input, output], { encoding: 'utf8' })
   rmSync(input, { force: true })
   if (tool.status === 3) return { kind: 'transparent' }
   if (tool.status === 2) return { kind: 'failed', reason: 'não encontrei o produto na foto' }
@@ -179,6 +186,7 @@ async function main() {
   for (const slot of slots) {
     if (!slot.source || !slot.url) continue // homepage category without a chosen photo
     const id = baseId(slot.docId)
+    if (ONLY.size && !ONLY.has(id)) continue
     if (SKIP.has(id) || SKIP.has(slot.source)) {
       counts.skipped++
       console.log(`  ${slot.label}: deixada de fora (--skip)`)
