@@ -93,6 +93,23 @@ export const productType = defineType({
       type: 'url',
       description: 'Alternativa ao upload — cole o URL da imagem. A imagem carregada tem prioridade.',
     }),
+    // Filled by studio/scripts/remove-backgrounds.ts — the site only uses it while "cutoutOf"
+    // still matches the current photo, so replacing the photo never shows an old cut-out.
+    defineField({
+      name: 'cutout',
+      title: 'Foto sem fundo (automática)',
+      type: 'image',
+      readOnly: true,
+      description:
+        'Gerada automaticamente a partir da imagem acima. Não precisa de mexer — se trocar a imagem, o site mostra a nova até ser gerada outra.',
+    }),
+    defineField({
+      name: 'cutoutOf',
+      title: 'Imagem de origem do recorte',
+      type: 'string',
+      hidden: true,
+      readOnly: true,
+    }),
     defineField({
       name: 'desc',
       title: 'Descrição',
