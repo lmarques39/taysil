@@ -1,12 +1,51 @@
-import { MessageCircle, MapPin } from 'lucide-react'
+import { useRef, useState } from 'react'
+import { MessageCircle, MapPin, Copy, Check } from 'lucide-react'
 import GridOverlay from '../components/atoms/GridOverlay'
 import { useCookieConsent } from '../context/CookieConsentContext'
+import { EMAIL, MAIN_PHONE, PHONES, mailtoHref, whatsappHref } from '../data/contacts'
 
-const phones = [
-  { number: '939 044 050', href: 'tel:939044050', label: 'Telemóvel' },
-  { number: '936 645 930', href: 'tel:936645930', label: 'Telemóvel' },
-  { number: '216 019 522', href: 'tel:216019522', label: 'Fixo' },
-]
+/**
+ * Email address with a "Copiar" button: for visitors without a mail app set up (mailto: then does nothing).
+ * If the browser blocks the clipboard, the address gets selected so it can be copied by hand.
+ */
+function EmailWithCopy() {
+  const [copied, setCopied] = useState(false)
+  const linkRef = useRef<HTMLAnchorElement>(null)
+  const copy = async () => {
+    try {
+      await navigator.clipboard.writeText(EMAIL)
+    } catch {
+      const range = document.createRange()
+      if (linkRef.current) range.selectNodeContents(linkRef.current)
+      window.getSelection()?.removeAllRanges()
+      window.getSelection()?.addRange(range)
+      return
+    }
+    setCopied(true)
+    setTimeout(() => setCopied(false), 2500)
+  }
+  return (
+    <div className="flex flex-wrap items-center gap-3">
+      <a
+        ref={linkRef}
+        href={mailtoHref()}
+        className="text-lg font-bold text-slate-900 hover:text-red-600 transition-colors"
+      >
+        {EMAIL}
+      </a>
+      <button
+        type="button"
+        onClick={copy}
+        className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold rounded-full border border-slate-300 text-slate-700 hover:bg-slate-100 transition-colors"
+      >
+        {copied ? <Check size={13} aria-hidden /> : <Copy size={13} aria-hidden />}
+        {copied ? 'Copiado' : 'Copiar'}
+      </button>
+      {/* Announced to screen readers */}
+      <span role="status" className="sr-only">{copied ? 'Email copiado' : ''}</span>
+    </div>
+  )
+}
 
 export default function Contactos() {
   const { consent, accept } = useCookieConsent()
@@ -28,10 +67,10 @@ export default function Contactos() {
           <div>
             <p className="text-slate-500 text-xs uppercase tracking-widest mb-2">Linha principal</p>
             <a
-              href="tel:939044050"
+              href={MAIN_PHONE.tel}
               className="text-3xl sm:text-4xl font-black text-red-500 hover:text-white transition-colors tracking-tight"
             >
-              939 044 050
+              {MAIN_PHONE.display}
             </a>
           </div>
         </div>
@@ -70,13 +109,13 @@ export default function Contactos() {
                   <h3 className="text-sm font-extrabold text-red-600 uppercase tracking-wide">Telefone</h3>
                 </div>
                 <ul className="space-y-3">
-                  {phones.map(({ number, href, label }) => (
-                    <li key={href} className="flex items-center gap-3">
+                  {PHONES.map(({ display, tel, label }) => (
+                    <li key={tel} className="flex items-center gap-3">
                       <a
-                        href={href}
+                        href={tel}
                         className="text-lg font-bold text-slate-900 hover:text-red-600 transition-colors tabular-nums"
                       >
-                        {number}
+                        {display}
                       </a>
                       <span className="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded-full uppercase tracking-wide">
                         {label}
@@ -91,18 +130,13 @@ export default function Contactos() {
                 <div className="border-l-4 border-red-600 pl-4 mb-4">
                   <h3 className="text-sm font-extrabold text-red-600 uppercase tracking-wide">Email</h3>
                 </div>
-                <a
-                  href="mailto:geral.taysil@gmail.com"
-                  className="text-lg font-bold text-slate-900 hover:text-red-600 transition-colors"
-                >
-                  geral.taysil@gmail.com
-                </a>
+                <EmailWithCopy />
               </div>
 
               {/* WhatsApp */}
               <div className="mb-10">
                 <a
-                  href="https://wa.me/351939044050"
+                  href={whatsappHref()}
                   target="_blank"
                   rel="noopener noreferrer"
                   // Dark text on the WhatsApp green (≈9:1); white on it was only 2:1

@@ -1,3 +1,4 @@
+import { mailtoHref } from '../data/contacts'
 export default function Privacidade() {
   return (
     <>
@@ -16,7 +17,7 @@ export default function Privacidade() {
               A <strong>Taysil, Lda.</strong> é uma empresa de comércio por grosso de produtos para o setor automóvel,
               com sede na Rua Vasco da Gama nº33, Algueirão Mem-Martins, 2725-152 Sintra, Portugal.
               Para questões relacionadas com privacidade, pode contactar-nos através do email{' '}
-              <a href="mailto:geral.taysil@gmail.com" className="text-red-600 underline hover:text-red-700">
+              <a href={mailtoHref()} className="text-red-600 underline hover:text-red-700">
                 geral.taysil@gmail.com
               </a>.
             </p>
@@ -105,7 +106,7 @@ export default function Privacidade() {
             </ul>
             <p className="mt-3">
               Para exercer estes direitos, contacte-nos em{' '}
-              <a href="mailto:geral.taysil@gmail.com" className="text-red-600 underline hover:text-red-700">
+              <a href={mailtoHref()} className="text-red-600 underline hover:text-red-700">
                 geral.taysil@gmail.com
               </a>.
             </p>
