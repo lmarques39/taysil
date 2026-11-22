@@ -24,16 +24,16 @@ const containedFallbacks = new Set([
 ])
 
 type PhotoState = 'loading' | Record<string, HomeCategoryPhoto>
-type CardPhoto = { src: string; cutout: boolean | 'auto'; cover: boolean }
+type CardPhoto = { src: string; cover: boolean }
 
 function cardPhoto(categoryId: string, cms: HomeCategoryPhoto): CardPhoto | null {
   // Cut-out made by the background-removal script
-  if (cms?.cutout) return { src: cms.cutout, cutout: true, cover: false }
+  if (cms?.cutout) return { src: cms.cutout, cover: false }
   // Photo chosen in Studio, not cut out yet: shown whole (gets the shadow if it's already a transparent PNG)
-  if (cms?.url) return { src: cms.url, cutout: 'auto', cover: false }
+  if (cms?.url) return { src: cms.url, cover: false }
   const fallback = catImages[categoryId]
   if (!fallback) return null
-  return { src: fallback, cutout: 'auto', cover: !containedFallbacks.has(fallback) }
+  return { src: fallback, cover: !containedFallbacks.has(fallback) }
 }
 
 // Light backdrop behind cut-out products
@@ -77,7 +77,6 @@ export default function CategoryGrid() {
                     <div className={`absolute inset-0 ${BACKDROP}`} />
                     <div className="absolute inset-0 flex items-center justify-center pt-6 pb-20 px-8 group-hover:scale-105 transition-transform duration-500">
                       <ProductPhoto
-                        transparent={photo.cutout}
                         src={photo.src}
                         alt={cat.label}
                         className="w-full h-full"

@@ -6,6 +6,9 @@
 //   exit 0 → transparent PNG written, cropped to the product; prints the method used
 //   exit 2 → no product found in the photo
 //   exit 3 → the photo already has a transparent background (nothing written)
+//   White packshots (supplier photos on plain white, often with a mirror reflection under the product)
+//   are NOT cut out: the output is the original cropped to the product + reflection, white kept. The site
+//   blends white backgrounds into the card (mix-blend multiply), which keeps the reflection natural.
 // Two methods:
 //   - Plain backgrounds (the border is one flat colour, e.g. supplier packshots on white):
 //     flood-fill that colour from the edges, so every object in the photo is kept.
@@ -58,6 +61,24 @@ let med: (Double, Double, Double) = {
   return (m(0), m(1), m(2))
 }()
 let flat = Double(border.filter { dist($0, med) < 12 }.count) / Double(border.count) > 0.97
+
+// --- White packshot: crop to the product (and its reflection), keep the white background ---
+if flat && med.0 >= 240 && med.1 >= 240 && med.2 >= 240 {
+  var minX = W, minY = H, maxX = -1, maxY = -1
+  for y in 0..<H { for x in 0..<W where dist(y*W + x, med) > 14 {
+    minX = min(minX, x); maxX = max(maxX, x); minY = min(minY, y); maxY = max(maxY, y)
+  } }
+  guard maxX >= 0 else { fputs("no product found\n", stderr); exit(2) }
+  let m = max(4, max(maxX - minX, maxY - minY) / 33)   // ~3% white margin
+  let rect = CGRect(x: max(0, minX - m), y: max(0, minY - m),
+                    width: min(W - 1, maxX + m) - max(0, minX - m) + 1, height: min(H - 1, maxY + m) - max(0, minY - m) + 1)
+  let cropped = cg.cropping(to: rect)!
+  guard let dest = CGImageDestinationCreateWithURL(outURL as CFURL, UTType.png.identifier as CFString, 1, nil) else { exit(1) }
+  CGImageDestinationAddImage(dest, cropped, nil)
+  guard CGImageDestinationFinalize(dest) else { exit(1) }
+  print("white-packshot \(cropped.width)x\(cropped.height)")
+  exit(0)
+}
 
 var alpha = [UInt8](repeating: 255, count: W * H)
 var method = "vision"
