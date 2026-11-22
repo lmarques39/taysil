@@ -47,7 +47,7 @@ export const productType = defineType({
       type: 'reference',
       to: [{ type: 'subcategory' }],
       description:
-        'Escolha da lista (mostra só as subcategorias da categoria escolhida). Para criar uma nova, use "Criar novo" ou a secção Subcategoria.',
+        'Escolha da lista (mostra só as subcategorias da categoria escolhida). Pode escolher uma subcategoria ou um tipo dentro dela (aparece como "Chaves › Chaves Torx"). Para criar uma nova, use "Criar novo" ou a secção Subcategoria.',
       options: {
         filter: ({ document }) => ({
           filter: 'category == $category',
@@ -105,11 +105,12 @@ export const productType = defineType({
       title: 'name',
       brand: 'brand',
       sub: 'subcategory.name',
+      parentSub: 'subcategory.parent.name',
       media: 'image',
     },
-    prepare: ({ title, brand, sub, media }) => ({
+    prepare: ({ title, brand, sub, parentSub, media }) => ({
       title,
-      subtitle: [brand, sub].filter(Boolean).join(' · '),
+      subtitle: [brand, [parentSub, sub].filter(Boolean).join(' › ')].filter(Boolean).join(' · '),
       media,
     }),
   },

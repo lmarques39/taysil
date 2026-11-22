@@ -7,13 +7,16 @@ export const sanityClient = createClient({
   useCdn: true,
 })
 
-// "sub": subcategory is a reference (renamable in Studio); plain "sub" text is the legacy fallback
+// "sub": subcategory is a reference (renamable in Studio); plain "sub" text is the legacy fallback.
+// A subcategory can sit inside another one ("Chaves › Chaves Torx"): then "sub" is the parent
+// and "sub2" the chosen one, so the site always filters by the 2nd level first, then the 3rd.
 export const PRODUCTS_QUERY = `*[_type == "product"] | order(_createdAt asc) {
   "id": _id,
   name,
   brand,
   category,
-  "sub": coalesce(subcategory->name, sub),
+  "sub": coalesce(subcategory->parent->name, subcategory->name, sub),
+  "sub2": select(defined(subcategory->parent) => subcategory->name, null),
   "img": coalesce(image.asset->url, imageUrl),
   desc
 }`
