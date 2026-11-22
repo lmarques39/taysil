@@ -1,5 +1,6 @@
-import { useEffect, type ReactNode } from 'react'
+import { useEffect, useRef, type ReactNode } from 'react'
 import { X } from 'lucide-react'
+import { useDialogFocus } from '../../hooks/useDialogFocus'
 
 type Props = {
   onClose: () => void
@@ -18,6 +19,11 @@ type Props = {
  * products are left — tapping it closes the panel and shows them.
  */
 export default function MobileFilterSheet({ onClose, onShowResults, resultCount, hasFilters, clearAll, children }: Props) {
+  const sheetRef = useRef<HTMLDivElement>(null)
+  const closeRef = useRef<HTMLButtonElement>(null)
+  // Focus goes to "Fechar filtros", stays inside the panel, and returns to the "Filtros" button on close
+  useDialogFocus(sheetRef, closeRef)
+
   // Esc closes; the page behind doesn't scroll while the panel is open
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => { if (e.key === 'Escape') onClose() }
@@ -35,7 +41,7 @@ export default function MobileFilterSheet({ onClose, onShowResults, resultCount,
     : `Ver ${resultCount} produtos`
 
   return (
-    <div className="fixed inset-0 z-50 lg:hidden" role="dialog" aria-modal="true" aria-labelledby="filter-sheet-title">
+    <div ref={sheetRef} className="fixed inset-0 z-50 lg:hidden" role="dialog" aria-modal="true" aria-labelledby="filter-sheet-title">
       <div
         className="absolute inset-0 bg-slate-900/50 backdrop-blur-sm motion-safe:animate-fade-in"
         onClick={onClose}
@@ -45,7 +51,7 @@ export default function MobileFilterSheet({ onClose, onShowResults, resultCount,
         <div className="shrink-0 pt-2.5 px-5 border-b border-slate-100">
           <div className="mx-auto w-10 h-1 rounded-full bg-slate-200" aria-hidden />
           <div className="flex items-center justify-between py-3">
-            <p id="filter-sheet-title" className="font-bold text-slate-900 text-lg">Filtros</p>
+            <h2 id="filter-sheet-title" className="font-bold text-slate-900 text-lg">Filtros</h2>
             <div className="flex items-center gap-2">
               {hasFilters && (
                 <button
@@ -56,11 +62,12 @@ export default function MobileFilterSheet({ onClose, onShowResults, resultCount,
                 </button>
               )}
               <button
+                ref={closeRef}
                 onClick={onClose}
                 aria-label="Fechar filtros"
                 className="w-10 h-10 rounded-full bg-slate-100 hover:bg-slate-200 flex items-center justify-center transition-colors"
               >
-                <X size={18} className="text-slate-600" />
+                <X size={18} aria-hidden className="text-slate-600" />
               </button>
             </div>
           </div>

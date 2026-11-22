@@ -14,6 +14,31 @@ import ProductModal from '../components/organisms/ProductModal'
 import ProductSidebar from '../components/organisms/ProductSidebar'
 import MobileFilterSheet from '../components/organisms/MobileFilterSheet'
 
+/** Active-filter chip; the × is a 24px target with a spoken name (WCAG 2.5.8, 4.1.2) */
+function FilterChip({ label, onRemove, dark = false }: { label: string; onRemove: () => void; dark?: boolean }) {
+  return (
+    <span className={`inline-flex items-center gap-0.5 pl-3 pr-1 py-0.5 text-xs rounded-full ${
+      dark ? 'bg-slate-900 text-white font-medium' : 'bg-slate-100 text-slate-700'
+    }`}>
+      {label}
+      <button
+        type="button"
+        onClick={onRemove}
+        aria-label={`Remover filtro: ${label}`}
+        className={`inline-flex items-center justify-center w-6 h-6 rounded-full transition-colors ${
+          dark ? 'hover:bg-white/15' : 'hover:bg-slate-200'
+        }`}
+      >
+        <X size={12} aria-hidden />
+      </button>
+    </span>
+  )
+}
+
+// Smooth scrolling unless the visitor asked the system to reduce motion
+const scrollBehavior = (): ScrollBehavior =>
+  window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'
+
 export default function Produtos() {
   const {
     loading,
@@ -39,6 +64,9 @@ export default function Produtos() {
   } = useProductFilter()
 
   const [showSuggestions, setShowSuggestions]     = useState(false)
+  // Suggestion highlighted with the arrow keys (-1 = none); reset whenever the typed text changes
+  const [activeSuggestion, setActiveSuggestion]   = useState(-1)
+  useEffect(() => setActiveSuggestion(-1), [searchQuery])
   const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false)
 
   const {
@@ -59,7 +87,7 @@ export default function Produtos() {
   const NAVBAR_OFFSET = 96
   const scrollToEl = (el: HTMLElement | null, offset = NAVBAR_OFFSET) => {
     if (!el) return
-    window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - offset, behavior: 'smooth' })
+    window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - offset, behavior: scrollBehavior() })
   }
 
   // Enter / the keyboard's "Pesquisar" key: close suggestions, hide the mobile keyboard, show the results
@@ -68,6 +96,23 @@ export default function Produtos() {
     setShowSuggestions(false)
     searchInputRef.current?.blur()
     scrollToEl(resultsListRef.current)
+  }
+
+  // Search box as an ARIA combobox: ↓/↑ move through the suggestions, Enter picks one, Esc closes them
+  const suggestionsOpen = showSuggestions && suggestions.length > 0
+  const pickSuggestion = (e: React.SyntheticEvent, name: string) => { updateParams({ q: name }); submitSearch(e as React.FormEvent) }
+  const onSearchKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === 'ArrowDown' && suggestions.length) {
+      e.preventDefault(); setShowSuggestions(true)
+      setActiveSuggestion(i => (i + 1) % suggestions.length)
+    } else if (e.key === 'ArrowUp' && suggestions.length) {
+      e.preventDefault(); setShowSuggestions(true)
+      setActiveSuggestion(i => (i <= 0 ? suggestions.length - 1 : i - 1))
+    } else if (e.key === 'Enter' && suggestionsOpen && activeSuggestion >= 0) {
+      pickSuggestion(e, suggestions[activeSuggestion])
+    } else if (e.key === 'Escape' && suggestionsOpen) {
+      e.preventDefault(); setShowSuggestions(false); setActiveSuggestion(-1)
+    }
   }
 
   // When a filter changes while scrolled down the list, jump back to the top of the results
@@ -148,45 +193,61 @@ export default function Produtos() {
 
             {/* Search bar */}
             <form role="search" onSubmit={submitSearch} className="relative mb-5">
-              <Search size={15} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none z-10" />
+              <Search size={15} aria-hidden className="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-500 pointer-events-none z-10" />
               <input
                 ref={searchInputRef}
                 type="text"
                 enterKeyHint="search"
+                role="combobox"
                 aria-label="Pesquisar produtos"
+                aria-autocomplete="list"
+                aria-expanded={suggestionsOpen}
+                aria-controls="sugestoes-pesquisa"
+                aria-activedescendant={suggestionsOpen && activeSuggestion >= 0 ? `sugestao-${activeSuggestion}` : undefined}
                 value={searchQuery}
                 onChange={e => updateParams({ q: e.target.value })}
+                onKeyDown={onSearchKeyDown}
                 onFocus={() => setShowSuggestions(true)}
                 onBlur={() => setTimeout(() => setShowSuggestions(false), 150)}
                 placeholder="Pesquisar produtos... (ex: chave torx, luvas nitrilo)"
-                className="w-full pl-10 pr-9 py-3 bg-white border border-slate-200 rounded-xl text-sm text-slate-800 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-slate-200 shadow-sm"
+                className="w-full pl-10 pr-10 py-3 bg-white border border-slate-500 rounded-xl text-sm text-slate-800 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent shadow-sm"
               />
               {searchQuery && (
                 <button
                   type="button"
                   onClick={() => { updateParams({ q: null }); searchInputRef.current?.focus() }}
-                  className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 transition-colors"
+                  className="absolute right-2 top-1/2 -translate-y-1/2 w-7 h-7 inline-flex items-center justify-center rounded-full text-slate-500 hover:text-slate-800 hover:bg-slate-100 transition-colors"
                   aria-label="Limpar pesquisa"
                 >
-                  <X size={15} />
+                  <X size={15} aria-hidden />
                 </button>
               )}
 
-              {/* Suggestions dropdown */}
-              {showSuggestions && suggestions.length > 0 && (
-                <div className="absolute top-full left-0 right-0 mt-1.5 bg-white border border-slate-200 rounded-xl shadow-lg z-20 overflow-hidden">
+              {/* Suggestions (ARIA listbox controlled by the search box) */}
+              {suggestionsOpen && (
+                <ul
+                  id="sugestoes-pesquisa"
+                  role="listbox"
+                  aria-label="Sugestões"
+                  className="absolute top-full left-0 right-0 mt-1.5 bg-white border border-slate-200 rounded-xl shadow-lg z-20 overflow-hidden"
+                >
                   {suggestions.map((name, i) => (
-                    <button
+                    <li
                       key={i}
-                      type="button"
-                      onMouseDown={e => { updateParams({ q: name }); submitSearch(e) }}
-                      className="w-full text-left px-4 py-2.5 text-sm text-slate-700 hover:bg-slate-50 flex items-center gap-2.5 border-b border-slate-50 last:border-0"
+                      id={`sugestao-${i}`}
+                      role="option"
+                      aria-selected={i === activeSuggestion}
+                      onMouseDown={e => pickSuggestion(e, name)}
+                      onMouseEnter={() => setActiveSuggestion(i)}
+                      className={`w-full text-left px-4 py-2.5 text-sm text-slate-700 cursor-pointer flex items-center gap-2.5 border-b border-slate-50 last:border-0 ${
+                        i === activeSuggestion ? 'bg-slate-100' : ''
+                      }`}
                     >
-                      <Search size={12} className="text-slate-300 shrink-0" />
+                      <Search size={12} aria-hidden className="text-slate-400 shrink-0" />
                       <span className="truncate">{name}</span>
-                    </button>
+                    </li>
                   ))}
-                </div>
+                </ul>
               )}
             </form>
 
@@ -194,45 +255,12 @@ export default function Produtos() {
             {hasFilters && (
               <div className="flex flex-wrap gap-2 mb-4">
                 {activeCategory && (
-                  <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-slate-900 text-white text-xs rounded-full font-medium">
-                    {CATEGORIES.find(c => c.id === activeCategory)?.label}
-                    <button onClick={() => selectCategory(null)} className="hover:opacity-70 transition-opacity">
-                      <X size={11} />
-                    </button>
-                  </span>
+                  <FilterChip dark label={CATEGORIES.find(c => c.id === activeCategory)?.label ?? ''} onRemove={() => selectCategory(null)} />
                 )}
-                {activeSubcategory && (
-                  <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-slate-100 text-slate-700 text-xs rounded-full">
-                    {activeSubcategory}
-                    <button onClick={() => selectSubcategory(null)} className="hover:opacity-70 transition-opacity">
-                      <X size={11} />
-                    </button>
-                  </span>
-                )}
-                {activeSubtype && (
-                  <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-slate-100 text-slate-700 text-xs rounded-full">
-                    {activeSubtype}
-                    <button onClick={() => selectSubtype(null)} className="hover:opacity-70 transition-opacity">
-                      <X size={11} />
-                    </button>
-                  </span>
-                )}
-                {activeBrands.map(b => (
-                  <span key={b} className="inline-flex items-center gap-1.5 px-3 py-1 bg-slate-100 text-slate-700 text-xs rounded-full">
-                    {b}
-                    <button onClick={() => toggleBrand(b)} className="hover:opacity-70 transition-opacity">
-                      <X size={11} />
-                    </button>
-                  </span>
-                ))}
-                {searchQuery.trim() && (
-                  <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-slate-100 text-slate-700 text-xs rounded-full">
-                    &ldquo;{searchQuery}&rdquo;
-                    <button onClick={() => updateParams({ q: null })} className="hover:opacity-70 transition-opacity">
-                      <X size={11} />
-                    </button>
-                  </span>
-                )}
+                {activeSubcategory && <FilterChip label={activeSubcategory} onRemove={() => selectSubcategory(null)} />}
+                {activeSubtype && <FilterChip label={activeSubtype} onRemove={() => selectSubtype(null)} />}
+                {activeBrands.map(b => <FilterChip key={b} label={b} onRemove={() => toggleBrand(b)} />)}
+                {searchQuery.trim() && <FilterChip label={`“${searchQuery}”`} onRemove={() => updateParams({ q: null })} />}
               </div>
             )}
 
@@ -249,14 +277,15 @@ export default function Produtos() {
                     : 'bg-white border-slate-200 text-slate-700 hover:bg-slate-50'
                 }`}
               >
-                <SlidersHorizontal size={16} /> Filtros
+                <SlidersHorizontal size={16} aria-hidden /> Filtros
                 {activeFilterCount > 0 && (
                   <span className="min-w-5 h-5 px-1.5 rounded-full bg-white text-slate-900 text-xs font-bold flex items-center justify-center">
                     {activeFilterCount}
                   </span>
                 )}
               </button>
-              <p className="text-sm text-slate-500 lg:order-first">
+              {/* Announced to screen readers when the filters change (WCAG 4.1.3) */}
+              <p className="text-sm text-slate-600 lg:order-first" aria-live="polite" aria-atomic="true">
                 <span className="font-semibold text-slate-900">{filteredProducts.length}</span>{' '}
                 {filteredProducts.length === 1 ? 'produto encontrado' : 'produtos encontrados'}
               </p>
@@ -264,14 +293,14 @@ export default function Produtos() {
 
             {/* Product grid */}
             {loading ? (
-              <div className="flex items-center justify-center py-24 text-slate-400 text-sm">
+              <div role="status" className="flex items-center justify-center py-24 text-slate-500 text-sm">
                 A carregar produtos...
               </div>
             ) : error ? (
               <div className="flex flex-col items-center justify-center py-24 text-center">
                 <p className="text-slate-700 font-semibold mb-1">Não foi possível carregar os produtos</p>
-                <p className="text-slate-400 text-sm mb-5">Verifique a sua ligação e{' '}
-                  <button onClick={() => window.location.reload()} className="text-red-600 hover:underline font-medium">
+                <p className="text-slate-500 text-sm mb-5">Verifique a sua ligação e{' '}
+                  <button onClick={() => window.location.reload()} className="text-red-600 underline font-medium">
                     recarregue a página
                   </button>.
                 </p>
@@ -293,12 +322,12 @@ export default function Produtos() {
             ) : (
               <div className="flex flex-col items-center justify-center py-24 text-center">
                 <div className="w-14 h-14 bg-slate-100 rounded-2xl flex items-center justify-center mb-4">
-                  <Search size={22} className="text-slate-400" />
+                  <Search size={22} aria-hidden className="text-slate-400" />
                 </div>
                 <p className="text-slate-700 font-semibold mb-1">Nenhum produto encontrado</p>
-                <p className="text-slate-400 text-sm mb-5 max-w-xs">
+                <p className="text-slate-500 text-sm mb-5 max-w-xs">
                   Tente outras palavras ou{' '}
-                  <button onClick={clearAll} className="text-red-600 hover:underline font-medium">
+                  <button onClick={clearAll} className="text-red-600 underline font-medium">
                     limpe os filtros
                   </button>
                   .

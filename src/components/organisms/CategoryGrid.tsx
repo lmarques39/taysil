@@ -53,7 +53,7 @@ export default function CategoryGrid() {
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-12">
-          <p className="text-red-500 text-sm font-semibold uppercase tracking-widest mb-3">O que fornecemos</p>
+          <p className="text-red-600 text-sm font-semibold uppercase tracking-widest mb-3">O que fornecemos</p>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900">
             6 categorias, tudo num só lugar.
           </h2>
@@ -92,7 +92,7 @@ export default function CategoryGrid() {
                   />
                 ) : (
                   <div className="absolute inset-0 bg-slate-800 flex items-center justify-center">
-                    <Icon size={72} className="text-red-500 opacity-30" />
+                    <Icon size={72} aria-hidden className="text-red-500 opacity-30" />
                   </div>
                 )}
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/20 to-transparent" />

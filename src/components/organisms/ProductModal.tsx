@@ -5,6 +5,7 @@ import type { EnrichedProduct } from '../../hooks/useProductFilter'
 import type { CategoryConfig } from '../../data/categories'
 import BrandBadge from '../atoms/BrandBadge'
 import ProductPhoto from '../atoms/ProductPhoto'
+import { useDialogFocus } from '../../hooks/useDialogFocus'
 import NavArrowButton from '../atoms/NavArrowButton'
 import ModalDotPagination from '../molecules/ModalDotPagination'
 
@@ -34,7 +35,11 @@ export default function ProductModal({
   const iconBg = catConfig?.iconBg
   const touchStart = useRef<{ x: number; y: number; inDesc: boolean } | null>(null)
   const descRef = useRef<HTMLDivElement>(null)
+  const dialogRef = useRef<HTMLDivElement>(null)
+  const closeRef = useRef<HTMLButtonElement>(null)
   const [descHasMore, setDescHasMore] = useState(false)
+  // Focus goes to "Fechar" on open, stays inside the dialog, and returns to the product card on close
+  useDialogFocus(dialogRef, closeRef)
 
   const updateDescFade = () => {
     const el = descRef.current
@@ -90,6 +95,10 @@ export default function ProductModal({
 
   return (
     <div
+      ref={dialogRef}
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="produto-modal-titulo"
       className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-sm"
       onClick={onClose}
     >
@@ -111,11 +120,12 @@ export default function ProductModal({
         onTouchEnd={handleTouchEnd}
       >
         <button
+          ref={closeRef}
           onClick={onClose}
           className="absolute top-4 right-4 w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 flex items-center justify-center transition-colors"
           aria-label="Fechar"
         >
-          <X size={15} className="text-slate-600" />
+          <X size={15} aria-hidden className="text-slate-600" />
         </button>
 
         <div className="lg:flex lg:items-center lg:gap-10">
@@ -130,24 +140,28 @@ export default function ProductModal({
               />
             ) : (
               <div className={`w-40 h-40 lg:w-full lg:h-96 ${iconBg ?? 'bg-slate-200'} rounded-2xl flex items-center justify-center`}>
-                {Icon && <Icon size={52} className="text-white opacity-75" />}
+                {Icon && <Icon size={52} aria-hidden className="text-white opacity-75" />}
               </div>
             )}
           </div>
 
           <div className="lg:flex-1 lg:min-w-0">
-            <p className="text-[11px] text-slate-400 mb-1 uppercase tracking-wide">{sub}</p>
-            <h3 className="text-lg lg:text-2xl font-bold text-slate-900 mb-3 leading-snug pr-4">{name}</h3>
+            <p className="text-[11px] text-slate-500 mb-1 uppercase tracking-wide">{sub}</p>
+            <h2 id="produto-modal-titulo" className="text-lg lg:text-2xl font-bold text-slate-900 mb-3 leading-snug pr-4">{name}</h2>
 
             <div className="flex items-center gap-2 mb-4">
               <BrandBadge brand={brand} />
-              <span className="text-xs text-slate-400">{categoryLabel}</span>
+              <span className="text-xs text-slate-500">{categoryLabel}</span>
             </div>
 
             {desc && (
               <div
                 ref={descRef}
                 onScroll={updateDescFade}
+                // Scrollable, so it must be reachable with the keyboard (WCAG 2.1.1)
+                tabIndex={0}
+                role="region"
+                aria-label="Descrição do produto"
                 className={`max-h-52 lg:max-h-72 overflow-y-auto overscroll-contain pr-2 mb-5 [scrollbar-width:thin] ${
                   descHasMore ? '[mask-image:linear-gradient(to_bottom,black_65%,transparent)]' : ''
                 }`}
@@ -168,7 +182,7 @@ export default function ProductModal({
                 onClick={onClose}
                 className="flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white font-semibold px-5 py-2.5 rounded-lg text-sm transition-colors w-full"
               >
-                Pedir Informação <ArrowRight size={15} />
+                Pedir Informação <ArrowRight size={15} aria-hidden />
               </Link>
             </div>
           </div>

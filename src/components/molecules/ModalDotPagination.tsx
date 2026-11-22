@@ -17,7 +17,7 @@ export default function ModalDotPagination({ total, current }: {
   }
 
   return (
-    <p className="text-center text-xs text-slate-400">
+    <p className="text-center text-xs text-slate-500">
       {current + 1} <span className="text-slate-300">/</span> {total}
     </p>
   )

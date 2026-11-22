@@ -23,6 +23,27 @@
 
 html {
   scroll-behavior: smooth;
+  /* Fixed navbar (and, on mobile, the sticky filter bar): keep focused/scrolled-to elements visible (WCAG 2.4.11) */
+  scroll-padding-top: 8.5rem;
+}
+@media (min-width: 1024px) {
+  html { scroll-padding-top: 6.5rem; }
+}
+
+/* Clearly visible keyboard focus, in the brand red (contrast ≥ 3:1 on white and on the dark sections) */
+:focus-visible {
+  outline: 2px solid var(--color-red-600);
+  outline-offset: 2px;
+}
+
+/* Respect the system "reduce motion" setting */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
 
 body {

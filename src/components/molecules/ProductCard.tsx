@@ -32,7 +32,7 @@ export default function ProductCard({ product, catConfig, onClick }: {
         )}
       </div>
       <div className="p-3 flex flex-col gap-1.5 flex-1 min-w-0 justify-center sm:justify-start">
-        <p className="text-[10px] text-slate-400 leading-tight truncate">{sub}</p>
+        <p className="text-[10px] text-slate-500 leading-tight truncate">{sub}</p>
         <p className="text-sm font-semibold text-slate-800 leading-snug line-clamp-2 sm:flex-1">{name}</p>
         <div className="pt-0.5">
           <BrandBadge brand={brand} />
