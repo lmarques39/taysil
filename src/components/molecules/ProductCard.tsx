@@ -22,7 +22,6 @@ export default function ProductCard({ product, catConfig, onClick }: {
           // Absolute so a tall photo can't stretch the square (padding = space around the product)
           <ProductPhoto
             src={cutout ?? img}
-            transparent={cutout ? true : 'auto'}
             alt={name}
             className="absolute inset-0 w-full h-full p-2 sm:p-4"
           />
