@@ -18,6 +18,7 @@ export const PRODUCTS_QUERY = `*[_type == "product"] | order(_createdAt asc) {
   "sub": coalesce(subcategory->parent->name, subcategory->name, sub),
   "sub2": select(defined(subcategory->parent) => subcategory->name, null),
   "img": coalesce(image.asset->url, imageUrl),
+  sku,
   desc,
   // Photo without background made by studio/scripts/remove-backgrounds.ts — only while it matches the current photo
   "cutout": select(defined(cutoutOf) && cutoutOf == coalesce(image.asset._ref, imageUrl) => cutout.asset->url)

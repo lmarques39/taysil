@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
-import { Link } from 'react-router-dom'
-import { X, ArrowRight } from 'lucide-react'
+import { X, Mail } from 'lucide-react'
 import type { EnrichedProduct } from '../../hooks/useProductFilter'
 import type { CategoryConfig } from '../../data/categories'
 import BrandBadge from '../atoms/BrandBadge'
@@ -8,6 +7,7 @@ import ProductPhoto from '../atoms/ProductPhoto'
 import { useDialogFocus } from '../../hooks/useDialogFocus'
 import NavArrowButton from '../atoms/NavArrowButton'
 import ModalDotPagination from '../molecules/ModalDotPagination'
+import { productEnquiryEmail } from '../../data/contacts'
 
 export default function ProductModal({
   product,
@@ -30,7 +30,9 @@ export default function ProductModal({
   currentIndex?: number
   total?: number
 }) {
-  const { img, cutout, name, brand, sub, desc, categoryLabel } = product
+  const { img, cutout, name, brand, sub, desc, categoryLabel, sku } = product
+  // Email already mentioning this product and its reference
+  const enquiryEmail = productEnquiryEmail(name, sku)
   const Icon = catConfig?.Icon
   const iconBg = catConfig?.iconBg
   const touchStart = useRef<{ x: number; y: number; inDesc: boolean } | null>(null)
@@ -177,13 +179,12 @@ export default function ProductModal({
             )}
 
             <div className="border-t border-slate-100 pt-4">
-              <Link
-                to="/contactos"
-                onClick={onClose}
+              <a
+                href={enquiryEmail}
                 className="flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white font-semibold px-5 py-2.5 rounded-lg text-sm transition-colors w-full"
               >
-                Pedir Informação <ArrowRight size={15} aria-hidden />
-              </Link>
+                <Mail size={16} aria-hidden /> Pedir informação por email
+              </a>
             </div>
           </div>
         </div>
