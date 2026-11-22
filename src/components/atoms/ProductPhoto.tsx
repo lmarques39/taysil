@@ -25,7 +25,7 @@ const SHADOW = 'drop-shadow-[0_10px_12px_rgba(15,23,42,0.22)]'
 const isSanity = (src: string) => src.startsWith('https://cdn.sanity.io/')
 const sized = (src: string) => (isSanity(src) ? `${src}?w=800&h=800&fit=max&auto=format` : src)
 
-/** True when a good part of the photo's border is see-through, i.e. the background was removed */
+/** True when the background was removed: a good part of the border is see-through... */
 function hasTransparentBackground(img: HTMLImageElement): boolean {
   try {
     const k = Math.min(1, 256 / Math.max(img.naturalWidth, img.naturalHeight))
@@ -41,7 +41,10 @@ function hasTransparentBackground(img: HTMLImageElement): boolean {
     const check = (x: number, y: number) => { border++; if (data[(y * w + x) * 4 + 3] < 128) clear++ }
     for (let x = 0; x < w; x++) { check(x, 0); check(x, h - 1) }
     for (let y = 1; y < h - 1; y++) { check(0, y); check(w - 1, y) }
-    return clear / border > 0.25
+    // ...and a real share of the whole photo is see-through (some opaque photos have a 1px transparent edge)
+    let clearTotal = 0
+    for (let i = 3; i < data.length; i += 4) if (data[i] < 128) clearTotal++
+    return clear / border > 0.25 && clearTotal / (w * h) > 0.05
   } catch {
     return false // pixels not readable (no CORS): treat as a normal photo
   }

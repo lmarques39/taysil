@@ -34,9 +34,14 @@ var border: [Int] = []
 for x in 0..<W { border.append(x); border.append((H-1)*W + x) }
 for y in 1..<(H-1) { border.append(y*W); border.append(y*W + W-1) }
 
-// --- Already transparent? (a good part of the border is see-through — same rule as the website) ---
+// --- Already transparent? Same rule as the website: a good part of the border is see-through AND
+// a real share of the whole photo is. (Some supplier photos are opaque with a 1px transparent edge.)
 let clearBorder = border.filter { px[$0*4+3] < 128 }.count
-if Double(clearBorder) / Double(border.count) > 0.25 { print("already-transparent"); exit(3) }
+var clearTotal = 0
+for i in 0..<(W*H) where px[i*4+3] < 128 { clearTotal += 1 }
+if Double(clearBorder) / Double(border.count) > 0.25 && Double(clearTotal) / Double(W*H) > 0.05 {
+  print("already-transparent"); exit(3)
+}
 
 func dist(_ i: Int, _ c: (Double, Double, Double)) -> Double {
   let r = Double(px[i*4]) - c.0, g = Double(px[i*4+1]) - c.1, b = Double(px[i*4+2]) - c.2
