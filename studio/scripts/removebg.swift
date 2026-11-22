@@ -1,5 +1,8 @@
 // Background remover used by remove-backgrounds.ts (macOS only — compiled automatically on first run).
-// Usage: removebg <input image> <output.png>
+// Usage: removebg [--holes] <input image> <output.png>
+//   --holes: also clears background seen THROUGH the product (inside handles, loops, chains), i.e.
+//            enclosed areas with the background colour. Only for products that need it — on others it
+//            could clear white parts of the product itself.
 //   exit 0 → transparent PNG written, cropped to the product; prints the method used
 //   exit 2 → no product found in the photo
 //   exit 3 → the photo already has a transparent background (nothing written)
@@ -13,8 +16,9 @@ import CoreImage
 import ImageIO
 import UniformTypeIdentifiers
 
-let args = CommandLine.arguments
-guard args.count == 3 else { fputs("usage: removebg <input> <output.png>\n", stderr); exit(1) }
+let HOLES = CommandLine.arguments.contains("--holes")
+let args = CommandLine.arguments.filter { $0 != "--holes" }
+guard args.count == 3 else { fputs("usage: removebg [--holes] <input> <output.png>\n", stderr); exit(1) }
 let inURL = URL(fileURLWithPath: args[1]), outURL = URL(fileURLWithPath: args[2])
 guard let src = CGImageSourceCreateWithURL(inURL as CFURL, nil),
       let cg = CGImageSourceCreateImageAtIndex(src, 0, nil) else { fputs("cannot read image\n", stderr); exit(1) }
@@ -89,6 +93,61 @@ if flat {
     alpha[y*W + x] = v > 0.98 ? 255 : UInt8(v * 255)   // the mask tops out just under 1.0
   } }
   CVPixelBufferUnlockBaseAddress(mask, .readOnly)
+}
+
+// --- Enclosed background ("holes"): areas still kept that have the background colour and are big enough.
+// Only for plain-background photos: on real photos the backdrop looks too much like translucent plastic
+// and white labels, so it would eat into the product.
+if HOLES && !flat { fputs("holes: skipped (real photo, not a plain background)\n", stderr) }
+if HOLES && flat {
+  // Reference colour per row: the flat background, or (photos on a graded backdrop) the median of what
+  // the mask removed in that row band — the backdrop seen through a hole matches the backdrop beside it
+  var rowRef = [(Double, Double, Double)](repeating: med, count: H)
+  if !flat {
+    let band = max(4, H / 40)
+    for b in stride(from: 0, to: H, by: band) {
+      var rs: [Double] = [], gs: [Double] = [], bs: [Double] = []
+      for y in b..<min(H, b + band) { for x in stride(from: 0, to: W, by: 3) where alpha[y*W + x] < 20 {
+        let i = y*W + x; rs.append(Double(px[i*4])); gs.append(Double(px[i*4+1])); bs.append(Double(px[i*4+2]))
+      } }
+      guard rs.count > 10 else { continue }
+      rs.sort(); gs.sort(); bs.sort()
+      for y in b..<min(H, b + band) { rowRef[y] = (rs[rs.count/2], gs[gs.count/2], bs[bs.count/2]) }
+    }
+  }
+  // Photos: the hole must also be neutral grey (tinted translucent plastic is not)
+  func sat(_ i: Int) -> Double { let r = Double(px[i*4]), g = Double(px[i*4+1]), b = Double(px[i*4+2]); return max(r, g, b) - min(r, g, b) }
+  let tol = flat ? 16.0 : 22.0
+  func isHole(_ i: Int) -> Bool { dist(i, rowRef[i / W]) < tol && (flat || sat(i) < 22) }
+  let minArea = max(40, W * H / 3000)          // ignore specks (highlights, small white print)
+  var seen = [Bool](repeating: false, count: W * H)
+  var cleared = 0
+  for start in 0..<(W * H) where !seen[start] && alpha[start] >= 128 && isHole(start) {
+    // flood the component of background-coloured kept pixels
+    var comp: [Int] = [start]; seen[start] = true
+    var k = 0
+    while k < comp.count {
+      let i = comp[k]; k += 1
+      let x = i % W, y = i / W
+      for (nx, ny) in [(x-1,y),(x+1,y),(x,y-1),(x,y+1)] where nx >= 0 && ny >= 0 && nx < W && ny < H {
+        let j = ny*W + nx
+        if !seen[j] && alpha[j] >= 128 && isHole(j) { seen[j] = true; comp.append(j) }
+      }
+    }
+    if comp.count < minArea { continue }
+    for i in comp { alpha[i] = 0 }
+    cleared += comp.count
+    // soften the rim: neighbours that are close to the background colour become partly transparent
+    for i in comp {
+      let x = i % W, y = i / W
+      for (nx, ny) in [(x-1,y),(x+1,y),(x,y-1),(x,y+1)] where nx >= 0 && ny >= 0 && nx < W && ny < H {
+        let j = ny*W + nx
+        let d = dist(j, rowRef[j / W])
+        if alpha[j] > 0 && d < tol * 2 { alpha[j] = min(alpha[j], UInt8(max(0, min(255, (d - tol) / tol * 255)))) }
+      }
+    }
+  }
+  fputs("holes: cleared \(cleared) px (\(String(format: "%.1f", Double(cleared) * 100 / Double(W * H)))%)\n", stderr)
 }
 
 // --- Bounding box of the product (alpha > 8), with a small margin ---
