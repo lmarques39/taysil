@@ -5,17 +5,15 @@ type Props = {
   alt: string
   /** Classes for the <img> box (size), e.g. "w-full h-full" */
   className?: string
-  /** Shadow for cut-outs; defaults to a soft one under the product */
-  shadowClassName?: string
   loading?: 'lazy' | 'eager'
 }
 
 /** How a photo is shown, decided from its own pixels once it loads */
 type Look = 'cutout' | 'white' | 'photo'
 
-const SHADOW = 'drop-shadow-[0_10px_12px_rgba(15,23,42,0.22)]'
+// No shadows on purpose (visual consistency across cut-outs and supplier packshots)
 const LOOK_CLASS: Record<Look, string> = {
-  cutout: '',                       // + shadow, so the product sits on the card
+  cutout: '',
   white: 'mix-blend-multiply',      // white background melts into the card; supplier reflections stay natural
   photo: '',
 }
@@ -66,8 +64,8 @@ function detectLook(img: HTMLImageElement): Look {
   }
 }
 
-/** Product photo shown whole (object-contain), styled by what it is: cut-out, white packshot or photo. */
-export default function ProductPhoto({ src, alt, className = '', shadowClassName = SHADOW, loading = 'lazy' }: Props) {
+/** Product photo shown whole (object-contain); a white packshot's background blends into the card. */
+export default function ProductPhoto({ src, alt, className = '', loading = 'lazy' }: Props) {
   // Result belongs to the photo it was measured for, so a new src starts undecided without an effect
   const [detected, setDetected] = useState<{ src: string; look: Look } | null>(null)
   const look = detected?.src === src ? detected.look : null
@@ -81,7 +79,7 @@ export default function ProductPhoto({ src, alt, className = '', shadowClassName
       onLoad={e => setDetected({ src, look: detectLook(e.currentTarget) })}
       className={`object-contain transition-opacity duration-200 ${look ? 'opacity-100' : 'opacity-0'} ${
         look ? LOOK_CLASS[look] : ''
-      } ${look === 'cutout' ? shadowClassName : ''} ${className}`}
+      } ${className}`}
     />
   )
 }
