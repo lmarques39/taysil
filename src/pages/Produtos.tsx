@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from 'react'
+import { useState, useRef, useEffect, useCallback } from 'react'
 import { useModalNavigation } from '../hooks/useModalNavigation'
 import { Link } from 'react-router-dom'
 import {
@@ -12,6 +12,7 @@ import BrandBadge from '../components/atoms/BrandBadge'
 import ProductCard from '../components/molecules/ProductCard'
 import ProductModal from '../components/organisms/ProductModal'
 import ProductSidebar from '../components/organisms/ProductSidebar'
+import MobileFilterSheet from '../components/organisms/MobileFilterSheet'
 
 export default function Produtos() {
   const {
@@ -19,16 +20,21 @@ export default function Produtos() {
     error,
     activeCategory,
     activeSubcategory,
+    activeSubtype,
     activeBrands,
     searchQuery,
     filteredProducts,
     suggestions,
     availableSubcategories,
+    availableSubtypes,
+    subcategoriesWithTypes,
     brandCounts,
     hasFilters,
     updateParams,
     clearAll,
     selectCategory,
+    selectSubcategory,
+    selectSubtype,
     toggleBrand,
   } = useProductFilter()
 
@@ -51,9 +57,9 @@ export default function Produtos() {
   const resultsListRef = useRef<HTMLDivElement>(null)
 
   const NAVBAR_OFFSET = 96
-  const scrollToEl = (el: HTMLElement | null) => {
+  const scrollToEl = (el: HTMLElement | null, offset = NAVBAR_OFFSET) => {
     if (!el) return
-    window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - NAVBAR_OFFSET, behavior: 'smooth' })
+    window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - offset, behavior: 'smooth' })
   }
 
   // Enter / the keyboard's "Pesquisar" key: close suggestions, hide the mobile keyboard, show the results
@@ -65,7 +71,7 @@ export default function Produtos() {
   }
 
   // When a filter changes while scrolled down the list, jump back to the top of the results
-  const filterKey = `${activeCategory}|${activeSubcategory}|${activeBrands.join(',')}`
+  const filterKey = `${activeCategory}|${activeSubcategory}|${activeSubtype}|${activeBrands.join(',')}`
   const firstFilterRender = useRef(true)
   useEffect(() => {
     if (firstFilterRender.current) { firstFilterRender.current = false; return }
@@ -74,19 +80,30 @@ export default function Produtos() {
     scrollToEl(el)
   }, [filterKey]) // eslint-disable-line react-hooks/exhaustive-deps
 
-  const handleSelectCategory = (id: Parameters<typeof selectCategory>[0]) => {
-    selectCategory(id)
+  const closeMobileFilters = useCallback(() => setMobileSidebarOpen(false), [])
+  // "Ver N produtos": close the panel and bring the list into view (after the page can scroll again)
+  const showFilteredResults = () => {
     setMobileSidebarOpen(false)
+    // Offset = mobile navbar height (h-16 / sm:h-20), so the sticky filter bar lands right under it
+    setTimeout(() => scrollToEl(resultsListRef.current, window.innerWidth >= 640 ? 80 : 64), 50)
   }
+
+  // How many filters are on (search not included — it has its own box), shown on the mobile button
+  const activeFilterCount =
+    (activeCategory ? 1 : 0) + (activeSubcategory ? 1 : 0) + (activeSubtype ? 1 : 0) + activeBrands.length
 
   const sidebarProps = {
     hasFilters,
     clearAll,
     activeCategory,
-    onSelectCategory: handleSelectCategory,
+    onSelectCategory: selectCategory,
     availableSubcategories,
     activeSubcategory,
-    updateParams,
+    onSelectSubcategory: selectSubcategory,
+    subcategoriesWithTypes,
+    availableSubtypes,
+    activeSubtype,
+    onSelectSubtype: selectSubtype,
     activeBrands,
     brandCounts,
     toggleBrand,
@@ -179,7 +196,7 @@ export default function Produtos() {
                 {activeCategory && (
                   <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-slate-900 text-white text-xs rounded-full font-medium">
                     {CATEGORIES.find(c => c.id === activeCategory)?.label}
-                    <button onClick={() => updateParams({ category: null, sub: null })} className="hover:opacity-70 transition-opacity">
+                    <button onClick={() => selectCategory(null)} className="hover:opacity-70 transition-opacity">
                       <X size={11} />
                     </button>
                   </span>
@@ -187,7 +204,15 @@ export default function Produtos() {
                 {activeSubcategory && (
                   <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-slate-100 text-slate-700 text-xs rounded-full">
                     {activeSubcategory}
-                    <button onClick={() => updateParams({ sub: null })} className="hover:opacity-70 transition-opacity">
+                    <button onClick={() => selectSubcategory(null)} className="hover:opacity-70 transition-opacity">
+                      <X size={11} />
+                    </button>
+                  </span>
+                )}
+                {activeSubtype && (
+                  <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-slate-100 text-slate-700 text-xs rounded-full">
+                    {activeSubtype}
+                    <button onClick={() => selectSubtype(null)} className="hover:opacity-70 transition-opacity">
                       <X size={11} />
                     </button>
                   </span>
@@ -211,18 +236,30 @@ export default function Produtos() {
               </div>
             )}
 
-            {/* Results count + mobile filter trigger */}
-            <div ref={resultsListRef} className="flex items-center justify-between mb-5">
-              <p className="text-sm text-slate-500">
+            {/* Results count + mobile filter button. On mobile the bar sticks under the navbar,
+                so the filters are one tap away anywhere in the list. */}
+            <div ref={resultsListRef} />
+            <div className="sticky top-16 sm:top-20 z-30 -mx-4 px-4 sm:-mx-6 sm:px-6 py-2.5 mb-3 bg-slate-50 shadow-[0_1px_0_0_rgb(226_232_240)] flex items-center justify-between gap-3 lg:static lg:mx-0 lg:px-0 lg:py-0 lg:mb-5 lg:bg-transparent lg:shadow-none">
+              <button
+                onClick={() => setMobileSidebarOpen(true)}
+                aria-label={activeFilterCount > 0 ? `Filtros (${activeFilterCount} ativos)` : 'Filtros'}
+                className={`lg:hidden flex items-center gap-2 pl-3.5 pr-3 py-2.5 text-sm font-semibold rounded-xl border transition-colors ${
+                  activeFilterCount > 0
+                    ? 'bg-slate-900 border-slate-900 text-white'
+                    : 'bg-white border-slate-200 text-slate-700 hover:bg-slate-50'
+                }`}
+              >
+                <SlidersHorizontal size={16} /> Filtros
+                {activeFilterCount > 0 && (
+                  <span className="min-w-5 h-5 px-1.5 rounded-full bg-white text-slate-900 text-xs font-bold flex items-center justify-center">
+                    {activeFilterCount}
+                  </span>
+                )}
+              </button>
+              <p className="text-sm text-slate-500 lg:order-first">
                 <span className="font-semibold text-slate-900">{filteredProducts.length}</span>{' '}
                 {filteredProducts.length === 1 ? 'produto encontrado' : 'produtos encontrados'}
               </p>
-              <button
-                onClick={() => setMobileSidebarOpen(true)}
-                className="lg:hidden flex items-center gap-2 px-3 py-2 text-sm border border-slate-200 rounded-lg text-slate-600 hover:bg-slate-50 transition-colors"
-              >
-                <SlidersHorizontal size={14} /> Filtros
-              </button>
             </div>
 
             {/* Product grid */}
@@ -286,28 +323,17 @@ export default function Produtos() {
         </div>
       </div>
 
-      {/* Mobile sidebar drawer */}
+      {/* Mobile filter panel */}
       {mobileSidebarOpen && (
-        <div className="fixed inset-0 z-50 lg:hidden">
-          <div
-            className="absolute inset-0 bg-slate-900/50 backdrop-blur-sm"
-            onClick={() => setMobileSidebarOpen(false)}
-          />
-          <div className="absolute inset-y-0 left-0 w-72 bg-white shadow-2xl flex flex-col">
-            <div className="flex items-center justify-between px-6 py-5 border-b border-slate-100">
-              <p className="font-bold text-slate-900">Filtros</p>
-              <button
-                onClick={() => setMobileSidebarOpen(false)}
-                className="w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 flex items-center justify-center transition-colors"
-              >
-                <X size={16} className="text-slate-600" />
-              </button>
-            </div>
-            <div className="flex-1 overflow-y-auto px-6 py-6">
-              <ProductSidebar {...sidebarProps} />
-            </div>
-          </div>
-        </div>
+        <MobileFilterSheet
+          onClose={closeMobileFilters}
+          onShowResults={showFilteredResults}
+          resultCount={filteredProducts.length}
+          hasFilters={hasFilters}
+          clearAll={clearAll}
+        >
+          <ProductSidebar {...sidebarProps} variant="sheet" />
+        </MobileFilterSheet>
       )}
 
       {selectedProduct && (

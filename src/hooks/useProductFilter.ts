@@ -22,6 +22,8 @@ export function useProductFilter() {
 
   const activeCategory    = searchParams.get('category') as CategoryId | null
   const activeSubcategory = searchParams.get('sub')
+  // 3rd level ("tipo"), only meaningful inside the selected subcategory
+  const activeSubtype     = activeSubcategory ? searchParams.get('tipo') : null
   const activeBrands      = (searchParams.get('brands')?.split(',').filter(Boolean) ?? []) as Brand[]
   const searchQuery       = searchParams.get('q') ?? ''
 
@@ -47,6 +49,7 @@ export function useProductFilter() {
     keys: [
       { name: 'name',          weight: 3   },
       { name: 'sub',           weight: 2   },
+      { name: 'sub2',          weight: 2   },
       { name: 'categoryLabel', weight: 1.5 },
       { name: 'brand',         weight: 1   },
       { name: 'desc',          weight: 0.5 },
@@ -81,9 +84,10 @@ export function useProductFilter() {
       : enriched
     if (activeCategory)           pool = pool.filter(p => p.category === activeCategory)
     if (activeSubcategory)        pool = pool.filter(p => p.sub === activeSubcategory)
+    if (activeSubtype)            pool = pool.filter(p => p.sub2 === activeSubtype)
     if (activeBrands.length > 0)  pool = pool.filter(p => activeBrands.includes(p.brand))
     return pool
-  }, [searchQuery, activeCategory, activeSubcategory, activeBrands, searchAllWords, enriched])
+  }, [searchQuery, activeCategory, activeSubcategory, activeSubtype, activeBrands, searchAllWords, enriched])
 
   const suggestions = useMemo(() => {
     if (searchQuery.trim().length < 2) return []
@@ -110,6 +114,29 @@ export function useProductFilter() {
     return Object.entries(counts).sort((a, b) => a[0].localeCompare(b[0]))
   }, [activeCategory, activeSubcategory, brandsKey, enriched]) // eslint-disable-line react-hooks/exhaustive-deps
 
+  // Subcategories that have types inside them (3rd level), so the filter list can show they expand
+  const subcategoriesWithTypes = useMemo(() => new Set(
+    enriched
+      .filter(p => p.sub && p.sub2 && (!activeCategory || p.category === activeCategory))
+      .map(p => p.sub as string)
+  ), [activeCategory, enriched])
+
+  // 3rd level: the types inside the selected subcategory, counted the same way.
+  // Products of that subcategory without a type still show under the subcategory itself.
+  const availableSubtypes = useMemo(() => {
+    if (!activeSubcategory) return []
+    const counts: Record<string, number> = {}
+    enriched.forEach(p => {
+      if (
+        p.sub2 && p.sub === activeSubcategory &&
+        (!activeCategory || p.category === activeCategory) &&
+        (activeBrands.length === 0 || activeBrands.includes(p.brand))
+      ) counts[p.sub2] = (counts[p.sub2] ?? 0) + 1
+    })
+    if (activeSubtype && !(activeSubtype in counts)) counts[activeSubtype] = 0
+    return Object.entries(counts).sort((a, b) => a[0].localeCompare(b[0]))
+  }, [activeCategory, activeSubcategory, activeSubtype, brandsKey, enriched]) // eslint-disable-line react-hooks/exhaustive-deps
+
   const brandCounts = useMemo(() => {
     const pool = activeCategory
       ? enriched.filter(p => p.category === activeCategory)
@@ -120,12 +147,19 @@ export function useProductFilter() {
     }))
   }, [activeCategory, enriched])
 
-  const hasFilters = !!(activeCategory || activeSubcategory || activeBrands.length > 0 || searchQuery.trim())
+  const hasFilters = !!(activeCategory || activeSubcategory || activeSubtype || activeBrands.length > 0 || searchQuery.trim())
 
   const clearAll = () => setSearchParams({}, { replace: true })
 
   const selectCategory = (id: CategoryId | null) =>
-    updateParams({ category: id, sub: null })
+    updateParams({ category: id, sub: null, tipo: null })
+
+  // Picking (or unpicking) a subcategory always resets the type inside it
+  const selectSubcategory = (sub: string | null) =>
+    updateParams({ sub, tipo: null })
+
+  const selectSubtype = (tipo: string | null) =>
+    updateParams({ tipo })
 
   const toggleBrand = (brand: Brand) => {
     const next = activeBrands.includes(brand)
@@ -139,17 +173,22 @@ export function useProductFilter() {
     error,
     activeCategory,
     activeSubcategory,
+    activeSubtype,
     activeBrands,
     searchQuery,
     enriched,
     filteredProducts,
     suggestions,
     availableSubcategories,
+    availableSubtypes,
+    subcategoriesWithTypes,
     brandCounts,
     hasFilters,
     updateParams,
     clearAll,
     selectCategory,
+    selectSubcategory,
+    selectSubtype,
     toggleBrand,
   }
 }
